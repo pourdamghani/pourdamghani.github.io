@@ -15,7 +15,7 @@ In this paper, we propose Hybrid Mining: a new mining protocol that combines sol
 [Download paper here](https://dl.acm.org/doi/abs/10.1145/3297280.3297319)
 
 Recommended citation: 
-@inproceedings{DBLP:conf/sac/ChatterjeeGP19,
+@inproceedings{SAC19Pourdamghani,
   author    = {Krishnendu Chatterjee and
                Amir Kafshdar Goharshady and
                Arash Pourdamghani},
@@ -24,5 +24,5 @@ Recommended citation:
   booktitle = {Proc. {ACM/SIGAPP} Symposium on Applied Computing,
                {SAC}},
   publisher = {{ACM}},
-  year      = {2019},
+  year      = {2019}
 }
