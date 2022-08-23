@@ -2,9 +2,9 @@
 title: "Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving"
 collection: publications
 permalink: /publication/SAC19
-excerpt: 'we propose a new mining protocol that combines solving real-world useful problems with Hashcash'
+excerpt: 'We propose a new mining protocol that combines solving real-world useful problems with Hashcash.'
 date: 2019-04-08
-venue: '34th ACM/SIGAPP Symposium on Applied Computing'
+venue: 'ACM/SIGAPP Symposium on Applied Computing'
 paperurl: 
 citation: 'Krishnendu Chatterjee and Amir Kafshdar Goharshady'
 ---
@@ -21,7 +21,7 @@ Recommended citation:
                Arash Pourdamghani},
   title     = {Hybrid mining: exploiting blockchain's computational power for distributed
                problem solving},
-  booktitle = {Proc. {ACM/SIGAPP} Symposium on Applied Computing,
+  booktitle = {Proc. of the {ACM/SIGAPP} Symposium on Applied Computing,
                {SAC}},
   publisher = {{ACM}},
   year      = {2019}
