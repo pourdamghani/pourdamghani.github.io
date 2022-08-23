@@ -5,8 +5,8 @@ permalink: /publication/SAC19
 excerpt: 'We propose a novel game-theoretic approach for generating provably unmanipulatable pseudorandom numbers on the blockchain.'
 date: 
 venue: '2019 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)'
-paperurl: 'https://ieeexplore.ieee.org/abstract/document/8751326/'
-citation: ''
+paperurl: 
+citation: 
 ---
 In today's cryptocurrencies, Hashcash proof of work is the most commonly-adopted approach to mining. In Hashcash, when a miner decides to add a block to the chain, she has to solve the difficult computational puzzle of inverting a hash function. While Hashcash has been successfully adopted in both Bitcoin and Ethereum, it has attracted significant and harsh criticism due to its massive waste of electricity, its carbon footprint and environmental effects, and the inherent lack of usefulness in inverting a hash function. Various other mining protocols have been suggested, including proof of stake, in which a miner's chance of adding the next block is proportional to her current balance. However, such protocols lead to a higher entry cost for new miners who might not still have any stake in the cryptocurrency, and can in the worst case lead to an oligopoly, where the rich have complete control over mining.
 
