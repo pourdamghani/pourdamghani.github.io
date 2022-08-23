@@ -3,7 +3,7 @@ title: "Hybrid Mining: Exploiting Blockchain`s Computational Power for Distribut
 collection: publications
 permalink: /publication/SAC19
 excerpt: 'We propose a novel game-theoretic approach for generating provably unmanipulatable pseudorandom numbers on the blockchain.'
-date: 
+date: 2019-04-08
 venue: '2019 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)'
 paperurl: 
 citation: 
