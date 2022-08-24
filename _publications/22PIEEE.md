@@ -13,6 +13,7 @@ Programmable wireless environments (PWEs) utilize internetworked intelligent met
 [Download paper here](https://ieeexplore.ieee.org/abstract/document/9769768)
 
 Recommended citation: 
+
 @article{PIEEE22Pourdamghani,
   author={Liaskos, Christos and Mamatas, Lefteris and Pourdamghani, Arash and Tsioliaridou, Ageliki and Ioannidis, Sotiris and Pitsillides, Andreas and Schmid, Stefan and Akyildiz, Ian F},
   title={Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation},
