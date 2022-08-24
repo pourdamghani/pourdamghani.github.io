@@ -4,7 +4,7 @@ collection: teaching
 type: "Graduate course"
 permalink: /teaching/NetAlg
 venue: "TU Berlin"
-date: 2022-07-25
+date: 2022-04-25
 location: "Berlin, Germany"
 ---
 
