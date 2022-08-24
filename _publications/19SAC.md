@@ -24,6 +24,5 @@ Recommended citation:
                problem solving},
   booktitle = {Proc. of the {ACM/SIGAPP} Symposium on Applied Computing,
                {SAC}},
-  publisher = {{ACM}},
   year      = {2019}
 }

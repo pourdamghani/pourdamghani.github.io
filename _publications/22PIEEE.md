@@ -1,28 +1,21 @@
 ---
-title: "Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving"
+title: "Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation"
 collection: publications
-permalink: /publication/SAC19
-excerpt: 'We propose a new mining protocol that combines solving real-world useful problems with Hashcash.'
-date: 2019-04-08
-venue: 'ACM/SIGAPP Symposium on Applied Computing'
+permalink: /publication/PIEEE22
+excerpt: 'Programmable wireless environments (PWEs) utilize internetworked intelligent metasurfaces to transform wireless propagation into a software-controlled resource. This article outlines strategies for the optimal placement of metasurfaces within a PWE-controlled space, open challenges in PWE security, specialized SDN integration issues, and theoretical problems toward the graph-driven modeling of PWEs.'
+date: 2022-05-05
+venue: 'Proceedings of the IEEE (PIEEE)'
 paperurl: 
-with: 'Krishnendu Chatterjee and Amir Kafshdar Goharshady'
+with: 'Christos Liaskos, Lefteris Mamatas, Ageliki Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid and Ian F Akyildiz'
 ---
-In today's cryptocurrencies, Hashcash proof of work is the most commonly-adopted approach to mining. In Hashcash, when a miner decides to add a block to the chain, she has to solve the difficult computational puzzle of inverting a hash function. While Hashcash has been successfully adopted in both Bitcoin and Ethereum, it has attracted significant and harsh criticism due to its massive waste of electricity, its carbon footprint and environmental effects, and the inherent lack of usefulness in inverting a hash function. Various other mining protocols have been suggested, including proof of stake, in which a miner's chance of adding the next block is proportional to her current balance. However, such protocols lead to a higher entry cost for new miners who might not still have any stake in the cryptocurrency, and can in the worst case lead to an oligopoly, where the rich have complete control over mining.
+Programmable wireless environments (PWEs) utilize internetworked intelligent metasurfaces to transform wireless propagation into a software-controlled resource. In this article, the interplay is explored between the user devices, the metasurfaces, and the PWE control system from the theory to the end-to-end implementation. This article first discusses the metasurface hardware and software, covering the complete workflow from the user device initialization to its final service via the PWE. Furthermore, to be compatible with the 5G and 6G wireless systems, the software-defined networking (SDN) paradigm is extended to achieve scalable internetworking and central control in PWE deployments with multiple metasurfaces and multihop communication. Subsequently, the set of SDN foundations is exploited in order to abstract the physics behind PWEs and a theoretical framework is established to describe and manipulate them in an algorithmic form. This can lead to smart radio environments that are readily accessible from various engineering disciplines, facilitating their integration into existing networks, wireless systems, and applications. This article is concluded by outlining strategies for the optimal placement of metasurfaces within a PWE-controlled space, open challenges in PWE security, specialized SDN integration issues, and theoretical problems toward the graph-driven modeling of PWEs.
 
-In this paper, we propose Hybrid Mining: a new mining protocol that combines solving real-world useful problems with Hashcash. Our protocol allows new miners to join the network by taking part in Hashcash mining without having to own an initial stake. It also allows nodes of the network to submit hard computational problems whose solutions are of interest in the real world, e.g. protein folding problems. Then, miners can choose to compete in solving these problems, in lieu of Hashcash, for adding a new block. Hence, Hybrid Mining incentivizes miners to solve useful problems, such as hard computational problems arising in biology, in a distributed manner. It also gives researchers in other areas an easy-to-use tool to outsource their hard computations to the blockchain network, which has enormous computational power, by paying a reward to the miner who solves the problem for them. Moreover, our protocol provides strong security guarantees and is at least as resilient to double spending as Bitcoin.
-
-[Download paper here](https://dl.acm.org/doi/abs/10.1145/3297280.3297319)
+[Download paper here](https://ieeexplore.ieee.org/abstract/document/9769768)
 
 Recommended citation: 
-@inproceedings{SAC19Pourdamghani,
-  author    = {Krishnendu Chatterjee and
-               Amir Kafshdar Goharshady and
-               Arash Pourdamghani},
-  title     = {Hybrid mining: exploiting blockchain's computational power for distributed
-               problem solving},
-  booktitle = {Proc. of the {ACM/SIGAPP} Symposium on Applied Computing,
-               {SAC}},
-  publisher = {{ACM}},
-  year      = {2019}
+@article{PIEEE22Pourdamghani,
+  author={Liaskos, Christos and Mamatas, Lefteris and Pourdamghani, Arash and Tsioliaridou, Ageliki and Ioannidis, Sotiris and Pitsillides, Andreas and Schmid, Stefan and Akyildiz, Ian F},
+  title={Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation},
+  journal={Proceedings of the {IEEE}, PIEEE},
+  year={2022},
 }
