@@ -12,6 +12,3 @@ I am a direct Ph.D. student at the <a href="https://www.inet.tu-berlin.de/menue/
 Previously I was a researcher at the University of Vienna and completed research internships in IST Austria and CUHK Hong Kong.
 I got my B.Sc from the Sharif University of Technology, Iran, and I am interested in algorithm design, with applications in networks and blockchains.
 
-Under construction :)
-
-
