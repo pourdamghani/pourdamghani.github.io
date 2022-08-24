@@ -14,6 +14,7 @@ In today's programmable blockchains, smart contracts are limited to being determ
 [Download paper here](https://ieeexplore.ieee.org/abstract/document/8751326/)
 
 Recommended citation: 
+
 @inproceedings{ICBC19Pourdamghani,
   author    = {Krishnendu Chatterjee and
                Amir Kafshdar Goharshady and

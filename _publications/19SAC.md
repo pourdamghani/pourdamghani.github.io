@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/SAC19
 excerpt: 'We propose a new mining protocol that combines solving real-world useful problems with Hashcash.'
 date: 2019-04-08
-venue: 'ACM/SIGAPP Symposium on Applied Computing'
+venue: 'ACM/SIGAPP Symposium on Applied Computing (SAC)'
 paperurl: 
 with: 'Krishnendu Chatterjee and Amir Kafshdar Goharshady'
 ---
@@ -15,6 +15,7 @@ In this paper, we propose Hybrid Mining: a new mining protocol that combines sol
 [Download paper here](https://dl.acm.org/doi/abs/10.1145/3297280.3297319)
 
 Recommended citation: 
+
 @inproceedings{SAC19Pourdamghani,
   author    = {Krishnendu Chatterjee and
                Amir Kafshdar Goharshady and

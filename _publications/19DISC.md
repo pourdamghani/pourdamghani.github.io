@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/DISC19
 excerpt: 'We consider the class of programs with structured branch and loop statements and present a greedy and polynomial-time optimum fence insertion algorithm. In addition, we show that the minimum fence insertion problem with multiple types of fence instructions is NP-hard even for straight-line programs.'
 date: 2019-10-08
-venue: 'International Symposium on Distributed Computing'
+venue: 'International Symposium on Distributed Computing (DISC)'
 paperurl: 
 with: 'Mohammad Taheri and Mohsen Lesani'
 ---
