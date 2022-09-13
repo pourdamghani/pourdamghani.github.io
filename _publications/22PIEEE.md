@@ -2,7 +2,7 @@
 title: "Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation"
 collection: publications
 permalink: /publication/PIEEE22
-excerpt: 'Programmable wireless environments (PWEs) utilize internetworked intelligent metasurfaces to transform wireless propagation into a software-controlled resource. This article outlines strategies for the optimal placement of metasurfaces within a PWE-controlled space, open challenges in PWE security, specialized SDN integration issues, and theoretical problems toward the graph-driven modeling of PWEs.'
+excerpt: 'This article outlines strategies for the optimal placement of metasurfaces within a PWE-controlled space, open challenges in PWE security, specialized SDN integration issues, and theoretical problems toward the graph-driven modeling of PWEs.'
 date: 2022-05-05
 venue: 'Proceedings of the IEEE (PIEEE)'
 paperurl: 
