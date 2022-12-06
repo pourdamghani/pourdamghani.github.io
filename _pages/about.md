@@ -48,7 +48,7 @@ Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/septem
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'19](https://icbc2019.ieee-icbc.org/)).\
-[Paper](https://ieeexplore.ieee.org/abstract/document/8751326),[Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib)
+[Paper](https://ieeexplore.ieee.org/abstract/document/8751326), [Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib)
 
 ### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
