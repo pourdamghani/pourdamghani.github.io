@@ -25,7 +25,7 @@ IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.iee
 (To appear)
 
 ### Self-Adjusting Partially Ordered Lists
-*with Vamsi Addanki, Maciej Pacut, Gabor Retvari, and Stefan Schmid, Juan  Vanerio*\
+*with Vamsi Addanki, Maciej Pacut, Gabor Retvari, Stefan Schmid, and Juan  Vanerio*\
 IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
 (To appear)
 
