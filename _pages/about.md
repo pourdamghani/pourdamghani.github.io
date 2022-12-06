@@ -17,7 +17,7 @@ I am interested in algorithm design and analysis with applications in newtworks,
 
 # Publications
 
-## Self-adjusting Datastructures:
+## Self-adjusting Data Structures:
 
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
