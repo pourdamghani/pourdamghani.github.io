@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
+# About
+
 Hi :) I am Arash, a direct Ph.D. student at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>.
 Previously I was a researcher at the University of Vienna and completed research internships in IST Austria under supervision of Prof. Chatterjee. I got my B.Sc. from the Sharif University of Technology.
 
