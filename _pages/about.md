@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Hi :) I am Arash, a direct Ph.D. student at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>.
-Previously I was a researcher at the University of Vienna and completed research internships in IST Austria under supervision of Prof. Chatterjee and CUHK Hong Kong under supervision of Prof. Cheng. I got my B.Sc from the Sharif University of Technology, Iran as an undergraduate researcher in the algorithm's lab.
+Previously I was a researcher at the University of Vienna and completed research internships in IST Austria under supervision of Prof. Chatterjee and CUHK Hong Kong under supervision of Prof. Cheng. I got my B.Sc. from the Sharif University of Technology, Iran as an undergraduate researcher in the algorithm's lab.
 
 I am interested in algorithm design and analysis with applications in newtworks, distributed systems and blockchain.
 
@@ -32,13 +32,13 @@ IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.iee
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 *with Monika Henzinger, Ami Paz, Arash Pourdamghani, and Stefan Schmid*\
 ACM SIGCOMM Symposium on SDN Research ([SOSR'22](https://conferences.sigcomm.org/sosr/2022/)).\
-[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides], [Citation]
+[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides], [Citation](SOSR22Tradeoff.bib)
 
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
 *with Christos Liaskos, Lefteris Mamatas, Atsioli Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
 Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/september-2022/)).\
-[Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation]
+[Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation](PIEEE22SDR.bib)
 
 
 ## Blockchain:
@@ -46,7 +46,7 @@ Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/septem
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'19](https://icbc2019.ieee-icbc.org/)).\
-[Paper](https://ieeexplore.ieee.org/abstract/document/8751326),[Slides], [Citation]
+[Paper](https://ieeexplore.ieee.org/abstract/document/8751326),[Slides], [Citation](ICBC19Random.bib)
 
 ### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
