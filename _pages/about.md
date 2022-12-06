@@ -41,12 +41,13 @@ IEEE International Conference on Blockchain and Cryptocurrency (ICBC'19)
 
 ### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
-Proceedings of the IEEE (PIEEE'22).
+ACM/SIGAPP Symposium on Applied Computing (SAC'19).
 
 ## Distributed Systems:
 ### Polynomial-Time Fence Insertion for Structured Programs
 *with Mohammad Taheri and Mohsen Lesani*\
-ACM/SIGAPP Symposium on Applied Computing (SAC'19).
+International Symposium on Distributed Computing (DISC), 2019
+
 
 
 
