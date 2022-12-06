@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Hi :) I am Arash, a direct Ph.D. student at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>.
-Previously I was a researcher at the University of Vienna and completed research internships in IST Austria under supervision of Prof. Chatterjee and CUHK Hong Kong under supervision of Prof. Cheng. I got my B.Sc. from the Sharif University of Technology, Iran as an undergraduate researcher in the algorithm's lab.
+Previously I was a researcher at the University of Vienna and completed research internships in IST Austria under supervision of Prof. Chatterjee. I got my B.Sc. from the Sharif University of Technology.
 
 I am interested in algorithm design and analysis with applications in newtworks, distributed systems and blockchain.
 
