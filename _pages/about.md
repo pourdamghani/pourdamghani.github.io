@@ -59,7 +59,7 @@ ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/s
 ### Polynomial-Time Fence Insertion for Structured Programs
 *with Mohammad Taheri and Mohsen Lesani*\
 International Symposium on Distributed Computing ([DISC'19](http://www.disc-conference.org/wp/disc2019/)).\
-[Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides], [Citation]
+[Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides], [Citation](DISC19Fence.bibtex)
 
 
 
