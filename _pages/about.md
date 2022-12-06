@@ -34,7 +34,7 @@ IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.iee
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 *with Monika Henzinger, Ami Paz, Arash Pourdamghani, and Stefan Schmid*\
 ACM SIGCOMM Symposium on SDN Research ([SOSR'22](https://conferences.sigcomm.org/sosr/2022/)).\
-[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides], [Citation](SOSR22Tradeoff.bib)
+[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib)
 
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
@@ -48,12 +48,12 @@ Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/septem
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'19](https://icbc2019.ieee-icbc.org/)).\
-[Paper](https://ieeexplore.ieee.org/abstract/document/8751326),[Slides], [Citation](ICBC19Random.bib)
+[Paper](https://ieeexplore.ieee.org/abstract/document/8751326),[Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib)
 
 ### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/sac2019/)).\
-[Paper](https://dl.acm.org/doi/abs/10.1145/3297280.3297319), [Slides], [Citation](SAC19HybridMining.bib)
+[Paper](https://dl.acm.org/doi/abs/10.1145/3297280.3297319), [Slides](SAC2019-Slides.pdf), [Citation](SAC19HybridMining.bib)
 
 
 ## Distributed Systems:
@@ -61,7 +61,7 @@ ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/s
 ### Polynomial-Time Fence Insertion for Structured Programs
 *with Mohammad Taheri and Mohsen Lesani*\
 International Symposium on Distributed Computing ([DISC'19](http://www.disc-conference.org/wp/disc2019/)).\
-[Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides], [Citation](DISC19Fence.bib)
+[Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
 
 
 
