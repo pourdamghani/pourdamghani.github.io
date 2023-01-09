@@ -1,0 +1,1 @@
+@inproceedings{INFOCOM23SeedTree, author = {Arash Pourdamghani and Chen Avin and Robert Sama and Stefan Schmid}, title = {SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree}, booktitle = {{IEEE} {INFOCOM}}, year = {2023} }
