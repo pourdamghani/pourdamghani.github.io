@@ -22,7 +22,8 @@ I am interested in algorithm design and analysis with applications in networks, 
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
 IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
-(To appear)
+[Paper](INFOCOM23SeedTree.pdf), [Citation](INFOCOM23SeedTree.bib)
+
 
 ### Self-Adjusting Partially Ordered Lists
 *with Vamsi Addanki, Maciej Pacut, Gabor Retvari, Stefan Schmid, and Juan  Vanerio*\
