@@ -6,4 +6,4 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-Download the latest version [here](Arash_Pourdamghani_CV.pdf).
+You can download the latest version [here](Arash_Pourdamghani_CV.pdf).
