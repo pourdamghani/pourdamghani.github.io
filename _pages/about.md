@@ -66,6 +66,35 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 
 
 
+# Teaching and Service
+
+## Teaching Assitance:
+#### Algorithms for Networked and Distributed Systems 
+TU Berlin & Berlin Mathematical School, Germany, Winter 2022 & 2021
+#### Cryptocurrency and Blockchain Networks Seminar
+TU Berlin, Germany, Summer 2023 & 2022.
+#### Network Protocols and Architectures
+TU Berlin, Germany, Winter 2021.
+#### Data Structures and Algorithms, 
+Sharif University of Technology, Iran, 2016 to 2019
+#### Algorithmic Game Theory
+Sharif University of Technology, Iran, 2017 to 2019
+#### Algorithms Design and Analysis
+Sharif University of Technology, Iran, Fall 2017 & 2018
+
+## Reviewer:
+SIROCCO, ITU J-FET on Intelligent Surfaces
+
+## Voluntary:
+#### ACM Asian Regional Contest in Iran
+Executive Staff, Iran, 2015 to 2017
+#### Winter Seminar Series in Advanced Computer Science
+Co-Organizer, Iran, 2015 to 2021
+#### TEDx SUT
+Co-Founder, 2018
+#### Persian Wikipedia Edit-a-thon
+Co-Founder, 2016
+
 
 
 
