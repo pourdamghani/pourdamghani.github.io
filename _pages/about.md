@@ -10,7 +10,9 @@ redirect_from:
 
 # About
 
-Hi :) I am Arash, a direct Ph.D. student at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>.
+I am a direct Ph.D. student at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> research group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. I am also an associated researcher with <a href="https://plamadiso.weizenbaum-institut.de">PLAMADISO</a>
+research group at the <a href="https://www.weizenbaum-institut.de/en">Weizenbaum Institute</a> for the Networked Society.
+
 Previously I was a researcher at the University of Vienna and completed research internships in IST Austria under the supervision of Prof. Chatterjee. I got my B.Sc. from the Sharif University of Technology.
 
 I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [self-adjusting networks](https://self-adjusting.net/).
@@ -89,7 +91,7 @@ SIROCCO, ITU J-FET on Intelligent Surfaces
 ### ACM Asian Regional Contest in Iran
 Executive Staff, Iran, 2015 to 2017
 ### Winter Seminar Series in Advanced Computer Science
-Co-Organizer, Iran, 2015 to 2021
+Co-organizer, Iran, 2015 to 2018
 ### TEDx SUT
 Co-Founder, 2018
 ### Persian Wikipedia Edit-a-thon
