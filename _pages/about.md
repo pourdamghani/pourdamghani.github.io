@@ -74,7 +74,7 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 ### Algorithms for Networked and Distributed Systems 
 TU Berlin & Berlin Mathematical School, Germany, Winter 2022 & 2021
 ### Cryptocurrency and Blockchain Networks Seminar
-TU Berlin, Germany, Summer 2023 & 2022.
+TU Berlin, Germany, Winer & Summer 2023 & 2022.
 ### Network Protocols and Architectures
 TU Berlin, Germany, Winter 2021.
 ### Data Structures and Algorithms, 
