@@ -70,6 +70,12 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
+# Analytics
+analytics:
+  provider               :  false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          
+
 
 # Site Author
 author:
@@ -165,6 +171,19 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
