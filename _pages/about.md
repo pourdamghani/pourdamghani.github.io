@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,43 +8,85 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+# About
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I am a Ph.D. candidate at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> research group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. I am also an associated researcher with <a href="https://plamadiso.weizenbaum-institut.de">PLAMADISO</a>
+research group at the <a href="https://www.weizenbaum-institut.de/en">Weizenbaum Institute</a> for the Networked Society.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+Previously I was a researcher at the University of Vienna and completed research internships at IST Austria and CUHK Hong Kong. I got my B.Sc. from the Sharif University of Technology.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [self-adjusting networks](https://self-adjusting.net/).
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+# Publications
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+## Self-adjusting Data Structures:
 
-**Markdown generator**
+### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
+*with Chen Avin, Robert Sama, and Stefan Schmid*\
+IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
+[Paper](INFOCOM23SeedTree.pdf), [Citation](INFOCOM23SeedTree.bib)
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+### Self-Adjusting Partially Ordered Lists
+*with Vamsi Addanki, Maciej Pacut, Gabor Retvari, Stefan Schmid, and Juan  Vanerio*\
+IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
+[Paper](INFOCOM23List.pdf), [Citation](INFOCOM23List.bib)
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+## Efficient Software-defined Networking:
 
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+### The Augmentation-Speed Tradeoff for Consistent Network Updates
+*with Monika Henzinger, Ami Paz, Arash Pourdamghani, and Stefan Schmid*\
+ACM SIGCOMM Symposium on SDN Research ([SOSR'22](https://conferences.sigcomm.org/sosr/2022/)).\
+[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib)
+
+
+### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
+*with Christos Liaskos, Lefteris Mamatas, Atsioli Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
+Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/september-2022/)).\
+[Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation](PIEEE22SDR.bib)
+
+
+## Blockchain:
+
+### Probabilistic smart contracts: Secure randomness on the blockchain
+*with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
+IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'19](https://icbc2019.ieee-icbc.org/)).\
+[Paper](https://ieeexplore.ieee.org/abstract/document/8751326), [Slides](ICBC2019-Slides.pdf), [Video](https://youtu.be/ilWwCqGA-_Y?t=64), [Citation](ICBC19Random.bib)
+
+### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
+*with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
+ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/sac2019/)).\
+[Paper](https://dl.acm.org/doi/abs/10.1145/3297280.3297319), [Slides](SAC2019-Slides.pdf), [Citation](SAC19HybridMining.bib)
+
+
+## Distributed Systems:
+
+### Polynomial-Time Fence Insertion for Structured Programs
+*with Mohammad Taheri and Mohsen Lesani*\
+International Symposium on Distributed Computing ([DISC'19](http://www.disc-conference.org/wp/disc2019/)).\
+[Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
+
+
+
+# Teaching and Service
+
+## Teaching Assitance:
+### Algorithms for Networked and Distributed Systems 
+TU Berlin & Berlin Mathematical School, Germany, Winter 2022 & 2021
+### Cryptocurrency and Blockchain Networks Seminar
+TU Berlin, Germany, Winer & Summer 2023 & 2022.
+### Network Protocols and Architectures
+TU Berlin, Germany, Winter 2021.
+### Data Structures and Algorithms, 
+Sharif University of Technology, Iran, 2016 to 2019
+### Algorithmic Game Theory
+Sharif University of Technology, Iran, 2017 to 2019
+### Algorithms Design and Analysis
+Sharif University of Technology, Iran, Fall 2017 & 2018
+
+## Reviewer:
+SIROCCO, ITU J-FET on Intelligent Surfaces
+
+
+
+
