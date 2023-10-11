@@ -71,13 +71,6 @@ social:
   links: # An array of links to social media profiles
 
 
-# Analytics
-analytics:
-  provider               :  "custom" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          :
-
-
 # Site Author
 author:
   name             : "Arash Pourdamghani"
@@ -171,11 +164,6 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-
-# Collections
-collections:
-
 
 
 # Defaults
