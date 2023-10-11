@@ -87,16 +87,6 @@ Sharif University of Technology, Iran, Fall 2017 & 2018
 ## Reviewer:
 SIROCCO, ITU J-FET on Intelligent Surfaces
 
-## Voluntary:
-### ACM Asian Regional Contest in Iran
-Executive Staff, Iran, 2015 to 2017
-### Winter Seminar Series in Advanced Computer Science
-Co-organizer, Iran, 2015 to 2018
-### TEDx SUT
-Co-Founder, 2018
-### Persian Wikipedia Edit-a-thon
-Co-Founder, 2016
-
 
 
 
