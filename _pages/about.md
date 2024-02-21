@@ -72,11 +72,11 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 
 ## Teaching Assitance:
 ### Algorithms for Networked Systems 
-TU Berlin & Berlin Mathematical School, Germany, 2021-Now
+TU Berlin, Germany, 2021-Now
 ### Cryptocurrency and Blockchain Networks Seminar
-TU Berlin, Germany, Winer & Summer 2022-Now
+TU Berlin, Germany, 2022-Now
 ### Blockchain Foundations
-TU Berlin & Berlin Mathematical School, Germany, 2024-Now
+TU Berlin, Germany, 2024-Now
 ### Network Protocols and Architectures
 TU Berlin, Germany, Winter 2021.
 ### Data Structures and Algorithms, 
