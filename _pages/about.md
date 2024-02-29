@@ -66,25 +66,28 @@ ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/s
 International Symposium on Distributed Computing ([DISC'19](http://www.disc-conference.org/wp/disc2019/)).\
 [Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
 
+# Talks
+
+<!--- ### (Upcoimg) Dagstuhl Seminar: Discrete Algorithms on Modern and Emerging Compute Infrastructure-->
+### [Dutch Seminar on Optimization](https://wsc.project.cwi.nl/dutch-optimization-seminar/events/seminar-danish-kashaev-cwi-and-arash-pourdamghani-tu-berlin-2-phd-talks)
+### Freie Universität Berlin
+### [Winter Seminar Series at Sharif University](https://www.youtube.com/watch?v=op_x7zDYK2A)
+### INFOCOM'22, SOSR'22, SAC'19 
 
 
 # Teaching (Assitance)
 
 ## Teaching Assitance:
-### Algorithms for Networked Systems 
-TU Berlin, Germany, 2021-Now
-### Cryptocurrency and Blockchain Networks Seminar
-TU Berlin, Germany, 2022-Now
-### Blockchain Foundations
-TU Berlin, Germany, 2024-Now
-### Network Protocols and Architectures
-TU Berlin, Germany, Winter 2021.
-### Data Structures and Algorithms, 
-Sharif University of Technology, Iran, 2016-2019
-### Algorithmic Game Theory
-Sharif University of Technology, Iran, 2017-2019
-### Algorithms Design and Analysis
-Sharif University of Technology, Iran, Fall 2017-2018
+### TU Berlin, Germany, 2021-Now
+#### Algorithms for Networked Systems 
+#### Cryptocurrency and Blockchain Networks Seminar
+#### Blockchain Foundations
+#### Network Protocols and Architectures
+
+### Sharif University of Technology, Iran, 2016-2019
+#### Data Structures and Algorithms, 
+#### Algorithmic Game Theory
+#### Algorithms Design and Analysis
 
 ## Reviewer:
 PODC (Junior PC), SIROCCO, ITU J-FET on Intelligent Surfaces
