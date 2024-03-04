@@ -75,8 +75,6 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 ### INFOCOM'22, SOSR'22, SAC'19 
 
 
-# Teaching (Assitance)
-
 ## Teaching Assitance:
 ### TU Berlin, Germany, 2021-Now
 #### Algorithms for Networked Systems 
