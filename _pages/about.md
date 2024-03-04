@@ -32,7 +32,7 @@ IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.iee
 IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
 [Paper](INFOCOM23List.pdf), [Citation](INFOCOM23List.bib)
 
-## Efficient Software-defined Networking:
+## Traffic Engineering:
 
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 *with Monika Henzinger, Ami Paz, Arash Pourdamghani, and Stefan Schmid*\
