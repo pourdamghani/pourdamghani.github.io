@@ -97,19 +97,27 @@ PODC (Junior PC), SIROCCO, ACM Computing Surveys, ITU J-FET on Intelligent Surfa
 ## Alumni:
 I am honored to have been working with following students in the past few years.
 
-### Research Internships
-Helia Yazdanyar (2023-24, TU Berlin) -> University of Waterloo
+### Undergraduate Research Interns
+Helia Yazdanyar (2023-24, TU Berlin) -> Masters at University of Waterloo
+
 Bahar Oveisgharan (2023-24, TU Berlin) 
+
 Maryam Shiran (2023-24, TU Berlin) 
+
 Dorsa Majdi (2022-23, TU Berlin) 
-Esra Ceylan (2022, University of Vienna) -> TU Wien
+
+Esra Ceylan (2022, University of Vienna) -> Masters at TU Wien
+
 Marzieh Aliakbarpour (2021-2022, University of Vienna)
+
 Siddhesh Kalekar (2021, University of Vienna)
+
 Loric André (2021, University of Vienna)
 
 ### Thesis supervision
-Qingyun Ji (Bachelor and Master thesis, 2022 and 2024)
-Johannes Gründler (Bachelor thesis, 2023)
+Qingyun Ji (Bachelor and Master thesis, 2022 and 2024) -> IBM
+
+Johannes Gründler (Bachelor thesis, 2023) -> Masters at University of Vienna
 
 
 
