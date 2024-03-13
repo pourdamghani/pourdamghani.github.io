@@ -48,9 +48,9 @@ Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/septem
 
 ## Blockchain:
 
-<!--- ### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System
+### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System
 *with Johannes Gründler, Darya Melnyk, Stefan Schmid*\
-IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'24](https://icbc2024.ieee-icbc.org/)). -->
+IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'24](https://icbc2024.ieee-icbc.org/)).
 
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
@@ -72,7 +72,7 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 
 # Talks
 
-<!--- ### (Upcoimg) Dagstuhl Seminar: Discrete Algorithms on Modern and Emerging Compute Infrastructure-->
+### (Upcoimg) Dagstuhl Seminar: Discrete Algorithms on Modern and Emerging Compute Infrastructure
 ### [Dutch Seminar on Optimization](https://wsc.project.cwi.nl/dutch-optimization-seminar/events/seminar-danish-kashaev-cwi-and-arash-pourdamghani-tu-berlin-2-phd-talks)
 ### Freie Universität Berlin
 ### [Winter Seminar Series at Sharif University](https://www.youtube.com/watch?v=op_x7zDYK2A)
@@ -93,6 +93,25 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 
 ## Reviewer:
 PODC (Junior PC), SIROCCO, ACM Computing Surveys, ITU J-FET on Intelligent Surfaces
+
+## Alumni:
+I am honored to have been working with following students in the past few years.
+
+### Research Internships
+Helia Yazdanyar (2023-24, TU Berlin) 
+Bahar Oveisgharan (2023-24, TU Berlin) 
+Maryam Shiran (2023-24, TU Berlin) 
+Dorsa Majdi (2022-23, TU Berlin) 
+Esra Ceylan (2022, University of Vienna)
+Marzieh Aliakbarpour (2021-2022, University of Vienna)
+Siddhesh Kalekar (2021, University of Vienna)
+Loric André (2021, University of Vienna)
+
+### Thesis supervision
+Qingyun Ji (Bachelor and Master thesis, 2022 and 2024)
+Johannes Gründler (Bachelor thesis, 2023)
+
+
 
 
 
