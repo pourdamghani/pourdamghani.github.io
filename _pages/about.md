@@ -84,7 +84,7 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 #### Network Protocols and Architectures
 
 ### Sharif University of Technology, Iran, 2016-2019
-#### Data Structures and Algorithms, 
+#### Data Structures and Algorithms
 #### Algorithmic Game Theory
 #### Algorithms Design and Analysis
 
