@@ -90,6 +90,7 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 
 ## Reviewer:
 PODC'24 (Junior PC), SIROCCO'23, ITU J-FET on Intelligent Surfaces 2022, ACM Computing Surveys 2020
+
 Subreviwer: CCS'24, SIGMETRICS'24, DSN'24, PODC'23, SPAA'23, ESA'22, CoNEXT'22
 
 ## Alumni:
@@ -102,7 +103,7 @@ Bahar Oveisgharan (2023-24, TU Berlin)
 
 Maryam Shiran (2023-24, TU Berlin) 
 
-Dorsa Majdi (2022-23, TU Berlin) 
+Dorsa Majdi (2022-23, TU Berlin) -> Intern at EPFL
 
 Esra Ceylan (2022, University of Vienna) -> Masters at TU Wien
 
