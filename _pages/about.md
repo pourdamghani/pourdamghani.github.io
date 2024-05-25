@@ -24,7 +24,7 @@ I am interested in algorithm design and analysis with applications in networks, 
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
 IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
-[Paper](INFOCOM23SeedTree.pdf), [Citation](INFOCOM23SeedTree.bib)
+[Paper](INFOCOM23SeedTree.pdf), [Slides](SeedTree-Pres.pdf), [Citation](INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
 
 
 ### Self-Adjusting Partially Ordered Lists
@@ -37,7 +37,7 @@ IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.iee
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 *with Monika Henzinger, Ami Paz, Arash Pourdamghani, and Stefan Schmid*\
 ACM SIGCOMM Symposium on SDN Research ([SOSR'22](https://conferences.sigcomm.org/sosr/2022/)).\
-[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib)
+[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib), [Video](https://www.youtube.com/watch?v=DqF48BG1DbA)
 
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
@@ -52,7 +52,7 @@ Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/septem
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'19](https://icbc2019.ieee-icbc.org/)).\
-[Paper](ICBC2019.pdf), [Slides](ICBC2019-Slides.pdf), [Video](https://youtu.be/ilWwCqGA-_Y?t=64), [Citation](ICBC19Random.bib)
+[Paper](ICBC2019.pdf), [Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib), [Video](https://youtu.be/ilWwCqGA-_Y?t=64)
 
 ### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
@@ -69,7 +69,7 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 
 # Talks
 
-### (Upcoimg) Dagstuhl Seminar: Discrete Algorithms on Modern and Emerging Compute Infrastructure
+### (Upcoimg) SPAA'24
 ### [Dutch Seminar on Optimization](https://wsc.project.cwi.nl/dutch-optimization-seminar/events/seminar-danish-kashaev-cwi-and-arash-pourdamghani-tu-berlin-2-phd-talks)
 ### Freie Universität Berlin
 ### [Winter Seminar Series at Sharif University](https://www.youtube.com/watch?v=op_x7zDYK2A)
@@ -89,7 +89,7 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 #### Algorithms Design and Analysis
 
 ## Reviewer:
-PODC'24 (Junior PC), SIROCCO'23, ITU J-FET on Intelligent Surfaces 2022, ACM Computing Surveys 2020
+TON'24, PODC'24 (Junior PC), SIROCCO'23, ITU J-FET on Intelligent Surfaces 2022, ACM Computing Surveys 2020
 
 Subreviwer: PODC'24, CCS'24, SIGMETRICS'24, DSN'24, NSDI'24, PODC'23, SPAA'23, NSDI'23, ESA'22, CoNEXT'22, DISC'22, AFT'22
 
