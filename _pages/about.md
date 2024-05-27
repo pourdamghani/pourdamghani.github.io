@@ -91,7 +91,7 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 ## Reviewer:
 TON'24, PODC'24 (Junior PC), SIROCCO'23, ITU J-FET on Intelligent Surfaces 2022, ACM Computing Surveys 2020
 
-Subreviwer: PODC'24, CCS'24, SIGMETRICS'24, DSN'24, NSDI'24, PODC'23, SPAA'23, NSDI'23, ESA'22, CoNEXT'22, DISC'22, AFT'22
+Subreviwer: DISC'24, PODC'24, CCS'24, SIGMETRICS'24, DSN'24, NSDI'24, PODC'23, SPAA'23, NSDI'23, ESA'22, CoNEXT'22, DISC'22, AFT'22
 
 ## Alumni:
 I am honored to have been working with following students in the past few years.
