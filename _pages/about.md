@@ -48,7 +48,7 @@ Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/septem
 
 ## Blockchain:
 
-### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System
+### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System (Poster)
 *with Johannes Gruendler, Darya Melnyk, and Stefan Schmid*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'24](https://icbc2024.ieee-icbc.org/)).
 
