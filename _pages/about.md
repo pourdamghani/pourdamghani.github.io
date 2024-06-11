@@ -24,7 +24,7 @@ I am interested in algorithm design and analysis with applications in networks, 
 ### Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation
 *with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
 ACM Symposium on Parallelism in Algorithms and Architectures (SPAA'24).\
-[Paper](SPAA24Matching.pdf), [Slides](SPAA-Pres.pdf), [Citation](SPAA24Matching.bib)
+[Paper](spaa24ba.pdf), [Slides](spaa24ba-slides.pdf), [Citation](SPAA24Matching.bib)
 
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
