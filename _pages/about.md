@@ -21,6 +21,10 @@ I am interested in algorithm design and analysis with applications in networks, 
 
 ## Self-adjusting Data Structures:
 
+### SpiderDAN: Matching Augmentation in Demand-Aware Networks
+*with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
+SIAM Symposium on Algorithm Engineering and Experiments (ALENEX25).\
+
 ### Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation
 *with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
 ACM Symposium on Parallelism in Algorithms and Architectures (SPAA'24).\
@@ -30,7 +34,6 @@ ACM Symposium on Parallelism in Algorithms and Architectures (SPAA'24).\
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
 IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
 [Paper](INFOCOM23SeedTree.pdf), [Slides](SeedTree-Pres.pdf), [Citation](INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
-
 
 ### Self-Adjusting Partially Ordered Lists
 *with Vamsi Addanki, Maciej Pacut, Gabor Retvari, Stefan Schmid, and Juan  Vanerio*\
@@ -79,18 +82,20 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 
 # Talks
 
-### (Upcoimg) SPAA'24
+### SPAA'24, PODC'24
 ### [Dutch Seminar on Optimization](https://wsc.project.cwi.nl/dutch-optimization-seminar/events/seminar-danish-kashaev-cwi-and-arash-pourdamghani-tu-berlin-2-phd-talks)
 ### Freie Universität Berlin
 ### [Winter Seminar Series at Sharif University](https://www.youtube.com/watch?v=op_x7zDYK2A)
 ### INFOCOM'23, SOSR'22, SAC'19 
 
 
-## Teaching Assitance:
+## Teaching (Assitance):
 ### TU Berlin, Germany, 2021-Now
 #### Algorithms for Networked Systems 
+#### Blockchain Technology and Decentralized Applications
 #### Cryptocurrency and Blockchain Networks Seminar
-#### Blockchain Foundations
+#### Networked and Distributed Systems Seminar
+#### AI in Networked Systems Seminar
 #### Network Protocols and Architectures
 
 ### Sharif University of Technology, Iran, 2016-2019
@@ -101,29 +106,27 @@ International Symposium on Distributed Computing ([DISC'19](http://www.disc-conf
 ## Reviewer:
 TON'24, PODC'24 (Junior PC), SIROCCO'23, ITU J-FET on Intelligent Surfaces 2022, ACM Computing Surveys 2020
 
-Subreviwer: DISC'24, PODC'24, CCS'24, SIGMETRICS'24, DSN'24, NSDI'24, PODC'23, SPAA'23, NSDI'23, ESA'22, CoNEXT'22, DISC'22, AFT'22
+Subreviwer: SIGMETRICS'25, HoTNets'25. DISC'24, PODC'24, CCS'24, SIGMETRICS'24, DSN'24, NSDI'24, PODC'23, SPAA'23, NSDI'23, ESA'22, CoNEXT'22, DISC'22, AFT'22
 
 ## Alumni:
 I am honored to have been working with following students in the past few years.
 
-### Undergraduate Research Interns
-Helia Yazdanyar (2023-24, TU Berlin) -> Masters at University of Waterloo
+### Selected Undergraduate Research Interns
 
 Bahar Oveisgharan (2023-24, TU Berlin) 
 
 Maryam Shiran (2023-24, TU Berlin) 
 
+Helia Yazdanyar (2023-24, TU Berlin) -> Masters at University of Waterloo
+
 Dorsa Majdi (2022-23, TU Berlin) -> Intern at EPFL
 
 Esra Ceylan (2022, University of Vienna) -> Masters at TU Wien
 
-Marzieh Aliakbarpour (2021-2022, University of Vienna)
+Marzieh Aliakbarpour (2021-2022, University of Vienna) -> The Pennsylvania State University
 
-Siddhesh Kalekar (2021, University of Vienna)
 
-Loric André (2021, University of Vienna)
-
-### Thesis supervision
+### Selected Thesis Supervision
 Qingyun Ji (Bachelor and Master thesis, 2022 and 2024) -> IBM
 
 Johannes Gründler (Bachelor thesis, 2023) -> Masters at University of Vienna
