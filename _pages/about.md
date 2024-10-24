@@ -19,9 +19,7 @@ I am interested in algorithm design and analysis with applications in networks, 
 
 # Publications
 
-## Self-adjusting Data Structures:
-
-
+## Self-Adjusting Systems:
 
 ### SpiderDAN: Matching Augmentation in Demand-Aware Networks
 *with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
@@ -29,7 +27,7 @@ SIAM Symposium on Algorithm Engineering and Experiments (ALENEX'25)
 
 ### Hash & Adjust: Competitive Demand-Aware Consistent Hashing
 *with Chen Avin, Robert Sama, Maryam Shiran, and Stefan Schmid*\
-SIAM Symposium on Algorithm Engineering and Experiments (OPODIS'24)
+The 28th International Conference on Principles of Distributed Systems (OPODIS'24)
 
 ### Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation
 *with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
