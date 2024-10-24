@@ -21,6 +21,10 @@ I am interested in algorithm design and analysis with applications in networks, 
 
 ## Self-adjusting Data Structures:
 
+### Hash & Adjust: Competitive Demand-Aware Consistent Hashing
+*with Chen Avin, Robert Sama, Maryam Shiran, and Stefan Schmid*\
+SIAM Symposium on Algorithm Engineering and Experiments (OPODIS25).\
+
 ### SpiderDAN: Matching Augmentation in Demand-Aware Networks
 *with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
 SIAM Symposium on Algorithm Engineering and Experiments (ALENEX25).\
