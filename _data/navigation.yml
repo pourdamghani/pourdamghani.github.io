@@ -12,6 +12,9 @@ main:
   - title: "Supervision"
     url: /supervision/
 
+  - title: "Talks"
+    url: /talks/
+
   - title: "CV"
     url: /cv/
 
