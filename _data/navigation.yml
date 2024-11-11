@@ -1,5 +1,14 @@
 # main links links
 main:
+  - title: "Research"
+    url: /research/
+
+  - title: "Teaching"
+    url: /teaching/
+
+  - title: "Supervision"
+    url: /supervision/
+
   - title: "CV"
     url: /cv/
 
