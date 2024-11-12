@@ -22,7 +22,7 @@ email: lastname (at) tu-berlin (dot) de
 
 ### SpiderDAN: Matching Augmentation in Demand-Aware Networks
 *with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
-SIAM Symposium on Algorithm Engineering and Experiments (ALENEX'25)
+SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX'25](href="https://www.siam.org/conferences-events/siam-conferences/alenex25/">))
 
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
@@ -38,3 +38,5 @@ ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/s
 *with Mohammad Taheri and Mohsen Lesani*\
 International Symposium on Distributed Computing ([DISC'19](http://www.disc-conference.org/wp/disc2019/)).\
 [Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
+
+For all list of publications, please check my [research page](/research).
