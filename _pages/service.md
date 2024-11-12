@@ -9,7 +9,7 @@ redirect_from:
   - /service/
 ---
 
-## ServiceCommunity Service
+## Community Service
 
 ### PC member:
 FC CAAW'25, PODC'24 (Junior PC)
