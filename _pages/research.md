@@ -1,7 +1,7 @@
 ---
 permalink: /research
-title: "Publications"
-excerpt: "Publications"
+title: ""
+excerpt: "Publications of Arash Pourdamghani"
 author_profile: true
 redirect_from: 
   - /Publications/
