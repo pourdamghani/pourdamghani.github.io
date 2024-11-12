@@ -10,7 +10,7 @@ redirect_from:
 
 
 
-# Teaching :
+<!-- # Teaching :
 ## TU Berlin, Germany, 2021-Now
 ### Algorithms for Networked Systems 
 ### Blockchain Technology and Decentralized Applications
@@ -22,4 +22,4 @@ redirect_from:
 ## Sharif University of Technology, Iran, 2016-2019
 ### Data Structures and Algorithms
 ### Algorithmic Game Theory
-### Algorithms Design and Analysis
+### Algorithms Design and Analysis -->
