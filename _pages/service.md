@@ -1,5 +1,6 @@
 ---
 permalink: /service
+title: ""
 excerpt: "List of community service of Arash Pourdamghani"
 author_profile: true
 redirect_from: 
