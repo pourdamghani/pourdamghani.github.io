@@ -1,10 +1,9 @@
 ---
 permalink: /supervision
-title: "Supervision"
-excerpt: "Supervision"
+excerpt: "Students that I supervised"
 author_profile: true
 redirect_from: 
-  - /Supervision/
+  - /supervision/
   - /supervision.html
 ---
 
