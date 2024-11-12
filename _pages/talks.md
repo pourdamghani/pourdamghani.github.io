@@ -4,8 +4,7 @@ title: "Talks"
 excerpt: "Talks"
 author_profile: true
 redirect_from: 
-  - /Talls/
-  - /talks.html
+  - /presentations
 ---
 
 

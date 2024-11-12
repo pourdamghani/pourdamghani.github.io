@@ -4,8 +4,7 @@ title: "Teachin"
 excerpt: "Teaching"
 author_profile: true
 redirect_from: 
-  - /Teaching/
-  - /teaching.html
+  - /courses
 ---
 
 # Teaching :
