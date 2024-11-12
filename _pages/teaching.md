@@ -5,6 +5,8 @@ excerpt: "Teaching"
 author_profile: true
 redirect_from: 
   - /courses
+  - /courses/
+  - /teaching/
 ---
 
 # Teaching :

@@ -4,7 +4,9 @@ title: ""
 excerpt: "Publications of Arash Pourdamghani"
 author_profile: true
 redirect_from: 
-  - /Publications/
+  - /publications
+  - /publications/
+  - /research/
 ---
 
 I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [self-adjusting networks](https://self-adjusting.net/).

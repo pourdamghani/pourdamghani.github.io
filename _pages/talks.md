@@ -5,6 +5,8 @@ excerpt: "Talks"
 author_profile: true
 redirect_from: 
   - /presentations
+  - /presentations/
+  - /talks/
 ---
 
 

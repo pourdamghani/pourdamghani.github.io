@@ -4,6 +4,8 @@ excerpt: "List of community service of Arash Pourdamghani"
 author_profile: true
 redirect_from: 
   - /community
+  - /community/
+  - /service/
 ---
 
 # ServiceCommunity Service
