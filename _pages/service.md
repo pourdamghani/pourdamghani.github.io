@@ -1,11 +1,11 @@
 ---
-permalink: /
-title: ""
-excerpt: "About me"
+permalink: /service
+title: "Community Service"
+excerpt: "Community Service"
 author_profile: true
 redirect_from: 
-  - /Research/
-  - /research.html
+  - /Service/
+  - /service.html
 ---
 
 # Service

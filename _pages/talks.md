@@ -1,11 +1,11 @@
 ---
-permalink: /
-title: ""
-excerpt: "About me"
+permalink: /talks
+title: "Talks"
+excerpt: "Talks"
 author_profile: true
 redirect_from: 
-  - /Research/
-  - /research.html
+  - /Talls/
+  - /talks.html
 ---
 
 
