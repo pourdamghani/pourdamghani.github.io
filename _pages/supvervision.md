@@ -11,7 +11,7 @@ redirect_from:
 ## Alumni:
 I am honored to have been working with following students in the past few years.
 
-### Selected Undergraduate Research Interns
+###  Undergraduate Research Interns
 
 Bahar Oveisgharan (2023-24, TU Berlin) 
 
