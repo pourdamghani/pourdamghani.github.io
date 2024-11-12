@@ -4,8 +4,8 @@ title: "Publications"
 excerpt: "Publications"
 author_profile: true
 redirect_from: 
-  - /Research/
-  - /research.html
+  - /Publications/
+  - /publications.html
 ---
 
 I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [self-adjusting networks](https://self-adjusting.net/).
