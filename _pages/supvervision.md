@@ -1,11 +1,11 @@
 ---
-permalink: /
-title: ""
-excerpt: "About me"
+permalink: /supervision
+title: "Supervision"
+excerpt: "Supervision"
 author_profile: true
 redirect_from: 
-  - /Research/
-  - /research.html
+  - /Supervision/
+  - /supervision.html
 ---
 
 ## Alumni:
