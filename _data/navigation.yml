@@ -1,18 +1,17 @@
 # main links links
 main:
   - title: "Research"
-    url: /research/
-
+    url: /research
 
   - title: "Service"
-    url: /service/
+    url: /service
 
   - title: "Supervision"
-    url: /supervision/
+    url: /supervision
 
   - title: "Talks"
-    url: /talks/
+    url: /talks
 
   - title: "CV"
-    url: /cv/
+    url: /cv
 
