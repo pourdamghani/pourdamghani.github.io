@@ -57,7 +57,7 @@ Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/septem
 ### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System (Poster)
 *with Johannes Gruendler, Darya Melnyk, and Stefan Schmid*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'24](https://icbc2024.ieee-icbc.org/)).\
-[Paper](ICBC24Peer.pdf),  [Citation](ICBC24Peer.bib)
+[Paper](ICBC24Peer.pdf), [Poster](ICBC24Poster.pdf) [Citation](ICBC24Peer.bib)
 
 
 ### Probabilistic smart contracts: Secure randomness on the blockchain
