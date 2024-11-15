@@ -13,20 +13,36 @@ I am honored to have been working with following students in the past few years.
 
 ###  Undergraduate Research Interns
 
-Bahar Oveisgharan (2023-24, TU Berlin) 
-
 Maryam Shiran (2023-24, TU Berlin) 
 
-Helia Yazdanyar (2023-24, TU Berlin) -> Masters at University of Waterloo
+Bahar Oveisgharan (2023-24, TU Berlin) → Masters at York University
 
-Dorsa Majdi (2022-23, TU Berlin) -> Intern at EPFL
+Helia Yazdanyar (2023-24, TU Berlin) → Masters at University of Waterloo
 
-Esra Ceylan (2022, University of Vienna) -> Masters at TU Wien
+Dorsa Majdi (2022-23, TU Berlin) → PhD at Stanford
 
-Marzieh Aliakbarpour (2021-2022, University of Vienna) -> The Pennsylvania State University
+Esra Ceylan (2022, University of Vienna) → Masters at TU Wien
+
+Marzieh Aliakbarpour (2021-2022, University of Vienna) → Phd at The Pennsylvania State University
 
 
 ### Selected Thesis Supervision
-Qingyun Ji (Bachelor and Master thesis, 2022 and 2024) -> IBM
+Qingyun Ji (Bachelor and Master thesis) 
 
-Johannes Gründler (Bachelor thesis, 2023) -> Masters at University of Vienna
+Aakshay Choudhary (Master thesis) 
+
+Nedyalko Stanchev (Master thesis)
+
+Aida-Stefania Manole (Master thesis) 
+
+Irem Gizer(Bachelor thesis) 
+
+Vera Wagner(Bachelor thesis)
+
+Baki Berkay  Uzel (Bachelor thesis)
+
+Johannes Gruendler (Bachelor thesis) 
+
+Maria Cole (Bachelor thesis)
+
+Anton Carl Juerss (Bachelor thesis)
