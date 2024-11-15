@@ -85,7 +85,7 @@ IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'24](https:
 [Paper](ICBC24Peer.pdf), [Poster](ICBC24Poster.pdf), [Citation](ICBC24Peer.bib)
 
 ### Compressed Bundle Reporting for Reliable Bundle Transmission in Disruption-Tolerant Networking
-*with Aida-Stefania Manole, Felix Flentge, Stefan Schmid, Arash Pourdamghani, Max Franke
+*with Aida-Stefania Manole, Felix Flentge, Stefan Schmid, Arash Pourdamghani, Max Franke.\
 17th International Conference on Space Operations (SpaceOps'23)
 [Paper](spaceops23.pdf)
 
