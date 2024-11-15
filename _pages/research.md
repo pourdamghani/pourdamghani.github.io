@@ -40,11 +40,11 @@ IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.iee
 
 ## Traffic Engineering:
 
+
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 *with Monika Henzinger, Ami Paz, Arash Pourdamghani, and Stefan Schmid*\
 ACM SIGCOMM Symposium on SDN Research ([SOSR'22](https://conferences.sigcomm.org/sosr/2022/)).\
 [Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib), [Video](https://www.youtube.com/watch?v=DqF48BG1DbA)
-
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
 *with Christos Liaskos, Lefteris Mamatas, Atsioli Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
@@ -53,12 +53,6 @@ Proceedings of the IEEE ([PIEEE'22](https://proceedingsoftheieee.ieee.org/septem
 
 
 ## Blockchain:
-
-### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System (Poster)
-*with Johannes Gruendler, Darya Melnyk, and Stefan Schmid*\
-IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'24](https://icbc2024.ieee-icbc.org/)).\
-[Paper](ICBC24Peer.pdf), [Poster](ICBC24Poster.pdf) [Citation](ICBC24Peer.bib)
-
 
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
@@ -77,3 +71,18 @@ ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/s
 *with Mohammad Taheri and Mohsen Lesani*\
 International Symposium on Distributed Computing ([DISC'19](http://www.disc-conference.org/wp/disc2019/)).\
 [Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
+
+
+## Short Papers & Posters
+
+### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System
+*with Johannes Gruendler, Darya Melnyk, and Stefan Schmid*\
+IEEE International Conference on Blockchain and Cryptocurrency ([ICBC'24](https://icbc2024.ieee-icbc.org/)).\
+[Paper](ICBC24Peer.pdf), [Poster](ICBC24Poster.pdf) [Citation](ICBC24Peer.bib)
+
+### Compressed Bundle Reporting for Reliable Bundle Transmission in Disruption-Tolerant Networking
+*with Aida-Stefania Manole, Felix Flentge, Stefan Schmid, Arash Pourdamghani, Max Franke
+17th International Conference on Space Operations (SpaceOps'23)
+[Paper](spaceops23.pdf)
+
+
