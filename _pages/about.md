@@ -38,4 +38,16 @@ ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/s
 International Symposium on Distributed Computing ([DISC'19](http://www.disc-conference.org/wp/disc2019/)).\
 [Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
 
-For all list of publications, please check my [research page](/research).
+For the list of all publications, please check my [research page](/research).
+
+## Selected Student Supervision
+Qingyun Ji (Bachelor and Master thesis, 2022 and 2024) → IBM
+
+Helia Yazdanyar (Internship, 2023-24) → Masters at University of Waterloo
+
+Johannes Gründler (Bachelor thesis, 2023) → Masters at University of Vienna
+
+Marzieh Aliakbarpour (Internship, 2021-2022) → Phd at The Pennsylvania State University
+
+For the full list of supversied students, please [check here](/supvervision).
+
