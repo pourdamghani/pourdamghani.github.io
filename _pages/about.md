@@ -28,10 +28,10 @@ SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX'25](href="https
 IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
 [Paper](INFOCOM23SeedTree.pdf), [Slides](SeedTree-Pres.pdf), [Citation](INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
 
-### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
-*with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
-ACM/SIGAPP Symposium on Applied Computing ([SAC'19](https://www.sigapp.org/sac/sac2019/)).\
-[Paper](https://dl.acm.org/doi/abs/10.1145/3297280.3297319), [Slides](SAC2019-Slides.pdf), [Citation](SAC19HybridMining.bib)
+### The Augmentation-Speed Tradeoff for Consistent Network Updates
+*with Monika Henzinger, Ami Paz, Arash Pourdamghani, and Stefan Schmid*\
+ACM SIGCOMM Symposium on SDN Research ([SOSR 2022](https://conferences.sigcomm.org/sosr/2022/))\
+[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib), [Video](https://www.youtube.com/watch?v=DqF48BG1DbA)
 
 ### Polynomial-Time Fence Insertion for Structured Programs
 *with Mohammad Taheri and Mohsen Lesani*\
