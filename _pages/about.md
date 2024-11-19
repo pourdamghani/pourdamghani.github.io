@@ -21,7 +21,8 @@ email: lastname (at) tu-berlin (dot) de
 
 ### SpiderDAN: Matching Augmentation in Demand-Aware Networks
 *with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
-SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX'25](href="https://www.siam.org/conferences-events/siam-conferences/alenex25/">))
+SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX 2025](https://www.siam.org/conferences-events/siam-conferences/alenex25/))\
+[Paper](ALENEX25.pdf), [Citation](ALENEX25.bib)
 
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
@@ -33,10 +34,10 @@ IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.iee
 ACM SIGCOMM Symposium on SDN Research ([SOSR 2022](https://conferences.sigcomm.org/sosr/2022/))\
 [Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib), [Video](https://www.youtube.com/watch?v=DqF48BG1DbA)
 
-### Polynomial-Time Fence Insertion for Structured Programs
-*with Mohammad Taheri and Mohsen Lesani*\
-International Symposium on Distributed Computing ([DISC'19](http://www.disc-conference.org/wp/disc2019/)).\
-[Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
+### Probabilistic smart contracts: Secure randomness on the blockchain
+*with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
+IEEE International Conference on Blockchain and Cryptocurrency ([ICBC 2019](https://icbc2019.ieee-icbc.org/))\
+[Paper](ICBC2019.pdf), [Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib), [Video](https://youtu.be/ilWwCqGA-_Y?t=64)
 
 For the list of all publications, please check my [research page](/research).
 
