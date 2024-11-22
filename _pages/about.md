@@ -29,10 +29,10 @@ SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX 2025](https://w
 IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
 [Paper](INFOCOM23SeedTree.pdf), [Slides](SeedTree-Pres.pdf), [Citation](INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
 
-### The Augmentation-Speed Tradeoff for Consistent Network Updates
-*with Monika Henzinger, Ami Paz, and Stefan Schmid*\
-ACM SIGCOMM Symposium on SDN Research ([SOSR 2022](https://conferences.sigcomm.org/sosr/2022/))\
-[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib), [Video](https://www.youtube.com/watch?v=DqF48BG1DbA)
+### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
+*with Christos Liaskos, Lefteris Mamatas, Atsioli Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
+Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/september-2022/))\
+[Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation](PIEEE22SDR.bib)
 
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
