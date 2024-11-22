@@ -28,7 +28,7 @@ SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX 2025](https://w
 
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
-IEEE Conference on Computer Communications ([INFOCOM'23](https://infocom2023.ieee-infocom.org/)).\
+IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.ieee-infocom.org/)).\
 [Paper](INFOCOM23SeedTree.pdf), [Slides](SeedTree-Pres.pdf), [Citation](INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
