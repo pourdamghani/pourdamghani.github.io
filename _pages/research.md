@@ -24,7 +24,7 @@ SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX 2025](https://w
 ### Hash & Adjust: Competitive Demand-Aware Consistent Hashing
 *with Chen Avin, Robert Sama, Maryam Shiran, and Stefan Schmid*\
 The 28th International Conference on Principles of Distributed Systems ([OPODIS 2024](https://opodis2024.imtlucca.it/))\
-[Paper](OPDIS24.pdf), [Citation](OPODIS24.bib)
+[Paper](OPODIS24.pdf), [Citation](OPODIS24.bib)
 
 
 ### Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation
