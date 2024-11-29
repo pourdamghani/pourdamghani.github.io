@@ -44,7 +44,7 @@ IEEE International Conference on Blockchain and Cryptocurrency ([ICBC 2019](http
 For the list of all publications, please check my [research page](/research).
 
 ## Selected Student Supervision
-Qingyun Ji (Bachelor and Master thesis, 2022 and 2024)
+Qingyun Ji (Bachelor and Master thesis, 2022 and 2024) -> IBM then SAP
 
 Helia Yazdanyar (Internship, 2023-24) → Masters at University of Waterloo
 
