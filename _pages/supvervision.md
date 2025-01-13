@@ -27,6 +27,7 @@ Marzieh Aliakbarpour (2021-2022, University of Vienna) → Phd at The Pennsylvan
 
 
 ### Thesis Supervision
+
 | Student | Topic | BA/MA | 
 | -------- | ------- | ------- | ------- | 
 | Irem Gizer       | Delay-aware blockchain P2P networks | BA    |
