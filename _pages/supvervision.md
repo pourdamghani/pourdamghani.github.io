@@ -27,22 +27,16 @@ Marzieh Aliakbarpour (2021-2022, University of Vienna) → Phd at The Pennsylvan
 
 
 ### Thesis Supervision
-Qingyun Ji (Bachelor and Master thesis) 
-
-Aakshay Choudhary (Master thesis) 
-
-Nedyalko Stanchev (Master thesis)
-
-Aida-Stefania Manole (Master thesis) 
-
-Irem Gizer(Bachelor thesis) 
-
-Vera Wagner(Bachelor thesis)
-
-Baki Berkay  Uzel (Bachelor thesis)
-
-Johannes Gruendler (Bachelor thesis) 
-
-Maria Cole (Bachelor thesis)
-
-Anton Carl Juerss (Bachelor thesis)
+| Student | Topic | BA/MA | 
+| -------- | ------- | ------- | ------- | 
+| Irem Gizer       | Delay-aware blockchain P2P networks | BA    |
+| Vera Wagner      | SkipNet with ML advice              | BA    |
+| Baki Berkay Uzel | Gas-optimized smart contracts       | BA    |
+| Johannes Gründler  | Blockchain-based peer-review | BA |
+| Maria Cole  | SplayNet with sliding window | BA |
+| Qingyun Ji  | Demand-aware P2P networks | MA |
+| Qingyun Ji  | Frequency of Nash Equilibria | BA |
+| Nedyalko Stanchev | Linear Embeding of Series–parallel graphs | MA |
+| Akshay Choudhary | Fast failover verification | MA |
+| Anton Jurß | Improving Self-Adjusting Networks by Reordering | BA |
+| Kevin Kreutz  | Demand-aware P2P networks | MA |
