@@ -26,14 +26,15 @@ I am honored to have been working with following students in the past few years.
 ### Thesis Supervision
 
 
-| Student  | BA/MA  |
-|---|---|
-| Qingyun Ji  | MA & BA |
-| Aida Manole |  MA    | 
-| Nedyalko Stanchev | MA |
-| Irem Gizer       | BA    |
-| Vera Wagner      | BA    |
-| Baki Berkay Uzel |  BA    |
-| Johannes Gründler  | BA |
-| Maria Cole  |  BA |
-| Anton Jurß |  BA |
+| Student  | Years   | Host University |  BA/MA |
+|---|---|---|---|
+| Qingyun Ji  |  | TU Berlin | MA & BA |
+| Aida Manole |   | TU Berlin | MA    |
+| Nedyalko Stanchev | | TU Berlin | MA | 
+| Irem Gizer       |  | TU Berlin | BA    |
+| Vera Wagner      |  | TU Berlin | BA    |
+| Baki Berkay Uzel | | TU Berlin |  BA    | 
+| Johannes Gründler  | | TU Berlin |  BA |
+| Maria Cole  |  | TU Berlin |  BA |
+| Anton Jurß |  | TU Berlin | BA | 
+ 
