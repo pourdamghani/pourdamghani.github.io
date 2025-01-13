@@ -26,7 +26,7 @@ Esra Ceylan (2022, University of Vienna) → Masters at TU Wien
 Marzieh Aliakbarpour (2021-2022, University of Vienna) → Phd at The Pennsylvania State University
 
 
-### Selected Thesis Supervision
+### Thesis Supervision
 Qingyun Ji (Bachelor and Master thesis) 
 
 Aakshay Choudhary (Master thesis) 
