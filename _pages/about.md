@@ -42,15 +42,3 @@ IEEE International Conference on Blockchain and Cryptocurrency ([ICBC 2019](http
 [Paper](ICBC2019.pdf), [Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib), [Video](https://youtu.be/ilWwCqGA-_Y?t=64)
 
 For the list of all publications, please check my [research page](/research).
-
-## Selected Student Supervision
-Qingyun Ji (Bachelor and Master thesis, 2022 and 2024) -> IBM then SAP
-
-Helia Yazdanyar (Internship, 2023-24) → Masters at University of Waterloo
-
-Johannes Gründler (Bachelor thesis, 2023) → Masters at University of Vienna
-
-Marzieh Aliakbarpour (Internship, 2021-2022) → Phd at The Pennsylvania State University
-
-For the full list of supversied students, please [check here](/supvervision).
-
