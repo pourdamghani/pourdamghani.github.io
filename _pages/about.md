@@ -9,14 +9,14 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD candidate at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> research group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. I am also an associated researcher with <a href="https://plamadiso.weizenbaum-institut.de">PLAMADISO</a>
+I am Arash, a PhD candidate at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> research group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. I am also an associated researcher with <a href="https://plamadiso.weizenbaum-institut.de">PLAMADISO</a>
 research group at the <a href="https://www.weizenbaum-institut.de/en">Weizenbaum Institute</a> for the Networked Society.
-
 Previously I was a researcher at the University of Vienna and completed research internships at IST Austria and CUHK Hong Kong. I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [self-adjusting networks](https://self-adjusting.net/).
 
-I will be on the job market in 2025/2026 cycle. Feel free to contact me via email.
+Throughout the years, [my publications](/research)  gathered [250+ citations](https://scholar.google.com/citations?user=jsHuvKEAAAAJ&hl=en), and I have been delighted to be a mentor for [more than 15 students](/supervision) from across the world. I have involved in teaching advanced theorotical and practical algorithmic concepts for [10 years](/teaching), and I have been active in [community service](/service) to ensure credibility and accessibility of knowledge. 
+I will be on the job market in 2025/2026 cycle, feel free to reach out to me via my email:
 
-email: lastname (at) tu-berlin (dot) de
+lastname (at) tu-berlin (dot) de
 
 
 ## Selected Publications
@@ -40,5 +40,3 @@ Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/sept
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC 2019](https://icbc2019.ieee-icbc.org/))\
 [Paper](ICBC2019.pdf), [Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib), [Video](https://youtu.be/ilWwCqGA-_Y?t=64)
-
-For the list of all publications, please check my [research page](/research).
