@@ -8,8 +8,8 @@ redirect_from:
   - /students/
 ---
 
-## Alumni:
-I am honored to have been working with following students in the past few years.
+## Alumni
+I am delighted to be able to mentor following students in the past few years.
 
 ###  Undergraduate Research Interns
 

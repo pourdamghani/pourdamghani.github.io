@@ -9,7 +9,7 @@ redirect_from:
   - /teaching/
 ---
 
-## Teaching & Teaching Assitance:
+## Teaching & Teaching Assitance
 ### TU Berlin, Germany 
 
 | Course  | Year(s)  | Task(s)  |
