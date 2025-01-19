@@ -11,6 +11,7 @@ redirect_from:
 
 ## Teaching & Teaching Assitance:
 ### TU Berlin, Germany 
+
 | Course  | Year(s)  | Task(s)  |
 |---|---|---|
 | AI/ML in Networked Systems Seminar | 2024-2025 | Teaching |
@@ -23,6 +24,7 @@ redirect_from:
 | Network Protocols and Architectures  | 2021 | Teaching Assistance|
 
 ### Sharif University of Technology 
+
 | Course  | Year(s)  | Task(s)  |
 |---|---|---|
 | Data Structures and Algorithms   | 2018 | Content Creation, Teaching Assistance|
@@ -32,6 +34,7 @@ redirect_from:
 | Fundamental of Programming  | 2015 | Teaching Assistance|
 
 ### National Olympiad in Informatics
+
 | Course  | Year(s)  | Task(s)  |
 |---|---|---|
 | National Summer Coding Camp | 2016 | Content Creation, Teaching Assistance|
