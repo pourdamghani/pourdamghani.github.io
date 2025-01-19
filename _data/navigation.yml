@@ -12,9 +12,11 @@ main:
   - title: "Teaching"
     url: /teaching
 
-
   - title: "Talks"
     url: /talks
+
+  - title: "Awards"
+    url: /awards
 
   - title: "CV"
     url: /cv
