@@ -15,10 +15,10 @@ I am honored to have been working with following students in the past few years.
 
 | Intern  | Years  | Host University  | Next Position |
 |---|---|---|---|
-|  Maryam Shiran  |  2023-24 | TU Berlin  |  TBA |
+|  Maryam Shiran  |  2023-24 | TU Berlin  |  Research Intern at TU Munich |
 |  Bahar Oveisgharan |  2023-24 |  TU Berlin |   Masters at York University |
 |  Helia Yazdanyar  |  2023-24 | TU Berlin  | Masters at University of Waterloo  |
-|  Dorsa Majdi |  2022-23 |  TU Berlin |  PhD at Stanford |
+|  Dorsa Majdi |  2022-23 |  TU Berlin |  Research Intern at EPFL |
 |  Esra Ceylan  |  2022-23 | University of Vienna  | Masters at TU Wien |
 |  Marzieh Aliakbarpour |  2021-2022 |  University of Vienna  |  Phd at The Pennsylvania State University |
 |  Andre Loric  |  2021-2022 | University of Vienna  | Intern at Wavestone|
