@@ -13,7 +13,7 @@ I am honored to have been working with following students in the past few years.
 
 ###  Undergraduate Research Interns
 
-| Intern  | Years  | Host University  | Next Position |
+| Intern  | Year(s)  | Host University  | Next Position |
 |---|---|---|---|
 |  Maryam Shiran  |  2023-24 | TU Berlin  |  Research Intern at TU Munich |
 |  Bahar Oveisgharan |  2023-24 |  TU Berlin |   Masters at York University |
@@ -28,7 +28,7 @@ I am honored to have been working with following students in the past few years.
 ### Thesis Supervision
 
 
-| Student  | Years   | Host University |  BA/MA |
+| Student  | Year(s)   | Host University |  BA/MA |
 |---|---|---|---|
 | Irem Gizer       |  2024-2025 | TU Berlin | BA    |
 | Vera Wagner      | 2024-2025 | TU Berlin | BA    |
