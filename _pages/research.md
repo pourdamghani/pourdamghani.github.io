@@ -45,6 +45,9 @@ IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.i
 ## Traffic Engineering:
 
 
+### Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization
+*with Matthias Bentert, Max Franke, Darya Melnyk, and Stefan Schmid *\
+
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 *with Monika Henzinger, Ami Paz, and Stefan Schmid*\
 ACM SIGCOMM Symposium on SDN Research ([SOSR 2022](https://conferences.sigcomm.org/sosr/2022/))\
