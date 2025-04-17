@@ -19,6 +19,11 @@ I will be on the job market in 2025/2026 cycle, feel free to reach out to me via
 
 lastname (at) tu-berlin (dot) de
 
+## Recent News
+
+- [April 2025] Our paper "Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization" just got accepted in [IFIP Networking 2025](https://networking.ifip.org/2025/)
+- [April 2025] We just got awarded the [Trilateral Seed Funding Program 2025](https://www.tu.berlin/strategie/siemens-rie-kooperationen/trilateral-seed-funding-program-2025) in a collaboration University of Oxford and Simenes AG.
+
 
 ## Selected Publications
 
