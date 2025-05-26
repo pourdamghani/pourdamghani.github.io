@@ -46,7 +46,8 @@ IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.i
 
 
 ### Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization
-*with Matthias Bentert, Max Franke, Darya Melnyk, and Stefan Schmid *\
+*with Matthias Bentert, Max Franke, Darya Melnyk, and Stefan Schmid*\
+International Federation for Information Processing Networking Conference ([IFIP NETWORKING 2025](https://networking.ifip.org/2025/))
 
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 *with Monika Henzinger, Ami Paz, and Stefan Schmid*\
