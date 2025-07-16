@@ -18,17 +18,16 @@ redirect_from:
 FC CAAW 2025, PODC 2024 (Junior PC)
 
 ### Reviewer:
-TON 2024, SIROCCO 2023, ITU J-FET on Intelligent Surfaces 2022, ACM Computing Surveys 2020
+DLT 2025, TON 2024, SIROCCO 2023, ITU J-FET on Intelligent Surfaces 2022, ACM Computing Surveys 2020
 
 ### Subreviewer: 
-SIROCCO 2025, SIGMETRICS 2025, HoTNets 2025, DISC 2024, PODC 2024, CCS 2024, SIGMETRICS 2024, DSN 2024, NSDI 2024, PODC 2023, SPAA 2023, NSDI 2023, ESA 2022, CoNEXT 2022, DISC 2022, AFT 2022
+CCS 2025, SIROCCO 2025, SIGMETRICS 2025, HoTNets 2025, DISC 2024, PODC 2024, CCS 2024, SIGMETRICS 2024, DSN 2024, NSDI 2024, PODC 2023, SPAA 2023, NSDI 2023, ESA 2022, CoNEXT 2022, DISC 2022, AFT 2022
 
 
 ## Voluntary Service
 
 ### Rayacast Podcast
 *Founder & organizer, 2022*
-
 
 ### Persian Wikipedia Edit-a-thon
 *Co-Founder & co-organizer*
