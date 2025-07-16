@@ -15,7 +15,6 @@ I am delighted to be able to mentor following students in the past few years.
 
 | Intern  | Year(s)  | Host University  | Next Position |
 |---|---|---|---|
-|  Maryam Shiran  |  2023-24 | TU Berlin  |  Research Intern at TU Munich |
 |  Bahar Oveisgharan |  2023-24 |  TU Berlin |   Masters at York University |
 |  Helia Yazdanyar  |  2023-24 | TU Berlin  | Masters at University of Waterloo  |
 |  Dorsa Majdi |  2022-23 |  TU Berlin |  Research Intern at EPFL |
