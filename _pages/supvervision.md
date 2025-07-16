@@ -29,6 +29,7 @@ I am delighted to be able to mentor following students in the past few years.
 
 | Student  | Year(s)   | Host University |  BA/MA |
 |---|---|---|---|
+| Luca Lichterman | 2025 | TU Berlin | BA |
 | Irem Gizer       |  2024-2025 | TU Berlin | BA    |
 | Vera Wagner      | 2024-2025 | TU Berlin | BA    |
 | Baki Berkay Uzel | 2024-2025 | TU Berlin |  BA    | 
