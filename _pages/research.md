@@ -53,12 +53,12 @@ International Federation for Information Processing Networking Conference ([IFIP
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 *with Monika Henzinger, Ami Paz, and Stefan Schmid*\
 ACM SIGCOMM Symposium on SDN Research ([SOSR 2022](https://conferences.sigcomm.org/sosr/2022/))\
-[Paper](https://dl.acm.org/doi/10.1145/3563647.3563655), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib), [Video](https://www.youtube.com/watch?v=DqF48BG1DbA)
+[Paper](SOSR22.pdf), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib), [Video](https://www.youtube.com/watch?v=DqF48BG1DbA)
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
 *with Christos Liaskos, Lefteris Mamatas, Atsioli Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
 Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/september-2022/))\
-[Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation](PIEEE22SDR.bib)
+[Paper](PIEEE22.pdf), [Citation](PIEEE22SDR.bib)
 
 
 ## Blockchain:
@@ -71,7 +71,7 @@ IEEE International Conference on Blockchain and Cryptocurrency ([ICBC 2019](http
 ### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 ACM/SIGAPP Symposium on Applied Computing ([SAC 2019](https://www.sigapp.org/sac/sac2019/))\
-[Paper](https://dl.acm.org/doi/abs/10.1145/3297280.3297319), [Slides](SAC2019-Slides.pdf), [Citation](SAC19HybridMining.bib)
+[Paper](SAC19.pdf), [Slides](SAC2019-Slides.pdf), [Citation](SAC19HybridMining.bib)
 
 
 ## Distributed Systems:
@@ -79,7 +79,7 @@ ACM/SIGAPP Symposium on Applied Computing ([SAC 2019](https://www.sigapp.org/sac
 ### Polynomial-Time Fence Insertion for Structured Programs
 *with Mohammad Taheri and Mohsen Lesani*\
 International Symposium on Distributed Computing ([DISC 2019](http://www.disc-conference.org/wp/disc2019/))\
-[Paper](https://drops.dagstuhl.de/opus/volltexte/2019/11341/), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
+[Paper](DISC19.pdf), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
 
 
 ## Short Papers & Posters
