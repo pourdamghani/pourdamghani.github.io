@@ -1,0 +1,19 @@
+# robots.txt for https://pourdamghani.net/
+
+# General
+User-agent: *
+Allow: /research/
+Allow: /
+
+# Nudge major bots 
+User-agent: Googlebot
+Allow: /
+Allow: /research/
+
+User-agent: Bingbot
+Allow: /
+Allow: /research/
+
+User-agent: DuckDuckBot
+Allow: /
+Allow: /research/
