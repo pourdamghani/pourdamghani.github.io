@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ## Alumni
-I am delighted to be able to mentor following students in the past few years.
+I am delighted to be able to mentor the following students in the past few years.
 
 ###  Undergraduate Research Interns
 
@@ -19,7 +19,7 @@ I am delighted to be able to mentor following students in the past few years.
 |  Helia Yazdanyar  |  2023-24 | TU Berlin  | Masters at University of Waterloo  |
 |  Dorsa Majdi |  2022-23 |  TU Berlin |  Research Intern at EPFL |
 |  Esra Ceylan  |  2022-23 | University of Vienna  | Masters at TU Wien |
-|  Marzieh Aliakbarpour |  2021-2022 |  University of Vienna  |  Phd at The Pennsylvania State University |
+|  Marzieh Aliakbarpour |  2021-2022 |  University of Vienna  |  PhD. at The Pennsylvania State University |
 |  Andre Loric  |  2021-2022 | University of Vienna  | Intern at Wavestone|
 |  Siddhesh Kalekar |  2021-2022|  University of Vienna  | Intern at GreatFour Systems|
 
