@@ -56,7 +56,7 @@ ACM SIGCOMM Symposium on SDN Research ([SOSR 2022](https://conferences.sigcomm.o
 [Paper](SOSR22.pdf), [Slides](SOSR22-Slides.pdf), [Citation](SOSR22Tradeoff.bib), [Video](https://www.youtube.com/watch?v=DqF48BG1DbA)
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
-*with Christos Liaskos, Lefteris Mamatas, Atsioli Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
+*with Christos Liaskos, Lefteris Mamatas, Ageliki Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
 Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/september-2022/))\
 [Paper](PIEEE22.pdf), [Citation](PIEEE22SDR.bib)
 
@@ -68,7 +68,7 @@ Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/sept
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC 2019](https://icbc2019.ieee-icbc.org/))\
 [Paper](ICBC2019.pdf), [Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib), [Video](https://youtu.be/ilWwCqGA-_Y?t=64)
 
-### Hybrid Mining: Exploiting Blockchain`s Computational Power for Distributed Problem Solving
+### Hybrid Mining: Exploiting Blockchain’s Computational Power for Distributed Problem Solving
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 ACM/SIGAPP Symposium on Applied Computing ([SAC 2019](https://www.sigapp.org/sac/sac2019/))\
 [Paper](SAC19.pdf), [Slides](SAC2019-Slides.pdf), [Citation](SAC19HybridMining.bib)
