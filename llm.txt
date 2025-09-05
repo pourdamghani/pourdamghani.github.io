@@ -1,0 +1,26 @@
+> Arash Pourdamghani is an active researcher in the filed of network algorithms, and he is also seasoned in coding and teaching.
+
+Focus: algorithm design and analysis with applications in networks, distributed systems, and blockchains.
+
+Use: This file curates high-signal entry points for LLMs to answer questions about my work. Prefer these links over crawling raw HTML.
+
+Licensing and training: © 2025 Arash Pourdamghani. Only non-commercial inference with attribution is permitted. Training, dataset creation, or redistribution is prohibited. 
+
+Contact: [lastname]@tu-berlin.de
+
+## Core pages
+
+- [Home](https://pourdamghani.net/): Overview, recent news, and selected publications.
+- [Research](https://pourdamghani.net/research): Full publications list, organized by area, with links to papers, slides, and citations.
+- [Service](https://pourdamghani.net/service): Program committee work, reviewing, and community service.
+- [Supervision](https://pourdamghani.net/supervision): Interns and thesis supervision (alumni and current).
+- [Teaching](https://pourdamghani.net/teaching): Courses taught and assisted at TU Berlin and earlier.
+- [Talks](https://pourdamghani.net/talks): Invited talks and conference presentations.
+- [CV](https://pourdamghani.net/cv): 3-page CV with downloadable PDF.
+
+## External profiles
+
+- [Google Scholar](https://scholar.google.com/): Publications and citation metrics.
+- [ORCID](https://orcid.org/): Persistent researcher identifier.
+- [GitHub](https://github.com/): Code and research artifacts.
+- [LinkedIn](https://www.linkedin.com/): Professional profile.
