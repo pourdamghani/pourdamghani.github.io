@@ -9,11 +9,14 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 Allow: /research/
+Allow: /_pages/Arash_Pourdamghani_CV.pdf
 
 User-agent: Bingbot
 Allow: /
 Allow: /research/
+Allow: /_pages/Arash_Pourdamghani_CV.pdf
 
 User-agent: DuckDuckBot
 Allow: /
 Allow: /research/
+Allow: /_pages/Arash_Pourdamghani_CV.pdf
