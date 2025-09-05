@@ -13,7 +13,7 @@ I am Arash, a PhD candidate at the <a href="https://www.linkedin.com/company/ine
 Previously I was a researcher at the University of Vienna and completed research internships at IST Austria and CUHK Hong Kong. 
 
 Throughout the years, [my publications](/research)  gathered [280+ citations](https://scholar.google.com/citations?user=jsHuvKEAAAAJ&hl=en), and I have been delighted to be a [mentor](/supervision) for more than 15 students from across the world. My [teaching experience](/teaching) in advanced theoretical and practical algorithmic concepts is going beyond 10 years, and I have been active in [community service](/service) to ensure credibility and accessibility of knowledge. 
-I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [demand-aware and self-adjusting networks](https://self-adjusting.net/) and .
+I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [demand-aware and self-adjusting networks](https://self-adjusting.net/).
 I will be on the job market in 2025/2026 cycle, feel free to reach out to me via my email:
 
 lastname (at) tu-berlin (dot) de
@@ -37,7 +37,7 @@ IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.i
 [Paper](INFOCOM23SeedTree.pdf), [Slides](SeedTree-Pres.pdf), [Citation](INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
-*with Christos Liaskos, Lefteris Mamatas, Atsioli Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
+*with Christos Liaskos, Lefteris Mamatas, Ageliki Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
 Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/september-2022/))\
 [Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation](PIEEE22SDR.bib)
 
