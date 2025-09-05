@@ -31,11 +31,11 @@ redirect_from:
 | Algorithms Design and Analysis  | 2016-2018 | Content Creation, Teaching Assistance|
 | Algorithmic Game Theory  | 2017 | Content Creation, Teaching Assistance|
 | Compiler Design  | 2017 | Teaching Assistance|
-| Fundamental of Programming  | 2015 | Teaching Assistance|
+| Fundamentals of Programming  | 2015 | Teaching Assistance|
 
 ### National Olympiad in Informatics
 
 | Course  | Year(s)  | Task(s)  |
 |---|---|---|
 | National Summer Coding Camp | 2016 | Content Creation, Teaching Assistance|
-| Prepratation Classes Across Iran | 2014-2016 | Content Creation, Teaching |
+| Preparation Classes Across Iran | 2014-2016 | Content Creation, Teaching |
