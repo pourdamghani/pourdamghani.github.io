@@ -27,16 +27,15 @@ I am delighted to be able to mentor the following students in the past few years
 ### Thesis Supervision
 
 
-| Student  | Year(s)   | Host University |  BSc/MSc |
-|---|---|---|---|
-| Luca Lichterman | 2025 | TU Berlin | BSc |
-| Irem Gizer       |  2024-2025 | TU Berlin | BSc    |
-| Vera Wagner      | 2024-2025 | TU Berlin | BSc    |
-| Baki Berkay Uzel | 2024-2025 | TU Berlin |  BSc    | 
-| Maria Cole  | 2024 | TU Berlin |  BSc |
-| Qingyun Ji  | 2021-2022 & 2023-2024 | TU Berlin | MSc & BSc |
-| Johannes Gründler  | 2023 | TU Berlin |  BSc |
-| Anton Jurß | 2023 | TU Berlin | BSc | 
-| Nedyalko Stanchev | 2023 | TU Berlin | MSc | 
-| Aida Stefania Manole  |  2022 | TU Berlin | MSc    |
+| Student              | Year  | Host University | BSc/MSc | Thesis Title                                                                 |
+|----------------------------------------------------------------|-------|-----------------|---------|----------------------------------------------------------------------------------------------------|
+| Luca Lichterman      | 2025  | TU Berlin       | BSc     | Temperature-Based Cache Control for LLMs                                      |
+| Vera Wagner          | 2025  | TU Berlin       | BSc     | Empirical Assessment of Advice Augmented Skip Graphs                          |
+| Baki Berkay Uzel     | 2025  | TU Berlin       | BSc     | Resource-Optimized Blockchain-Based Peer Review System                        |
+| Maria Cole           | 2024  | TU Berlin       | BSc     | A Sliding Window Approach to Designing Self-Adjusting Networks                |
+| Qingyun Ji           | 2024  | TU Berlin       | MSc     | Decentralized and Demand-Aware Peer Selection Algorithms                      |
+| Johannes Gründler    | 2023  | TU Berlin       | BSc     | Fair and Secure Blockchain-Based Peer Review System                           |
+| Anton Jurß           | 2023  | TU Berlin       | BSc     | Improving Self-Adjusting Networks by Reordering Communication Requests        |
+| Nedyalko Stanchev    | 2023  | TU Berlin       | MSc     | Fast and Efficient Algorithm for the Minimum Linear Arrangement Problem on Series Parallel Graphs |
+| Qingyun Ji           | 2022  | TU Berlin       | BSc     | Frequency Distribution of Nash Equilibria in Public Goods Game                 |
  
