@@ -27,16 +27,16 @@ I am delighted to be able to mentor the following students in the past few years
 ### Thesis Supervision
 
 
-| Student  | Year(s)   | Host University |  BA/MA |
+| Student  | Year(s)   | Host University |  BSc/MSc |
 |---|---|---|---|
-| Luca Lichterman | 2025 | TU Berlin | BA |
-| Irem Gizer       |  2024-2025 | TU Berlin | BA    |
-| Vera Wagner      | 2024-2025 | TU Berlin | BA    |
-| Baki Berkay Uzel | 2024-2025 | TU Berlin |  BA    | 
-| Maria Cole  | 2024 | TU Berlin |  BA |
-| Qingyun Ji  | 2021-2022 & 2023-2024 | TU Berlin | MA & BA |
-| Johannes Gründler  | 2023 | TU Berlin |  BA |
-| Anton Jurß | 2023 | TU Berlin | BA | 
-| Nedyalko Stanchev | 2023 | TU Berlin | MA | 
-| Aida Stefania Manole  |  2022 | TU Berlin | MA    |
+| Luca Lichterman | 2025 | TU Berlin | BSc |
+| Irem Gizer       |  2024-2025 | TU Berlin | BSc    |
+| Vera Wagner      | 2024-2025 | TU Berlin | BSc    |
+| Baki Berkay Uzel | 2024-2025 | TU Berlin |  BSc    | 
+| Maria Cole  | 2024 | TU Berlin |  BSc |
+| Qingyun Ji  | 2021-2022 & 2023-2024 | TU Berlin | MSc & BSc |
+| Johannes Gründler  | 2023 | TU Berlin |  BSc |
+| Anton Jurß | 2023 | TU Berlin | BSc | 
+| Nedyalko Stanchev | 2023 | TU Berlin | MSc | 
+| Aida Stefania Manole  |  2022 | TU Berlin | MSc    |
  
