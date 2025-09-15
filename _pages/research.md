@@ -18,7 +18,7 @@ In theoretical computer science, authors are sorted alphabetically by default.
 
 ### LASLiN: A Learning-Augmented Peer-to-Peer Network
 Julien Dallot, Caio Alves Caldeira, **Arash Pourdamghani**, Olga Goussevskaia, and Stefan Schmid \
-*under review*
+*under review* \
 [arXiv]()
 
 ### SpiderDAN: Matching Augmentation in Demand-Aware Networks
@@ -56,7 +56,7 @@ Vamsi Addanki, Maciej Pacut, **Arash Pourdamghani**, Gabor Retvari, Stefan Schmi
 
 ### Rethinking Fronthaul Topologies for Cell-Free 6G Networks
 Max Franke, **Arash Pourdamghani**, Fabian Göttsch, Stefan Schmid, and Giuseppe Caire \
-*under review*
+*under review* \
 [arXiv]()
 
 ### Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization
