@@ -19,7 +19,7 @@ In theoretical computer science, authors are sorted alphabetically by default.
 ### LASLiN: A Learning-Augmented Peer-to-Peer Network
 Julien Dallot, Caio Alves Caldeira, **Arash Pourdamghani**, Olga Goussevskaia, and Stefan Schmid \
 *under review* \
-[arXiv]()
+[arXiv](https://arxiv.org/abs/2509.11904)
 
 ### SpiderDAN: Matching Augmentation in Demand-Aware Networks
 Aleksander Figiel, Darya Melnyk, André Nichterlein, **Arash Pourdamghani** and Stefan Schmid \
