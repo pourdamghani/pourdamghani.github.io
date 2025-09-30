@@ -26,9 +26,9 @@ Aleksander Figiel, Darya Melnyk, André Nichterlein, **Arash Pourdamghani** and 
 *SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX 2025](https://www.siam.org/conferences-events/siam-conferences/alenex25/))*\
 [Paper](ALENEX25.pdf), [Slides](ALENEX25slides.pdf), [Citation](ALENEX25.bib), [Code](https://github.com/inet-tub/SpiderDAN)
 
-### Invited Paper: Towards Demand-Aware Peer Selection With XOR-based Routing
+### BSB: Towards Demand-Aware Peer Selection With XOR-based Routing
 Qingyun Ji, Darya Melnyk, **Arash Pourdamghani**, Stefan Schmid \
-*The 27th International Symposium on Stabilization, Safety, and Security of Distributed Systems ([SSS 2025](https://sss2025.conf.lip6.fr/))*\
+*Invited Paper at The 27th International Symposium on Stabilization, Safety, and Security of Distributed Systems ([SSS 2025](https://sss2025.conf.lip6.fr/))*\
 [Paper](SSS25.pdf), [Slides](), [Citation](), [Code](https://github.com/inet-tub/BSB)
 
 ### Hash & Adjust: Competitive Demand-Aware Consistent Hashing
@@ -50,7 +50,7 @@ Aleksander Figiel, Darya Melnyk, André Nichterlein, **Arash Pourdamghani** and 
 ### Self-Adjusting Partially Ordered Lists
 Vamsi Addanki, Maciej Pacut, **Arash Pourdamghani**, Gabor Retvari, Stefan Schmid, and Juan  Vanerio\
 *IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.ieee-infocom.org/))*\
-[Paper](INFOCOM23List.pdf), [Slides](), [Citation](INFOCOM23List.bib), [Code]()
+[Paper](INFOCOM23List.pdf), [Slides](INFOCOM23Slides.pdf), [Citation](INFOCOM23List.bib), [Code]()
 
 ## Traffic Engineering:
 
@@ -60,14 +60,14 @@ Max Franke, **Arash Pourdamghani**, Fabian Göttsch, Stefan Schmid, and Giuseppe
 [arXiv]()
 
 ### Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization
-Matthias Bentert, Max Franke, Darya Melnyk, **Arash Pourdamghani**, and Stefan Schmid*
+Matthias Bentert, Max Franke, Darya Melnyk, **Arash Pourdamghani**, and Stefan Schmid \
 *International Federation for Information Processing Networking Conference ([IFIP NETWORKING 2025](https://networking.ifip.org/2025/))*\
 [Paper](IFIP25.pdf), [Slides](IFIP25-Slides.pdf), [Citation](), [Code](https://github.com/inet-tub/demand-aware-multi-cast)
 
 ### Optimizing Fronthaul Quantization for Flexible User Load in Cell-Free Massive MIMO
 Fabian Göttsch, Max Franke, **Arash Pourdamghani**, Giuseppe Caire, and Stefan Schmid \
 *IEEE Globecom Workshop on Resilience in Next-Generation Wireless Communication Networks ([Globecom 2025](https://globecom2025.ieee-globecom.org/workshop/ws-21-workshop-resilience-next-generation-wireless-communication-networks))*\
-[Paper](), [Citation]()
+[Paper](Globecom25.pdf), [Citation]()
 
 
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
