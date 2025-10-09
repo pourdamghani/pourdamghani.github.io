@@ -56,7 +56,7 @@ Vamsi Addanki, Maciej Pacut, **Arash Pourdamghani**, Gabor Retvari, Stefan Schmi
 
 ### Rethinking Fronthaul Topologies for Cell-Free 6G Networks
 Max Franke, **Arash Pourdamghani**, Fabian Göttsch, Stefan Schmid, and Giuseppe Caire \
-*under review* \
+*under review* 
 
 ### Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization
 Matthias Bentert, Max Franke, Darya Melnyk, **Arash Pourdamghani**, and Stefan Schmid \
@@ -66,7 +66,7 @@ Matthias Bentert, Max Franke, Darya Melnyk, **Arash Pourdamghani**, and Stefan S
 ### Optimizing Fronthaul Quantization for Flexible User Load in Cell-Free Massive MIMO
 Fabian Göttsch, Max Franke, **Arash Pourdamghani**, Giuseppe Caire, and Stefan Schmid \
 *IEEE Globecom Workshop on Resilience in Next-Generation Wireless Communication Networks ([Globecom 2025](https://globecom2025.ieee-globecom.org/workshop/ws-21-workshop-resilience-next-generation-wireless-communication-networks))*\
-
+[arXiv](https://arxiv.org/abs/2510.06734)
 
 ### The Augmentation-Speed Tradeoff for Consistent Network Updates
 Monika Henzinger, Ami Paz, **Arash Pourdamghani**, and Stefan Schmid\
