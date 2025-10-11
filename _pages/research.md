@@ -30,7 +30,7 @@ Aleksander Figiel, Darya Melnyk, André Nichterlein, **Arash Pourdamghani** and 
 ### BSB: Towards Demand-Aware Peer Selection With XOR-based Routing
 Qingyun Ji, Darya Melnyk, **Arash Pourdamghani**, Stefan Schmid \
 *Invited Paper at The 27th International Symposium on Stabilization, Safety, and Security of Distributed Systems ([SSS 2025](https://sss2025.conf.lip6.fr/))*\
-[Paper](SSS25.pdf), [Slides](), [Citation](https://scholar.googleusercontent.com/scholar.bib?q=info:KwlXv5oaHZsJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2u8jg:AAZF9b8AAAAAaNuo6jiN9VhLJJjV_-J8m18xdnw&scisig=AAZF9b8AAAAAaNuo6gJ5cbAKrOMzRApjvYolPz4&scisf=4&ct=citation&cd=-1&hl=en), [Code](https://github.com/inet-tub/BSB)
+[Paper](SSS25.pdf), [Slides](SSS25-presentation.pdf), [Citation](https://scholar.googleusercontent.com/scholar.bib?q=info:KwlXv5oaHZsJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2u8jg:AAZF9b8AAAAAaNuo6jiN9VhLJJjV_-J8m18xdnw&scisig=AAZF9b8AAAAAaNuo6gJ5cbAKrOMzRApjvYolPz4&scisf=4&ct=citation&cd=-1&hl=en), [Code](https://github.com/inet-tub/BSB)
 
 ### Hash & Adjust: Competitive Demand-Aware Consistent Hashing
 **Arash Pourdamghani**, Chen Avin, Robert Sama, Maryam Shiran, and Stefan Schmid\
