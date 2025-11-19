@@ -18,7 +18,9 @@ I am delighted to be able to mentor the following students in the past few years
 
 | Student              | Year  | Host University | BSc/MSc | Thesis Title                                                                 |
 |----------------------------------------------------------------|-------|-----------------|---------|----------------------------------------------------------------------------------------------------|
+| Sebastian Wojciechowski     | 2025  | TU Berlin       | BSc     | Development and evaluation of a joined physical and network simulator for cell-free networks  |
 | Luca Lichterman      | 2025  | TU Berlin       | BSc     | Temperature-Based Cache Control for LLMs                                      |
+| Irem Gizer           | 2025  | TU Berlin       | BSc     | Exploring Trade-o!s in Structured P2P Message Dissemination Protocols         |
 | Vera Wagner          | 2025  | TU Berlin       | BSc     | Empirical Assessment of Advice Augmented Skip Graphs                          |
 | Baki Berkay Uzel     | 2025  | TU Berlin       | BSc     | Resource-Optimized Blockchain-Based Peer Review System                        |
 | Maria Cole           | 2024  | TU Berlin       | BSc     | A Sliding Window Approach to Designing Self-Adjusting Networks                |
