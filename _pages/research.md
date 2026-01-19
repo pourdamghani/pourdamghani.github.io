@@ -56,7 +56,8 @@ Vamsi Addanki, Maciej Pacut, **Arash Pourdamghani**, Gabor Retvari, Stefan Schmi
 
 ### Rethinking Fronthaul Topologies for Cell-Free 6G Networks
 Max Franke, **Arash Pourdamghani**, Fabian Göttsch, Stefan Schmid, and Giuseppe Caire \
-*under review* 
+*IEEE International Conference on Communications ([IEEE ICC 2026](https://icc2026.ieee-icc.org/))*\
+[Paper](), [Slides](), [Citation]()
 
 ### Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization
 Matthias Bentert, Max Franke, Darya Melnyk, **Arash Pourdamghani**, and Stefan Schmid \
