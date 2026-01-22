@@ -54,6 +54,11 @@ Vamsi Addanki, Maciej Pacut, **Arash Pourdamghani**, Gabor Retvari, Stefan Schmi
 
 ## Traffic Engineering:
 
+### A Tutorial on Controlling Metasurfaces from the Network Perspective
+Christos Liaskos, Evangelos Papapetrou, Kostas Katsalis, Dimitrios Tyrovolas, Alexandros Papadopoulos, Stavros Tsimpoukis, **Arash Pourdamghani**, Max Franke, Stefan Schmid
+*under review* \
+[arXiv](https://arxiv.org/pdf/2601.12118)
+ 
 ### Rethinking Fronthaul Topologies for Cell-Free 6G Networks
 Max Franke, **Arash Pourdamghani**, Fabian Göttsch, Stefan Schmid, and Giuseppe Caire \
 *IEEE International Conference on Communications ([IEEE ICC 2026](https://icc2026.ieee-icc.org/))*\
@@ -101,7 +106,12 @@ Mohammad Taheri,  **Arash Pourdamghani**, and Mohsen Lesani\
 [Paper](DISC19.pdf), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
 
 
-## Short Papers & Posters
+## Short Papers, Posters 
+
+### Opening Gates of Knowledge: Wikimedia as an Ecosystem of Co-Creation
+Mohammad Heidarzadeh, **Arash Pourdamghani**
+*First Grand Challenges Conference of the Berlin University Alliance ([Grand Challenges 2026](https://gc-conference-bua.de/))*\
+[Abstract](GC2026.txt)
 
 ### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System
 Johannes Gruendler, Darya Melnyk, **Arash Pourdamghani**, and Stefan Schmid\
