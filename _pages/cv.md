@@ -11,5 +11,5 @@ redirect_from:
 
 <a href="https://pourdamghani.net/_pages/Arash_Pourdamghani_CV.pdf" style="display:inline-block;padding:10px 20px;border-radius:6px;text-decoration:none;background-color:#5AB1C1;color:#fff;">Download my CV</a>
 
-Above is my 4-page CV, last updated September 2025. \
-For an extended or updated version, please email me.
+Above is a 4-page version of my CV. \
+For an alternative or updated version, please email me.
