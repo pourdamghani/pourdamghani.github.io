@@ -55,7 +55,7 @@ Vamsi Addanki, Maciej Pacut, **Arash Pourdamghani**, Gabor Retvari, Stefan Schmi
 ## Traffic Engineering:
 
 ### A Tutorial on Controlling Metasurfaces from the Network Perspective
-Christos Liaskos, Evangelos Papapetrou, Kostas Katsalis, Dimitrios Tyrovolas, Alexandros Papadopoulos, Stavros Tsimpoukis, **Arash Pourdamghani**, Max Franke, Stefan Schmid
+Christos Liaskos, Evangelos Papapetrou, Kostas Katsalis, Dimitrios Tyrovolas, Alexandros Papadopoulos, Stavros Tsimpoukis, **Arash Pourdamghani**, Max Franke, Stefan Schmid \
 *under review* \
 [arXiv](https://arxiv.org/pdf/2601.12118)
  
