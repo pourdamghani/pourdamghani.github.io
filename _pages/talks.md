@@ -13,7 +13,8 @@ redirect_from:
 
 ## Talks
 
-#### OPODIS'24
+#### The DISCOGA Research Seminar
+#### OPODIS'25
 #### SPAA'24
 #### PODC'24
 #### [Dutch Seminar on Optimization](https://wsc.project.cwi.nl/dutch-optimization-seminar/events/seminar-danish-kashaev-cwi-and-arash-pourdamghani-tu-berlin-2-phd-talks)
