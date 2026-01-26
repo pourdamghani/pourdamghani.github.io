@@ -21,7 +21,7 @@ lastname (at) tu-berlin (dot) de
 ## Recent News
 
 - We have just been awarded Oxford Berlin Research Partnership Flexible Funds 2026!
-- Our paper "Rethinking Fronthaul Topologies for Cell-Free 6G Networks" has been accpted in ([IEEE ICC 2026](https://icc2026.ieee-icc.org/))!
+- Our paper "Rethinking Fronthaul Topologies for Cell-Free 6G Networks" has been accpted in [IEEE ICC 2026](https://icc2026.ieee-icc.org/)!
 - Our group just got awarded the [Trilateral Seed Funding Program 2025](https://www.linkedin.com/feed/update/urn:li:activity:7320726047107280896/) in a collaboration with University of Oxford and Simenes AG.
 - Our paper "SpiderDAN: Matching Augmentation in Demand-Aware Networks" just got accepted in [ALENEX 2025](https://www.siam.org/conferences-events/siam-conferences/alenex25/)
 
