@@ -37,11 +37,6 @@ Qingyun Ji, Darya Melnyk, **Arash Pourdamghani**, Stefan Schmid \
 The 28th International Conference on Principles of Distributed Systems ([OPODIS 2024](https://opodis2024.imtlucca.it/))\
 [Paper](OPODIS24.pdf), [Slides](OPODIS24-slides.pdf), [Citation](https://dblp.org/rec/conf/opodis/PourdamghaniASS24.html?view=bibtex), [Code](https://github.com/inet-tub/Hash-And-Adjust)
 
-### Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation
-Aleksander Figiel, Darya Melnyk, André Nichterlein, **Arash Pourdamghani** and Stefan Schmid \
-*ACM Symposium on Parallelism in Algorithms and Architectures ([SPAA 2024](https://spaa.acm.org/spaa-2024-2/))*\
-[Paper](spaa24ba.pdf), [Slides](spaa24ba-slides.pdf), [Citation](https://dblp.uni-trier.de/rec/conf/spaa/FigielMNP024.html?view=bibtex), [Code](https://github.com/inet-tub/Hash-And-Adjust)
-
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 **Arash Pourdamghani**, Chen Avin, Robert Sama, and Stefan Schmid \
 *IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.ieee-infocom.org/))*\
@@ -112,6 +107,11 @@ Mohammad Taheri,  **Arash Pourdamghani**, and Mohsen Lesani\
 Mohammad Heidarzadeh, **Arash Pourdamghani**
 *First Grand Challenges Conference of the Berlin University Alliance ([Grand Challenges 2026](https://gc-conference-bua.de/))*\
 [Abstract](GC2026.txt)
+
+### Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation
+Aleksander Figiel, Darya Melnyk, André Nichterlein, **Arash Pourdamghani** and Stefan Schmid \
+*ACM Symposium on Parallelism in Algorithms and Architectures ([SPAA 2024](https://spaa.acm.org/spaa-2024-2/))*\
+[Paper](spaa24ba.pdf), [Slides](spaa24ba-slides.pdf), [Citation](https://dblp.uni-trier.de/rec/conf/spaa/FigielMNP024.html?view=bibtex), [Code](https://github.com/inet-tub/Hash-And-Adjust)
 
 ### DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System
 Johannes Gruendler, Darya Melnyk, **Arash Pourdamghani**, and Stefan Schmid\
