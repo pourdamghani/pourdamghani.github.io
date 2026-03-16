@@ -62,7 +62,7 @@ Christos Liaskos, Evangelos Papapetrou, Kostas Katsalis, Dimitrios Tyrovolas, Al
 ### Rethinking Fronthaul Topologies for Cell-Free 6G Networks
 Max Franke, **Arash Pourdamghani**, Fabian Göttsch, Stefan Schmid, and Giuseppe Caire \
 *IEEE International Conference on Communications ([IEEE ICC 2026](https://icc2026.ieee-icc.org/))*\
-[Paper](), [Slides](), [Citation]()
+[Paper](ICC26.pdf), [Slides](), [Citation]()
 
 ### Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization
 Matthias Bentert, Max Franke, Darya Melnyk, **Arash Pourdamghani**, and Stefan Schmid \
