@@ -16,7 +16,7 @@ In theoretical computer science, authors are sorted alphabetically by default.
 
 ## Self-Adjusting Systems:
 
-### LASLiN: A Learning-Augmented Peer-to-Peer Network
+### A Learning-Augmented Overlay Network
 Julien Dallot, Caio Alves Caldeira, **Arash Pourdamghani**, Olga Goussevskaia, and Stefan Schmid \
 *under review* \
 [arXiv](https://arxiv.org/abs/2509.11904), [Citation](https://scholar.googleusercontent.com/scholar.bib?q=info:H_MJ63HH9_EJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2vQFU:AAZF9b8AAAAAaNupWFW1wyQFfCe3-7s_aLHFUDU&scisig=AAZF9b8AAAAAaNupWLN-rgk-CB68SI0VSjGc0_w&scisf=4&ct=citation&cd=-1&hl=en)
