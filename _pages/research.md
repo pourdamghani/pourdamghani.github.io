@@ -13,7 +13,6 @@ I am interested in algorithm design and analysis with applications in networks, 
 
 # Publications
 In theoretical computer science, authors are sorted alphabetically by default.
-New publications can be added in [_data/publications.yml](/Users/pourdamghani/Documents/GitHub/pourdamghani.github.io/_data/publications.yml). If you have a BibTeX file, place it in `_pages/` and set the card's `bibtex` field to that file path.
 
 {% for section in site.data.publications.sections %}
 <section class="research-section research-section--cards">
