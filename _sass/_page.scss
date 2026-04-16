@@ -133,6 +133,118 @@
       margin-top: 0;
     }
   }
+
+  .service-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 0.9rem;
+    margin: 1.75rem 0 2.25rem;
+  }
+
+  .service-overview__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1rem 1.05rem;
+    background: linear-gradient(155deg, mix(#fff, $info-color, 91%) 0%, mix(#fff, $info-color, 97%) 100%);
+    border: 1px solid mix(#fff, $info-color, 80%);
+    border-radius: 14px;
+    box-shadow: 0 14px 30px rgba(mix(#000, $info-color, 45%), 0.05);
+  }
+
+  .service-overview__value {
+    font-size: clamp(1.55rem, 1.2rem + 1vw, 2.2rem);
+    font-weight: 700;
+    line-height: 1;
+    color: mix(#000, $info-color, 22%);
+  }
+
+  .service-overview__label {
+    font-size: $type-size-6;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: mix(#000, $info-color, 42%);
+  }
+
+  .service-section {
+    margin-top: 2rem;
+  }
+
+  .service-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 0.6rem;
+
+    @include breakpoint($medium) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .service-card {
+    position: relative;
+    padding: 1.15rem 1.1rem 1rem;
+    background: linear-gradient(180deg, #fff 0%, mix(#fff, $info-color, 97%) 100%);
+    border: 1px solid mix(#fff, $info-color, 80%);
+    border-radius: 14px;
+    box-shadow: 0 14px 28px rgba(mix(#000, $info-color, 45%), 0.05);
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: linear-gradient(180deg, mix(#000, $info-color, 5%) 0%, $info-color 100%);
+    }
+
+    h3 {
+      margin: 0 0 0.45rem;
+      font-size: $type-size-5;
+      border: 0;
+      padding: 0;
+      color: $text-color;
+    }
+  }
+
+  .service-card--wide {
+    @include breakpoint($medium) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .service-card__eyebrow {
+    margin: 0 0 0.35rem;
+    font-size: $type-size-7;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: mix(#000, $info-color, 38%);
+  }
+
+  .service-card__meta {
+    margin: 0;
+    color: $muted-text-color;
+  }
+
+  .service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+
+  .service-tags span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: mix(#fff, $info-color, 90%);
+    border: 1px solid mix(#fff, $info-color, 73%);
+    color: mix(#000, $info-color, 28%);
+    font-size: $type-size-6;
+    line-height: 1.35;
+  }
 }
 
 .page__hero {

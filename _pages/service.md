@@ -12,31 +12,114 @@ redirect_from:
 
 ---
 
-## Community Service
+# Community Service
 
-### PC member:
-FC CAAW 2026, FC CAAW 2025, PODC 2024 (Junior PC)
+Service matters to me as part of how research communities stay rigorous, welcoming, and useful. I contribute through formal academic reviewing as well as volunteer efforts focused on open knowledge, events, and community-building.
 
-### Reviewer:
-TON 2025, DLT 2025, TON 2024, SIROCCO 2023, ITU J-FET on Intelligent Surfaces 2022, ACM Computing Surveys 2020
+<section class="service-overview" markdown="1">
+<div class="service-overview__item">
+  <span class="service-overview__value">3</span>
+  <span class="service-overview__label">PC Roles</span>
+</div>
+<div class="service-overview__item">
+  <span class="service-overview__value">6</span>
+  <span class="service-overview__label">Reviewer Roles</span>
+</div>
+<div class="service-overview__item">
+  <span class="service-overview__value">17</span>
+  <span class="service-overview__label">Subreviews</span>
+</div>
+<div class="service-overview__item">
+  <span class="service-overview__value">5</span>
+  <span class="service-overview__label">Volunteer Initiatives</span>
+</div>
+</section>
 
-### Subreviewer: 
-CCS 2025, SIROCCO 2025, SIGMETRICS 2025, HoTNets 2025, DISC 2024, PODC 2024, CCS 2024, SIGMETRICS 2024, DSN 2024, NSDI 2024, PODC 2023, SPAA 2023, NSDI 2023, ESA 2022, CoNEXT 2022, DISC 2022, AFT 2022
+<section class="research-section service-section" markdown="1">
+## Academic Service
 
+<div class="service-grid">
+  <article class="service-card">
+    <p class="service-card__eyebrow">Program Committees</p>
+    <h3>PC Member</h3>
+    <div class="service-tags">
+      <span>FC CAAW 2026</span>
+      <span>FC CAAW 2025</span>
+      <span>PODC 2024 (Junior PC)</span>
+    </div>
+  </article>
 
+  <article class="service-card">
+    <p class="service-card__eyebrow">Peer Review</p>
+    <h3>Reviewer</h3>
+    <div class="service-tags">
+      <span>TON 2025</span>
+      <span>DLT 2025</span>
+      <span>TON 2024</span>
+      <span>SIROCCO 2023</span>
+      <span>ITU J-FET on Intelligent Surfaces 2022</span>
+      <span>ACM Computing Surveys 2020</span>
+    </div>
+  </article>
+
+  <article class="service-card service-card--wide">
+    <p class="service-card__eyebrow">Community Contribution</p>
+    <h3>Subreviewer</h3>
+    <div class="service-tags">
+      <span>CCS 2025</span>
+      <span>SIROCCO 2025</span>
+      <span>SIGMETRICS 2025</span>
+      <span>HoTNets 2025</span>
+      <span>DISC 2024</span>
+      <span>PODC 2024</span>
+      <span>CCS 2024</span>
+      <span>SIGMETRICS 2024</span>
+      <span>DSN 2024</span>
+      <span>NSDI 2024</span>
+      <span>PODC 2023</span>
+      <span>SPAA 2023</span>
+      <span>NSDI 2023</span>
+      <span>ESA 2022</span>
+      <span>CoNEXT 2022</span>
+      <span>DISC 2022</span>
+      <span>AFT 2022</span>
+    </div>
+  </article>
+</div>
+</section>
+
+<section class="research-section service-section" markdown="1">
 ## Voluntary Service
 
-### Rayacast Podcast
-*Founder & organizer, 2022*
+<div class="service-grid">
+  <article class="service-card">
+    <p class="service-card__eyebrow">Podcasting</p>
+    <h3>Rayacast Podcast</h3>
+    <p class="service-card__meta">Founder & organizer, 2022</p>
+  </article>
 
-### Persian Wikipedia Edit-a-thon
-*Co-Founder & co-organizer*
+  <article class="service-card">
+    <p class="service-card__eyebrow">Open Knowledge</p>
+    <h3>Persian Wikipedia Edit-a-thon</h3>
+    <p class="service-card__meta">Co-founder & co-organizer</p>
+  </article>
 
-### TEDxSUT
-*Founding member*
+  <article class="service-card">
+    <p class="service-card__eyebrow">Events</p>
+    <h3>TEDxSUT</h3>
+    <p class="service-card__meta">Founding member</p>
+  </article>
 
-### Seminar Series in Advanced Computer Science
-*Organizing team, panelist, and speaker*
+  <article class="service-card">
+    <p class="service-card__eyebrow">Academic Outreach</p>
+    <h3>Seminar Series in Advanced Computer Science</h3>
+    <p class="service-card__meta">Organizing team, panelist, and speaker</p>
+  </article>
 
-### ACM-ICPC Asia Region, Tehran Site
-*Organizing team*
+  <article class="service-card">
+    <p class="service-card__eyebrow">Competition Support</p>
+    <h3>ACM-ICPC Asia Region, Tehran Site</h3>
+    <p class="service-card__meta">Organizing team</p>
+  </article>
+</div>
+</section>
