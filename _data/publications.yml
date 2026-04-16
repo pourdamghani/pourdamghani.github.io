@@ -1,0 +1,228 @@
+# Add new publications here.
+# If you have a local BibTeX file, place it in `_pages/` and set `bibtex: /YourFile.bib`.
+sections:
+  - title: Self-Adjusting Systems
+    items:
+      - title: A Learning-Augmented Overlay Network
+        authors: Julien Dallot, Caio Alves Caldeira, Arash Pourdamghani, Olga Goussevskaia, and Stefan Schmid
+        venue: under review
+        links:
+          - label: arXiv
+            url: https://arxiv.org/abs/2509.11904
+          - label: Citation
+            url: https://scholar.googleusercontent.com/scholar.bib?q=info:H_MJ63HH9_EJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2vQFU:AAZF9b8AAAAAaNupWFW1wyQFfCe3-7s_aLHFUDU&scisig=AAZF9b8AAAAAaNupWLN-rgk-CB68SI0VSjGc0_w&scisf=4&ct=citation&cd=-1&hl=en
+      - title: "SpiderDAN: Matching Augmentation in Demand-Aware Networks"
+        authors: Aleksander Figiel, Darya Melnyk, André Nichterlein, Arash Pourdamghani, and Stefan Schmid
+        venue: SIAM Symposium on Algorithm Engineering and Experiments (ALENEX 2025)
+        venue_url: https://www.siam.org/conferences-events/siam-conferences/alenex25/
+        links:
+          - label: Paper
+            url: /ALENEX25.pdf
+          - label: Slides
+            url: /ALENEX25slides.pdf
+          - label: Citation
+            url: https://epubs.siam.org/action/downloadCitation?format=bibtex&include=abs&direct=true&doi=10.1137/1.9781611978339.10&downloadFileName=siam_1.9781611978339.10
+          - label: Code
+            url: https://github.com/inet-tub/SpiderDAN
+        bibtex: /ALENEX25.bib
+      - title: "BSB: Towards Demand-Aware Peer Selection With XOR-based Routing"
+        authors: Qingyun Ji, Darya Melnyk, Arash Pourdamghani, and Stefan Schmid
+        venue: Invited Paper at The 27th International Symposium on Stabilization, Safety, and Security of Distributed Systems (SSS 2025)
+        venue_url: https://sss2025.conf.lip6.fr/
+        links:
+          - label: Paper
+            url: /SSS25.pdf
+          - label: Slides
+            url: /SSS25-presentation.pdf
+          - label: Citation
+            url: https://scholar.googleusercontent.com/scholar.bib?q=info:KwlXv5oaHZsJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2u8jg:AAZF9b8AAAAAaNuo6jiN9VhLJJjV_-J8m18xdnw&scisig=AAZF9b8AAAAAaNuo6gJ5cbAKrOMzRApjvYolPz4&scisf=4&ct=citation&cd=-1&hl=en
+          - label: Code
+            url: https://github.com/inet-tub/BSB
+      - title: "Hash & Adjust: Competitive Demand-Aware Consistent Hashing"
+        authors: Arash Pourdamghani, Chen Avin, Robert Sama, Maryam Shiran, and Stefan Schmid
+        venue: The 28th International Conference on Principles of Distributed Systems (OPODIS 2024)
+        venue_url: https://opodis2024.imtlucca.it/
+        links:
+          - label: Paper
+            url: /OPODIS24.pdf
+          - label: Slides
+            url: /OPODIS24-slides.pdf
+          - label: Citation
+            url: https://dblp.org/rec/conf/opodis/PourdamghaniASS24.html?view=bibtex
+          - label: Code
+            url: https://github.com/inet-tub/Hash-And-Adjust
+        bibtex: /OPODIS24.bib
+      - title: "SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree"
+        authors: Arash Pourdamghani, Chen Avin, Robert Sama, and Stefan Schmid
+        venue: IEEE Conference on Computer Communications (INFOCOM 2023)
+        venue_url: https://infocom2023.ieee-infocom.org/
+        links:
+          - label: Paper
+            url: /INFOCOM23SeedTree.pdf
+          - label: Slides
+            url: /SeedTree-Pres.pdf
+          - label: Citation
+            url: https://dblp.uni-trier.de/rec/conf/infocom/PourdamghaniASS23.html?view=bibtex
+          - label: Video
+            url: https://www.youtube.com/watch?v=KdDbRnhPcM4
+          - label: Code
+            url: https://github.com/inet-tub/SeedTree
+        bibtex: /INFOCOM23SeedTree.bib
+      - title: Self-Adjusting Partially Ordered Lists
+        authors: Vamsi Addanki, Maciej Pacut, Arash Pourdamghani, Gabor Retvari, Stefan Schmid, and Juan Vanerio
+        venue: IEEE Conference on Computer Communications (INFOCOM 2023)
+        venue_url: https://infocom2023.ieee-infocom.org/
+        links:
+          - label: Paper
+            url: /INFOCOM23List.pdf
+          - label: Slides
+            url: /INFOCOM23Slides.pdf
+          - label: Citation
+            url: https://dblp.uni-trier.de/rec/conf/infocom/AddankiPPRSV23.html?view=bibtex
+        bibtex: /INFOCOM23List.bib
+
+  - title: Traffic Engineering
+    items:
+      - title: A Tutorial on Controlling Metasurfaces from the Network Perspective
+        authors: Christos Liaskos, Evangelos Papapetrou, Kostas Katsalis, Dimitrios Tyrovolas, Alexandros Papadopoulos, Stavros Tsimpoukis, Arash Pourdamghani, Max Franke, and Stefan Schmid
+        venue: under review
+        links:
+          - label: arXiv
+            url: https://arxiv.org/pdf/2601.12118
+      - title: Rethinking Fronthaul Topologies for Cell-Free 6G Networks
+        authors: Max Franke, Arash Pourdamghani, Fabian Göttsch, Stefan Schmid, and Giuseppe Caire
+        venue: IEEE International Conference on Communications (IEEE ICC 2026)
+        venue_url: https://icc2026.ieee-icc.org/
+        links:
+          - label: Paper
+            url: /ICC26.pdf
+      - title: "Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization"
+        authors: Matthias Bentert, Max Franke, Darya Melnyk, Arash Pourdamghani, and Stefan Schmid
+        venue: International Federation for Information Processing Networking Conference (IFIP NETWORKING 2025)
+        venue_url: https://networking.ifip.org/2025/
+        links:
+          - label: Paper
+            url: /IFIP25.pdf
+          - label: Slides
+            url: /IFIP25-Slides.pdf
+          - label: Citation
+            url: https://scholar.googleusercontent.com/scholar.bib?q=info:uiuZ_gdb2lcJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2vlH8:AAZF9b8AAAAAaNupjH-n00G9SP-A7WxATPNjy0A&scisig=AAZF9b8AAAAAaNupjIVu2apBcTP1KMsU-EsbYSU&scisf=4&ct=citation&cd=-1&hl=en
+          - label: Code
+            url: https://github.com/inet-tub/demand-aware-multi-cast
+      - title: Optimizing Fronthaul Quantization for Flexible User Load in Cell-Free Massive MIMO
+        authors: Fabian Göttsch, Max Franke, Arash Pourdamghani, Giuseppe Caire, and Stefan Schmid
+        venue: IEEE Globecom Workshop on Resilience in Next-Generation Wireless Communication Networks (Globecom 2025)
+        venue_url: https://globecom2025.ieee-globecom.org/workshop/ws-21-workshop-resilience-next-generation-wireless-communication-networks
+        links:
+          - label: arXiv
+            url: https://arxiv.org/abs/2510.06734
+      - title: The Augmentation-Speed Tradeoff for Consistent Network Updates
+        authors: Monika Henzinger, Ami Paz, Arash Pourdamghani, and Stefan Schmid
+        venue: ACM SIGCOMM Symposium on SDN Research (SOSR 2022)
+        venue_url: https://conferences.sigcomm.org/sosr/2022/
+        links:
+          - label: Paper
+            url: /SOSR22.pdf
+          - label: Slides
+            url: /SOSR22-Slides.pdf
+          - label: Citation
+            url: /SOSR22Tradeoff.bib
+          - label: Video
+            url: https://www.youtube.com/watch?v=DqF48BG1DbA
+          - label: Code
+            url: https://github.com/inet-tub/AugmentRoute
+        bibtex: /SOSR22Tradeoff.bib
+      - title: "Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation"
+        authors: Christos Liaskos, Lefteris Mamatas, Arash Pourdamghani, Ageliki Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz
+        venue: Proceedings of the IEEE (PIEEE 2022)
+        venue_url: https://proceedingsoftheieee.ieee.org/september-2022/
+        links:
+          - label: Paper
+            url: /PIEEE22.pdf
+          - label: Citation
+            url: /PIEEE22SDR.bib
+        bibtex: /PIEEE22SDR.bib
+
+  - title: Blockchain
+    items:
+      - title: "Probabilistic smart contracts: Secure randomness on the blockchain"
+        authors: Krishnendu Chatterjee, Amir Kafshdar Goharshady, and Arash Pourdamghani
+        venue: IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2019)
+        venue_url: https://icbc2019.ieee-icbc.org/
+        links:
+          - label: Paper
+            url: /ICBC2019.pdf
+          - label: Slides
+            url: /ICBC2019-Slides.pdf
+          - label: Citation
+            url: /ICBC19Random.bib
+          - label: Video
+            url: https://youtu.be/ilWwCqGA-_Y?t=64
+        bibtex: /ICBC19Random.bib
+      - title: "Hybrid Mining: Exploiting Blockchain's Computational Power for Distributed Problem Solving"
+        authors: Krishnendu Chatterjee, Amir Kafshdar Goharshady, and Arash Pourdamghani
+        venue: ACM/SIGAPP Symposium on Applied Computing (SAC 2019)
+        venue_url: https://www.sigapp.org/sac/sac2019/
+        links:
+          - label: Paper
+            url: /SAC19.pdf
+          - label: Slides
+            url: /SAC2019-Slides.pdf
+          - label: Citation
+            url: /SAC19HybridMining.bib
+        bibtex: /SAC19HybridMining.bib
+
+  - title: Distributed Systems
+    items:
+      - title: Polynomial-Time Fence Insertion for Structured Programs
+        authors: Mohammad Taheri, Arash Pourdamghani, and Mohsen Lesani
+        venue: International Symposium on Distributed Computing (DISC 2019)
+        venue_url: http://www.disc-conference.org/wp/disc2019/
+        links:
+          - label: Paper
+            url: /DISC19.pdf
+          - label: Slides
+            url: /DISC2019-Slides.pdf
+          - label: Citation
+            url: /DISC19Fence.bib
+        bibtex: /DISC19Fence.bib
+
+  - title: Short Papers, Posters
+    items:
+      - title: "Opening Gates of Knowledge: Wikimedia as an Ecosystem of Co-Creation"
+        authors: Mohammad Heidarzadeh and Arash Pourdamghani
+        venue: First Grand Challenges Conference of the Berlin University Alliance (Grand Challenges 2026)
+        venue_url: https://gc-conference-bua.de/
+        links:
+          - label: Abstract
+            url: /GC2026.txt
+      - title: "Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation"
+        authors: Aleksander Figiel, Darya Melnyk, André Nichterlein, Arash Pourdamghani, and Stefan Schmid
+        venue: ACM Symposium on Parallelism in Algorithms and Architectures (SPAA 2024)
+        venue_url: https://spaa.acm.org/spaa-2024-2/
+        links:
+          - label: Paper
+            url: /spaa24ba.pdf
+          - label: Slides
+            url: /spaa24ba-slides.pdf
+          - label: Citation
+            url: https://dblp.uni-trier.de/rec/conf/spaa/FigielMNP024.html?view=bibtex
+          - label: Code
+            url: https://github.com/inet-tub/Hash-And-Adjust
+        bibtex: /SPAA24ba.bib
+      - title: "DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System"
+        authors: Johannes Gruendler, Darya Melnyk, Arash Pourdamghani, and Stefan Schmid
+        venue: IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2024)
+        venue_url: https://icbc2024.ieee-icbc.org/
+        links:
+          - label: Paper
+            url: /ICBC24Peer.pdf
+          - label: Poster
+            url: /ICBC24Poster.pdf
+      - title: Compressed Bundle Reporting for Reliable Bundle Transmission in Disruption-Tolerant Networking
+        authors: Aida-Stefania Manole, Felix Flentge, Stefan Schmid, Arash Pourdamghani, and Max Franke
+        venue: 17th International Conference on Space Operations (SpaceOps 2023)
+        venue_url: https://2023.spaceops.org/
+        links:
+          - label: Paper
+            url: /spaceops23.pdf

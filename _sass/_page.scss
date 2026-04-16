@@ -134,6 +134,116 @@
     }
   }
 
+  .research-section--cards {
+    padding-bottom: 1.45rem;
+  }
+
+  .publication-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @include breakpoint($medium) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+  }
+
+  .publication-card {
+    height: 100%;
+    padding: 1.2rem 1.1rem;
+    background: rgba(#fff, 0.94);
+    border: 1px solid mix(#fff, $info-color, 85%);
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(#000, 0.05);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: mix(#fff, $info-color, 70%);
+      box-shadow: 0 16px 34px rgba(#000, 0.08);
+    }
+  }
+
+  .publication-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    height: 100%;
+  }
+
+  .publication-card__title {
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.35;
+    color: $darker-gray;
+  }
+
+  .publication-card__authors,
+  .publication-card__venue {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .publication-card__authors {
+    color: mix(#000, $gray, 52%);
+  }
+
+  .publication-card__venue {
+    color: mix(#000, $info-color, 26%);
+    font-weight: 600;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(mix(#000, $info-color, 26%), 0.2);
+    }
+  }
+
+  .publication-card__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: auto;
+    padding-top: 0.1rem;
+  }
+
+  .publication-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid mix(#fff, $info-color, 72%);
+    background: mix(#fff, $info-color, 92%);
+    color: mix(#000, $info-color, 22%);
+    font-size: 0.77rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+
+    &:hover {
+      background: mix(#fff, $info-color, 82%);
+      border-color: mix(#fff, $info-color, 58%);
+      color: mix(#000, $info-color, 14%);
+      text-decoration: none;
+    }
+  }
+
+  .publication-chip--bibtex {
+    background: mix(#fff, $gray, 92%);
+    border-color: mix(#fff, $gray, 76%);
+    color: mix(#000, $gray, 34%);
+
+    &:hover {
+      background: mix(#fff, $gray, 84%);
+      border-color: mix(#fff, $gray, 62%);
+      color: mix(#000, $gray, 18%);
+    }
+  }
+
   .service-overview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -153,10 +263,18 @@
   }
 
   .service-overview__value {
-    font-size: clamp(1.55rem, 1.2rem + 1vw, 2.2rem);
+    font-size: 1.55rem;
     font-weight: 700;
     line-height: 1;
     color: mix(#000, $info-color, 22%);
+
+    @include breakpoint($medium) {
+      font-size: 1.85rem;
+    }
+
+    @include breakpoint($large) {
+      font-size: 2.2rem;
+    }
   }
 
   .service-overview__label {

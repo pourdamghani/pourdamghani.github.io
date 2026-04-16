@@ -1,0 +1,36 @@
+{% assign publication = include.publication %}
+
+<article class="publication-card">
+  <div class="publication-card__body">
+    <h3 class="publication-card__title">{{ publication.title }}</h3>
+
+    {% if publication.authors %}
+      <p class="publication-card__authors">{{ publication.authors }}</p>
+    {% endif %}
+
+    {% if publication.venue %}
+      <p class="publication-card__venue">
+        {% if publication.venue_url %}
+          <a href="{{ publication.venue_url }}">{{ publication.venue }}</a>
+        {% else %}
+          {{ publication.venue }}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if publication.links or publication.bibtex %}
+      <div class="publication-card__links">
+        {% for link in publication.links %}
+          {% assign href = link.url %}
+          {% if href %}
+            <a class="publication-chip" href="{% if href contains '://' %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}">{{ link.label }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if publication.bibtex %}
+          <a class="publication-chip publication-chip--bibtex" href="{% if publication.bibtex contains '://' %}{{ publication.bibtex }}{% else %}{{ publication.bibtex | relative_url }}{% endif %}">BibTeX</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>
