@@ -14,7 +14,6 @@ redirect_from:
 
 # Community Service
 
-Service matters to me as part of how research communities stay rigorous, welcoming, and useful. I contribute through formal academic reviewing as well as volunteer efforts focused on open knowledge, events, and community-building.
 
 <section class="service-overview" markdown="1">
 <div class="service-overview__item">
