@@ -138,15 +138,73 @@
     padding-bottom: 1.45rem;
   }
 
+  .research-layout {
+    display: block;
+
+    @include breakpoint($large) {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 220px;
+      gap: 1.75rem;
+      align-items: start;
+    }
+  }
+
+  .research-content {
+    min-width: 0;
+  }
+
+  .research-nav {
+    display: none;
+
+    @include breakpoint($large) {
+      display: block;
+      position: sticky;
+      top: 1.5rem;
+      padding: 1rem 1rem 1.1rem;
+      background: linear-gradient(180deg, mix(#fff, $info-color, 95%) 0%, #fff 100%);
+      border: 1px solid mix(#fff, $info-color, 84%);
+      border-radius: 14px;
+      box-shadow: 0 14px 32px rgba(mix(#000, $info-color, 45%), 0.05);
+    }
+  }
+
+  .research-nav__title {
+    margin: 0 0 0.8rem;
+    font-size: $type-size-6;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: mix(#000, $info-color, 38%);
+  }
+
+  .research-nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .research-nav__links a {
+    display: block;
+    padding: 0.45rem 0.6rem;
+    border-radius: 10px;
+    color: mix(#000, $gray, 55%);
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: background-color 0.18s ease, color 0.18s ease;
+
+    &:hover {
+      background: mix(#fff, $info-color, 86%);
+      color: mix(#000, $info-color, 18%);
+      text-decoration: none;
+    }
+  }
+
   .publication-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-
-    @include breakpoint($medium) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.1rem;
-    }
   }
 
   .publication-card {
