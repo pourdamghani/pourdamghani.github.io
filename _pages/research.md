@@ -14,7 +14,7 @@ I am interested in algorithm design and analysis with applications in networks, 
 # Publications
 In theoretical computer science, authors are sorted alphabetically by default.
 
-## Self-Adjusting Systems:
+## Self-Adjusting Systems
 
 ### A Learning-Augmented Overlay Network
 Julien Dallot, Caio Alves Caldeira, **Arash Pourdamghani**, Olga Goussevskaia, and Stefan Schmid \
@@ -47,7 +47,7 @@ Vamsi Addanki, Maciej Pacut, **Arash Pourdamghani**, Gabor Retvari, Stefan Schmi
 *IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.ieee-infocom.org/))*\
 [Paper](INFOCOM23List.pdf), [Slides](INFOCOM23Slides.pdf), [Citation](https://dblp.uni-trier.de/rec/conf/infocom/AddankiPPRSV23.html?view=bibtex), 
 
-## Traffic Engineering:
+## Traffic Engineering
 
 ### A Tutorial on Controlling Metasurfaces from the Network Perspective
 Christos Liaskos, Evangelos Papapetrou, Kostas Katsalis, Dimitrios Tyrovolas, Alexandros Papadopoulos, Stavros Tsimpoukis, **Arash Pourdamghani**, Max Franke, Stefan Schmid \
@@ -80,7 +80,7 @@ Christos Liaskos, Lefteris Mamatas, **Arash Pourdamghani**, Ageliki Tsioliaridou
 [Paper](PIEEE22.pdf), [Citation](PIEEE22SDR.bib)
 
 
-## Blockchain:
+## Blockchain
 
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 Krishnendu Chatterjee, Amir Kafshdar Goharshady, and **Arash Pourdamghani** \
@@ -93,7 +93,7 @@ Krishnendu Chatterjee, Amir Kafshdar Goharshady, and **Arash Pourdamghani** \
 [Paper](SAC19.pdf), [Slides](SAC2019-Slides.pdf), [Citation](SAC19HybridMining.bib)
 
 
-## Distributed Systems:
+## Distributed Systems
 
 ### Polynomial-Time Fence Insertion for Structured Programs
 Mohammad Taheri,  **Arash Pourdamghani**, and Mohsen Lesani\
