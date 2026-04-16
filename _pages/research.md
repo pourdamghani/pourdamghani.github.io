@@ -14,6 +14,7 @@ I am interested in algorithm design and analysis with applications in networks, 
 # Publications
 In theoretical computer science, authors are sorted alphabetically by default.
 
+<section class="research-section" markdown="1">
 ## Self-Adjusting Systems
 
 ### A Learning-Augmented Overlay Network
@@ -46,7 +47,9 @@ The 28th International Conference on Principles of Distributed Systems ([OPODIS 
 Vamsi Addanki, Maciej Pacut, **Arash Pourdamghani**, Gabor Retvari, Stefan Schmid, and Juan  Vanerio\
 *IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.ieee-infocom.org/))*\
 [Paper](INFOCOM23List.pdf), [Slides](INFOCOM23Slides.pdf), [Citation](https://dblp.uni-trier.de/rec/conf/infocom/AddankiPPRSV23.html?view=bibtex), 
+</section>
 
+<section class="research-section" markdown="1">
 ## Traffic Engineering
 
 ### A Tutorial on Controlling Metasurfaces from the Network Perspective
@@ -78,8 +81,10 @@ Monika Henzinger, Ami Paz, **Arash Pourdamghani**, and Stefan Schmid\
 Christos Liaskos, Lefteris Mamatas, **Arash Pourdamghani**, Ageliki Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz\
 *Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/september-2022/))*\
 [Paper](PIEEE22.pdf), [Citation](PIEEE22SDR.bib)
+</section>
 
 
+<section class="research-section" markdown="1">
 ## Blockchain
 
 ### Probabilistic smart contracts: Secure randomness on the blockchain
@@ -91,16 +96,20 @@ Krishnendu Chatterjee, Amir Kafshdar Goharshady, and **Arash Pourdamghani** \
 Krishnendu Chatterjee, Amir Kafshdar Goharshady, and **Arash Pourdamghani** \
 *ACM/SIGAPP Symposium on Applied Computing ([SAC 2019](https://www.sigapp.org/sac/sac2019/))*\
 [Paper](SAC19.pdf), [Slides](SAC2019-Slides.pdf), [Citation](SAC19HybridMining.bib)
+</section>
 
 
+<section class="research-section" markdown="1">
 ## Distributed Systems
 
 ### Polynomial-Time Fence Insertion for Structured Programs
 Mohammad Taheri,  **Arash Pourdamghani**, and Mohsen Lesani\
 *International Symposium on Distributed Computing ([DISC 2019](http://www.disc-conference.org/wp/disc2019/))*\
 [Paper](DISC19.pdf), [Slides](DISC2019-Slides.pdf), [Citation](DISC19Fence.bib)
+</section>
 
 
+<section class="research-section" markdown="1">
 ## Short Papers, Posters 
 
 ### Opening Gates of Knowledge: Wikimedia as an Ecosystem of Co-Creation
@@ -122,5 +131,5 @@ Johannes Gruendler, Darya Melnyk, **Arash Pourdamghani**, and Stefan Schmid\
 Aida-Stefania Manole, Felix Flentge, Stefan Schmid, **Arash Pourdamghani**, Max Franke\
 *17th International Conference on Space Operations ([SpaceOps 2023](https://2023.spaceops.org/))*\
 [Paper](spaceops23.pdf)
-
+</section>
 

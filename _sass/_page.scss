@@ -105,6 +105,34 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+  .research-section {
+    margin: 2.5rem 0;
+    padding: 1.5rem 1.25rem 1.1rem;
+    background: linear-gradient(180deg, mix(#fff, $info-color, 94%) 0%, #fff 100%);
+    border: 1px solid mix(#fff, $info-color, 82%);
+    border-top: 4px solid mix(#000, $info-color, 10%);
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(mix(#000, $info-color, 45%), 0.06);
+
+    @include breakpoint($medium) {
+      padding: 1.85rem 1.75rem 1.35rem;
+    }
+
+    > h2 {
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid mix(#fff, $info-color, 78%);
+      font-size: $type-size-4;
+      color: mix(#000, $info-color, 28%);
+      letter-spacing: 0.01em;
+    }
+
+    > h3:first-of-type {
+      margin-top: 0;
+    }
+  }
 }
 
 .page__hero {
