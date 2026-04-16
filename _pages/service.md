@@ -15,25 +15,6 @@ redirect_from:
 # Community Service
 
 
-<section class="service-overview" markdown="1">
-<div class="service-overview__item">
-  <span class="service-overview__value">3</span>
-  <span class="service-overview__label">PC Roles</span>
-</div>
-<div class="service-overview__item">
-  <span class="service-overview__value">6</span>
-  <span class="service-overview__label">Reviewer Roles</span>
-</div>
-<div class="service-overview__item">
-  <span class="service-overview__value">17</span>
-  <span class="service-overview__label">Subreviews</span>
-</div>
-<div class="service-overview__item">
-  <span class="service-overview__value">5</span>
-  <span class="service-overview__label">Volunteer Initiatives</span>
-</div>
-</section>
-
 <section class="research-section service-section" markdown="1">
 ## Academic Service
 
