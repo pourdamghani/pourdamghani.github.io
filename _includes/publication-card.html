@@ -5,7 +5,7 @@
     <h3 class="publication-card__title">{{ publication.title }}</h3>
 
     {% if publication.authors %}
-      <p class="publication-card__authors">{{ publication.authors }}</p>
+      <p class="publication-card__authors">{{ publication.authors | replace: "Arash Pourdamghani", "<strong>Arash Pourdamghani</strong>" }}</p>
     {% endif %}
 
     {% if publication.venue %}
