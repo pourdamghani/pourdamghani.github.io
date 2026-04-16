@@ -266,8 +266,7 @@
 
 .sidebar-topics__links a {
   display: block;
-  padding: 0.45rem 0.6rem;
-  border-radius: 10px;
+  padding: 0.15rem 0;
   color: mix(#000, $gray, 55%);
   font-size: 0.88rem;
   font-weight: 600;
@@ -276,7 +275,6 @@
   transition: background-color 0.18s ease, color 0.18s ease;
 
   &:hover {
-    background: mix(#fff, $info-color, 86%);
     color: mix(#000, $info-color, 18%);
     text-decoration: none;
   }
