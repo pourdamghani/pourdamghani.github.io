@@ -342,7 +342,7 @@
 
   .service-card__meta {
     margin: 0;
-    color: $muted-text-color;
+    color: mix(#000, $gray, 45%);
   }
 
   .service-tags {
