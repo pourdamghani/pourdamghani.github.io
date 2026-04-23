@@ -30,19 +30,19 @@ lastname (at) tu-berlin (dot) de
 ### SpiderDAN: Matching Augmentation in Demand-Aware Networks
 *with Aleksander Figiel, Darya Melnyk, André Nichterlein, and Stefan Schmid*\
 SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX 2025](https://www.siam.org/conferences-events/siam-conferences/alenex25/))\
-[Paper](ALENEX25.pdf), [Slides](ALENEX25slides.pdf), [Citation](ALENEX25.bib)
+[Paper](/_pages/ALENEX25.pdf), [Slides](/_pages/ALENEX25slides.pdf), [Citation](/_pages/ALENEX25.bib)
 
 ### SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree
 *with Chen Avin, Robert Sama, and Stefan Schmid*\
 IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.ieee-infocom.org/)).\
-[Paper](INFOCOM23SeedTree.pdf), [Slides](SeedTree-Pres.pdf), [Citation](INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
+[Paper](/_pages/INFOCOM23SeedTree.pdf), [Slides](/_pages/SeedTree-Pres.pdf), [Citation](/_pages/INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
 
 ### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
 *with Christos Liaskos, Lefteris Mamatas, Ageliki Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
 Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/september-2022/))\
-[Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation](PIEEE22SDR.bib)
+[Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation](/_pages/PIEEE22SDR.bib)
 
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC 2019](https://icbc2019.ieee-icbc.org/))\
-[Paper](ICBC2019.pdf), [Slides](ICBC2019-Slides.pdf), [Citation](ICBC19Random.bib), [Video](https://youtu.be/ilWwCqGA-_Y?t=64)
+[Paper](/_pages/ICBC2019.pdf), [Slides](/_pages/ICBC2019-Slides.pdf), [Citation](/_pages/ICBC19Random.bib), [Video](https://youtu.be/ilWwCqGA-_Y?t=64)
