@@ -349,170 +349,76 @@
     line-height: 1.35;
   }
 
-  .supervision-overview,
-  .teaching-overview {
-    margin-top: 1.2rem;
-  }
-
-  .supervision-section,
-  .teaching-section {
+  .people-table-section {
     > h2 {
       color: mix(#000, $info-color, 24%);
     }
-  }
 
-  .supervision-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-
-    @include breakpoint($medium) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  .supervision-grid--compact {
-    @include breakpoint($medium) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-
-  .supervision-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    height: 100%;
-    padding: 1.1rem;
-    background: linear-gradient(180deg, #fff 0%, mix(#fff, $info-color, 97%) 100%);
-    border: 1px solid mix(#fff, $info-color, 80%);
-    border-radius: 14px;
-    box-shadow: 0 14px 28px rgba(mix(#000, $info-color, 45%), 0.05);
-    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-      border-color: mix(#fff, $info-color, 68%);
-      box-shadow: 0 18px 34px rgba(#000, 0.08);
-    }
-
-    h3 {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      color: $darker-gray;
-      font-size: $type-size-5;
-      line-height: 1.3;
-    }
-
-    p {
-      margin: 0;
-      color: mix(#000, $gray, 46%);
-      font-size: $type-size-6;
-      line-height: 1.55;
-    }
-  }
-
-  .supervision-card--intern {
-    p {
-      color: mix(#000, $info-color, 30%);
-      font-weight: 600;
-    }
-  }
-
-  .supervision-card__meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-
-    span {
-      display: inline-flex;
-      align-items: center;
-      min-height: 1.7rem;
-      padding: 0.25rem 0.55rem;
-      border-radius: 999px;
-      background: mix(#fff, $info-color, 91%);
-      border: 1px solid mix(#fff, $info-color, 74%);
-      color: mix(#000, $info-color, 30%);
-      font-size: $type-size-7;
-      font-weight: 700;
-      line-height: 1.25;
-    }
-  }
-
-  .teaching-list {
-    display: grid;
-    gap: 0.95rem;
-  }
-
-  .teaching-card {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.85rem;
-    padding: 1rem;
-    background: linear-gradient(180deg, #fff 0%, mix(#fff, $info-color, 97%) 100%);
-    border: 1px solid mix(#fff, $info-color, 80%);
-    border-radius: 14px;
-    box-shadow: 0 14px 28px rgba(mix(#000, $info-color, 45%), 0.05);
-
-    @include breakpoint($medium) {
-      grid-template-columns: minmax(7.5rem, 0.28fr) 1fr;
-      align-items: start;
-      padding: 1.1rem 1.15rem;
-    }
-
-    h3 {
-      margin: 0 0 0.35rem;
-      padding: 0;
-      border: 0;
-      color: $darker-gray;
-      font-size: $type-size-5;
-      line-height: 1.3;
-    }
-
-    p {
-      margin: 0;
-      color: mix(#000, $gray, 46%);
-      font-size: $type-size-6;
-      line-height: 1.5;
-    }
-  }
-
-  .teaching-card--featured {
-    border-color: mix(#fff, $info-color, 68%);
-    box-shadow: 0 16px 32px rgba(mix(#000, $info-color, 45%), 0.07);
-  }
-
-  .teaching-card__date {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    min-height: 2rem;
-    padding: 0.35rem 0.75rem;
-    border-radius: 999px;
-    background: mix(#fff, $info-color, 90%);
-    border: 1px solid mix(#fff, $info-color, 72%);
-    color: mix(#000, $info-color, 25%);
-    font-size: $type-size-6;
-    font-weight: 700;
-    line-height: 1.25;
-
-    @include breakpoint($medium) {
+    table {
+      display: block;
       width: 100%;
+      margin: 0.35rem 0 0;
+      overflow-x: auto;
+      background: #fff;
+      border: 1px solid mix(#fff, $info-color, 80%);
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 14px;
+      box-shadow: 0 12px 28px rgba(mix(#000, $info-color, 45%), 0.05);
     }
-  }
 
-  .teaching-card__body {
-    min-width: 0;
-  }
+    thead {
+      background: linear-gradient(180deg, mix(#fff, $info-color, 88%) 0%, mix(#fff, $info-color, 94%) 100%);
+    }
 
-  .teaching-card__role {
-    margin-bottom: 0.25rem !important;
-    color: mix(#000, $info-color, 36%) !important;
-    font-size: $type-size-7 !important;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    th,
+    td {
+      padding: 0.75rem 0.85rem;
+      border-bottom: 1px solid mix(#fff, $info-color, 84%);
+      font-size: $type-size-6;
+      line-height: 1.45;
+      vertical-align: top;
+    }
+
+    th {
+      color: mix(#000, $info-color, 28%);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    td {
+      color: mix(#000, $gray, 43%);
+    }
+
+    tbody tr {
+      transition: background-color 0.16s ease;
+
+      &:nth-child(even) {
+        background: mix(#fff, $info-color, 97%);
+      }
+
+      &:hover {
+        background: mix(#fff, $info-color, 91%);
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    td:first-child {
+      color: $darker-gray;
+      font-weight: 700;
+    }
+
+    td:nth-child(2),
+    td:nth-child(4) {
+      color: mix(#000, $info-color, 30%);
+      font-weight: 700;
+      white-space: nowrap;
+    }
   }
 }
 

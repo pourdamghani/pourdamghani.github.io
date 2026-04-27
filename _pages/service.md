@@ -20,7 +20,6 @@ redirect_from:
 
 <div class="service-grid">
   <article class="service-card">
-    <p class="service-card__eyebrow">Program Committees</p>
     <h3>PC Member</h3>
     <div class="service-tags">
       <span>FC CAAW 2026</span>
@@ -30,9 +29,9 @@ redirect_from:
   </article>
 
   <article class="service-card">
-    <p class="service-card__eyebrow">Peer Review</p>
     <h3>Reviewer</h3>
     <div class="service-tags">
+      <span>TON 2026</span>
       <span>TON 2025</span>
       <span>DLT 2025</span>
       <span>TON 2024</span>
@@ -43,7 +42,6 @@ redirect_from:
   </article>
 
   <article class="service-card service-card--wide">
-    <p class="service-card__eyebrow">Community Contribution</p>
     <h3>Subreviewer</h3>
     <div class="service-tags">
       <span>CCS 2025</span>
@@ -73,31 +71,26 @@ redirect_from:
 
 <div class="service-grid">
   <article class="service-card">
-    <p class="service-card__eyebrow">Podcasting</p>
     <h3>Rayacast Podcast</h3>
     <p class="service-card__meta">Founder & organizer, 2022</p>
   </article>
 
   <article class="service-card">
-    <p class="service-card__eyebrow">Open Knowledge</p>
     <h3>Persian Wikipedia Edit-a-thon</h3>
     <p class="service-card__meta">Co-founder & co-organizer</p>
   </article>
 
   <article class="service-card">
-    <p class="service-card__eyebrow">Events</p>
     <h3>TEDxSUT</h3>
     <p class="service-card__meta">Founding member</p>
   </article>
 
   <article class="service-card">
-    <p class="service-card__eyebrow">Academic Outreach</p>
     <h3>Seminar Series in Advanced Computer Science</h3>
     <p class="service-card__meta">Organizing team, panelist, and speaker</p>
   </article>
 
   <article class="service-card">
-    <p class="service-card__eyebrow">Competition Support</p>
     <h3>ACM-ICPC Asia Region, Tehran Site</h3>
     <p class="service-card__meta">Organizing team</p>
   </article>

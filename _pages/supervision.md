@@ -9,139 +9,36 @@ redirect_from:
 ---
 
 ## Alumni
-I am delighted to have mentored students across thesis projects and undergraduate research internships in the past few years.
+I am delighted to be able to mentor the following students in the past few years.
 
-<div class="service-overview supervision-overview">
-  <div class="service-overview__item">
-    <span class="service-overview__value">11</span>
-    <span class="service-overview__label">Theses</span>
-  </div>
-  <div class="service-overview__item">
-    <span class="service-overview__value">7</span>
-    <span class="service-overview__label">Research Interns</span>
-  </div>
-  <div class="service-overview__item">
-    <span class="service-overview__value">2</span>
-    <span class="service-overview__label">Host Institutions</span>
-  </div>
-</div>
-
-<section class="research-section supervision-section" markdown="1">
+<section class="research-section people-table-section" markdown="1">
 ## Thesis Supervision
 
-<div class="supervision-grid">
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2025</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Sebastian Wojciechowski</h3>
-    <p>Development and evaluation of a joint physical and network simulator for cell-free networks</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2025</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Luca Lichterman</h3>
-    <p>Temperature-Based Cache Control for LLMs</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2025</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Irem Gizer</h3>
-    <p>Exploring Trade-offs in Structured P2P Message Dissemination Protocols</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2025</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Vera Wagner</h3>
-    <p>Empirical Assessment of Advice Augmented Skip Graphs</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2025</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Baki Berkay Uzel</h3>
-    <p>Resource-Optimized Blockchain-Based Peer Review System</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2024</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Maria Cole</h3>
-    <p>A Sliding Window Approach to Designing Self-Adjusting Networks</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2024</span><span>MSc</span><span>TU Berlin</span></div>
-    <h3>Qingyun Ji</h3>
-    <p>Decentralized and Demand-Aware Peer Selection Algorithms</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2023</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Johannes Gründler</h3>
-    <p>Fair and Secure Blockchain-Based Peer Review System</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2023</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Anton Jurß</h3>
-    <p>Improving Self-Adjusting Networks by Reordering Communication Requests</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2023</span><span>MSc</span><span>TU Berlin</span></div>
-    <h3>Nedyalko Stanchev</h3>
-    <p>Fast and Efficient Algorithm for the Minimum Linear Arrangement Problem on Series Parallel Graphs</p>
-  </article>
-
-  <article class="supervision-card">
-    <div class="supervision-card__meta"><span>2022</span><span>BSc</span><span>TU Berlin</span></div>
-    <h3>Qingyun Ji</h3>
-    <p>Frequency Distribution of Nash Equilibria in Public Goods Game</p>
-  </article>
-</div>
+| Student | Year | Host University | BSc/MSc | Thesis Title |
+|---|---:|---|---|---|
+| Sebastian Wojciechowski | 2025 | TU Berlin | BSc | Development and evaluation of a joint physical and network simulator for cell-free networks |
+| Luca Lichterman | 2025 | TU Berlin | BSc | Temperature-Based Cache Control for LLMs |
+| Irem Gizer | 2025 | TU Berlin | BSc | Exploring Trade-offs in Structured P2P Message Dissemination Protocols |
+| Vera Wagner | 2025 | TU Berlin | BSc | Empirical Assessment of Advice Augmented Skip Graphs |
+| Baki Berkay Uzel | 2025 | TU Berlin | BSc | Resource-Optimized Blockchain-Based Peer Review System |
+| Maria Cole | 2024 | TU Berlin | BSc | A Sliding Window Approach to Designing Self-Adjusting Networks |
+| Qingyun Ji | 2024 | TU Berlin | MSc | Decentralized and Demand-Aware Peer Selection Algorithms |
+| Johannes Gründler | 2023 | TU Berlin | BSc | Fair and Secure Blockchain-Based Peer Review System |
+| Anton Jurß | 2023 | TU Berlin | BSc | Improving Self-Adjusting Networks by Reordering Communication Requests |
+| Nedyalko Stanchev | 2023 | TU Berlin | MSc | Fast and Efficient Algorithm for the Minimum Linear Arrangement Problem on Series Parallel Graphs |
+| Qingyun Ji | 2022 | TU Berlin | BSc | Frequency Distribution of Nash Equilibria in Public Goods Game |
 </section>
 
-<section class="research-section supervision-section" markdown="1">
+<section class="research-section people-table-section" markdown="1">
 ## Undergraduate Research Interns
 
-<div class="supervision-grid supervision-grid--compact">
-  <article class="supervision-card supervision-card--intern">
-    <div class="supervision-card__meta"><span>2023-24</span><span>TU Berlin</span></div>
-    <h3>Bahar Oveisgharan</h3>
-    <p>Masters at York University</p>
-  </article>
-
-  <article class="supervision-card supervision-card--intern">
-    <div class="supervision-card__meta"><span>2023-24</span><span>TU Berlin</span></div>
-    <h3>Helia Yazdanyar</h3>
-    <p>Masters at University of Waterloo</p>
-  </article>
-
-  <article class="supervision-card supervision-card--intern">
-    <div class="supervision-card__meta"><span>2022-23</span><span>TU Berlin</span></div>
-    <h3>Dorsa Majdi</h3>
-    <p>Research Intern at EPFL</p>
-  </article>
-
-  <article class="supervision-card supervision-card--intern">
-    <div class="supervision-card__meta"><span>2022-23</span><span>University of Vienna</span></div>
-    <h3>Esra Ceylan</h3>
-    <p>Masters at TU Wien</p>
-  </article>
-
-  <article class="supervision-card supervision-card--intern">
-    <div class="supervision-card__meta"><span>2021-2022</span><span>University of Vienna</span></div>
-    <h3>Marzieh Aliakbarpour</h3>
-    <p>PhD. at The Pennsylvania State University</p>
-  </article>
-
-  <article class="supervision-card supervision-card--intern">
-    <div class="supervision-card__meta"><span>2021-2022</span><span>University of Vienna</span></div>
-    <h3>Andre Loric</h3>
-    <p>Intern at Wavestone</p>
-  </article>
-
-  <article class="supervision-card supervision-card--intern">
-    <div class="supervision-card__meta"><span>2021-2022</span><span>University of Vienna</span></div>
-    <h3>Siddhesh Kalekar</h3>
-    <p>Intern at GreatFour Systems</p>
-  </article>
-</div>
+| Intern | Year(s) | Host University | Next Position |
+|---|---:|---|---|
+| Bahar Oveisgharan | 2023-24 | TU Berlin | Masters at York University |
+| Helia Yazdanyar | 2023-24 | TU Berlin | Masters at University of Waterloo |
+| Dorsa Majdi | 2022-23 | TU Berlin | Research Intern at EPFL |
+| Esra Ceylan | 2022-23 | University of Vienna | Masters at TU Wien |
+| Marzieh Aliakbarpour | 2021-2022 | University of Vienna | PhD. at The Pennsylvania State University |
+| Andre Loric | 2021-2022 | University of Vienna | Intern at Wavestone |
+| Siddhesh Kalekar | 2021-2022 | University of Vienna | Intern at GreatFour Systems |
 </section>
