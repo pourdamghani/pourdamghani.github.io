@@ -11,21 +11,111 @@ redirect_from:
 
 ## Teaching & Teaching Assistance
 
-<section class="research-section people-table-section" markdown="1">
+<section class="research-section people-list-section" markdown="1">
 
-| Course | Year(s) | Institution/Place | Role |
-|---|---:|---|---|
-| AI/ML in Networked Systems Seminar | 2024-Present | TU Berlin, Germany | Lecturer |
-| Advanced Topics in Networked and Distributed Systems Seminar | 2023-Present | TU Berlin, Germany | Lecturer |
-| Algorithms for Networked Systems | 2022-Present | TU Berlin, Germany | Tutor |
-| Cryptocurrency and Blockchain Networks Seminar | 2022-2025 | TU Berlin, Germany | Lecturer |
-| Networked Systems Security Seminar | 2024-2025 | TU Berlin, Germany | Lecturer |
-| Blockchain Technology and Decentralized Applications | 2024-2025 | TU Berlin, Germany | Tutor |
-| Algorithms for Distributed Systems | 2024 | TU Berlin, Germany | Tutor |
-| Network Protocols and Architectures | 2021 | TU Berlin, Germany | Tutor |
-| Data Structures and Algorithms | 2016-2019 | Sharif University of Technology | Teaching Assistance |
-| Algorithmic Game Theory | 2017-2019 | Sharif University of Technology | Teaching Assistance |
-| Algorithms Design and Analysis | 2018 | Sharif University of Technology | Teaching Assistance |
-| Preparation Classes for National Olympiad in Informatics | 2014-2016 | Across Iran | Lecturer |
-| Fundamentals of Programming | 2015 | Sharif University of Technology | Teaching Assistance |
+<div class="supervision-list">
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2024-Present</span><span>Lecturer</span></div>
+    <div class="supervision-entry__body">
+      <h3>AI/ML in Networked Systems Seminar</h3>
+      <p>TU Berlin, Germany</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2023-Present</span><span>Lecturer</span></div>
+    <div class="supervision-entry__body">
+      <h3>Advanced Topics in Networked and Distributed Systems Seminar</h3>
+      <p>TU Berlin, Germany</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2022-Present</span><span>Tutor</span></div>
+    <div class="supervision-entry__body">
+      <h3>Algorithms for Networked Systems</h3>
+      <p>TU Berlin, Germany</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2022-2025</span><span>Lecturer</span></div>
+    <div class="supervision-entry__body">
+      <h3>Cryptocurrency and Blockchain Networks Seminar</h3>
+      <p>TU Berlin, Germany</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2024-2025</span><span>Lecturer</span></div>
+    <div class="supervision-entry__body">
+      <h3>Networked Systems Security Seminar</h3>
+      <p>TU Berlin, Germany</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2024-2025</span><span>Tutor</span></div>
+    <div class="supervision-entry__body">
+      <h3>Blockchain Technology and Decentralized Applications</h3>
+      <p>TU Berlin, Germany</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2024</span><span>Tutor</span></div>
+    <div class="supervision-entry__body">
+      <h3>Algorithms for Distributed Systems</h3>
+      <p>TU Berlin, Germany</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2021</span><span>Tutor</span></div>
+    <div class="supervision-entry__body">
+      <h3>Network Protocols and Architectures</h3>
+      <p>TU Berlin, Germany</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2016-2019</span><span>Teaching Assistance</span></div>
+    <div class="supervision-entry__body">
+      <h3>Data Structures and Algorithms</h3>
+      <p>Sharif University of Technology</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2017-2019</span><span>Teaching Assistance</span></div>
+    <div class="supervision-entry__body">
+      <h3>Algorithmic Game Theory</h3>
+      <p>Sharif University of Technology</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2018</span><span>Teaching Assistance</span></div>
+    <div class="supervision-entry__body">
+      <h3>Algorithms Design and Analysis</h3>
+      <p>Sharif University of Technology</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2014-2016</span><span>Lecturer</span></div>
+    <div class="supervision-entry__body">
+      <h3>Preparation Classes for National Olympiad in Informatics</h3>
+      <p>Across Iran</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2015</span><span>Teaching Assistance</span></div>
+    <div class="supervision-entry__body">
+      <h3>Fundamentals of Programming</h3>
+      <p>Sharif University of Technology</p>
+    </div>
+  </article>
+</div>
 </section>
