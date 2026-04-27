@@ -16,6 +16,7 @@ Throughout the years, [my publications](/research)  gathered [280+ citations](ht
 I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [demand-aware and self-adjusting networks](https://self-adjusting.net/).
 
 Academic email: lastname (at) tu-berlin (dot) de
+
 Personal email: firstname (at) lastname (dot) net
 
 ## Recent News
