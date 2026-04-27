@@ -12,9 +12,6 @@ redirect_from:
 
 ---
 
-# Community Service
-
-
 <section class="research-section service-section" markdown="1">
 ## Academic Service
 

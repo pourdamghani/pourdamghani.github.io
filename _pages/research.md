@@ -11,7 +11,6 @@ redirect_from:
 
 I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on [self-adjusting networks](https://self-adjusting.net/).
 
-# Publications
 In theoretical computer science, authors are sorted alphabetically by default.
 
 {% for section in site.data.publications.sections %}

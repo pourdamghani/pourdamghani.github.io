@@ -11,8 +11,6 @@ redirect_from:
 
 
 
-## Talks
-
 #### The DISCOGA Research Seminar
 #### OPODIS'25
 #### SPAA'24

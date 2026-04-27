@@ -8,7 +8,6 @@ redirect_from:
   - /students/
 ---
 
-## Alumni
 I am delighted to be able to mentor the following students in the past few years.
 
 <section class="research-section people-list-section" markdown="1">

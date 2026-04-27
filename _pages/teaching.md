@@ -9,8 +9,6 @@ redirect_from:
   - /teaching/
 ---
 
-## Teaching & Teaching Assistance
-
 <section class="research-section people-list-section" markdown="1">
 
 <div class="supervision-list">

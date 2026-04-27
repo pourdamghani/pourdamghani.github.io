@@ -9,8 +9,6 @@ redirect_from:
 
 
 
-## Grants
-
 <section class="research-section people-list-section" markdown="1">
 <div class="grant-list">
   <article class="grant-entry">
