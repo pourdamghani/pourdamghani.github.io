@@ -10,7 +10,7 @@ author_profile: true
 # Supervision
 
 I am delighted to be able to mentor the following students in the past few years.
-</section>
+
 
 <section class="research-section people-list-section" markdown="1">
 ## Thesis Supervision
@@ -166,4 +166,5 @@ I am delighted to be able to mentor the following students in the past few years
     </div>
   </article>
 </div>
+</section>
 </section>
