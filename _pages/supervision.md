@@ -6,8 +6,9 @@ excerpt: "Students that I supervised"
 author_profile: true
 ---
 
+# Supervision
+
 <section class="research-section supervision-intro-section">
-<h1>Supervision</h1>
 
 <p>I am delighted to be able to mentor the following students in the past few years.</p>
 </section>
