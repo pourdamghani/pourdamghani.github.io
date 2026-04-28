@@ -238,11 +238,8 @@
 
 .sidebar-topics {
   margin-top: 1.25rem;
-  padding: 0.95rem 0.95rem 1rem;
-  background: linear-gradient(180deg, mix(#fff, $info-color, 95%) 0%, #fff 100%);
-  border: 1px solid mix(#fff, $info-color, 84%);
-  border-radius: 14px;
-  box-shadow: 0 14px 32px rgba(mix(#000, $info-color, 45%), 0.05);
+  padding-top: 1rem;
+  border-top: 1px solid $border-color;
 
   @include breakpoint($large) {
     margin-top: 1.5rem;
@@ -250,12 +247,12 @@
 }
 
 .sidebar-topics__title {
-  margin: 0 0 0.8rem;
+  margin: 0 0 0.7rem;
   font-size: $type-size-6;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: mix(#000, $info-color, 38%);
+  color: $gray;
 }
 
 .sidebar-topics__links {
@@ -272,10 +269,10 @@
   font-weight: 600;
   line-height: 1.35;
   text-decoration: none;
-  transition: background-color 0.18s ease, color 0.18s ease;
+  transition: color 0.18s ease;
 
   &:hover {
-    color: mix(#000, $info-color, 18%);
+    color: $link-color;
     text-decoration: none;
   }
 }
