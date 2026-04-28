@@ -119,6 +119,16 @@
       padding: 1.85rem 1.75rem 1.35rem;
     }
 
+    > h1 {
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid mix(#fff, $info-color, 78%);
+      font-size: $type-size-3;
+      color: mix(#000, $info-color, 22%);
+      letter-spacing: 0.01em;
+    }
+
     > h2 {
       margin-top: 0;
       margin-bottom: 1.2rem;
