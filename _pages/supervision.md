@@ -6,14 +6,14 @@ excerpt: "Students that I supervised"
 author_profile: true
 ---
 
-<section class="research-section supervision-intro-section" markdown="1">
-# Supervision
+<section class="research-section supervision-intro-section">
+<h1>Supervision</h1>
 
-I am delighted to be able to mentor the following students in the past few years.
+<p>I am delighted to be able to mentor the following students in the past few years.</p>
+</section>
 
-
-<section class="research-section people-list-section" markdown="1">
-## Thesis Supervision
+<section class="research-section people-list-section">
+<h2>Thesis Supervision</h2>
 
 <div class="supervision-list">
   <article class="supervision-entry">
@@ -106,8 +106,8 @@ I am delighted to be able to mentor the following students in the past few years
 </div>
 </section>
 
-<section class="research-section people-list-section" markdown="1">
-## Undergraduate Research Interns
+<section class="research-section people-list-section">
+<h2>Undergraduate Research Interns</h2>
 
 <div class="supervision-list">
   <article class="supervision-entry">
@@ -166,5 +166,4 @@ I am delighted to be able to mentor the following students in the past few years
     </div>
   </article>
 </div>
-</section>
 </section>

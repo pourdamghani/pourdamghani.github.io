@@ -6,8 +6,8 @@ excerpt: "List of community service of Arash Pourdamghani"
 author_profile: true
 ---
 
-<section class="research-section service-section" markdown="1">
-## Academic Service
+<section class="research-section service-section">
+<h2>Academic Service</h2>
 
 <div class="service-grid">
   <article class="service-card">
@@ -57,8 +57,8 @@ author_profile: true
 </div>
 </section>
 
-<section class="research-section service-section" markdown="1">
-## Voluntary Service
+<section class="research-section service-section">
+<h2>Voluntary Service</h2>
 
 <div class="service-grid">
   <article class="service-card">

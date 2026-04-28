@@ -8,7 +8,7 @@ author_profile: true
 
 
 
-<section class="research-section people-list-section" markdown="1">
+<section class="research-section people-list-section">
 <div class="grant-list">
   <article class="grant-entry">
     <span class="grant-entry__year">2026</span>

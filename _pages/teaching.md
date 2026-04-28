@@ -6,7 +6,7 @@ excerpt: "Teaching"
 author_profile: true
 ---
 
-<section class="research-section people-list-section" markdown="1">
+<section class="research-section people-list-section">
 
 <div class="supervision-list">
   <article class="supervision-entry">
