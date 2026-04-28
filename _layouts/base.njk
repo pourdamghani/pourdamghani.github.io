@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include "head.njk" %}
+  </head>
+  <body>
+    {% include "masthead.njk" %}
+
+    {{ content | safe }}
+
+    <div class="page__footer">
+      <footer>
+        {% include "footer.njk" %}
+      </footer>
+    </div>
+
+    <script src="/assets/js/main.min.js"></script>
+  </body>
+</html>

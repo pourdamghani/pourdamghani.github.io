@@ -1,10 +1,9 @@
 ---
-permalink: /grants
+layout: page.njk
+permalink: /grants/
 title: ""
-excerpt: "Talks and presentations of Arash Pourdamghani"
+excerpt: "Grants and awards of Arash Pourdamghani"
 author_profile: true
-redirect_from: 
-  - /awards
 ---
 
 

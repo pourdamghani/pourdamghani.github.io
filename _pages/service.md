@@ -1,15 +1,9 @@
 ---
-permalink: /service
+layout: page.njk
+permalink: /service/
 title: ""
 excerpt: "List of community service of Arash Pourdamghani"
 author_profile: true
-redirect_from: 
-  - /community
-  - /community/
-  - /service/
-  - /voluntary
-  - /voluntary/
-
 ---
 
 <section class="research-section service-section" markdown="1">

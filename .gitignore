@@ -1,4 +1,6 @@
 _site/
+node_modules/
+assets/css/main.css
 
 talkmap/.DS_Store
 images/.DS_Store

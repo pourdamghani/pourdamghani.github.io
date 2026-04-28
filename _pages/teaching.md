@@ -1,12 +1,9 @@
 ---
-permalink: /teaching
+layout: page.njk
+permalink: /teaching/
 title: ""
 excerpt: "Teaching"
 author_profile: true
-redirect_from: 
-  - /courses
-  - /courses/
-  - /teaching/
 ---
 
 <section class="research-section people-list-section" markdown="1">

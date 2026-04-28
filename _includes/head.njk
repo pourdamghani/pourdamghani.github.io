@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<title>{% if title %}{{ title }} – {% endif %}{{ metadata.title }}</title>
+<meta name="description" content="{{ excerpt if excerpt else metadata.description }}">
+
+<link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
+<meta property="og:title" content="{% if title %}{{ title }} – {% endif %}{{ metadata.title }}">
+<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ metadata.title }}">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+<meta http-equiv="cleartype" content="on">

@@ -1,0 +1,11 @@
+node_modules/
+_site/
+_sass/
+assets/css/main.scss
+markdown_generator/
+_pages/research.md
+_pages/archive-layout-with-content.md
+_pages/non-menu-page.md
+_pages/sitemap.md
+_pages/page-archive.html
+_pages/year-archive.html

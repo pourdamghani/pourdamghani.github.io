@@ -1,11 +1,9 @@
 ---
-permalink: /supervision
+layout: page.njk
+permalink: /supervision/
 title: ""
 excerpt: "Students that I supervised"
 author_profile: true
-redirect_from: 
-  - /students
-  - /students/
 ---
 
 <section class="research-section supervision-intro-section" markdown="1">

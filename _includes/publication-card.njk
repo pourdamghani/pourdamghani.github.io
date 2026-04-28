@@ -1,0 +1,34 @@
+{% macro pubCard(pub) %}
+<article class="publication-card">
+  <div class="publication-card__body">
+    <h3 class="publication-card__title">{{ pub.title }}</h3>
+
+    {% if pub.authors %}
+      <p class="publication-card__authors">{{ pub.authors | replace("Arash Pourdamghani", "<strong>Arash Pourdamghani</strong>") | safe }}</p>
+    {% endif %}
+
+    {% if pub.venue %}
+      <p class="publication-card__venue">
+        {% if pub.venue_url %}
+          <a href="{{ pub.venue_url }}">{{ pub.venue }}</a>
+        {% else %}
+          {{ pub.venue }}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if pub.links or pub.bibtex %}
+      <div class="publication-card__links">
+        {% for link in pub.links %}
+          {% if link.url %}
+            <a class="publication-chip" href="{{ link.url }}">{{ link.label }}</a>
+          {% endif %}
+        {% endfor %}
+        {% if pub.bibtex %}
+          <a class="publication-chip publication-chip--bibtex" href="{{ pub.bibtex }}">BibTeX</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>
+{% endmacro %}

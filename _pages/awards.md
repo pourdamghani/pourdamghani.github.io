@@ -1,8 +1,7 @@
 ---
-permalink: /awards
+layout: page.njk
+permalink: /awards/
 title: ""
 excerpt: "Awards"
 author_profile: true
-redirect_from: 
-  - /awards/
 ---

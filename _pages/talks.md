@@ -1,12 +1,9 @@
 ---
-permalink: /talks
+layout: page.njk
+permalink: /talks/
 title: ""
 excerpt: "Talks and presentations of Arash Pourdamghani"
 author_profile: true
-redirect_from: 
-  - /presentations
-  - /presentations/
-  - /talks/
 ---
 
 

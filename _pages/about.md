@@ -1,12 +1,9 @@
 ---
+layout: page.njk
 permalink: /
 title: ""
 excerpt: "About me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about
-  - /about.html
 ---
 
 I am Arash, a PhD candidate at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> research group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. I am also an associated researcher with <a href="https://plamadiso.weizenbaum-institut.de">PLAMADISO</a> research group at the Weizenbaum Institute for the Networked Society.

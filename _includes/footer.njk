@@ -1,0 +1,15 @@
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if metadata.author.github %}
+      <li><a href="https://github.com/{{ metadata.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
+    {% if metadata.author.linkedin %}
+      <li><a href="https://www.linkedin.com/in/{{ metadata.author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+    {% endif %}
+    {% if metadata.author.googlescholar %}
+      <li><a href="{{ metadata.author.googlescholar }}"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+    {% endif %}
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 {{ metadata.author.name }}.</div>

@@ -1,0 +1,17 @@
+{% if author_profile %}
+  <div class="sidebar sticky">
+    {% include "author-profile.njk" %}
+
+    {% if page.url == "/research/" or page.url == "/research" %}
+      <section class="sidebar-topics" aria-label="Publication topics">
+        <h3 class="sidebar-topics__title">Topics</h3>
+        <nav class="sidebar-topics__links">
+          {% for section in publications.sections %}
+            {% set section_id = section.title | slugify %}
+            <a href="#{{ section_id }}">{{ section.title }}</a>
+          {% endfor %}
+        </nav>
+      </section>
+    {% endif %}
+  </div>
+{% endif %}

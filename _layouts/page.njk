@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+<div id="main" role="main">
+  {% include "sidebar.njk" %}
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if title %}<meta itemprop="headline" content="{{ title }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% if title %}
+        <header>
+          <h1 class="page__title" itemprop="headline">{{ title }}</h1>
+        </header>
+      {% endif %}
+
+      <section class="page__content" itemprop="text">
+        {{ content | safe }}
+      </section>
+    </div>
+  </article>
+</div>
