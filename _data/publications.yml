@@ -189,6 +189,17 @@ sections:
 
   - title: Short Papers, Posters
     items:
+      - title: "Brief Announcement: Demand-Aware Consistent Hashing with Bounded Loads & Greedy Routing"
+        authors: Arash Pourdamghani, Chen Avin, and Stefan SChmid
+        venue: The 5th Symposium on Algorithmic Foundations of Dynamic Networks (SAND 2026)
+        venue_url: https://litis.univ-lehavre.fr/sand2026/
+        links:
+          - label: Paper
+            url: /_pages/sand26ba.pdf
+          - label: Slides
+            url: /_pages/sand26ba-slides.pdf
+          - label: Citation
+            url: /_pages/sand26ba-citation.txt
       - title: "Opening Gates of Knowledge: Wikimedia as an Ecosystem of Co-Creation"
         authors: Mohammad Heidarzadeh and Arash Pourdamghani
         venue: First Grand Challenges Conference of the Berlin University Alliance (Grand Challenges 2026)
