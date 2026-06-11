@@ -168,7 +168,7 @@ sections:
             url: /_pages/PIEEE22SDR.bib
         bibtex: /_pages/PIEEE22SDR.bib
 
-  - title: Blockchain & Distributed Systems
+  - title: Blockchain & Concurrent Systems
     items:
       - title: "DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System"
         authors: Johannes Gruendler, Darya Melnyk, Arash Pourdamghani, and Stefan Schmid
