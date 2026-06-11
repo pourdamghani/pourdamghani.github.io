@@ -11,6 +11,17 @@ sections:
             url: https://arxiv.org/abs/2509.11904
           - label: Citation
             url: https://scholar.googleusercontent.com/scholar.bib?q=info:H_MJ63HH9_EJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2vQFU:AAZF9b8AAAAAaNupWFW1wyQFfCe3-7s_aLHFUDU&scisig=AAZF9b8AAAAAaNupWLN-rgk-CB68SI0VSjGc0_w&scisf=4&ct=citation&cd=-1&hl=en
+      - title: "Brief Announcement: Demand-Aware Consistent Hashing with Bounded Loads & Greedy Routing"
+        authors: Arash Pourdamghani, Chen Avin, and Stefan SChmid
+        venue: The 5th Symposium on Algorithmic Foundations of Dynamic Networks (SAND 2026)
+        venue_url: https://litis.univ-lehavre.fr/sand2026/
+        links:
+          - label: Paper
+            url: /_pages/sand26ba.pdf
+          - label: Slides
+            url: /_pages/sand26ba-slides.pdf
+          - label: Citation
+            url: /_pages/sand26ba-citation.txt
       - title: "SpiderDAN: Matching Augmentation in Demand-Aware Networks"
         authors: Aleksander Figiel, Darya Melnyk, André Nichterlein, Arash Pourdamghani, and Stefan Schmid
         venue: SIAM Symposium on Algorithm Engineering and Experiments (ALENEX 2025)
@@ -38,6 +49,20 @@ sections:
             url: https://scholar.googleusercontent.com/scholar.bib?q=info:KwlXv5oaHZsJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2u8jg:AAZF9b8AAAAAaNuo6jiN9VhLJJjV_-J8m18xdnw&scisig=AAZF9b8AAAAAaNuo6gJ5cbAKrOMzRApjvYolPz4&scisf=4&ct=citation&cd=-1&hl=en
           - label: Code
             url: https://github.com/inet-tub/BSB
+      - title: "Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation"
+        authors: Aleksander Figiel, Darya Melnyk, André Nichterlein, Arash Pourdamghani, and Stefan Schmid
+        venue: ACM Symposium on Parallelism in Algorithms and Architectures (SPAA 2024)
+        venue_url: https://spaa.acm.org/spaa-2024-2/
+        links:
+          - label: Paper
+            url: /_pages/spaa24ba.pdf
+          - label: Slides
+            url: /_pages/spaa24ba-slides.pdf
+          - label: Citation
+            url: https://dblp.uni-trier.de/rec/conf/spaa/FigielMNP024.html?view=bibtex
+          - label: Code
+            url: https://github.com/inet-tub/Hash-And-Adjust
+        bibtex: /_pages/SPAA24ba.bib
       - title: "Hash & Adjust: Competitive Demand-Aware Consistent Hashing"
         authors: Arash Pourdamghani, Chen Avin, Robert Sama, Maryam Shiran, and Stefan Schmid
         venue: The 28th International Conference on Principles of Distributed Systems (OPODIS 2024)
@@ -143,8 +168,17 @@ sections:
             url: /_pages/PIEEE22SDR.bib
         bibtex: /_pages/PIEEE22SDR.bib
 
-  - title: Blockchain
+  - title: Blockchain & Distributed Systems
     items:
+      - title: "DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System"
+        authors: Johannes Gruendler, Darya Melnyk, Arash Pourdamghani, and Stefan Schmid
+        venue: Poster at IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2024)
+        venue_url: https://icbc2024.ieee-icbc.org/
+        links:
+          - label: Paper
+            url: /_pages/ICBC24Peer.pdf
+          - label: Poster
+            url: /_pages/ICBC24Poster.pdf
       - title: "Probabilistic smart contracts: Secure randomness on the blockchain"
         authors: Krishnendu Chatterjee, Amir Kafshdar Goharshady, and Arash Pourdamghani
         venue: IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2019)
@@ -171,9 +205,6 @@ sections:
           - label: Citation
             url: /_pages/SAC19HybridMining.bib
         bibtex: /_pages/SAC19HybridMining.bib
-
-  - title: Distributed Systems
-    items:
       - title: Polynomial-Time Fence Insertion for Structured Programs
         authors: Mohammad Taheri, Arash Pourdamghani, and Mohsen Lesani
         venue: International Symposium on Distributed Computing (DISC 2019)
@@ -187,19 +218,8 @@ sections:
             url: /_pages/DISC19Fence.bib
         bibtex: /_pages/DISC19Fence.bib
 
-  - title: Short Papers, Posters
+  - title: Miscellaneous
     items:
-      - title: "Brief Announcement: Demand-Aware Consistent Hashing with Bounded Loads & Greedy Routing"
-        authors: Arash Pourdamghani, Chen Avin, and Stefan SChmid
-        venue: The 5th Symposium on Algorithmic Foundations of Dynamic Networks (SAND 2026)
-        venue_url: https://litis.univ-lehavre.fr/sand2026/
-        links:
-          - label: Paper
-            url: /_pages/sand26ba.pdf
-          - label: Slides
-            url: /_pages/sand26ba-slides.pdf
-          - label: Citation
-            url: /_pages/sand26ba-citation.txt
       - title: "Opening Gates of Knowledge: Wikimedia as an Ecosystem of Co-Creation"
         authors: Mohammad Heidarzadeh and Arash Pourdamghani
         venue: First Grand Challenges Conference of the Berlin University Alliance (Grand Challenges 2026)
@@ -207,30 +227,9 @@ sections:
         links:
           - label: Abstract
             url: /_pages/GC2026.txt
-      - title: "Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation"
-        authors: Aleksander Figiel, Darya Melnyk, André Nichterlein, Arash Pourdamghani, and Stefan Schmid
-        venue: ACM Symposium on Parallelism in Algorithms and Architectures (SPAA 2024)
-        venue_url: https://spaa.acm.org/spaa-2024-2/
-        links:
-          - label: Paper
-            url: /_pages/spaa24ba.pdf
-          - label: Slides
-            url: /_pages/spaa24ba-slides.pdf
-          - label: Citation
-            url: https://dblp.uni-trier.de/rec/conf/spaa/FigielMNP024.html?view=bibtex
-          - label: Code
-            url: https://github.com/inet-tub/Hash-And-Adjust
-        bibtex: /_pages/SPAA24ba.bib
-      - title: "DecentPeeR: A Self-Incentivised & Inclusive Decentralized Peer Review System"
-        authors: Johannes Gruendler, Darya Melnyk, Arash Pourdamghani, and Stefan Schmid
-        venue: IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2024)
-        venue_url: https://icbc2024.ieee-icbc.org/
-        links:
-          - label: Paper
-            url: /_pages/ICBC24Peer.pdf
-          - label: Poster
-            url: /_pages/ICBC24Poster.pdf
       - title: Compressed Bundle Reporting for Reliable Bundle Transmission in Disruption-Tolerant Networking
         authors: Aida-Stefania Manole, Felix Flentge, Stefan Schmid, Arash Pourdamghani, and Max Franke
         venue: 17th International Conference on Space Operations (SpaceOps 2023)
         venue_url: https://2023.spaceops.org/
+
+
