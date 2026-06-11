@@ -1,7 +1,7 @@
 # Add new publications here.
 # If you have a local BibTeX file, place it in `_pages/` and set `bibtex: /_pages/YourFile.bib`.
 sections:
-  - title: Self-Adjusting Systems
+  - title: Demand-Aware Networks
     items:
       - title: A Learning-Augmented Overlay Network
         authors: Julien Dallot, Caio Alves Caldeira, Arash Pourdamghani, Olga Goussevskaia, and Stefan Schmid
@@ -106,7 +106,7 @@ sections:
             url: https://dblp.uni-trier.de/rec/conf/infocom/AddankiPPRSV23.html?view=bibtex
         bibtex: /_pages/INFOCOM23List.bib
 
-  - title: Traffic Engineering
+  - title: Network Traffic Engineering
     items:
       - title: A Tutorial on Controlling Metasurfaces from the Network Perspective
         authors: Christos Liaskos, Evangelos Papapetrou, Kostas Katsalis, Dimitrios Tyrovolas, Alexandros Papadopoulos, Stavros Tsimpoukis, Arash Pourdamghani, Max Franke, and Stefan Schmid
