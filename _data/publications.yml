@@ -12,7 +12,7 @@ sections:
           - label: Citation
             url: https://scholar.googleusercontent.com/scholar.bib?q=info:H_MJ63HH9_EJ:scholar.google.com/&output=citation&scisdr=CgLI4nW4EJP1yB2vQFU:AAZF9b8AAAAAaNupWFW1wyQFfCe3-7s_aLHFUDU&scisig=AAZF9b8AAAAAaNupWLN-rgk-CB68SI0VSjGc0_w&scisf=4&ct=citation&cd=-1&hl=en
       - title: "Brief Announcement: Demand-Aware Consistent Hashing with Bounded Loads & Greedy Routing"
-        authors: Arash Pourdamghani, Chen Avin, and Stefan SChmid
+        authors: Arash Pourdamghani, Chen Avin, and Stefan Schmid
         venue: The 5th Symposium on Algorithmic Foundations of Dynamic Networks (SAND 2026)
         venue_url: https://litis.univ-lehavre.fr/sand2026/
         links:
