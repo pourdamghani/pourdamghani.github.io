@@ -17,16 +17,13 @@
       </p>
     {% endif %}
 
-    {% if pub.links or pub.bibtex %}
+    {% if pub.links %}
       <div class="publication-card__links">
         {% for link in pub.links %}
           {% if link.url %}
             <a class="publication-chip" href="{{ link.url }}">{{ link.label }}</a>
           {% endif %}
         {% endfor %}
-        {% if pub.bibtex %}
-          <a class="publication-chip publication-chip--bibtex" href="{{ pub.bibtex }}">BibTeX</a>
-        {% endif %}
       </div>
     {% endif %}
   </div>
