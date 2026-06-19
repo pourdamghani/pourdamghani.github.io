@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "run_dir": "/Users/pourdamghani/Documents/GitHub/pourdamghani.github.io/output/hatch-pet/scholarpanda-run",
+  "spritesheet": "/Users/pourdamghani/Documents/GitHub/pourdamghani.github.io/output/hatch-pet/scholarpanda-run/final/spritesheet.webp",
+  "validation": "/Users/pourdamghani/Documents/GitHub/pourdamghani.github.io/output/hatch-pet/scholarpanda-run/final/validation.json",
+  "contact_sheet": "/Users/pourdamghani/Documents/GitHub/pourdamghani.github.io/output/hatch-pet/scholarpanda-run/qa/contact-sheet.png",
+  "review": "/Users/pourdamghani/Documents/GitHub/pourdamghani.github.io/output/hatch-pet/scholarpanda-run/qa/review.json",
+  "package": "/Users/pourdamghani/.codex/pets/scholarpanda"
+}
