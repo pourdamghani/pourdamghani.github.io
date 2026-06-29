@@ -1,5 +1,5 @@
 # Add new publications here.
-# Citation links should point to local BibTeX files in `_pages/`.
+# Citation links should point to root-level asset URLs.
 sections:
   - title: Demand-Aware Networks
     items:
@@ -10,29 +10,29 @@ sections:
           - label: arXiv
             url: https://arxiv.org/abs/2509.11904
           - label: Citation
-            url: /_pages/LASLiN25.bib
+            url: /LASLiN25.bib
       - title: "Brief Announcement: Demand-Aware Consistent Hashing with Bounded Loads & Greedy Routing"
         authors: Arash Pourdamghani, Chen Avin, and Stefan Schmid
         venue: The 5th Symposium on Algorithmic Foundations of Dynamic Networks (SAND 2026)
         venue_url: https://litis.univ-lehavre.fr/sand2026/
         links:
           - label: Paper
-            url: /_pages/sand26ba.pdf
+            url: /sand26ba.pdf
           - label: Slides
-            url: /_pages/sand26ba-slides.pdf
+            url: /sand26ba-slides.pdf
           - label: Citation
-            url: /_pages/SAND26.bib
+            url: /SAND26.bib
       - title: "SpiderDAN: Matching Augmentation in Demand-Aware Networks"
         authors: Aleksander Figiel, Darya Melnyk, André Nichterlein, Arash Pourdamghani, and Stefan Schmid
         venue: SIAM Symposium on Algorithm Engineering and Experiments (ALENEX 2025)
         venue_url: https://www.siam.org/conferences-events/siam-conferences/alenex25/
         links:
           - label: Paper
-            url: /_pages/ALENEX25.pdf
+            url: /ALENEX25.pdf
           - label: Slides
-            url: /_pages/ALENEX25slides.pdf
+            url: /ALENEX25slides.pdf
           - label: Citation
-            url: /_pages/ALENEX25.bib
+            url: /ALENEX25.bib
           - label: Code
             url: https://github.com/inet-tub/SpiderDAN
       - title: "BSB: Towards Demand-Aware Peer Selection With XOR-based Routing"
@@ -41,11 +41,11 @@ sections:
         venue_url: https://sss2025.conf.lip6.fr/
         links:
           - label: Paper
-            url: /_pages/SSS25.pdf
+            url: /SSS25.pdf
           - label: Slides
-            url: /_pages/SSS25-presentation.pdf
+            url: /SSS25-presentation.pdf
           - label: Citation
-            url: /_pages/SSS25.bib
+            url: /SSS25.bib
           - label: Code
             url: https://github.com/inet-tub/BSB
       - title: "Brief Announcement: Minimizing the Weighted Average Shortest Path Length in Demand-Aware Networks via Matching Augmentation"
@@ -54,11 +54,11 @@ sections:
         venue_url: https://spaa.acm.org/spaa-2024-2/
         links:
           - label: Paper
-            url: /_pages/spaa24ba.pdf
+            url: /spaa24ba.pdf
           - label: Slides
-            url: /_pages/spaa24ba-slides.pdf
+            url: /spaa24ba-slides.pdf
           - label: Citation
-            url: /_pages/SPAA24ba.bib
+            url: /SPAA24ba.bib
           - label: Code
             url: https://github.com/inet-tub/Hash-And-Adjust
       - title: "Hash & Adjust: Competitive Demand-Aware Consistent Hashing"
@@ -67,11 +67,11 @@ sections:
         venue_url: https://opodis2024.imtlucca.it/
         links:
           - label: Paper
-            url: /_pages/OPODIS24.pdf
+            url: /OPODIS24.pdf
           - label: Slides
-            url: /_pages/OPODIS24-slides.pdf
+            url: /OPODIS24-slides.pdf
           - label: Citation
-            url: /_pages/OPODIS24.bib
+            url: /OPODIS24.bib
           - label: Code
             url: https://github.com/inet-tub/Hash-And-Adjust
       - title: "SeedTree: A Dynamically Optimal and Local Self-Adjusting Tree"
@@ -80,11 +80,11 @@ sections:
         venue_url: https://infocom2023.ieee-infocom.org/
         links:
           - label: Paper
-            url: /_pages/INFOCOM23SeedTree.pdf
+            url: /INFOCOM23SeedTree.pdf
           - label: Slides
-            url: /_pages/SeedTree-Pres.pdf
+            url: /SeedTree-Pres.pdf
           - label: Citation
-            url: /_pages/INFOCOM23SeedTree.bib
+            url: /INFOCOM23SeedTree.bib
           - label: Video
             url: https://www.youtube.com/watch?v=KdDbRnhPcM4
           - label: Code
@@ -95,11 +95,11 @@ sections:
         venue_url: https://infocom2023.ieee-infocom.org/
         links:
           - label: Paper
-            url: /_pages/INFOCOM23List.pdf
+            url: /INFOCOM23List.pdf
           - label: Slides
-            url: /_pages/INFOCOM23Slides.pdf
+            url: /INFOCOM23Slides.pdf
           - label: Citation
-            url: /_pages/INFOCOM23List.bib
+            url: /INFOCOM23List.bib
 
   - title: Network Traffic Engineering
     items:
@@ -115,18 +115,18 @@ sections:
         venue_url: https://icc2026.ieee-icc.org/
         links:
           - label: Paper
-            url: /_pages/ICC26.pdf
+            url: /ICC26.pdf
       - title: "Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization"
         authors: Matthias Bentert, Max Franke, Darya Melnyk, Arash Pourdamghani, and Stefan Schmid
         venue: International Federation for Information Processing Networking Conference (IFIP NETWORKING 2025)
         venue_url: https://networking.ifip.org/2025/
         links:
           - label: Paper
-            url: /_pages/IFIP25.pdf
+            url: /IFIP25.pdf
           - label: Slides
-            url: /_pages/IFIP25-Slides.pdf
+            url: /IFIP25-Slides.pdf
           - label: Citation
-            url: /_pages/IFIP25.bib
+            url: /IFIP25.bib
           - label: Code
             url: https://github.com/inet-tub/demand-aware-multi-cast
       - title: Optimizing Fronthaul Quantization for Flexible User Load in Cell-Free Massive MIMO
@@ -142,11 +142,11 @@ sections:
         venue_url: https://conferences.sigcomm.org/sosr/2022/
         links:
           - label: Paper
-            url: /_pages/SOSR22.pdf
+            url: /SOSR22.pdf
           - label: Slides
-            url: /_pages/SOSR22-Slides.pdf
+            url: /SOSR22-Slides.pdf
           - label: Citation
-            url: /_pages/SOSR22Tradeoff.bib
+            url: /SOSR22Tradeoff.bib
           - label: Video
             url: https://www.youtube.com/watch?v=DqF48BG1DbA
           - label: Code
@@ -157,9 +157,9 @@ sections:
         venue_url: https://proceedingsoftheieee.ieee.org/september-2022/
         links:
           - label: Paper
-            url: /_pages/PIEEE22.pdf
+            url: /PIEEE22.pdf
           - label: Citation
-            url: /_pages/PIEEE22SDR.bib
+            url: /PIEEE22SDR.bib
 
   - title: Blockchain & Concurrent Systems
     items:
@@ -169,20 +169,20 @@ sections:
         venue_url: https://icbc2024.ieee-icbc.org/
         links:
           - label: Paper
-            url: /_pages/ICBC24Peer.pdf
+            url: /ICBC24Peer.pdf
           - label: Poster
-            url: /_pages/ICBC24Poster.pdf
+            url: /ICBC24Poster.pdf
       - title: "Probabilistic smart contracts: Secure randomness on the blockchain"
         authors: Krishnendu Chatterjee, Amir Kafshdar Goharshady, and Arash Pourdamghani
         venue: IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2019)
         venue_url: https://icbc2019.ieee-icbc.org/
         links:
           - label: Paper
-            url: /_pages/ICBC2019.pdf
+            url: /ICBC2019.pdf
           - label: Slides
-            url: /_pages/ICBC2019-Slides.pdf
+            url: /ICBC2019-Slides.pdf
           - label: Citation
-            url: /_pages/ICBC19Random.bib
+            url: /ICBC19Random.bib
           - label: Video
             url: https://youtu.be/ilWwCqGA-_Y?t=64
       - title: "Hybrid Mining: Exploiting Blockchain's Computational Power for Distributed Problem Solving"
@@ -191,22 +191,22 @@ sections:
         venue_url: https://www.sigapp.org/sac/sac2019/
         links:
           - label: Paper
-            url: /_pages/SAC19.pdf
+            url: /SAC19.pdf
           - label: Slides
-            url: /_pages/SAC2019-Slides.pdf
+            url: /SAC2019-Slides.pdf
           - label: Citation
-            url: /_pages/SAC19HybridMining.bib
+            url: /SAC19HybridMining.bib
       - title: Polynomial-Time Fence Insertion for Structured Programs
         authors: Mohammad Taheri, Arash Pourdamghani, and Mohsen Lesani
         venue: International Symposium on Distributed Computing (DISC 2019)
         venue_url: http://www.disc-conference.org/wp/disc2019/
         links:
           - label: Paper
-            url: /_pages/DISC19.pdf
+            url: /DISC19.pdf
           - label: Slides
-            url: /_pages/DISC2019-Slides.pdf
+            url: /DISC2019-Slides.pdf
           - label: Citation
-            url: /_pages/DISC19Fence.bib
+            url: /DISC19Fence.bib
 
   - title: Miscellaneous
     items:
@@ -216,9 +216,8 @@ sections:
         venue_url: https://gc-conference-bua.de/
         links:
           - label: Abstract
-            url: /_pages/GC2026.txt
+            url: /GC2026.txt
       - title: Compressed Bundle Reporting for Reliable Bundle Transmission in Disruption-Tolerant Networking
         authors: Aida-Stefania Manole, Felix Flentge, Stefan Schmid, Arash Pourdamghani, and Max Franke
         venue: 17th International Conference on Space Operations (SpaceOps 2023)
         venue_url: https://2023.spaceops.org/
-

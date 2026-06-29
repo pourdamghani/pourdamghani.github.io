@@ -1,3 +1,5 @@
+const fs = require("node:fs");
+const path = require("node:path");
 const markdownIt = require("markdown-it");
 const yaml = require("js-yaml");
 
@@ -13,10 +15,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("llms.txt");
 
-  // PDFs, BibTeX, and other files served from /_pages/
+  // Keep legacy /_pages/ asset URLs working.
   eleventyConfig.addPassthroughCopy("_pages/*.pdf");
   eleventyConfig.addPassthroughCopy("_pages/*.bib");
   eleventyConfig.addPassthroughCopy("_pages/*.txt");
+
+  // Also publish those assets at the site root, e.g. /sand26ba.pdf.
+  for (const file of fs.readdirSync("_pages")) {
+    if (/\.(pdf|bib|txt)$/i.test(file)) {
+      eleventyConfig.addPassthroughCopy({
+        [path.join("_pages", file)]: file,
+      });
+    }
+  }
 
   // Allow raw HTML inside Markdown
   const md = markdownIt({ html: true, typographer: true });
