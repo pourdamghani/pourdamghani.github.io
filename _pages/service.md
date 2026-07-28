@@ -22,6 +22,7 @@ author_profile: true
   <article class="service-card">
     <h3>Reviewer</h3>
     <div class="service-tags">
+      <span>DISC 2026</span>
       <span>TON 2026</span>
       <span>TON 2025</span>
       <span>DLT 2025</span>
