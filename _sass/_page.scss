@@ -210,6 +210,14 @@
     margin-top: 1.5rem;
   }
 
+  .deadline-results {
+    margin-top: 2rem;
+
+    .deadline-group + .deadline-group {
+      margin-top: 2rem;
+    }
+  }
+
   .deadline-estimate {
     display: block;
     margin-top: 0.2rem;

@@ -12,6 +12,8 @@ categories:
         next_submission_deadline: "2026-08-13"
         deadline_announced: true
         deadline_for: "ICDCN 2027 main conference paper (firm, AoE)"
+        last_submission_deadline: "2025-08-07"
+        last_deadline_source: "https://sites.google.com/view/icdcn2026/home"
         deadline_source: "https://cs3-lab.github.io/icdcn/index.html"
       - title: ACM International Conference on Mobile Computing and Networking
         acronym: MOBICOM
@@ -19,6 +21,8 @@ categories:
         next_submission_deadline: "2026-09-02"
         deadline_announced: true
         deadline_for: "MobiCom 2027 summer-cycle full paper (23:59 AoE)"
+        last_submission_deadline: "2025-09-03"
+        last_deadline_source: "https://sigmobile.org/mobicom/2026/cfp.html"
         deadline_source: "https://www.sigmobile.org/mobicom/2027/cfp.html"
       - title: Symposium on Networked Systems Design and Implementation
         acronym: NSDI
@@ -26,6 +30,8 @@ categories:
         next_submission_deadline: "2026-09-17"
         deadline_announced: true
         deadline_for: "NSDI '27 fall-cycle full paper (23:59 US EDT)"
+        last_submission_deadline: "2025-09-18"
+        last_deadline_source: "https://www.usenix.org/conference/nsdi26/call-for-papers"
         deadline_source: "https://www.usenix.org/conference/nsdi27/call-for-papers"
       - title: ACM SIGCOMM Conference
         acronym: SIGCOMM
@@ -33,6 +39,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SIGCOMM 2027 main paper"
+        last_submission_deadline: "2026-02-06"
+        last_deadline_source: "https://conferences.sigcomm.org/sigcomm/2026/cfp/"
         deadline_source: "https://conferences.sigcomm.org/sigcomm/"
       - title: IEEE International Conference on Computer Communications
         acronym: INFOCOM
@@ -40,6 +48,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "INFOCOM 2027 main paper"
+        last_submission_deadline: "2025-07-31"
+        last_deadline_source: "https://infocom2026.ieee-infocom.org/"
         deadline_source: "https://ieee-infocom.org/"
       - title: ACM Internet Measurement Conference
         acronym: IMC
@@ -47,6 +57,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "IMC 2027 main paper"
+        last_submission_deadline: "2026-04-29"
+        last_deadline_source: "https://conferences.sigcomm.org/imc/2026/cfp/"
         deadline_source: "https://conferences.sigcomm.org/imc/"
       - title: ACM International Conference on Emerging Networking Experiments and Technologies
         acronym: CoNEXT
@@ -55,6 +67,7 @@ categories:
         deadline_announced: false
         deadline_for: "Next main-paper cycle"
         last_submission_deadline: "2026-06-05"
+        last_deadline_source: "https://conferences.sigcomm.org/co-next/2026/"
         deadline_source: "https://conferences.sigcomm.org/co-next/2026/"
       - title: International Conference on Network Protocols
         acronym: ICNP
@@ -63,6 +76,7 @@ categories:
         deadline_announced: false
         deadline_for: "ICNP 2027 main paper"
         last_submission_deadline: "2026-05-22"
+        last_deadline_source: "https://icnp26.cs.ucr.edu/"
         deadline_source: "https://icnp26.cs.ucr.edu/"
       - title: ACM SIGCOMM Symposium on SDN Research
         acronym: SOSR
@@ -70,6 +84,9 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SOSR 2027 main paper"
+        last_submission_deadline: "2022-07-01"
+        last_deadline_source: "https://conferences.sigcomm.org/sosr/2022/"
+        estimate_from_last_deadline: false
         deadline_source: "https://conferences.sigcomm.org/sosr/"
       - title: IEEE Network Operations and Management Symposium
         acronym: NOMS
@@ -78,6 +95,7 @@ categories:
         deadline_announced: false
         deadline_for: "Next NOMS main paper"
         last_submission_deadline: "2025-11-10"
+        last_deadline_source: "https://noms2026.ieee-noms.org/"
         deadline_source: "https://noms2026.ieee-noms.org/"
       - title: IFIP Networking
         acronym: IFIP Networking
@@ -86,6 +104,7 @@ categories:
         deadline_announced: false
         deadline_for: "IFIP Networking 2027 main paper"
         last_submission_deadline: "2026-02-28"
+        last_deadline_source: "https://networking.ifip.org/"
         deadline_source: "https://networking.ifip.org/"
       - title: IEEE Network Softwarization
         acronym: NetSoft
@@ -93,6 +112,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "NetSoft 2027 main paper"
+        last_submission_deadline: "2026-01-12"
+        last_deadline_source: "https://mailarchive.ietf.org/arch/msg/coin/7tmoBMApt8h9zbcenL_V32nNl3w/"
         deadline_source: "https://netsoft2026.ieee-netsoft.org/"
       - title: International Conference on Network and Service Management
         acronym: CNSM
@@ -100,6 +121,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "CNSM 2027 main paper"
+        last_submission_deadline: "2026-06-29"
+        last_deadline_source: "https://www.cnsm-conf.org/2026/cfp.html"
         deadline_source: "https://cnsm-conference.org/"
 
   - title: Distributed Systems
@@ -110,6 +133,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "PODC 2027 main paper"
+        last_submission_deadline: "2026-02-16"
+        last_deadline_source: "https://www.podc.org/podc2026/"
         deadline_source: "https://www.podc.org/podc2026/next-podc/"
       - title: International Symposium on Distributed Computing
         acronym: DISC
@@ -117,6 +142,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "DISC 2027 main paper"
+        last_submission_deadline: "2026-06-01"
+        last_deadline_source: "https://www.disc-conference.org/wp/disc2026/call-for-papers/"
         deadline_source: "https://www.disc-conference.org/"
       - title: International Conference on Principles of Distributed Systems
         acronym: OPODIS
@@ -124,6 +151,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "OPODIS 2027 main paper"
+        last_submission_deadline: "2026-09-03"
+        last_deadline_source: "https://opodis26.software.imdea.org/cfp.html"
         deadline_source: "https://opodis2026.github.io/"
       - title: IEEE International Conference on Distributed Computing Systems
         acronym: ICDCS
@@ -131,6 +160,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ICDCS 2027 main paper"
+        last_submission_deadline: "2026-01-21"
+        last_deadline_source: "https://icdcs2026.icdcs.org/calls/call-for-papers/"
         deadline_source: "https://icdcs2026.icdcs.org/"
       - title: IEEE/IFIP International Conference on Dependable Systems and Networks
         acronym: DSN
@@ -138,6 +169,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "DSN 2027 main paper"
+        last_submission_deadline: "2025-12-04"
+        last_deadline_source: "https://dsn2026.github.io/cfpapers.html"
         deadline_source: "https://dsn2026.github.io/"
       - title: ACM/IFIP International Middleware Conference
         acronym: Middleware
@@ -145,6 +178,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "Middleware 2027 main paper"
+        last_submission_deadline: "2026-06-05"
+        last_deadline_source: "https://middleware-conf.github.io/2026/calls/call-for-research-papers/"
         deadline_source: "https://middleware-conf.github.io/2026/"
       - title: IEEE International Symposium on Reliable Distributed Systems
         acronym: SRDS
@@ -152,6 +187,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SRDS 2027 main paper"
+        last_submission_deadline: "2026-05-08"
+        last_deadline_source: "https://srds-conference.org/index.php/call-for-papers/"
         deadline_source: "https://srds-conference.org/"
       - title: IEEE International Parallel and Distributed Processing Symposium
         acronym: IPDPS
@@ -159,6 +196,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "IPDPS 2027 main paper"
+        last_submission_deadline: "2025-10-09"
+        last_deadline_source: "https://www.ipdps.org/ipdps2026/2026-call-for-papers.html"
         deadline_source: "https://www.ipdps.org/"
       - title: International Conference on Networked Systems
         acronym: NETYS
@@ -166,6 +205,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "NETYS 2027 main paper"
+        last_submission_deadline: "2026-03-18"
+        last_deadline_source: "https://netys.net/dates/"
         deadline_source: "https://netys.net/"
       - title: IEEE/ACM International Conference on Utility and Cloud Computing
         acronym: UCC
@@ -173,6 +214,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "UCC 2027 main paper"
+        last_submission_deadline: "2026-08-19"
+        last_deadline_source: "https://ucc2026.ufsc.br/calls/call-for-papers/"
         deadline_source: "https://ucc-conference.org/"
 
   - title: Algorithms and Theory
@@ -183,6 +226,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SAND 2027 main paper"
+        last_submission_deadline: "2026-03-03"
+        last_deadline_source: "https://litis.univ-lehavre.fr/sand2026/cfp"
         deadline_source: "https://algo-conference.org/"
       - title: SIAM Symposium on Algorithm Engineering and Experiments
         acronym: ALENEX
@@ -190,6 +235,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ALENEX 2027 main paper"
+        last_submission_deadline: "2025-07-23"
+        last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/alenex26/submissions/"
         deadline_source: "https://www.siam.org/conferences-events/siam-conferences/alenex/"
       - title: SIAM Symposium on Simplicity in Algorithms
         acronym: SOSA
@@ -197,6 +244,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SOSA 2027 main paper"
+        last_submission_deadline: "2025-08-07"
+        last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/sosa26/submissions/"
         deadline_source: "https://www.siam.org/conferences-events/siam-conferences/sosa/"
       - title: European Symposium on Algorithms
         acronym: ESA
@@ -204,6 +253,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ESA 2027 main paper"
+        last_submission_deadline: "2026-04-23"
+        last_deadline_source: "https://algo-conference.org/2026/esa/"
         deadline_source: "https://esa-conference.org/"
       - title: International Symposium on Theoretical Aspects of Computer Science
         acronym: STACS
@@ -211,6 +262,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "STACS 2027 main paper"
+        last_submission_deadline: "2025-09-25"
+        last_deadline_source: "https://stacs2026.imag.fr/"
         deadline_source: "https://stacs-conf.org/"
       - title: International Colloquium on Structural Information and Communication Complexity
         acronym: SIROCCO
@@ -218,6 +271,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SIROCCO 2027 main paper"
+        last_submission_deadline: "2025-11-14"
+        last_deadline_source: "https://sirocco2026.webspace.durham.ac.uk/call-for-papers/"
         deadline_source: "https://sirocco-conference.github.io/"
       - title: Innovations in Theoretical Computer Science
         acronym: ITCS
@@ -225,6 +280,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ITCS 2027 main paper"
+        last_submission_deadline: "2025-09-06"
+        last_deadline_source: "https://itcs-conf.org/"
         deadline_source: "https://itcs-conference.org/"
       - title: ACM-SIAM Symposium on Discrete Algorithms
         acronym: SODA
@@ -232,6 +289,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SODA 2027 main paper"
+        last_submission_deadline: "2025-07-14"
+        last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/soda26/submissions/"
         deadline_source: "https://www.siam.org/conferences-events/siam-conferences/soda/"
       - title: International Colloquium on Automata, Languages, and Programming
         acronym: ICALP
@@ -239,6 +298,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ICALP 2027 main paper"
+        last_submission_deadline: "2026-02-06"
+        last_deadline_source: "https://icalppodcspaa2026.cs.rhul.ac.uk/icalp/"
         deadline_source: "https://icalp-conference.org/"
       - title: International Conference on Concurrency Theory
         acronym: CONCUR
@@ -246,6 +307,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "CONCUR 2027 main paper"
+        last_submission_deadline: "2026-04-27"
+        last_deadline_source: "https://confest-2026.github.io/concur/"
         deadline_source: "https://concur-conference.org/"
 
   - title: Systems and Performance
@@ -256,6 +319,8 @@ categories:
         next_submission_deadline: "2027-01-11"
         deadline_announced: true
         deadline_for: "SIGMETRICS 2027 paper (23:59 AoE)"
+        last_submission_deadline: "2026-01-13"
+        last_deadline_source: "https://www.sigmetrics.org/sigmetrics2026/call_for_papers.html"
         deadline_source: "https://www.sigmetrics.org/sigmetrics2027/"
       - title: ACM Symposium on Parallelism in Algorithms and Architectures
         acronym: SPAA
@@ -263,6 +328,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SPAA 2027 main paper"
+        last_submission_deadline: "2026-02-27"
+        last_deadline_source: "https://spaa.acm.org/cfp/"
         deadline_source: "https://spaa.acm.org/"
       - title: ACM/IEEE Symposium on Architectures for Networking and Communications Systems
         acronym: ANCS
@@ -270,6 +337,9 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ANCS 2027 main paper"
+        last_submission_deadline: "2021-09-29"
+        last_deadline_source: "https://www.wikicfp.com/cfp/program?id=171"
+        estimate_from_last_deadline: false
         deadline_source: "https://www.ieee-ancs.org/"
       - title: International Symposium on Computer Performance, Modeling, Measurements and Evaluation
         acronym: PERFORMANCE
@@ -277,6 +347,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "Performance 2027 main paper"
+        last_submission_deadline: "2026-05-15"
+        last_deadline_source: "https://performance2026.github.io/"
         deadline_source: "https://www.performance-conference.org/"
       - title: ACM International Conference on Supercomputing
         acronym: ICS
@@ -284,6 +356,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ICS 2027 main paper"
+        last_submission_deadline: "2026-02-09"
+        last_deadline_source: "https://www.sigarch.org/call-contributions/ics-2026/"
         deadline_source: "https://ics-conference.org/"
       - title: International Conference for High Performance Computing, Networking, Storage, and Analysis
         acronym: SC
@@ -291,6 +365,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SC 2027 technical paper"
+        last_submission_deadline: "2026-04-08"
+        last_deadline_source: "https://sc26.supercomputing.org/program/papers/"
         deadline_source: "https://supercomputing.org/"
       - title: International Conference on Parallel Processing
         acronym: ICPP
@@ -298,6 +374,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ICPP 2027 main paper"
+        last_submission_deadline: "2026-05-01"
+        last_deadline_source: "https://icpp2026.github.io/call-for-papers/"
         deadline_source: "https://www.icpp-conf.org/"
 
   - title: Security and Privacy
@@ -308,6 +386,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "FC 2027 main paper"
+        last_submission_deadline: "2025-09-20"
+        last_deadline_source: "https://www.metzdowd.com/pipermail/cryptography/2025-September/039059.html"
         deadline_source: "https://fc26.ifca.ai/"
       - title: ACM Conference on Advances in Financial Technologies
         acronym: AFT
@@ -315,6 +395,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "AFT 2027 main paper"
+        last_submission_deadline: "2026-05-27"
+        last_deadline_source: "https://aft.ifca.ai/aft26/CFP.html"
         deadline_source: "https://aftconf.github.io/"
       - title: Privacy Enhancing Technologies Symposium
         acronym: PETS
@@ -322,6 +404,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "PETS 2027 paper"
+        last_submission_deadline: "2026-02-28"
+        last_deadline_source: "https://www.petsymposium.org/cfp26.php"
         deadline_source: "https://petsymposium.org/"
       - title: IEEE European Symposium on Security and Privacy
         acronym: EuroS&P
@@ -329,6 +413,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "EuroS&P 2027 main paper"
+        last_submission_deadline: "2025-11-20"
+        last_deadline_source: "https://eurosp2026.ieee-security.org/"
         deadline_source: "https://eurosp2026.ieee-security.org/"
       - title: International Symposium on Research in Attacks, Intrusions and Defenses
         acronym: RAID
@@ -336,6 +422,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "RAID 2027 main paper"
+        last_submission_deadline: "2026-04-16"
+        last_deadline_source: "https://raid2026.org/call.html"
         deadline_source: "https://raid2026.github.io/"
       - title: International Conference on Availability, Reliability and Security
         acronym: ARES
@@ -343,6 +431,8 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ARES 2027 main paper"
+        last_submission_deadline: "2026-03-09"
+        last_deadline_source: "https://www.ares-conference.eu/open-calls"
         deadline_source: "https://www.ares-conference.eu/"
       - title: IEEE International Conference on Blockchain and Cryptocurrency
         acronym: ICBC
@@ -350,4 +440,6 @@ categories:
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ICBC 2027 main paper"
+        last_submission_deadline: "2026-01-07"
+        last_deadline_source: "https://www.linkedin.com/posts/ieeeicbc_ieee-icbc-2026-activity-7389697388321357826-HP5J"
         deadline_source: "https://ieee-icbc.org/"
