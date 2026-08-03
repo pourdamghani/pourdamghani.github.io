@@ -1,82 +1,353 @@
-# Keep announced deadlines in chronological order, followed by unannounced ones.
-# Use ISO dates (YYYY-MM-DD) so entries remain easy to sort and review.
-networking:
-  - title: "International Conference on Distributed Computing and Networking"
-    acronym: "ICDCN"
-    rank: "B"
-    next_submission_deadline: "2026-08-13"
-    deadline_announced: true
-    deadline_for: "ICDCN 2027 main conference paper (firm, AoE)"
-    deadline_source: "https://cs3-lab.github.io/icdcn/index.html"
+# Keep each category's announced deadlines in chronological order, followed by
+# unannounced conferences. Use ISO dates (YYYY-MM-DD) for easy sorting.
+#
+# Add a conference by copying one entry below. `deadline_announced: false`
+# renders “Not announced” while preserving the official page to check later.
+categories:
+  - title: Networking
+    conferences:
+      - title: International Conference on Distributed Computing and Networking
+        acronym: ICDCN
+        rank: B
+        next_submission_deadline: "2026-08-13"
+        deadline_announced: true
+        deadline_for: "ICDCN 2027 main conference paper (firm, AoE)"
+        deadline_source: "https://cs3-lab.github.io/icdcn/index.html"
+      - title: ACM International Conference on Mobile Computing and Networking
+        acronym: MOBICOM
+        rank: A
+        next_submission_deadline: "2026-09-02"
+        deadline_announced: true
+        deadline_for: "MobiCom 2027 summer-cycle full paper (23:59 AoE)"
+        deadline_source: "https://www.sigmobile.org/mobicom/2027/cfp.html"
+      - title: Symposium on Networked Systems Design and Implementation
+        acronym: NSDI
+        rank: B
+        next_submission_deadline: "2026-09-17"
+        deadline_announced: true
+        deadline_for: "NSDI '27 fall-cycle full paper (23:59 US EDT)"
+        deadline_source: "https://www.usenix.org/conference/nsdi27/call-for-papers"
+      - title: ACM SIGCOMM Conference
+        acronym: SIGCOMM
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SIGCOMM 2027 main paper"
+        deadline_source: "https://conferences.sigcomm.org/sigcomm/"
+      - title: IEEE International Conference on Computer Communications
+        acronym: INFOCOM
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "INFOCOM 2027 main paper"
+        deadline_source: "https://ieee-infocom.org/"
+      - title: ACM Internet Measurement Conference
+        acronym: IMC
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "IMC 2027 main paper"
+        deadline_source: "https://conferences.sigcomm.org/imc/"
+      - title: ACM International Conference on Emerging Networking Experiments and Technologies
+        acronym: CoNEXT
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "Next main-paper cycle"
+        last_submission_deadline: "2026-06-05"
+        deadline_source: "https://conferences.sigcomm.org/co-next/2026/"
+      - title: International Conference on Network Protocols
+        acronym: ICNP
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ICNP 2027 main paper"
+        last_submission_deadline: "2026-05-22"
+        deadline_source: "https://icnp26.cs.ucr.edu/"
+      - title: ACM SIGCOMM Symposium on SDN Research
+        acronym: SOSR
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SOSR 2027 main paper"
+        deadline_source: "https://conferences.sigcomm.org/sosr/"
+      - title: IEEE Network Operations and Management Symposium
+        acronym: NOMS
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "Next NOMS main paper"
+        last_submission_deadline: "2025-11-10"
+        deadline_source: "https://noms2026.ieee-noms.org/"
+      - title: IFIP Networking
+        acronym: IFIP Networking
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "IFIP Networking 2027 main paper"
+        last_submission_deadline: "2026-02-28"
+        deadline_source: "https://networking.ifip.org/"
+      - title: IEEE Network Softwarization
+        acronym: NetSoft
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "NetSoft 2027 main paper"
+        deadline_source: "https://netsoft2026.ieee-netsoft.org/"
+      - title: International Conference on Network and Service Management
+        acronym: CNSM
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "CNSM 2027 main paper"
+        deadline_source: "https://cnsm-conference.org/"
 
-  - title: "ACM International Conference on Mobile Computing and Networking"
-    acronym: "MOBICOM"
-    rank: "A"
-    next_submission_deadline: "2026-09-02"
-    deadline_announced: true
-    deadline_for: "MobiCom 2027 summer-cycle full paper (23:59 AoE)"
-    deadline_source: "https://www.sigmobile.org/mobicom/2027/cfp.html"
+  - title: Distributed Systems
+    conferences:
+      - title: ACM Symposium on Principles of Distributed Computing
+        acronym: PODC
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "PODC 2027 main paper"
+        deadline_source: "https://www.podc.org/podc2026/next-podc/"
+      - title: International Symposium on Distributed Computing
+        acronym: DISC
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "DISC 2027 main paper"
+        deadline_source: "https://www.disc-conference.org/"
+      - title: International Conference on Principles of Distributed Systems
+        acronym: OPODIS
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "OPODIS 2027 main paper"
+        deadline_source: "https://opodis2026.github.io/"
+      - title: IEEE International Conference on Distributed Computing Systems
+        acronym: ICDCS
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ICDCS 2027 main paper"
+        deadline_source: "https://icdcs2026.icdcs.org/"
+      - title: IEEE/IFIP International Conference on Dependable Systems and Networks
+        acronym: DSN
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "DSN 2027 main paper"
+        deadline_source: "https://dsn2026.github.io/"
+      - title: ACM/IFIP International Middleware Conference
+        acronym: Middleware
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "Middleware 2027 main paper"
+        deadline_source: "https://middleware-conf.github.io/2026/"
+      - title: IEEE International Symposium on Reliable Distributed Systems
+        acronym: SRDS
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SRDS 2027 main paper"
+        deadline_source: "https://srds-conference.org/"
+      - title: IEEE International Parallel and Distributed Processing Symposium
+        acronym: IPDPS
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "IPDPS 2027 main paper"
+        deadline_source: "https://www.ipdps.org/"
+      - title: International Conference on Networked Systems
+        acronym: NETYS
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "NETYS 2027 main paper"
+        deadline_source: "https://netys.net/"
+      - title: IEEE/ACM International Conference on Utility and Cloud Computing
+        acronym: UCC
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "UCC 2027 main paper"
+        deadline_source: "https://ucc-conference.org/"
 
-  - title: "Symposium on Networked Systems, Design and Implementation"
-    acronym: "NSDI"
-    rank: "B"
-    next_submission_deadline: "2026-09-17"
-    deadline_announced: true
-    deadline_for: "NSDI '27 fall-cycle full paper (23:59 US EDT)"
-    deadline_source: "https://www.usenix.org/conference/nsdi27/call-for-papers"
+  - title: Algorithms and Theory
+    conferences:
+      - title: Symposium on Algorithmic Foundations of Dynamic Networks
+        acronym: SAND
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SAND 2027 main paper"
+        deadline_source: "https://algo-conference.org/"
+      - title: SIAM Symposium on Algorithm Engineering and Experiments
+        acronym: ALENEX
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ALENEX 2027 main paper"
+        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/alenex/"
+      - title: SIAM Symposium on Simplicity in Algorithms
+        acronym: SOSA
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SOSA 2027 main paper"
+        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/sosa/"
+      - title: European Symposium on Algorithms
+        acronym: ESA
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ESA 2027 main paper"
+        deadline_source: "https://esa-conference.org/"
+      - title: International Symposium on Theoretical Aspects of Computer Science
+        acronym: STACS
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "STACS 2027 main paper"
+        deadline_source: "https://stacs-conf.org/"
+      - title: International Colloquium on Structural Information and Communication Complexity
+        acronym: SIROCCO
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SIROCCO 2027 main paper"
+        deadline_source: "https://sirocco-conference.github.io/"
+      - title: Innovations in Theoretical Computer Science
+        acronym: ITCS
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ITCS 2027 main paper"
+        deadline_source: "https://itcs-conference.org/"
+      - title: ACM-SIAM Symposium on Discrete Algorithms
+        acronym: SODA
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SODA 2027 main paper"
+        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/soda/"
+      - title: International Colloquium on Automata, Languages, and Programming
+        acronym: ICALP
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ICALP 2027 main paper"
+        deadline_source: "https://icalp-conference.org/"
+      - title: International Conference on Concurrency Theory
+        acronym: CONCUR
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "CONCUR 2027 main paper"
+        deadline_source: "https://concur-conference.org/"
 
-  - title: "ACM International Conference on Emerging Networking Experiments and Technologies"
-    acronym: "CoNEXT"
-    rank: "A"
-    next_submission_deadline: "Not announced"
-    deadline_announced: false
-    deadline_for: "Next main-paper cycle"
-    deadline_source: "https://conferences.sigcomm.org/co-next/2026/"
+  - title: Systems and Performance
+    conferences:
+      - title: ACM SIGMETRICS
+        acronym: SIGMETRICS
+        rank: A
+        next_submission_deadline: "2027-01-11"
+        deadline_announced: true
+        deadline_for: "SIGMETRICS 2027 paper (23:59 AoE)"
+        deadline_source: "https://www.sigmetrics.org/sigmetrics2027/"
+      - title: ACM Symposium on Parallelism in Algorithms and Architectures
+        acronym: SPAA
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SPAA 2027 main paper"
+        deadline_source: "https://spaa.acm.org/"
+      - title: ACM/IEEE Symposium on Architectures for Networking and Communications Systems
+        acronym: ANCS
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ANCS 2027 main paper"
+        deadline_source: "https://www.ieee-ancs.org/"
+      - title: International Symposium on Computer Performance, Modeling, Measurements and Evaluation
+        acronym: PERFORMANCE
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "Performance 2027 main paper"
+        deadline_source: "https://www.performance-conference.org/"
+      - title: ACM International Conference on Supercomputing
+        acronym: ICS
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ICS 2027 main paper"
+        deadline_source: "https://ics-conference.org/"
+      - title: International Conference for High Performance Computing, Networking, Storage, and Analysis
+        acronym: SC
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SC 2027 technical paper"
+        deadline_source: "https://supercomputing.org/"
+      - title: International Conference on Parallel Processing
+        acronym: ICPP
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ICPP 2027 main paper"
+        deadline_source: "https://www.icpp-conf.org/"
 
-  - title: "ACM Workshop on Hot Topics in Networks"
-    acronym: "HOTNETS"
-    rank: "A"
-    next_submission_deadline: "Not announced"
-    deadline_announced: false
-    deadline_for: "HotNets 2027 main paper"
-    deadline_source: "https://conferences.sigcomm.org/hotnets/2026/cfp.html"
-
-  - title: "International Conference on Network Protocols"
-    acronym: "ICNP"
-    rank: "A"
-    next_submission_deadline: "Not announced"
-    deadline_announced: false
-    deadline_for: "ICNP 2027 main paper"
-    deadline_source: "https://icnp26.cs.ucr.edu/"
-
-  - title: "IEEE International Symposium on Network Computing and Applications"
-    acronym: "IEEE NCA"
-    rank: "A"
-    next_submission_deadline: "Not announced"
-    deadline_announced: false
-    deadline_for: "NCA 2027 main paper"
-    deadline_source: "https://www.nca-ieee.org/2026/cf-papers.html"
-
-  - title: "IFIP Networking 200X"
-    acronym: "Networking 200X"
-    rank: "A"
-    next_submission_deadline: "Not announced"
-    deadline_announced: false
-    deadline_for: "IFIP Networking 2027 main paper"
-    deadline_source: "https://networking.ifip.org/"
-
-  - title: "IEEE Network Operations and Management Symposium"
-    acronym: "NOMS"
-    rank: "B"
-    next_submission_deadline: "Not announced"
-    deadline_announced: false
-    deadline_for: "Next NOMS main paper"
-    deadline_source: "https://noms2026.ieee-noms.org/"
-
-  - title: "Network and OS Support for Digital A/V"
-    acronym: "NOSSDAV"
-    rank: "A"
-    next_submission_deadline: "Not announced"
-    deadline_announced: false
-    deadline_for: "NOSSDAV 2027 main paper"
-    deadline_source: "https://www.nossdav.hosting.acm.org/"
+  - title: Security and Privacy
+    conferences:
+      - title: Financial Cryptography and Data Security
+        acronym: FC
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "FC 2027 main paper"
+        deadline_source: "https://fc26.ifca.ai/"
+      - title: ACM Conference on Advances in Financial Technologies
+        acronym: AFT
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "AFT 2027 main paper"
+        deadline_source: "https://aftconf.github.io/"
+      - title: Privacy Enhancing Technologies Symposium
+        acronym: PETS
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "PETS 2027 paper"
+        deadline_source: "https://petsymposium.org/"
+      - title: IEEE European Symposium on Security and Privacy
+        acronym: EuroS&P
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "EuroS&P 2027 main paper"
+        deadline_source: "https://eurosp2026.ieee-security.org/"
+      - title: International Symposium on Research in Attacks, Intrusions and Defenses
+        acronym: RAID
+        rank: A
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "RAID 2027 main paper"
+        deadline_source: "https://raid2026.github.io/"
+      - title: International Conference on Availability, Reliability and Security
+        acronym: ARES
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ARES 2027 main paper"
+        deadline_source: "https://www.ares-conference.eu/"
+      - title: IEEE International Conference on Blockchain and Cryptocurrency
+        acronym: ICBC
+        rank: B
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ICBC 2027 main paper"
+        deadline_source: "https://ieee-icbc.org/"
