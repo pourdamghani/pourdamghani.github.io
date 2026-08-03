@@ -149,6 +149,75 @@
     }
   }
 
+  .deadline-filters {
+    margin: 1.5rem 0 2rem;
+    padding: 1rem;
+    background: $lighter-gray;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      align-items: end;
+
+      @include breakpoint($medium) {
+        grid-template-columns: minmax(220px, 2fr) repeat(3, minmax(130px, 1fr)) auto;
+      }
+    }
+
+    label,
+    input,
+    select {
+      margin-bottom: 0;
+    }
+
+    select {
+      width: 100%;
+    }
+
+    &__clear {
+      min-height: 2.35rem;
+      white-space: nowrap;
+    }
+
+    &__status,
+    &__hint,
+    &__empty {
+      font-size: 0.85rem;
+    }
+
+    &__status {
+      margin: 0.85rem 0 0;
+      font-weight: 600;
+    }
+
+    &__hint {
+      margin: 0.35rem 0 0;
+      color: $gray;
+    }
+
+    &__empty {
+      padding: 1rem;
+      text-align: center;
+      background: $lighter-gray;
+      border-radius: $border-radius;
+    }
+  }
+
+  .deadline-group > h3:first-child {
+    margin-top: 1.5rem;
+  }
+
+  .deadline-estimate {
+    display: block;
+    margin-top: 0.2rem;
+    color: $gray;
+    font-size: 0.82em;
+    white-space: nowrap;
+  }
+
   .publication-grid {
     display: grid;
     grid-template-columns: 1fr;
