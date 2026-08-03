@@ -9,8 +9,10 @@ author_profile: true
 <h1>Next Related Deadlines</h1>
 
 {% for category in related_deadlines.categories %}
-<section class="research-section">
-  <h2>{{ category.title }}</h2>
+{% set dated_future_conferences = category.conferences | selectattr("last_submission_deadline") | rejectattr("deadline_announced") | sort(attribute="last_submission_deadline") %}
+{% set undated_future_conferences = category.conferences | rejectattr("last_submission_deadline") | rejectattr("deadline_announced") %}
+<details class="research-section deadline-topic">
+  <summary><span class="deadline-topic__title" role="heading" aria-level="2">{{ category.title }}</span></summary>
 
   <h3>Current deadlines</h3>
   <div class="table-wrapper">
@@ -56,8 +58,7 @@ author_profile: true
         </tr>
       </thead>
       <tbody>
-        {% for conference in category.conferences %}
-          {% if not conference.deadline_announced %}
+        {% for conference in dated_future_conferences %}
           <tr>
             <td>{{ conference.title }}</td>
             <td>{{ conference.acronym }}</td>
@@ -72,10 +73,19 @@ author_profile: true
             <td>{{ conference.deadline_for }}</td>
             <td><a href="{{ conference.deadline_source }}">Official page</a></td>
           </tr>
-          {% endif %}
+        {% endfor %}
+        {% for conference in undated_future_conferences %}
+          <tr>
+            <td>{{ conference.title }}</td>
+            <td>{{ conference.acronym }}</td>
+            <td>{{ conference.rank }}</td>
+            <td>Not available</td>
+            <td>{{ conference.deadline_for }}</td>
+            <td><a href="{{ conference.deadline_source }}">Official page</a></td>
+          </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
-</section>
+</details>
 {% endfor %}
