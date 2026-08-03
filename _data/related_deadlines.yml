@@ -1,0 +1,82 @@
+# Keep announced deadlines in chronological order, followed by unannounced ones.
+# Use ISO dates (YYYY-MM-DD) so entries remain easy to sort and review.
+networking:
+  - title: "International Conference on Distributed Computing and Networking"
+    acronym: "ICDCN"
+    rank: "B"
+    next_submission_deadline: "2026-08-13"
+    deadline_announced: true
+    deadline_for: "ICDCN 2027 main conference paper (firm, AoE)"
+    deadline_source: "https://cs3-lab.github.io/icdcn/index.html"
+
+  - title: "ACM International Conference on Mobile Computing and Networking"
+    acronym: "MOBICOM"
+    rank: "A"
+    next_submission_deadline: "2026-09-02"
+    deadline_announced: true
+    deadline_for: "MobiCom 2027 summer-cycle full paper (23:59 AoE)"
+    deadline_source: "https://www.sigmobile.org/mobicom/2027/cfp.html"
+
+  - title: "Symposium on Networked Systems, Design and Implementation"
+    acronym: "NSDI"
+    rank: "B"
+    next_submission_deadline: "2026-09-17"
+    deadline_announced: true
+    deadline_for: "NSDI '27 fall-cycle full paper (23:59 US EDT)"
+    deadline_source: "https://www.usenix.org/conference/nsdi27/call-for-papers"
+
+  - title: "ACM International Conference on Emerging Networking Experiments and Technologies"
+    acronym: "CoNEXT"
+    rank: "A"
+    next_submission_deadline: "Not announced"
+    deadline_announced: false
+    deadline_for: "Next main-paper cycle"
+    deadline_source: "https://conferences.sigcomm.org/co-next/2026/"
+
+  - title: "ACM Workshop on Hot Topics in Networks"
+    acronym: "HOTNETS"
+    rank: "A"
+    next_submission_deadline: "Not announced"
+    deadline_announced: false
+    deadline_for: "HotNets 2027 main paper"
+    deadline_source: "https://conferences.sigcomm.org/hotnets/2026/cfp.html"
+
+  - title: "International Conference on Network Protocols"
+    acronym: "ICNP"
+    rank: "A"
+    next_submission_deadline: "Not announced"
+    deadline_announced: false
+    deadline_for: "ICNP 2027 main paper"
+    deadline_source: "https://icnp26.cs.ucr.edu/"
+
+  - title: "IEEE International Symposium on Network Computing and Applications"
+    acronym: "IEEE NCA"
+    rank: "A"
+    next_submission_deadline: "Not announced"
+    deadline_announced: false
+    deadline_for: "NCA 2027 main paper"
+    deadline_source: "https://www.nca-ieee.org/2026/cf-papers.html"
+
+  - title: "IFIP Networking 200X"
+    acronym: "Networking 200X"
+    rank: "A"
+    next_submission_deadline: "Not announced"
+    deadline_announced: false
+    deadline_for: "IFIP Networking 2027 main paper"
+    deadline_source: "https://networking.ifip.org/"
+
+  - title: "IEEE Network Operations and Management Symposium"
+    acronym: "NOMS"
+    rank: "B"
+    next_submission_deadline: "Not announced"
+    deadline_announced: false
+    deadline_for: "Next NOMS main paper"
+    deadline_source: "https://noms2026.ieee-noms.org/"
+
+  - title: "Network and OS Support for Digital A/V"
+    acronym: "NOSSDAV"
+    rank: "A"
+    next_submission_deadline: "Not announced"
+    deadline_announced: false
+    deadline_for: "NOSSDAV 2027 main paper"
+    deadline_source: "https://www.nossdav.hosting.acm.org/"

@@ -1,0 +1,47 @@
+---
+layout: page.njk
+permalink: /tools/next-related-deadlines/
+title: ""
+excerpt: "Next submission deadlines for related conferences"
+author_profile: true
+---
+
+<h1>Next Related Deadlines</h1>
+
+<p>Upcoming submission deadlines for conferences related to my research. Entries without an officially published future deadline are listed as “Not announced.”</p>
+
+<section class="research-section">
+  <h2>Networking</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Conference</th>
+          <th scope="col">Acronym</th>
+          <th scope="col">Rank</th>
+          <th scope="col">Next submission deadline</th>
+          <th scope="col">Deadline for</th>
+          <th scope="col">Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for conference in related_deadlines.networking %}
+          <tr>
+            <td>{{ conference.title }}</td>
+            <td>{{ conference.acronym }}</td>
+            <td>{{ conference.rank }}</td>
+            <td>
+              {% if conference.deadline_announced %}
+                <time datetime="{{ conference.next_submission_deadline }}">{{ conference.next_submission_deadline }}</time>
+              {% else %}
+                {{ conference.next_submission_deadline }}
+              {% endif %}
+            </td>
+            <td>{{ conference.deadline_for }}</td>
+            <td><a href="{{ conference.deadline_source }}">Official page</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>

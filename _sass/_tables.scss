@@ -36,3 +36,9 @@ td {
 tr, td, th {
   vertical-align: middle;
 }
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
