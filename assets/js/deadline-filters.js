@@ -86,7 +86,13 @@
     futureCount = futureMatches.length;
 
     groups.forEach(function (group) {
-      group.hidden = !group.querySelector("[data-deadline-row]");
+      var body = group.querySelector("tbody");
+      var groupRows = Array.prototype.slice.call(group.querySelectorAll("[data-deadline-row]"));
+
+      groupRows.sort(compareDeadlines).forEach(function (row) {
+        body.appendChild(row);
+      });
+      group.hidden = groupRows.length === 0;
     });
 
     if (isFiltering && !wasFiltering) {

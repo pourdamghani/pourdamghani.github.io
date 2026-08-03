@@ -42,16 +42,24 @@ module.exports = function (eleventyConfig) {
       .replace(/[\s_]+/g, "-")
   );
 
-  // Estimate an unannounced deadline from the same date in the next year.
-  eleventyConfig.addFilter("nextYear", (isoDate) => {
+  // Estimate the next unannounced deadline on the prior cycle's month and day.
+  eleventyConfig.addFilter("nextDeadline", (isoDate) => {
     const match = String(isoDate).match(/^(\d{4})-(\d{2})-(\d{2})$/);
     if (!match) return isoDate;
 
     const [, year, month, day] = match;
-    const nextYear = Number(year) + 1;
-    const lastDayOfMonth = new Date(Date.UTC(nextYear, Number(month), 0)).getUTCDate();
+    const now = new Date();
+    const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+    let expectedYear = Number(year) + 1;
+    let expectedDeadline;
 
-    return `${nextYear}-${month}-${String(Math.min(Number(day), lastDayOfMonth)).padStart(2, "0")}`;
+    do {
+      const lastDayOfMonth = new Date(Date.UTC(expectedYear, Number(month), 0)).getUTCDate();
+      expectedDeadline = `${expectedYear}-${month}-${String(Math.min(Number(day), lastDayOfMonth)).padStart(2, "0")}`;
+      expectedYear += 1;
+    } while (expectedDeadline < today);
+
+    return expectedDeadline;
   });
 
   return {

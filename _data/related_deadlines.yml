@@ -49,7 +49,7 @@ categories:
         deadline_announced: false
         deadline_for: "INFOCOM 2027 main paper"
         last_submission_deadline: "2025-07-31"
-        last_deadline_source: "https://infocom2026.ieee-infocom.org/"
+        last_deadline_source: "https://www.linkedin.com/posts/ieee-communications-society_ieee-infocom-2026-is-accepting-paper-submissions-activity-7350541607512752128-p0Na"
         deadline_source: "https://ieee-infocom.org/"
       - title: ACM Internet Measurement Conference
         acronym: IMC
@@ -86,7 +86,7 @@ categories:
         deadline_for: "SOSR 2027 main paper"
         last_submission_deadline: "2022-07-01"
         last_deadline_source: "https://conferences.sigcomm.org/sosr/2022/"
-        estimate_from_last_deadline: false
+        suppress_deadline_estimate: true
         deadline_source: "https://conferences.sigcomm.org/sosr/"
       - title: IEEE Network Operations and Management Symposium
         acronym: NOMS
@@ -339,7 +339,7 @@ categories:
         deadline_for: "ANCS 2027 main paper"
         last_submission_deadline: "2021-09-29"
         last_deadline_source: "https://www.wikicfp.com/cfp/program?id=171"
-        estimate_from_last_deadline: false
+        suppress_deadline_estimate: true
         deadline_source: "https://www.ieee-ancs.org/"
       - title: International Symposium on Computer Performance, Modeling, Measurements and Evaluation
         acronym: PERFORMANCE

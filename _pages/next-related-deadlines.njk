@@ -82,9 +82,8 @@ author_profile: true
 </div>
 
 {% for category in related_deadlines.categories %}
-{% set dated_future_conferences = category.conferences | selectattr("last_submission_deadline") | rejectattr("estimate_from_last_deadline", "equalto", false) | rejectattr("deadline_announced") | sort(attribute="last_submission_deadline") %}
+{% set dated_future_conferences = category.conferences | selectattr("last_submission_deadline") | rejectattr("deadline_announced") | sort(attribute="last_submission_deadline") %}
 {% set undated_future_conferences = category.conferences | rejectattr("last_submission_deadline") | rejectattr("deadline_announced") %}
-{% set dormant_future_conferences = category.conferences | selectattr("last_submission_deadline") | selectattr("estimate_from_last_deadline", "equalto", false) | rejectattr("deadline_announced") %}
 <details class="research-section deadline-topic" data-deadline-topic>
   <summary><span class="deadline-topic__title" role="heading" aria-level="2">{{ category.title }}</span></summary>
 
@@ -138,30 +137,7 @@ author_profile: true
         </thead>
         <tbody>
           {% for conference in dated_future_conferences %}
-            {% set expected_deadline = conference.last_submission_deadline | nextYear %}
-            <tr class="deadline-row" data-deadline-row data-deadline-kind="future" data-title="{{ conference.title }}" data-acronym="{{ conference.acronym }}" data-rank="{{ conference.rank }}" data-deadline="{{ expected_deadline }}">
-              <td>{{ conference.title }}</td>
-              <td>{{ conference.acronym }}</td>
-              <td>{{ conference.rank }}</td>
-              <td>
-                <time datetime="{{ expected_deadline }}">{{ expected_deadline }}</time>
-                <span class="deadline-estimate">Estimated from <a href="{{ conference.last_deadline_source }}">{{ conference.last_submission_deadline }}</a></span>
-              </td>
-              <td>{{ conference.deadline_for }}</td>
-              <td><a href="{{ conference.deadline_source }}">Official page</a></td>
-            </tr>
-          {% endfor %}
-          {% for conference in undated_future_conferences %}
-            <tr class="deadline-row" data-deadline-row data-deadline-kind="future" data-title="{{ conference.title }}" data-acronym="{{ conference.acronym }}" data-rank="{{ conference.rank }}" data-deadline="">
-              <td>{{ conference.title }}</td>
-              <td>{{ conference.acronym }}</td>
-              <td>{{ conference.rank }}</td>
-              <td>Not available</td>
-              <td>{{ conference.deadline_for }}</td>
-              <td><a href="{{ conference.deadline_source }}">Official page</a></td>
-            </tr>
-          {% endfor %}
-          {% for conference in dormant_future_conferences %}
+            {% if conference.suppress_deadline_estimate %}
             <tr class="deadline-row" data-deadline-row data-deadline-kind="future" data-title="{{ conference.title }}" data-acronym="{{ conference.acronym }}" data-rank="{{ conference.rank }}" data-deadline="">
               <td>{{ conference.title }}</td>
               <td>{{ conference.acronym }}</td>
@@ -170,6 +146,30 @@ author_profile: true
                 Not available
                 <span class="deadline-estimate">Last verified: <a href="{{ conference.last_deadline_source }}">{{ conference.last_submission_deadline }}</a></span>
               </td>
+              <td>{{ conference.deadline_for }}</td>
+              <td><a href="{{ conference.deadline_source }}">Official page</a></td>
+            </tr>
+            {% else %}
+              {% set expected_deadline = conference.last_submission_deadline | nextDeadline %}
+              <tr class="deadline-row" data-deadline-row data-deadline-kind="future" data-title="{{ conference.title }}" data-acronym="{{ conference.acronym }}" data-rank="{{ conference.rank }}" data-deadline="{{ expected_deadline }}">
+                <td>{{ conference.title }}</td>
+                <td>{{ conference.acronym }}</td>
+                <td>{{ conference.rank }}</td>
+                <td>
+                  <time datetime="{{ expected_deadline }}">{{ expected_deadline }}</time>
+                  <span class="deadline-estimate">Estimated from <a href="{{ conference.last_deadline_source }}">{{ conference.last_submission_deadline }}</a></span>
+                </td>
+                <td>{{ conference.deadline_for }}</td>
+                <td><a href="{{ conference.deadline_source }}">Official page</a></td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+          {% for conference in undated_future_conferences %}
+            <tr class="deadline-row" data-deadline-row data-deadline-kind="future" data-title="{{ conference.title }}" data-acronym="{{ conference.acronym }}" data-rank="{{ conference.rank }}" data-deadline="">
+              <td>{{ conference.title }}</td>
+              <td>{{ conference.acronym }}</td>
+              <td>{{ conference.rank }}</td>
+              <td>Not available</td>
               <td>{{ conference.deadline_for }}</td>
               <td><a href="{{ conference.deadline_source }}">Official page</a></td>
             </tr>

@@ -158,13 +158,12 @@
 
     &__grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(180px, 1.8fr) repeat(2, minmax(135px, 1fr)) minmax(90px, 0.7fr) auto;
       gap: 0.75rem;
       align-items: end;
-
-      @include breakpoint($medium) {
-        grid-template-columns: minmax(220px, 2fr) repeat(3, minmax(130px, 1fr)) auto;
-      }
+      min-width: 690px;
+      overflow-x: auto;
+      padding-bottom: 0.25rem;
     }
 
     label,
