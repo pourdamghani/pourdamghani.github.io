@@ -2,21 +2,21 @@
 
 # General
 User-agent: *
-Allow: /research/
+Allow: /publications/
 Allow: /
 
 # Nudge major bots 
 User-agent: Googlebot
 Allow: /
-Allow: /research/
+Allow: /publications/
 Allow: /Arash_Pourdamghani_CV.pdf
 
 User-agent: Bingbot
 Allow: /
-Allow: /research/
+Allow: /publications/
 Allow: /Arash_Pourdamghani_CV.pdf
 
 User-agent: DuckDuckBot
 Allow: /
-Allow: /research/
+Allow: /publications/
 Allow: /Arash_Pourdamghani_CV.pdf

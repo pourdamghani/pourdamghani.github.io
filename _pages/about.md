@@ -6,10 +6,10 @@ excerpt: "About me"
 author_profile: true
 ---
 
-I am Arash, a research assistant at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> research group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. I am also an associated researcher with <a href="https://plamadiso.weizenbaum-institut.de">PLAMADISO</a> research group at the Weizenbaum Institute for the Networked Society.
-Previously I was a researcher at the University of Vienna and completed research internships at IST Austria and CUHK Hong Kong. 
+I am Arash, a research assistant at the <a href="https://www.linkedin.com/company/inet-tuberlin/">INET</a> research group at the Technical University of Berlin, Germany, working under the supervision of <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>.
+Previously, I was an associated researcher with the <a href="https://plamadiso.weizenbaum-institut.de">PLAMADISO</a> research group at the Weizenbaum Institute for the Networked Society and a researcher at the University of Vienna. I also completed research internships at IST Austria and CUHK Hong Kong.
 
-Throughout the years, my publications gathered 370+ citations, and I have been delighted to be a mentor for more than 15 students from across the world. My teaching experience in advanced theoretical and practical algorithmic concepts is going beyond 10 years, and I have been active in [community service](/service) to ensure credibility and accessibility of knowledge.
+Throughout the years, my publications gathered 370+ citations, and I have been delighted to be a mentor for more than 15 students from across the world. My teaching experience in advanced theoretical and practical algorithmic concepts is going beyond 10 years, and I have been active in community service to ensure credibility and accessibility of knowledge.
 I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on demand-aware and self-adjusting networks.
 
 Academic email: lastname (at) tu-berlin (dot) de

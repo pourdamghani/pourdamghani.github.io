@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-permalink: /research/
+permalink: /publications/
 title: ""
 excerpt: "Publications of Arash Pourdamghani"
 author_profile: true

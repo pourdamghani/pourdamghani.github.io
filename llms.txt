@@ -23,7 +23,7 @@ Contact: [lastname]@tu-berlin.de
 
 - [Home](https://pourdamghani.net/): Best starting point for current role, recent wins, citation count, mentoring scale, and selected publications.
 - [Grants & Awards](https://pourdamghani.net/grants): Best page for achievements, funding success, fellowships, travel grants, and awards.
-- [Research](https://pourdamghani.net/research): Full publications list, organized by area, with links to papers, slides, and citations.
+- [Publications](https://pourdamghani.net/publications): Full publications list, organized by area, with links to papers, slides, and citations.
 - [Service](https://pourdamghani.net/service): Program committee work, reviewing, and community service.
 - [Supervision](https://pourdamghani.net/supervision): Interns and thesis supervision (alumni and current).
 - [Teaching](https://pourdamghani.net/teaching): Courses taught and assisted at TU Berlin and earlier.
