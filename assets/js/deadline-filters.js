@@ -8,6 +8,7 @@
   var fromInput = document.getElementById("deadline-from");
   var toInput = document.getElementById("deadline-to");
   var rankInput = document.getElementById("deadline-rank");
+  var currentOnlyInput = document.getElementById("deadline-current-only");
   var status = document.getElementById("deadline-filter-status");
   var emptyState = document.getElementById("deadline-filter-empty");
   var results = document.getElementById("deadline-filter-results");
@@ -115,8 +116,9 @@
     var from = fromInput.value;
     var to = toInput.value;
     var rank = rankInput.value;
+    var currentOnly = currentOnlyInput.checked;
     var hasInvalidRange = Boolean(from && to && from > to);
-    var isFiltering = Boolean(query || from || to || rank);
+    var isFiltering = Boolean(query || from || to || rank || currentOnly);
     var visibleCount = 0;
     var currentCount = 0;
     var futureCount = 0;
@@ -130,9 +132,10 @@
     rows.forEach(function (row) {
       var matchesName = !query || normalize(row.dataset.title).indexOf(query) !== -1 || normalize(row.dataset.acronym).indexOf(query) !== -1;
       var matchesRank = !rank || row.dataset.rank === rank;
+      var matchesKind = !currentOnly || row.dataset.deadlineKind === "current";
       var deadline = row.dataset.deadline;
       var matchesDate = hasInvalidRange || ((!from || (deadline && deadline >= from)) && (!to || (deadline && deadline <= to)));
-      var matches = matchesName && matchesRank && matchesDate;
+      var matches = matchesName && matchesRank && matchesKind && matchesDate;
 
       row.hidden = false;
       if (matches) {
@@ -184,7 +187,7 @@
     setHidden(emptyState, !isFiltering || visibleCount !== 0);
 
     if (hasInvalidRange) {
-      status.textContent = "Start date must be on or before end date. Showing matches for name and rank only.";
+      status.textContent = "Start date must be on or before end date. Showing matches for the other filters only.";
     } else {
       status.textContent = "Showing " + visibleCount + " of " + rows.length + " deadlines.";
     }

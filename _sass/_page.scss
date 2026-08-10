@@ -158,10 +158,10 @@
 
     &__grid {
       display: grid;
-      grid-template-columns: minmax(180px, 1.8fr) repeat(2, minmax(135px, 1fr)) minmax(90px, 0.7fr) auto;
+      grid-template-columns: minmax(180px, 1.8fr) repeat(2, minmax(135px, 1fr)) minmax(90px, 0.7fr) minmax(165px, auto) auto;
       gap: 0.75rem;
       align-items: end;
-      min-width: 690px;
+      min-width: 870px;
       overflow-x: auto;
       padding-bottom: 0.25rem;
     }
@@ -174,6 +174,18 @@
 
     select {
       width: 100%;
+    }
+
+    &__current {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+      min-height: 2.35rem;
+      white-space: nowrap;
+
+      input {
+        width: auto;
+      }
     }
 
     &__clear {

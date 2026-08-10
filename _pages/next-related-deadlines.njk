@@ -8,6 +8,8 @@ author_profile: true
 
 <h1>Next Related Deadlines</h1>
 
+<p>Conference ranks use the official <a href="https://portal.core.edu.au/conf-ranks/?by=all&amp;source=CORE2023">CORE 2023 conference rankings</a>. Conferences absent from that edition are marked “Not listed in CORE 2023.”</p>
+
 <form class="deadline-filters" id="deadline-filters" aria-label="Filter deadlines">
   <div class="deadline-filters__grid">
     <label class="deadline-filters__search" for="deadline-search">
@@ -29,9 +31,21 @@ author_profile: true
       Rank
       <select id="deadline-rank" name="rank">
         <option value="">All ranks</option>
+        <option value="A*">A*</option>
         <option value="A">A</option>
         <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="National: India">National: India</option>
+        <option value="National: USA">National: USA</option>
+        <option value="Journal Published">Journal Published</option>
+        <option value="Unranked">Unranked</option>
+        <option value="Not listed in CORE 2023">Not listed in CORE 2023</option>
       </select>
+    </label>
+
+    <label class="deadline-filters__current" for="deadline-current-only">
+      <input id="deadline-current-only" name="current" type="checkbox">
+      Current deadlines only
     </label>
 
     <button class="btn deadline-filters__clear" type="reset">Clear filters</button>
@@ -181,4 +195,4 @@ author_profile: true
 
 <p class="deadline-filters__empty" id="deadline-filter-empty" hidden>No deadlines match these filters.</p>
 
-<script src="/assets/js/deadline-filters.js?v=2" defer></script>
+<script src="/assets/js/deadline-filters.js?v=3" defer></script>
