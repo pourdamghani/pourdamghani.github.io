@@ -17,8 +17,8 @@ Academic email: lastname (at) tu-berlin (dot) de
 Personal email: firstname (at) lastname (dot) net
 
 ## Recent News
-- Our project, BeeFAIRChain, has just been fully accepted as part of DATIpilot BioBlock Innovationscommunity, funded by Federal Ministry for Research, Technology and Space (BMFTR) in Germany. 
-- We have just been awarded Oxford Berlin Research Partnership Flexible Funds 2026!
+- Our project, BeeFAIRChain, has just been fully accepted as part of DATIpilot [BioBlock Innovationscommunity](https://bioblock-community.org/event-cp3-cp5.html), funded by Federal Ministry for Research, Technology and Space (BMFTR) in Germany.
+- We have just been awarded [Oxford Berlin Research Partnership Flexible Funds 2026](https://www.berlin-university-alliance.de/en/commitments/international/oxford/news/251106-FFIX.html)!
 - Our paper "Rethinking Fronthaul Topologies for Cell-Free 6G Networks" has been accepted in [IEEE ICC 2026](https://icc2026.ieee-icc.org/)!
 
 ## Selected Publications
