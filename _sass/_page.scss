@@ -151,22 +151,24 @@
 
   .deadline-filters {
     margin: 1.5rem 0 2rem;
-    padding: 1rem;
-    background: $lighter-gray;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    padding: 1.25rem;
+    background: #fff;
+    border: 1px solid rgba(#000, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(#000, 0.06);
 
     &__grid {
       display: grid;
-      grid-template-columns: minmax(180px, 1.8fr) repeat(2, minmax(135px, 1fr)) minmax(90px, 0.7fr) minmax(165px, auto) auto;
-      gap: 0.75rem;
+      grid-template-columns: minmax(220px, 1.6fr) repeat(2, minmax(145px, 1fr)) minmax(125px, 0.8fr);
+      gap: 0.9rem;
       align-items: end;
-      min-width: 870px;
-      overflow-x: auto;
-      padding-bottom: 0.25rem;
     }
 
-    label,
+    label {
+      color: $dark-gray;
+      font-weight: 600;
+    }
+
     input,
     select {
       margin-bottom: 0;
@@ -178,18 +180,29 @@
 
     &__current {
       display: flex;
-      gap: 0.4rem;
+      grid-column: 1 / 4;
+      gap: 0.55rem;
       align-items: center;
+      justify-self: start;
       min-height: 2.35rem;
+      padding: 0.55rem 0.75rem;
+      background: rgba($primary-color, 0.06);
+      border: 1px solid rgba($primary-color, 0.15);
+      border-radius: 8px;
       white-space: nowrap;
 
       input {
         width: auto;
+        accent-color: $primary-color;
       }
     }
 
     &__clear {
+      grid-column: 4;
+      grid-row: 2;
+      justify-self: end;
       min-height: 2.35rem;
+      border-radius: 8px;
       white-space: nowrap;
     }
 
@@ -202,6 +215,24 @@
     &__status {
       margin: 0.85rem 0 0;
       font-weight: 600;
+    }
+
+    @include breakpoint(max-width $small) {
+      padding: 1rem;
+
+      &__grid {
+        grid-template-columns: 1fr;
+      }
+
+      &__current,
+      &__clear {
+        grid-column: 1;
+        grid-row: auto;
+      }
+
+      &__clear {
+        width: 100%;
+      }
     }
 
     &__hint {

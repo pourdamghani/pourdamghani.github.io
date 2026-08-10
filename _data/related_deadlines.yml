@@ -207,14 +207,6 @@ categories:
         last_submission_deadline: "2026-03-18"
         last_deadline_source: "https://netys.net/dates/"
         deadline_source: "https://netys.net/"
-      - title: IEEE/ACM International Conference on Utility and Cloud Computing
-        acronym: UCC
-        rank: Unranked
-        next_submission_deadline: "2026-08-19"
-        deadline_announced: true
-        deadline_for: "UCC 2027 main paper"
-        deadline_source: "https://ucc2026.ufsc.br/calls/call-for-papers/"
-
   - title: Algorithms and Theory
     conferences:
       - title: Symposium on Algorithmic Foundations of Dynamic Networks
