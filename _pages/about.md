@@ -33,11 +33,6 @@ SIAM Symposium on Algorithm Engineering and Experiments ([ALENEX 2025](https://w
 IEEE Conference on Computer Communications ([INFOCOM 2023](https://infocom2023.ieee-infocom.org/)).\
 [Paper](/INFOCOM23SeedTree.pdf), [Slides](/SeedTree-Pres.pdf), [Citation](/INFOCOM23SeedTree.bib), [Video](https://www.youtube.com/watch?v=KdDbRnhPcM4)
 
-### Software-Defined Reconfigurable Intelligent Surfaces: From Theory to End-to-End Implementation
-*with Christos Liaskos, Lefteris Mamatas, Ageliki Tsioliaridou, Sotiris Ioannidis, Andreas Pitsillides, Stefan Schmid, and Ian F. Akyildiz*\
-Proceedings of the IEEE ([PIEEE 2022](https://proceedingsoftheieee.ieee.org/september-2022/))\
-[Paper](https://ieeexplore.ieee.org/abstract/document/9769768), [Citation](/PIEEE22SDR.bib)
-
 ### Probabilistic smart contracts: Secure randomness on the blockchain
 *with Krishnendu Chatterjee and Amir Kafshdar Goharshady*\
 IEEE International Conference on Blockchain and Cryptocurrency ([ICBC 2019](https://icbc2019.ieee-icbc.org/))\
