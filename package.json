@@ -5,8 +5,7 @@
   "scripts": {
     "start": "npm run build:css && eleventy --serve",
     "build": "npm run build:css && eleventy",
-    "build:css": "sass --load-path=_sass assets/css/main.scss assets/css/main.css --style=compressed --no-source-map --silence-deprecation=import",
-    "test:deadlines": "python3 -m unittest discover -s tests -p 'test_*.py'"
+    "build:css": "sass --load-path=_sass assets/css/main.scss assets/css/main.css --style=compressed --no-source-map --silence-deprecation=import"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
