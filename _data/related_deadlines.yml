@@ -1,8 +1,8 @@
 # Keep each category's announced deadlines in chronological order, followed by
 # unannounced conferences. Use ISO dates (YYYY-MM-DD) for easy sorting.
 #
-# Ranks are the exact CORE 2023 labels from https://portal.core.edu.au/conf-ranks/.
-# "Not listed in CORE 2023" means the conference has no CORE 2023 record; do not
+# Ranks are the exact iCORE 2026 labels from https://portal.core.edu.au/conf-ranks/.
+# "Not listed in iCORE 2026" means the conference has no iCORE 2026 record; do not
 # infer a rank. Add a conference by copying one entry below.
 categories:
   - title: Networking
@@ -81,7 +81,7 @@ categories:
         deadline_source: "https://icnp26.cs.ucr.edu/"
       - title: ACM SIGCOMM Symposium on SDN Research
         acronym: SOSR
-        rank: "Not listed in CORE 2023"
+        rank: "Not listed in iCORE 2026"
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SOSR 2027 main paper"
@@ -200,7 +200,7 @@ categories:
         deadline_source: "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html"
       - title: International Conference on Networked Systems
         acronym: NETYS
-        rank: "Not listed in CORE 2023"
+        rank: "Not listed in iCORE 2026"
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "NETYS 2027 main paper"
@@ -219,7 +219,7 @@ categories:
     conferences:
       - title: Symposium on Algorithmic Foundations of Dynamic Networks
         acronym: SAND
-        rank: "Not listed in CORE 2023"
+        rank: "Not listed in iCORE 2026"
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "SAND 2027 main paper"
@@ -237,7 +237,7 @@ categories:
         deadline_source: "https://www.siam.org/conferences-events/siam-conferences/alenex27/submissions/"
       - title: SIAM Symposium on Simplicity in Algorithms
         acronym: SOSA
-        rank: "Not listed in CORE 2023"
+        rank: "Not listed in iCORE 2026"
         next_submission_deadline: "2026-08-06"
         deadline_announced: true
         deadline_for: "SOSA 2027 main paper"
@@ -300,7 +300,7 @@ categories:
         deadline_source: "https://spaa.acm.org/"
       - title: International Colloquium on Automata, Languages, and Programming
         acronym: ICALP
-        rank: A
+        rank: A*
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ICALP 2027 main paper"
@@ -309,7 +309,7 @@ categories:
         deadline_source: "https://icalp-conference.org/"
       - title: International Conference on Concurrency Theory
         acronym: CONCUR
-        rank: A
+        rank: B
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "CONCUR 2027 main paper"
@@ -330,7 +330,7 @@ categories:
         deadline_source: "https://www.sigmetrics.org/sigmetrics2027/"
       - title: ACM/IEEE Symposium on Architectures for Networking and Communications Systems
         acronym: ANCS
-        rank: "Not listed in CORE 2023"
+        rank: "Not listed in iCORE 2026"
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "ANCS 2027 main paper"
@@ -388,7 +388,7 @@ categories:
         deadline_source: "https://fc26.ifca.ai/"
       - title: ACM Conference on Advances in Financial Technologies
         acronym: AFT
-        rank: "Not listed in CORE 2023"
+        rank: B
         next_submission_deadline: "Not announced"
         deadline_announced: false
         deadline_for: "AFT 2027 main paper"
