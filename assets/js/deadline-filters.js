@@ -20,6 +20,71 @@
   var topics = Array.prototype.slice.call(document.querySelectorAll("[data-deadline-topic]"));
   var openBeforeFiltering = [];
   var wasFiltering = false;
+  var refreshTimer;
+
+  // A deadline dated YYYY-MM-DD remains current until 23:59:59 in AoE
+  // (UTC-12). Its first passed instant is therefore 12:00 UTC the next day.
+  function aoeExpiry(isoDate) {
+    var match = String(isoDate || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!match) return null;
+
+    return Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]) + 1, 12, 0, 0);
+  }
+
+  function markDeadlinePassed(row) {
+    var topic = row.closest("[data-deadline-topic]");
+    var futureBody = topic && topic.querySelector('[data-deadline-group="future"] tbody');
+    var deadlineCell = row.querySelector(".deadline-row__deadline");
+    var previousCell = row.querySelector(".deadline-row__previous");
+    var expiredDeadline = row.dataset.deadline;
+    var deadlineSource = row.dataset.deadlineSource;
+
+    if (!futureBody || !deadlineCell || !expiredDeadline) return;
+
+    row.dataset.deadlineKind = "future";
+    row.dataset.deadline = "";
+    row.dataset.deadlinePassed = "true";
+    deadlineCell.textContent = "Not announced";
+
+    var verification = document.createElement("span");
+    verification.className = "deadline-estimate";
+    verification.appendChild(document.createTextNode("Last verified: "));
+
+    var sourceLink = document.createElement("a");
+    sourceLink.href = deadlineSource;
+    var date = document.createElement("time");
+    date.dateTime = expiredDeadline;
+    date.textContent = expiredDeadline;
+    sourceLink.appendChild(date);
+    verification.appendChild(sourceLink);
+    deadlineCell.appendChild(verification);
+
+    if (previousCell) previousCell.remove();
+    futureBody.appendChild(row);
+  }
+
+  function refreshDeadlineKinds() {
+    var now = Date.now();
+    var nextExpiry = null;
+
+    rows.forEach(function (row) {
+      if (row.dataset.deadlineKind !== "current") return;
+
+      var expiry = aoeExpiry(row.dataset.deadline);
+      if (expiry !== null && now >= expiry) {
+        markDeadlinePassed(row);
+      } else if (expiry !== null && (nextExpiry === null || expiry < nextExpiry)) {
+        nextExpiry = expiry;
+      }
+    });
+
+    window.clearTimeout(refreshTimer);
+    var untilNextCheck = nextExpiry === null ? 86400000 : Math.min(86400000, Math.max(1000, nextExpiry - now + 1000));
+    refreshTimer = window.setTimeout(function () {
+      refreshDeadlineKinds();
+      applyFilters();
+    }, untilNextCheck);
+  }
 
   function normalize(value) {
     return String(value || "").toLocaleLowerCase().trim();
@@ -27,6 +92,11 @@
 
   function clearResults(container) {
     while (container.firstChild) container.removeChild(container.firstChild);
+  }
+
+  function setHidden(element, hidden) {
+    element.hidden = hidden;
+    element.style.display = hidden ? "none" : "";
   }
 
   function compareDeadlines(left, right) {
@@ -92,7 +162,7 @@
       groupRows.sort(compareDeadlines).forEach(function (row) {
         body.appendChild(row);
       });
-      group.hidden = groupRows.length === 0;
+      setHidden(group, groupRows.length === 0);
     });
 
     if (isFiltering && !wasFiltering) {
@@ -100,18 +170,18 @@
     }
 
     topics.forEach(function (topic, index) {
-      topic.hidden = isFiltering;
+      setHidden(topic, isFiltering);
 
       if (!isFiltering && wasFiltering) {
         topic.open = openBeforeFiltering[index];
       }
     });
 
-    results.hidden = !isFiltering;
-    currentResults.hidden = currentCount === 0;
-    futureResults.hidden = futureCount === 0;
+    setHidden(results, !isFiltering);
+    setHidden(currentResults, currentCount === 0);
+    setHidden(futureResults, futureCount === 0);
     wasFiltering = isFiltering;
-    emptyState.hidden = !isFiltering || visibleCount !== 0;
+    setHidden(emptyState, !isFiltering || visibleCount !== 0);
 
     if (hasInvalidRange) {
       status.textContent = "Start date must be on or before end date. Showing matches for name and rank only.";
@@ -126,5 +196,6 @@
     window.setTimeout(applyFilters, 0);
   });
 
+  refreshDeadlineKinds();
   applyFilters();
 })();

@@ -209,6 +209,10 @@
     margin-top: 1.5rem;
   }
 
+  .deadline-group[hidden] {
+    display: none;
+  }
+
   .deadline-results {
     margin-top: 2rem;
 

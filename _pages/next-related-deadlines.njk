@@ -52,7 +52,6 @@ author_profile: true
             <th scope="col">Rank</th>
             <th scope="col">Next submission deadline</th>
             <th scope="col">Previous submission deadline</th>
-            <th scope="col">Deadline for</th>
             <th scope="col">Source</th>
           </tr>
         </thead>
@@ -71,7 +70,6 @@ author_profile: true
             <th scope="col">Acronym</th>
             <th scope="col">Rank</th>
             <th scope="col">Expected submission deadline</th>
-            <th scope="col">Deadline for</th>
             <th scope="col">Source</th>
           </tr>
         </thead>
@@ -87,7 +85,7 @@ author_profile: true
 <details class="research-section deadline-topic" data-deadline-topic>
   <summary><span class="deadline-topic__title" role="heading" aria-level="2">{{ category.title }}</span></summary>
 
-  <section class="deadline-group" data-deadline-group>
+  <section class="deadline-group" data-deadline-group="current">
     <h3>Current deadlines</h3>
     <div class="table-wrapper">
       <table>
@@ -98,20 +96,24 @@ author_profile: true
             <th scope="col">Rank</th>
             <th scope="col">Next submission deadline</th>
             <th scope="col">Previous submission deadline</th>
-            <th scope="col">Deadline for</th>
             <th scope="col">Source</th>
           </tr>
         </thead>
         <tbody>
           {% for conference in category.conferences %}
             {% if conference.deadline_announced %}
-            <tr class="deadline-row" data-deadline-row data-deadline-kind="current" data-title="{{ conference.title }}" data-acronym="{{ conference.acronym }}" data-rank="{{ conference.rank }}" data-deadline="{{ conference.next_submission_deadline }}">
+            <tr class="deadline-row" data-deadline-row data-deadline-kind="current" data-title="{{ conference.title }}" data-acronym="{{ conference.acronym }}" data-rank="{{ conference.rank }}" data-deadline="{{ conference.next_submission_deadline }}" data-deadline-source="{{ conference.deadline_source }}">
               <td>{{ conference.title }}</td>
               <td>{{ conference.acronym }}</td>
               <td>{{ conference.rank }}</td>
-              <td><time datetime="{{ conference.next_submission_deadline }}">{{ conference.next_submission_deadline }}</time></td>
-              <td><a href="{{ conference.last_deadline_source }}"><time datetime="{{ conference.last_submission_deadline }}">{{ conference.last_submission_deadline }}</time></a></td>
-              <td>{{ conference.deadline_for }}</td>
+              <td class="deadline-row__deadline"><time datetime="{{ conference.next_submission_deadline }}">{{ conference.next_submission_deadline }}</time></td>
+              <td class="deadline-row__previous">
+                {% if conference.last_submission_deadline and conference.last_deadline_source %}
+                <a href="{{ conference.last_deadline_source }}"><time datetime="{{ conference.last_submission_deadline }}">{{ conference.last_submission_deadline }}</time></a>
+                {% else %}
+                Not available
+                {% endif %}
+              </td>
               <td><a href="{{ conference.deadline_source }}">Official page</a></td>
             </tr>
             {% endif %}
@@ -121,7 +123,7 @@ author_profile: true
     </div>
   </section>
 
-  <section class="deadline-group" data-deadline-group>
+  <section class="deadline-group" data-deadline-group="future">
     <h3>Future deadlines</h3>
     <div class="table-wrapper">
       <table>
@@ -131,7 +133,6 @@ author_profile: true
             <th scope="col">Acronym</th>
             <th scope="col">Rank</th>
             <th scope="col">Expected submission deadline</th>
-            <th scope="col">Deadline for</th>
             <th scope="col">Source</th>
           </tr>
         </thead>
@@ -146,7 +147,6 @@ author_profile: true
                 Not available
                 <span class="deadline-estimate">Last verified: <a href="{{ conference.last_deadline_source }}">{{ conference.last_submission_deadline }}</a></span>
               </td>
-              <td>{{ conference.deadline_for }}</td>
               <td><a href="{{ conference.deadline_source }}">Official page</a></td>
             </tr>
             {% else %}
@@ -159,7 +159,6 @@ author_profile: true
                   <time datetime="{{ expected_deadline }}">{{ expected_deadline }}</time>
                   <span class="deadline-estimate">Estimated from <a href="{{ conference.last_deadline_source }}">{{ conference.last_submission_deadline }}</a></span>
                 </td>
-                <td>{{ conference.deadline_for }}</td>
                 <td><a href="{{ conference.deadline_source }}">Official page</a></td>
               </tr>
             {% endif %}
@@ -170,7 +169,6 @@ author_profile: true
               <td>{{ conference.acronym }}</td>
               <td>{{ conference.rank }}</td>
               <td>Not available</td>
-              <td>{{ conference.deadline_for }}</td>
               <td><a href="{{ conference.deadline_source }}">Official page</a></td>
             </tr>
           {% endfor %}
@@ -183,4 +181,4 @@ author_profile: true
 
 <p class="deadline-filters__empty" id="deadline-filter-empty" hidden>No deadlines match these filters.</p>
 
-<script src="/assets/js/deadline-filters.js" defer></script>
+<script src="/assets/js/deadline-filters.js?v=2" defer></script>

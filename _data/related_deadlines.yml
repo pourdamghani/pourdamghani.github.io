@@ -45,12 +45,12 @@ categories:
       - title: IEEE International Conference on Computer Communications
         acronym: INFOCOM
         rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-07-31"
+        deadline_announced: true
         deadline_for: "INFOCOM 2027 main paper"
         last_submission_deadline: "2025-07-31"
         last_deadline_source: "https://www.linkedin.com/posts/ieee-communications-society_ieee-infocom-2026-is-accepting-paper-submissions-activity-7350541607512752128-p0Na"
-        deadline_source: "https://ieee-infocom.org/"
+        deadline_source: "https://infocom2027.ieee-infocom.org/call-papers"
       - title: ACM Internet Measurement Conference
         acronym: IMC
         rank: A
@@ -148,12 +148,10 @@ categories:
       - title: International Conference on Principles of Distributed Systems
         acronym: OPODIS
         rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-09-03"
+        deadline_announced: true
         deadline_for: "OPODIS 2027 main paper"
-        last_submission_deadline: "2026-09-03"
-        last_deadline_source: "https://opodis26.software.imdea.org/cfp.html"
-        deadline_source: "https://opodis2026.github.io/"
+        deadline_source: "https://opodis26.software.imdea.org/cfp.html"
       - title: IEEE International Conference on Distributed Computing Systems
         acronym: ICDCS
         rank: A
@@ -193,12 +191,12 @@ categories:
       - title: IEEE International Parallel and Distributed Processing Symposium
         acronym: IPDPS
         rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-10-08"
+        deadline_announced: true
         deadline_for: "IPDPS 2027 main paper"
         last_submission_deadline: "2025-10-09"
         last_deadline_source: "https://www.ipdps.org/ipdps2026/2026-call-for-papers.html"
-        deadline_source: "https://www.ipdps.org/"
+        deadline_source: "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html"
       - title: International Conference on Networked Systems
         acronym: NETYS
         rank: B
@@ -211,12 +209,10 @@ categories:
       - title: IEEE/ACM International Conference on Utility and Cloud Computing
         acronym: UCC
         rank: B
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-08-19"
+        deadline_announced: true
         deadline_for: "UCC 2027 main paper"
-        last_submission_deadline: "2026-08-19"
-        last_deadline_source: "https://ucc2026.ufsc.br/calls/call-for-papers/"
-        deadline_source: "https://ucc-conference.org/"
+        deadline_source: "https://ucc2026.ufsc.br/calls/call-for-papers/"
 
   - title: Algorithms and Theory
     conferences:
@@ -232,21 +228,21 @@ categories:
       - title: SIAM Symposium on Algorithm Engineering and Experiments
         acronym: ALENEX
         rank: B
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-07-20"
+        deadline_announced: true
         deadline_for: "ALENEX 2027 main paper"
         last_submission_deadline: "2025-07-23"
         last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/alenex26/submissions/"
-        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/alenex/"
+        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/alenex27/submissions/"
       - title: SIAM Symposium on Simplicity in Algorithms
         acronym: SOSA
         rank: B
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-08-06"
+        deadline_announced: true
         deadline_for: "SOSA 2027 main paper"
         last_submission_deadline: "2025-08-07"
         last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/sosa26/submissions/"
-        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/sosa/"
+        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/sosa27/submissions/"
       - title: European Symposium on Algorithms
         acronym: ESA
         rank: A
@@ -259,12 +255,12 @@ categories:
       - title: International Symposium on Theoretical Aspects of Computer Science
         acronym: STACS
         rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-10-11"
+        deadline_announced: true
         deadline_for: "STACS 2027 main paper"
         last_submission_deadline: "2025-09-25"
         last_deadline_source: "https://stacs2026.imag.fr/"
-        deadline_source: "https://stacs-conf.org/"
+        deadline_source: "https://events.gwdg.de/event/1460/"
       - title: International Colloquium on Structural Information and Communication Complexity
         acronym: SIROCCO
         rank: B
@@ -277,21 +273,21 @@ categories:
       - title: Innovations in Theoretical Computer Science
         acronym: ITCS
         rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-09-04"
+        deadline_announced: true
         deadline_for: "ITCS 2027 main paper"
         last_submission_deadline: "2025-09-06"
         last_deadline_source: "https://itcs-conf.org/"
-        deadline_source: "https://itcs-conference.org/"
+        deadline_source: "https://itcs-conf.org/"
       - title: ACM-SIAM Symposium on Discrete Algorithms
         acronym: SODA
         rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
+        next_submission_deadline: "2026-07-09"
+        deadline_announced: true
         deadline_for: "SODA 2027 main paper"
         last_submission_deadline: "2025-07-14"
         last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/soda26/submissions/"
-        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/soda/"
+        deadline_source: "https://www.siam.org/conferences-events/siam-conferences/soda27/submissions/"
       - title: International Colloquium on Automata, Languages, and Programming
         acronym: ICALP
         rank: A
@@ -378,7 +374,7 @@ categories:
         last_deadline_source: "https://icpp2026.github.io/call-for-papers/"
         deadline_source: "https://www.icpp-conf.org/"
 
-  - title: Security and Privacy
+  - title: Blockchain
     conferences:
       - title: Financial Cryptography and Data Security
         acronym: FC
@@ -398,42 +394,6 @@ categories:
         last_submission_deadline: "2026-05-27"
         last_deadline_source: "https://aft.ifca.ai/aft26/CFP.html"
         deadline_source: "https://aftconf.github.io/"
-      - title: Privacy Enhancing Technologies Symposium
-        acronym: PETS
-        rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
-        deadline_for: "PETS 2027 paper"
-        last_submission_deadline: "2026-02-28"
-        last_deadline_source: "https://www.petsymposium.org/cfp26.php"
-        deadline_source: "https://petsymposium.org/"
-      - title: IEEE European Symposium on Security and Privacy
-        acronym: EuroS&P
-        rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
-        deadline_for: "EuroS&P 2027 main paper"
-        last_submission_deadline: "2025-11-20"
-        last_deadline_source: "https://eurosp2026.ieee-security.org/"
-        deadline_source: "https://eurosp2026.ieee-security.org/"
-      - title: International Symposium on Research in Attacks, Intrusions and Defenses
-        acronym: RAID
-        rank: A
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
-        deadline_for: "RAID 2027 main paper"
-        last_submission_deadline: "2026-04-16"
-        last_deadline_source: "https://raid2026.org/call.html"
-        deadline_source: "https://raid2026.github.io/"
-      - title: International Conference on Availability, Reliability and Security
-        acronym: ARES
-        rank: B
-        next_submission_deadline: "Not announced"
-        deadline_announced: false
-        deadline_for: "ARES 2027 main paper"
-        last_submission_deadline: "2026-03-09"
-        last_deadline_source: "https://www.ares-conference.eu/open-calls"
-        deadline_source: "https://www.ares-conference.eu/"
       - title: IEEE International Conference on Blockchain and Cryptocurrency
         acronym: ICBC
         rank: B

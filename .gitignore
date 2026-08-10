@@ -1,6 +1,8 @@
 _site/
 node_modules/
 assets/css/main.css
+__pycache__/
+*.py[cod]
 
 talkmap/.DS_Store
 images/.DS_Store
