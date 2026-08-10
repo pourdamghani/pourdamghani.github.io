@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "../../su/settings";
+@use "direction";
+@use "output";
+
 // Margins API
 // ===========
 
@@ -9,15 +14,15 @@
 @mixin margin-output(
   $before,
   $after,
-  $flow: map-get($susy-defaults, flow)
+  $flow: map.get(settings.$susy-defaults, flow)
 ) {
-  $to: to($flow);
-  $from: from($flow);
+  $to: direction.to($flow);
+  $from: direction.from($flow);
 
   $output: (
     margin-#{$from}: $before,
     margin-#{$to}: $after,
   );
 
-  @include output($output);
+  @include output.output($output);
 }

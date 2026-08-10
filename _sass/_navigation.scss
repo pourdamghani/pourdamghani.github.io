@@ -1,3 +1,12 @@
+@use "sass:color";
+@use "mixins";
+@use "variables";
+@use "vendor/breakpoint/breakpoint";
+@use "vendor/susy/susy/language/susy/container";
+@use "vendor/susy/susy/language/susy/padding";
+@use "vendor/susy/susy/language/susy/rows";
+@use "vendor/susy/susy/language/susy/span";
+
 /* ==========================================================================
    NAVIGATION
    ========================================================================== */
@@ -7,38 +16,38 @@
    ========================================================================== */
 
 .breadcrumbs {
-  @include container;
-  @include clearfix;
+  @include container.container;
+  @include mixins.clearfix;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 2em;
   padding-right: 2em;
-  font-family: $sans-serif;
+  font-family: variables.$sans-serif;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.30s;
           animation-delay: 0.30s;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     padding-left: 1em;
     padding-right: 1em;
   }
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  @include breakpoint.breakpoint(variables.$x-large) {
+    max-width: variables.$x-large;
   }
 
   ol {
     padding: 0;
     list-style: none;
-    font-size: $type-size-6;
+    font-size: variables.$type-size-6;
 
-    @include breakpoint($large) {
-      @include span(10 of 12 last);
+    @include breakpoint.breakpoint(variables.$large) {
+      @include span.span(10 of 12 last);
     }
 
-    @include breakpoint($x-large) {
-      @include prefix(0.5 of 12);
+    @include breakpoint.breakpoint(variables.$x-large) {
+      @include padding.prefix(0.5 of 12);
     }
   }
 
@@ -57,8 +66,8 @@
    ========================================================================== */
 
 .pagination {
-  @include full();
-  @include clearfix();
+  @include rows.full();
+  @include mixins.clearfix();
   margin-top: 1em;
   padding-top: 1em;
 
@@ -66,7 +75,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: $sans-serif;
+    font-family: variables.$sans-serif;
   }
 
   li {
@@ -77,27 +86,27 @@
     a {
       margin-bottom: 0.25em;
       padding: 0.5em 1em;
-      font-family: $sans-serif;
+      font-family: variables.$sans-serif;
       font-size: 14px;
       font-weight: bold;
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
-      border: 1px solid $light-gray;
+      color: color.mix(#fff, variables.$gray, 25%);
+      border: 1px solid variables.$light-gray;
       border-radius: 0;
 
       &:hover {
-        color: $link-color-hover;
+        color: variables.$link-color-hover;
       }
 
       &.current {
         color: #fff;
-        background: $primary-color;
+        background: variables.$primary-color;
       }
 
       &.disabled {
-        color: mix(#fff, $gray, 75%);
+        color: color.mix(#fff, variables.$gray, 75%);
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -107,15 +116,15 @@
       margin-left: 0;
 
       a {
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
+        border-top-left-radius: variables.$border-radius;
+        border-bottom-left-radius: variables.$border-radius;
       }
     }
 
     &:last-child {
       a {
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
+        border-top-right-radius: variables.$border-radius;
+        border-bottom-right-radius: variables.$border-radius;
       }
     }
   }
@@ -126,17 +135,17 @@
     padding: 1em 2em;
     float: left;
     width: 50%;
-    font-family: $sans-serif;
-    font-size: $type-size-5;
+    font-family: variables.$sans-serif;
+    font-size: variables.$type-size-5;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: mix(#fff, $gray, 50%);
-    border: 1px solid $light-gray;
-    border-radius: $border-radius;
+    color: color.mix(#fff, variables.$gray, 50%);
+    border: 1px solid variables.$light-gray;
+    border-radius: variables.$border-radius;
 
     &:hover {
-      color: $link-color-hover;
+      color: variables.$link-color-hover;
     }
 
     &:first-child {
@@ -151,7 +160,7 @@
     }
 
     &.disabled {
-      color: mix(#fff, $gray, 75%);
+      color: color.mix(#fff, variables.$gray, 75%);
       pointer-events: none;
       cursor: not-allowed;
     }
@@ -164,7 +173,7 @@
 .page__comments + .pagination {
   margin-top: 2em;
   padding-top: 2em;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid variables.$border-color;
 }
 
 
@@ -175,17 +184,17 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
+  background: variables.$background-color;
 
   a {
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: $masthead-link-color;
+    color: variables.$masthead-link-color;
     text-decoration: none;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      color: variables.$masthead-link-color-hover;
     }
   }
 
@@ -196,7 +205,7 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     color: #fff;
     cursor: pointer;
   }
@@ -232,10 +241,10 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: mix(#fff, $primary-color, 50%);
+        background: color.mix(#fff, variables.$primary-color, 50%);
         width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
+        -webkit-transition: variables.$global-transition;
+        transition: variables.$global-transition;
         -webkit-transform: scaleX(0);
             -ms-transform: scaleX(0);
                 transform: scaleX(0); /* hide*/
@@ -255,19 +264,19 @@
     right: 0;
     margin-top: 15px;
     padding: 5px;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    border: 1px solid variables.$border-color;
+    border-radius: variables.$border-radius;
     background: #fff;
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
     a {
       margin: 0;
       padding: 10px 20px;
-      font-size: $type-size-5;
+      font-size: variables.$type-size-5;
 
       &:hover {
-        color: $masthead-link-color-hover;
-        background: mix(#fff, $primary-color, 75%);
+        color: variables.$masthead-link-color-hover;
+        background: color.mix(#fff, variables.$primary-color, 75%);
       }
     }
 
@@ -279,7 +288,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: $border-color transparent;
+      border-color: variables.$border-color transparent;
       display: block;
       z-index: 0;
     }
@@ -299,7 +308,7 @@
 
     li {
       display: block;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid variables.$border-color;
 
       &:last-child {
         border-bottom: none;
@@ -336,8 +345,8 @@
     padding-right: 0.5em;
     color: #fff;
     font-weight: bold;
-    background: $primary-color;
-    border-radius: $border-radius;
+    background: variables.$primary-color;
+    border-radius: variables.$border-radius;
 
     &:hover {
       color: #fff;
@@ -348,8 +357,8 @@
 .nav__title {
   margin: 0;
   padding: 0.5rem 1rem;
-  font-family: $sans-serif-narrow;
-  font-size: $type-size-5;
+  font-family: variables.$sans-serif-narrow;
+  font-size: variables.$type-size-5;
   font-weight: bold;
 }
 
@@ -357,11 +366,11 @@
   display: block;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
-  font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
+  font-family: variables.$sans-serif-narrow;
+  font-size: variables.$type-size-6;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid variables.$border-color;
 }
 
 
@@ -370,21 +379,21 @@
    ========================================================================== */
 
 .toc {
-  font-family: $sans-serif-narrow;
-  color: $gray;
+  font-family: variables.$sans-serif-narrow;
+  color: variables.$gray;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #fff;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$border-radius;
+  box-shadow: variables.$box-shadow;
 
   .nav__title {
     color: #fff;
-    font-size: $type-size-6;
-    background: $primary-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    font-size: variables.$type-size-6;
+    background: variables.$primary-color;
+    border-top-left-radius: variables.$border-radius;
+    border-top-right-radius: variables.$border-radius;
   }
 }
 
@@ -398,15 +407,15 @@
   a {
     display: block;
     padding: 0.5rem 1rem;
-    color: $gray;
-    font-size: $type-size-7;
+    color: variables.$gray;
+    font-size: variables.$type-size-7;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid variables.$border-color;
 
     &:hover {
       color: #000;
-      background: $lighter-gray;
+      background: variables.$lighter-gray;
     }
   }
 
@@ -425,7 +434,7 @@
   li > ul li {
     display: none;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       display: block;
     }
   }

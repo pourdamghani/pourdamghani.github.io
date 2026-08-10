@@ -1,3 +1,8 @@
+@use "sass:list";
+@use "sass:meta";
+@use "settings";
+@use "validation";
+
 // Column math
 // ===========
 
@@ -7,10 +12,10 @@
 // Returns true if a grid is symmetrical.
 // - [$columns]   : <number> | <list>
 @function is-symmetrical(
-  $columns: susy-get(columns)
+  $columns: settings.susy-get(columns)
 ) {
-  $columns: valid-columns($columns);
-  @return if(type-of($columns) == number, $columns, null);
+  $columns: validation.valid-columns($columns);
+  @return if(meta.type-of($columns) == number, $columns, null);
 }
 
 
@@ -19,10 +24,10 @@
 // Find the number of columns in a given layout
 // - [$columns]   : <number> | <list>
 @function susy-count(
-  $columns: susy-get(columns)
+  $columns: settings.susy-get(columns)
 ) {
-  $columns: valid-columns($columns);
-  @return is-symmetrical($columns) or length($columns);
+  $columns: validation.valid-columns($columns);
+  @return is-symmetrical($columns) or list.length($columns);
 }
 
 
@@ -33,12 +38,12 @@
 // - [$gutters]   : <ratio>
 // - [$spread]    : false/narrow | wide | wider
 @function susy-sum(
-  $columns  : susy-get(columns),
-  $gutters  : susy-get(gutters),
+  $columns  : settings.susy-get(columns),
+  $gutters  : settings.susy-get(gutters),
   $spread   : false
 ) {
-  $columns: valid-columns($columns);
-  $gutters: valid-gutters($gutters);
+  $columns: validation.valid-columns($columns);
+  $gutters: validation.valid-gutters($gutters);
 
   $spread: if($spread == wide, 0, if($spread == wider, 1, -1));
   $gutter-sum: (susy-count($columns) + $spread) * $gutters;
@@ -63,16 +68,16 @@
 @function susy-slice(
   $span,
   $location,
-  $columns: susy-get(columns)
+  $columns: settings.susy-get(columns)
 ) {
-  $columns: valid-columns($columns);
+  $columns: validation.valid-columns($columns);
   $sub-columns: $span;
 
   @if not(is-symmetrical($columns)) {
     $location: $location or 1;
     $sub-columns: ();
     @for $i from $location to ($location + $span) {
-      $sub-columns: append($sub-columns, nth($columns, $i));
+      $sub-columns: list.append($sub-columns, list.nth($columns, $i));
     }
   }
 
@@ -91,12 +96,12 @@
 @function susy(
   $span,
   $location     : false,
-  $columns      : susy-get(columns),
-  $gutters      : susy-get(gutters),
+  $columns      : settings.susy-get(columns),
+  $gutters      : settings.susy-get(gutters),
   $spread       : false
 ) {
-  $columns: valid-columns($columns);
-  $gutters: valid-gutters($gutters);
+  $columns: validation.valid-columns($columns);
+  $gutters: validation.valid-gutters($gutters);
   $span: susy-slice($span, $location, $columns);
 
   @return susy-sum($span, $gutters, $spread);

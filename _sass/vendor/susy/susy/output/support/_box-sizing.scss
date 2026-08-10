@@ -1,3 +1,6 @@
+@use "prefix";
+@use "support";
+
 // Box Sizing
 // ==========
 
@@ -9,11 +12,11 @@
   $model: content-box
 ) {
   @if $model {
-    @if susy-support(box-sizing, (mixin: box-sizing), $warn: false) {
+    @if support.susy-support(box-sizing, (mixin: box-sizing), $warn: false) {
       @include box-sizing($model);
     } @else {
       $prefix: (moz, webkit, official);
-      @include susy-prefix(box-sizing, $model, $prefix);
+      @include prefix.susy-prefix(box-sizing, $model, $prefix);
     }
   }
 }

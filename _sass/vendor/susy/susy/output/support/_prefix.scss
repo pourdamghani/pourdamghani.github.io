@@ -1,3 +1,5 @@
+@use "rem";
+
 // Susy Prefix
 // ===========
 
@@ -14,6 +16,6 @@
 ) {
   @each $fix in $prefix {
     $fix: if($fix == official or not($fix), $prop, '-#{$fix}-#{$prop}');
-    @include susy-rem($fix, $val);
+    @include rem.susy-rem($fix, $val);
   }
 }

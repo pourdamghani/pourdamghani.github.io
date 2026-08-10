@@ -1,3 +1,8 @@
+@use "../../../../../variables";
+@use "../../output/shared/inspect";
+@use "../../su/utilities";
+@use "settings";
+
 // Grid Syntax
 // ===========
 
@@ -12,9 +17,9 @@
   $clean: false
 ) {
   $inspect  : $layout;
-  $susy     : _get-layout($layout, $clean) !global;
+  @include variables.set-susy(_get-layout($layout, $clean));
 
-  @include susy-inspect(layout, $inspect);
+  @include inspect.susy-inspect(layout, $inspect);
 }
 
 
@@ -28,14 +33,14 @@
   $clean: false
 ) {
   $inspect  : $layout;
-  $old      : $susy;
-  $susy     : _get-layout($layout, $clean) !global;
+  $old      : variables.$susy;
+  @include variables.set-susy(_get-layout($layout, $clean));
 
-  @include susy-inspect(with-layout, $inspect);
+  @include inspect.susy-inspect(with-layout, $inspect);
 
   @content;
 
-  $susy: $old !global;
+  @include variables.set-susy($old);
 }
 
 
@@ -44,9 +49,9 @@
 // Return a parsed layout map based on shorthand syntax
 // - $layout: <settings>
 @function layout(
-  $layout: $susy
+  $layout: variables.$susy
 ) {
-  @return parse-grid($layout);
+  @return settings.parse-grid($layout);
 }
 
 
@@ -60,5 +65,5 @@
   $clean: false
 ) {
   $layout: layout($layout);
-  @return if($clean, $layout, _susy-deep-merge($susy, $layout));
+  @return if($clean, $layout, utilities.susy-deep-merge(variables.$susy, $layout));
 }

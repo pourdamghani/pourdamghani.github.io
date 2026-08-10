@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "../../su/settings";
+@use "../shared/direction";
+@use "../shared/output";
+
 // Float Isolation API
 // ===================
 
@@ -7,10 +12,10 @@
 // - [$flow]  : ltr | rtl
 @mixin isolate-output(
   $push,
-  $flow: map-get($susy-defaults, flow)
+  $flow: map.get(settings.$susy-defaults, flow)
 ) {
-  $to: to($flow);
-  $from: from($flow);
+  $to: direction.to($flow);
+  $from: direction.from($flow);
 
   $output: (
     float: $from,
@@ -18,5 +23,5 @@
     margin-#{$to}: -100%,
   );
 
-  @include output($output);
+  @include output.output($output);
 }

@@ -1,10 +1,15 @@
+@use "mixins";
+@use "variables";
+@use "vendor/breakpoint/breakpoint";
+@use "vendor/susy/susy/language/susy/container";
+
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid variables.$border-color;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -12,13 +17,13 @@
   z-index: 20;
 
   &__inner-wrap {
-    @include container;
-    @include clearfix;
+    @include container.container;
+    @include mixins.clearfix;
     padding: 1em 1em 1em;
-    font-family: $sans-serif-narrow;
+    font-family: variables.$sans-serif-narrow;
 
-    @include breakpoint($x-large) {
-      max-width: $x-large;
+    @include breakpoint.breakpoint(variables.$x-large) {
+      max-width: variables.$x-large;
     }
 
     nav {

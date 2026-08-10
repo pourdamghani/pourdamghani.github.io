@@ -1,3 +1,5 @@
+@use "variables";
+
 /* ==========================================================================
    Syntax highlighting
    ========================================================================== */
@@ -6,20 +8,20 @@ div.highlighter-rouge, figure.highlight {
   position: relative;
   margin-bottom: 1em;
   padding: 1em;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background-color: $code-background-color;
-  box-shadow: $box-shadow;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$border-radius;
+  background-color: variables.$code-background-color;
+  box-shadow: variables.$box-shadow;
 
   &:before {
     position: absolute;
     top: 0;
     right: 0;
     padding: 0.5em;
-    background-color: $lighter-gray;
+    background-color: variables.$lighter-gray;
     content: "\f121";
     font-family: "fontawesome" !important;
-    font-size: $type-size-6;
+    font-size: variables.$type-size-6;
     line-height: 1;
     text-transform: none;
     speak: none;
@@ -27,8 +29,8 @@ div.highlighter-rouge, figure.highlight {
 
   .highlight {
     margin: 0;
-    font-family: $monospace;
-    font-size: $type-size-7;
+    font-family: variables.$monospace;
+    font-size: variables.$type-size-7;
     line-height: 1.8;
   }
 }

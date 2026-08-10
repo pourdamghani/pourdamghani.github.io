@@ -1,3 +1,9 @@
+@use "sass:color";
+@use "mixins";
+@use "variables";
+@use "vendor/breakpoint/breakpoint";
+@use "vendor/susy/susy/language/susy/span";
+
 /* ==========================================================================
    SIDEBAR
    ========================================================================== */
@@ -10,11 +16,11 @@
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
 
-  @include clearfix();
+  @include mixins.clearfix();
   margin-bottom: 1em;
 
-  @include breakpoint($large) {
-    @include span(2 of 12);
+  @include breakpoint.breakpoint(variables.$large) {
+    @include span.span(2 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -25,22 +31,22 @@
   }
 
 
-  @include breakpoint($x-large) {
+  @include breakpoint.breakpoint(variables.$x-large) {
     padding-right: 0;
   }
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: variables.$sans-serif-narrow;
   }
 
   h3, h4 {
-    font-size: $type-size-5;
+    font-size: variables.$type-size-5;
   }
 
   p, li {
-    font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-family: variables.$sans-serif;
+    font-size: variables.$type-size-6;
     line-height: 1.5;
   }
 
@@ -52,16 +58,16 @@
 .sidebar__right {
   margin-bottom: 1em;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     position: relative;
     float: right;
-    width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
+    width: variables.$right-sidebar-width-narrow;
+    margin-left: span.span(0.5 of 12);
     z-index: 10;
   }
 
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
+  @include breakpoint.breakpoint(variables.$x-large) {
+    width: variables.$right-sidebar-width;
   }
 }
 
@@ -76,7 +82,7 @@
   // set width only, for non-square avatars
   // height: 36px;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     display: block;
     width: auto;
     height: auto;
@@ -86,9 +92,9 @@
     max-width: 175px;
     border-radius: 50%;
 
-    @include breakpoint($large) {
+    @include breakpoint.breakpoint(variables.$large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 1px solid variables.$border-color;
     }
   }
 }
@@ -100,7 +106,7 @@
   padding-right: 25px;
   line-height: 1;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     display: block;
     width: 100%;
     padding-left: 0;
@@ -111,20 +117,20 @@
 .author__name {
   margin: 0;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-family: variables.$sans-serif;
+  font-size: variables.$type-size-5;
 }
 
 .author__bio {
   margin: 0;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -134,7 +140,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: variables.$sans-serif;
   z-index: 10;
   position: relative;
   cursor: pointer;
@@ -145,14 +151,14 @@
     }
   }
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     display: block;
   }
 
   button {
     margin-bottom: 0;
 
-    @include breakpoint($large) {
+    @include breakpoint.breakpoint(variables.$large) {
       display: none;
     }
   }
@@ -165,14 +171,14 @@
   margin-top: 15px;
   padding: 10px;
   list-style-type: none;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
+  border: 1px solid variables.$border-color;
+  border-radius: variables.$border-radius;
   background: #fff;
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     display: block;
     position: relative;
     margin: 0;
@@ -191,10 +197,10 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: $border-color transparent;
+    border-color: variables.$border-color transparent;
     z-index: 0;
 
-    @include breakpoint($large) {
+    @include breakpoint.breakpoint(variables.$large) {
       display: none;
     }
   }
@@ -211,7 +217,7 @@
     border-color: #fff transparent;
     z-index: 1;
 
-    @include breakpoint($large) {
+    @include breakpoint.breakpoint(variables.$large) {
       display: none;
     }
   }
@@ -227,7 +233,7 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: variables.$type-size-5;
     text-decoration: none;
 
     &:hover {
@@ -239,20 +245,20 @@
 .sidebar-topics {
   margin-top: 1.25rem;
   padding-top: 1rem;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid variables.$border-color;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     margin-top: 1.5rem;
   }
 }
 
 .sidebar-topics__title {
   margin: 0 0 0.7rem;
-  font-size: $type-size-6;
+  font-size: variables.$type-size-6;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: $gray;
+  color: variables.$gray;
 }
 
 .sidebar-topics__links {
@@ -264,7 +270,7 @@
 .sidebar-topics__links a {
   display: block;
   padding: 0.15rem 0;
-  color: mix(#000, $gray, 55%);
+  color: color.mix(#000, variables.$gray, 55%);
   font-size: 0.88rem;
   font-weight: 600;
   line-height: 1.35;
@@ -272,7 +278,7 @@
   transition: color 0.18s ease;
 
   &:hover {
-    color: $link-color;
+    color: variables.$link-color;
     text-decoration: none;
   }
 }

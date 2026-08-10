@@ -5,12 +5,13 @@
   "scripts": {
     "start": "npm run build:css && eleventy --serve",
     "build": "npm run build:css && eleventy",
-    "build:css": "sass --load-path=_sass assets/css/main.scss assets/css/main.css --style=compressed --no-source-map --silence-deprecation=import"
+    "build:css": "sass assets/css/main.scss assets/css/main.css --style=compressed --no-source-map"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "js-yaml": "^4.1.0",
     "markdown-it": "^14.0.0",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "sass-migrator": "^2.6.1"
   }
 }

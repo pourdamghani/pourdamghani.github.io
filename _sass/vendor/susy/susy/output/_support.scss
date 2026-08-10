@@ -1,9 +1,9 @@
 // Susy Browser Support
 // ====================
 
-@import "support/support";
-@import "support/prefix";
-@import "support/background";
-@import "support/box-sizing";
-@import "support/rem";
-@import "support/clearfix";
+@use "support/support";
+@use "support/prefix";
+@use "support/background";
+@use "support/box-sizing";
+@use "support/rem";
+@use "support/clearfix";

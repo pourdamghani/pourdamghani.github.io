@@ -1,12 +1,16 @@
+@use "sass:math";
+
+@use "variables";
+
 /* ==========================================================================
    MIXINS
    ========================================================================== */
 
-%tab-focus {
+@mixin tab-focus {
   /* Default*/
-  outline: thin dotted $warning-color;
+  outline: thin dotted variables.$warning-color;
   /* Webkit*/
-  outline: 5px auto $warning-color;
+  outline: 5px auto variables.$warning-color;
   outline-offset: -2px;
 }
 
@@ -14,8 +18,8 @@
    em function
    ========================================================================== */
 
-@function em($target, $context: $doc-font-size) {
-  @return ($target / $context) * 1em;
+@function em($target, $context: variables.$doc-font-size) {
+  @return math.div($target, $context) * 1em;
 }
 
 

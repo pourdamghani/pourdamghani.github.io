@@ -1,35 +1,45 @@
+@use "sass:color";
+@use "mixins";
+@use "variables";
+@use "vendor/breakpoint/breakpoint";
+@use "vendor/susy/susy/language/susy/container";
+@use "vendor/susy/susy/language/susy/margins";
+@use "vendor/susy/susy/language/susy/padding";
+@use "vendor/susy/susy/language/susy/rows";
+@use "vendor/susy/susy/language/susy/span";
+
 /* ==========================================================================
    SINGLE PAGE/POST
    ========================================================================== */
 
 #main {
-  @include container;
-  @include clearfix;
+  @include container.container;
+  @include mixins.clearfix;
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  @include breakpoint.breakpoint(variables.$x-large) {
+    max-width: variables.$x-large;
   }
 }
 
 .page {
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+  @include breakpoint.breakpoint(variables.$large) {
+    @include span.span(10 of 12 last);
+    @include padding.prefix(0.5 of 12);
+    @include padding.suffix(2 of 12);
   }
 
   .page__inner-wrap {
-    @include full();
+    @include rows.full();
 
     .page__content,
     .page__meta,
     .page__share {
-      @include full();
+      @include rows.full();
     }
   }
 }
@@ -44,15 +54,15 @@
 }
 
 .page__lead {
-  font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-family: variables.$global-font-family;
+  font-size: variables.$type-size-4;
 }
 
 .page__content {
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid variables.$border-color;
   }
 
   p, li, dl {
@@ -61,13 +71,13 @@
 
   /* paragraph indents */
   p {
-    margin: 0 0 $indent-var;
+    margin: 0 0 variables.$indent-var;
 
     /* sibling indentation*/
-    @if $paragraph-indent == true {
+    @if variables.$paragraph-indent == true {
       & + p {
-        text-indent: $indent-var;
-        margin-top: -($indent-var);
+        text-indent: variables.$indent-var;
+        margin-top: -(variables.$indent-var);
       }
     }
   }
@@ -86,18 +96,18 @@
 
   dt {
     margin-top: 1em;
-    font-family: $sans-serif;
+    font-family: variables.$sans-serif;
     font-weight: bold;
   }
 
   dd {
     margin-left: 1em;
-    font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-family: variables.$sans-serif;
+    font-size: variables.$type-size-6;
   }
 
   .small {
-    font-size: $type-size-6;
+    font-size: variables.$type-size-6;
   }
 
   /* blockquote citations */
@@ -109,22 +119,22 @@
   .research-section {
     margin: 2.5rem 0;
     padding-top: 1.5rem;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid variables.$border-color;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       padding-top: 1.85rem;
     }
 
     > h1 {
       margin-top: 0;
       margin-bottom: 1.2rem;
-      font-size: $type-size-3;
+      font-size: variables.$type-size-3;
     }
 
     > h2 {
       margin-top: 0;
       margin-bottom: 1.2rem;
-      font-size: $type-size-4;
+      font-size: variables.$type-size-4;
     }
 
     > h3:first-of-type {
@@ -144,7 +154,7 @@
     &__title {
       display: inline;
       margin: 0;
-      font-size: $type-size-4;
+      font-size: variables.$type-size-4;
       font-weight: bold;
     }
   }
@@ -165,7 +175,7 @@
     }
 
     label {
-      color: $dark-gray;
+      color: variables.$dark-gray;
       font-weight: 600;
     }
 
@@ -186,14 +196,14 @@
       justify-self: start;
       min-height: 2.35rem;
       padding: 0.55rem 0.75rem;
-      background: rgba($primary-color, 0.06);
-      border: 1px solid rgba($primary-color, 0.15);
+      background: rgba(variables.$primary-color, 0.06);
+      border: 1px solid rgba(variables.$primary-color, 0.15);
       border-radius: 8px;
       white-space: nowrap;
 
       input {
         width: auto;
-        accent-color: $primary-color;
+        accent-color: variables.$primary-color;
       }
     }
 
@@ -217,7 +227,7 @@
       font-weight: 600;
     }
 
-    @include breakpoint(max-width $small) {
+    @include breakpoint.breakpoint(max-width variables.$small) {
       padding: 1rem;
 
       &__grid {
@@ -237,14 +247,14 @@
 
     &__hint {
       margin: 0.35rem 0 0;
-      color: $gray;
+      color: variables.$gray;
     }
 
     &__empty {
       padding: 1rem;
       text-align: center;
-      background: $lighter-gray;
-      border-radius: $border-radius;
+      background: variables.$lighter-gray;
+      border-radius: variables.$border-radius;
     }
   }
 
@@ -267,7 +277,7 @@
   .deadline-estimate {
     display: block;
     margin-top: 0.2rem;
-    color: $gray;
+    color: variables.$gray;
     font-size: 0.82em;
     white-space: nowrap;
   }
@@ -282,8 +292,8 @@
     height: 100%;
     padding: 1rem;
     background: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    border: 1px solid variables.$border-color;
+    border-radius: variables.$border-radius;
   }
 
   .publication-card__body {
@@ -297,7 +307,7 @@
     margin: 0;
     font-size: 1.02rem;
     line-height: 1.35;
-    color: $darker-gray;
+    color: variables.$darker-gray;
   }
 
   .publication-card__authors,
@@ -308,17 +318,17 @@
   }
 
   .publication-card__authors {
-    color: mix(#000, $gray, 52%);
+    color: color.mix(#000, variables.$gray, 52%);
   }
 
   .publication-card__venue {
-    color: $dark-gray;
+    color: variables.$dark-gray;
     font-weight: 600;
 
     a {
       color: inherit;
       text-decoration: none;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid variables.$border-color;
     }
   }
 
@@ -335,18 +345,18 @@
     align-items: center;
     min-height: 1.75rem;
     padding: 0.2rem 0.55rem;
-    border-radius: $border-radius;
-    border: 1px solid $border-color;
-    background: $lighter-gray;
-    color: $dark-gray;
+    border-radius: variables.$border-radius;
+    border: 1px solid variables.$border-color;
+    background: variables.$lighter-gray;
+    color: variables.$dark-gray;
     font-size: 0.77rem;
     font-weight: 600;
     text-decoration: none;
     transition: background-color 0.18s ease, border-color 0.18s ease;
 
     &:hover {
-      background: mix(#fff, $gray, 80%);
-      border-color: $light-gray;
+      background: color.mix(#fff, variables.$gray, 80%);
+      border-color: variables.$light-gray;
       text-decoration: none;
     }
   }
@@ -368,31 +378,31 @@
     gap: 0.2rem;
     padding: 1rem;
     background: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    border: 1px solid variables.$border-color;
+    border-radius: variables.$border-radius;
   }
 
   .service-overview__value {
     font-size: 1.55rem;
     font-weight: 700;
     line-height: 1;
-    color: $darker-gray;
+    color: variables.$darker-gray;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       font-size: 1.85rem;
     }
 
-    @include breakpoint($large) {
+    @include breakpoint.breakpoint(variables.$large) {
       font-size: 2.2rem;
     }
   }
 
   .service-overview__label {
-    font-size: $type-size-6;
+    font-size: variables.$type-size-6;
     font-weight: 600;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: $gray;
+    color: variables.$gray;
   }
 
   .service-section {
@@ -408,30 +418,30 @@
   .service-card {
     padding: 1rem;
     background: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    border: 1px solid variables.$border-color;
+    border-radius: variables.$border-radius;
 
     h3 {
       margin: 0 0 0.45rem;
-      font-size: $type-size-5;
+      font-size: variables.$type-size-5;
       border: 0;
       padding: 0;
-      color: $text-color;
+      color: variables.$text-color;
     }
   }
 
   .service-card__eyebrow {
     margin: 0 0 0.35rem;
-    font-size: $type-size-7;
+    font-size: variables.$type-size-7;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: $gray;
+    color: variables.$gray;
   }
 
   .service-card__meta {
     margin: 0;
-    color: $gray;
+    color: variables.$gray;
   }
 
   .service-tags {
@@ -445,17 +455,17 @@
     align-items: center;
     min-height: 1.75rem;
     padding: 0.2rem 0.55rem;
-    border-radius: $border-radius;
-    background: $lighter-gray;
-    border: 1px solid $border-color;
-    color: $dark-gray;
-    font-size: $type-size-6;
+    border-radius: variables.$border-radius;
+    background: variables.$lighter-gray;
+    border: 1px solid variables.$border-color;
+    color: variables.$dark-gray;
+    font-size: variables.$type-size-6;
     line-height: 1.35;
   }
 
   .people-table-section {
     > h2 {
-      color: $text-color;
+      color: variables.$text-color;
     }
 
     table {
@@ -464,27 +474,27 @@
       margin: 0.35rem 0 0;
       overflow-x: auto;
       background: #fff;
-      border: 1px solid $border-color;
+      border: 1px solid variables.$border-color;
       border-collapse: separate;
       border-spacing: 0;
-      border-radius: $border-radius;
+      border-radius: variables.$border-radius;
     }
 
     thead {
-      background: $lighter-gray;
+      background: variables.$lighter-gray;
     }
 
     th,
     td {
       padding: 0.75rem 0.85rem;
-      border-bottom: 1px solid $border-color;
-      font-size: $type-size-6;
+      border-bottom: 1px solid variables.$border-color;
+      font-size: variables.$type-size-6;
       line-height: 1.45;
       vertical-align: top;
     }
 
     th {
-      color: $dark-gray;
+      color: variables.$dark-gray;
       font-weight: 700;
       letter-spacing: 0.04em;
       text-transform: uppercase;
@@ -492,12 +502,12 @@
     }
 
     td {
-      color: $text-color;
+      color: variables.$text-color;
     }
 
     tbody tr {
       &:nth-child(even) {
-        background: mix(#fff, $gray, 96%);
+        background: color.mix(#fff, variables.$gray, 96%);
       }
     }
 
@@ -506,13 +516,13 @@
     }
 
     td:first-child {
-      color: $darker-gray;
+      color: variables.$darker-gray;
       font-weight: 700;
     }
 
     td:nth-child(2),
     td:nth-child(4) {
-      color: $dark-gray;
+      color: variables.$dark-gray;
       font-weight: 600;
       white-space: nowrap;
     }
@@ -520,7 +530,7 @@
 
   .people-list-section {
     > h2 {
-      color: $text-color;
+      color: variables.$text-color;
     }
   }
 
@@ -535,10 +545,10 @@
     gap: 0.5rem;
     padding: 0.85rem 1rem;
     background: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    border: 1px solid variables.$border-color;
+    border-radius: variables.$border-radius;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       grid-template-columns: minmax(7.5rem, 0.25fr) minmax(0, 1fr);
       align-items: start;
     }
@@ -547,15 +557,15 @@
       margin: 0 0 0.28rem;
       padding: 0;
       border: 0;
-      color: $darker-gray;
-      font-size: $type-size-5;
+      color: variables.$darker-gray;
+      font-size: variables.$type-size-5;
       line-height: 1.3;
     }
 
     p {
       margin: 0;
-      color: $gray;
-      font-size: $type-size-6;
+      color: variables.$gray;
+      font-size: variables.$type-size-6;
       line-height: 1.5;
     }
   }
@@ -565,7 +575,7 @@
     flex-wrap: wrap;
     gap: 0.35rem;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       align-content: flex-start;
     }
 
@@ -574,11 +584,11 @@
       align-items: center;
       min-height: 1.5rem;
       padding: 0.15rem 0.45rem;
-      border-radius: $border-radius;
-      background: $lighter-gray;
-      border: 1px solid $border-color;
-      color: $dark-gray;
-      font-size: $type-size-7;
+      border-radius: variables.$border-radius;
+      background: variables.$lighter-gray;
+      border: 1px solid variables.$border-color;
+      color: variables.$dark-gray;
+      font-size: variables.$type-size-7;
       font-weight: 600;
       line-height: 1.25;
       white-space: nowrap;
@@ -600,10 +610,10 @@
     gap: 0.5rem;
     padding: 0.85rem 1rem;
     background: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+    border: 1px solid variables.$border-color;
+    border-radius: variables.$border-radius;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       grid-template-columns: minmax(5rem, 0.18fr) minmax(0, 1fr);
       align-items: center;
     }
@@ -612,8 +622,8 @@
       margin: 0;
       padding: 0;
       border: 0;
-      color: $darker-gray;
-      font-size: $type-size-5;
+      color: variables.$darker-gray;
+      font-size: variables.$type-size-5;
       line-height: 1.35;
     }
   }
@@ -625,16 +635,16 @@
     width: fit-content;
     min-height: 1.5rem;
     padding: 0.15rem 0.55rem;
-    border-radius: $border-radius;
-    background: $lighter-gray;
-    border: 1px solid $border-color;
-    color: $dark-gray;
-    font-size: $type-size-7;
+    border-radius: variables.$border-radius;
+    background: variables.$lighter-gray;
+    border: 1px solid variables.$border-color;
+    color: variables.$dark-gray;
+    font-size: variables.$type-size-7;
     font-weight: 600;
     line-height: 1.25;
     white-space: nowrap;
 
-    @include breakpoint($medium) {
+    @include breakpoint.breakpoint(variables.$medium) {
       width: 100%;
     }
   }
@@ -643,7 +653,7 @@
 .page__hero {
   position: relative;
   margin-bottom: 2em;
-  @include clearfix;
+  @include mixins.clearfix;
   animation: intro 0.3s both;
   animation-delay: 0.25s;
 
@@ -651,7 +661,7 @@
     position: relative;
     margin-bottom: 2em;
     padding: 3em 0;
-    @include clearfix;
+    @include mixins.clearfix;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -666,8 +676,8 @@
       padding-left: 1em;
       padding-right: 1em;
 
-      @include breakpoint($x-large) {
-        max-width: $x-large;
+      @include breakpoint.breakpoint(variables.$x-large) {
+        max-width: variables.$x-large;
       }
     }
 
@@ -680,14 +690,14 @@
     }
 
     .page__lead {
-      max-width: $medium;
+      max-width: variables.$medium;
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: variables.$type-size-2;
 
-      @include breakpoint($small) {
-        font-size: $type-size-1;
+      @include breakpoint.breakpoint(variables.$small) {
+        font-size: variables.$type-size-1;
       }
     }
   }
@@ -706,15 +716,15 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $caption-font-family;
-  font-size: $type-size-7;
+  font-family: variables.$caption-font-family;
+  font-size: variables.$type-size-7;
   background: #000;
   text-align: right;
   z-index: 5;
   opacity: 0.5;
-  border-radius: $border-radius 0 $border-radius 0;
+  border-radius: variables.$border-radius 0 variables.$border-radius 0;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     padding: 5px 10px;
   }
 
@@ -731,9 +741,9 @@
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid variables.$border-color;
 
-  @include breakpoint(max-width $small) {
+  @include breakpoint.breakpoint(max-width variables.$small) {
     .btn span {
       border: 0;
       clip: rect(0 0 0 0);
@@ -749,7 +759,7 @@
 
 .page__share-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: variables.$type-size-6;
   text-transform: uppercase;
 }
 
@@ -760,9 +770,9 @@
 
 .page__meta {
   margin-top: 2em;
-  color: mix(#fff, $gray, 25%);
-  font-family: $sans-serif;
-  font-size: $type-size-6;
+  color: color.mix(#fff, variables.$gray, 25%);
+  font-family: variables.$sans-serif;
+  font-size: variables.$type-size-6;
 
   p {
     margin: 0;
@@ -775,7 +785,7 @@
 
 .page__meta-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: variables.$type-size-6;
   text-transform: uppercase;
 }
 
@@ -800,12 +810,12 @@
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid $light-gray;
-  border-radius: $border-radius;
+  border: 1px solid variables.$light-gray;
+  border-radius: variables.$border-radius;
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: variables.$link-color-hover;
   }
 }
 
@@ -815,22 +825,22 @@
    ========================================================================== */
 
 .page__comments {
-  @include full();
+  @include rows.full();
 }
 
 .page__comments-title {
   margin-top: 2rem;
   margin-bottom: 10px;
   padding-top: 2rem;
-  font-size: $type-size-6;
-  border-top: 1px solid $border-color;
+  font-size: variables.$type-size-6;
+  border-top: 1px solid variables.$border-color;
   text-transform: uppercase;
 }
 
 .page__comments-form {
   padding: 1em;
-  background: $lighter-gray;
-  transition: $global-transition;
+  background: variables.$lighter-gray;
+  transition: variables.$global-transition;
 
   &.disabled {
     input,
@@ -847,11 +857,11 @@
 }
 
 .comment {
-  @include clearfix();
+  @include mixins.clearfix();
   margin: 1em 0;
 
   &:not(:last-child) {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid variables.$border-color;
   }
 }
 
@@ -860,7 +870,7 @@
   width: 60px;
   height: 60px;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     width: 100px;
     height: 100px;
   }
@@ -871,11 +881,11 @@
   height: 40px;
   border-radius: 50%;
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     width: 80px;
     height: 80px;
     padding: 5px;
-    border: 1px solid $border-color;
+    border: 1px solid variables.$border-color;
   }
 }
 
@@ -883,7 +893,7 @@
   float: right;
   width: calc(100% - 60px);
 
-  @include breakpoint($large) {
+  @include breakpoint.breakpoint(variables.$large) {
     width: calc(100% - 100px);
   }
 }
@@ -913,12 +923,12 @@
 .page__related {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
-  @include clearfix();
+  border-top: 1px solid variables.$border-color;
+  @include mixins.clearfix();
   float: left;
 
-  @include breakpoint($large) {
-    @include pre(2.5 of 12);
+  @include breakpoint.breakpoint(variables.$large) {
+    @include margins.pre(2.5 of 12);
   }
 
   a {
@@ -929,6 +939,6 @@
 
 .page__related-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: variables.$type-size-6;
   text-transform: uppercase;
 }

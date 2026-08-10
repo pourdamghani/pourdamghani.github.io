@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "../../su/settings";
+@use "direction";
+@use "output";
+
 // Grid Background API
 // ===================
 // - Sub-pixel rounding can lead to several pixels variation between browsers.
@@ -12,15 +17,15 @@
   $image,
   $size: null,
   $clip: null,
-  $flow: map-get($susy-defaults, flow)
+  $flow: map.get(settings.$susy-defaults, flow)
 ) {
   $output: (
     background-image: $image,
     background-size: $size,
     background-origin: $clip,
     background-clip: $clip,
-    background-position: from($flow) top,
+    background-position: direction.from($flow) top,
   );
 
-  @include output($output);
+  @include output.output($output);
 }

@@ -1,3 +1,10 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+@use "../../../../breakpoint/breakpoint";
+@use "../../output/support/support";
+@use "grids";
+
 // Breakpoint Integration
 // ======================
 
@@ -20,7 +27,7 @@ $_susy-media-context: ();
 ) {
   @include susy-media-router($query, $no-query) {
     @if $layout {
-      @include with-layout($layout) {
+      @include grids.with-layout($layout) {
         @content;
       }
     } @else {
@@ -39,20 +46,20 @@ $_susy-media-context: ();
   $no-query: $susy-media-fallback
 ) {
   $old-context: $_susy-media-context;
-  $name: if(map-has-key($susy-media, $query), $query, null);
+  $name: if(map.has-key($susy-media, $query), $query, null);
   $query: susy-get-media($query);
   $query: susy-parse-media($query);
 
   @include susy-media-context($query, $name);
 
-  @if $no-query and type-of($no-query) != string {
+  @if $no-query and meta.type-of($no-query) != string {
     @content;
   } @else {
     @media #{susy-render-media($query)} {
       @content;
     }
 
-    @if type-of($no-query) == string {
+    @if meta.type-of($no-query) == string {
       #{$no-query} & {
         @content;
       }
@@ -70,8 +77,8 @@ $_susy-media-context: ();
   $query,
   $no-query: $susy-media-fallback
 ) {
-  @if susy-support(breakpoint, (mixin: breakpoint), $warn: false) {
-    @include breakpoint($query, $no-query) {
+  @if support.susy-support(breakpoint, (mixin: breakpoint), $warn: false) {
+    @include breakpoint.breakpoint($query, $no-query) {
       @content;
     }
   } @else {
@@ -90,12 +97,12 @@ $_susy-media-context: ();
   $name: null,
   $clean: false
 ) {
-  $query: map-merge((name: $name), $query);
+  $query: map.merge((name: $name), $query);
 
   @if $clean {
     $_susy-media-context: $query !global;
   } @else {
-    $_susy-media-context: map-merge($_susy-media-context, $query) !global;
+    $_susy-media-context: map.merge($_susy-media-context, $query) !global;
   }
 }
 
@@ -107,7 +114,7 @@ $_susy-media-context: ();
   $property: false
 ) {
   @if $property {
-    @return map-get($_susy-media-context, $property);
+    @return map.get($_susy-media-context, $property);
   } @else {
     @return $_susy-media-context;
   }
@@ -121,8 +128,8 @@ $_susy-media-context: ();
 @function susy-get-media(
   $name
 ) {
-  @if map-has-key($susy-media, $name) {
-    $map-value: map-get($susy-media, $name);
+  @if map.has-key($susy-media, $name) {
+    $map-value: map.get($susy-media, $name);
     @if ($name == $map-value) {
       $name: $map-value;
     } @else {
@@ -164,18 +171,18 @@ $_susy-media-context: ();
   $query
 ) {
   $mq: null;
-  @if type-of($query) == map {
+  @if meta.type-of($query) == map {
     $mq: $query;
-  } @else if type-of($query) == number {
+  } @else if meta.type-of($query) == number {
     $mq: (min-width: $query);
-  } @else if type-of($query) == list and length($query) == 2 {
-    @if type-of(nth($query, 1)) == number {
+  } @else if meta.type-of($query) == list and list.length($query) == 2 {
+    @if meta.type-of(list.nth($query, 1)) == number {
       $mq: (
         min-width: min($query...),
         max-width: max($query...),
       );
     } @else {
-      $mq: (nth($query, 1): nth($query, 2));
+      $mq: (list.nth($query, 1): list.nth($query, 2));
     }
   } @else {
     $mq: (media: '#{$query}');

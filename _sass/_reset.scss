@@ -1,16 +1,21 @@
+@use "mixins";
+@use "variables";
+@use "vendor/breakpoint/breakpoint";
+@use "vendor/susy/susy/language/susy/box-sizing";
+
 /* ==========================================================================
    STYLE RESETS
    ========================================================================== */
 
-@include border-box-sizing;
+@include box-sizing.border-box-sizing;
 
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: $background-color;
+  background-color: variables.$background-color;
   font-size: 16px;
 
-  @include breakpoint($medium) {
+  @include breakpoint.breakpoint(variables.$medium) {
     font-size: 18px;
   }
 
@@ -67,13 +72,13 @@ audio:not([controls]) {
 }
 
 a {
-  color: $link-color;
+  color: variables.$link-color;
 }
 
 /* Apply focus state */
 
 a:focus {
-  @extend %tab-focus;
+  @include mixins.tab-focus;
 }
 
 /* Remove outline from links */

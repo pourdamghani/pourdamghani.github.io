@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
 // Map Functions
 // =============
 
@@ -11,8 +14,8 @@
 ) {
   $_return: ();
 
-  @for $i from 1 through length($list) {
-    $_return: if($i <= $length, append($_return, nth($list, $i)), $_return);
+  @for $i from 1 through list.length($list) {
+    $_return: if($i <= $length, list.append($_return, list.nth($list, $i)), $_return);
   }
 
   @return $_return;
@@ -22,15 +25,15 @@
 // Deep Get
 // --------
 // - Return a value deep in nested maps
-@function _susy-deep-get(
+@function susy-deep-get(
   $map,
   $keys...
 ) {
   $_return: $map;
 
   @each $key in $keys {
-    @if type-of($_return) == map {
-      $_return: map-get($_return, $key);
+    @if meta.type-of($_return) == map {
+      $_return: map.get($_return, $key);
     }
   }
 
@@ -41,22 +44,22 @@
 // Deep Set
 // --------
 // - Set a value deep in nested maps
-@function _susy-deep-set(
+@function susy-deep-set(
   $map,
   $keys-value...
 ) {
-  $_value: nth($keys-value, -1);
-  $_keys: _susy-truncate-list($keys-value, length($keys-value) - 1);
-  $_length: length($_keys);
+  $_value: list.nth($keys-value, -1);
+  $_keys: _susy-truncate-list($keys-value, list.length($keys-value) - 1);
+  $_length: list.length($_keys);
   $_return: ();
 
   @for $i from 1 through $_length {
     $_n: 0 - $i;
     $_level: _susy-truncate-list($_keys, $_length + $_n);
-    $_level: _susy-deep-get($map, $_level...);
-    $_merge: nth($_keys, $_n);
+    $_level: susy-deep-get($map, $_level...);
+    $_merge: list.nth($_keys, $_n);
     $_merge: ($_merge: $_value);
-    $_return: if($_level, map-merge($_level, $_merge), $_merge);
+    $_return: if($_level, map.merge($_level, $_merge), $_merge);
     $_value: $_return;
   }
 
@@ -67,17 +70,17 @@
 // Deep Merge
 // ----------
 // Return 2 objects of any depth, merged
-@function _susy-deep-merge(
+@function susy-deep-merge(
   $map1,
   $map2
 ) {
 
-  @if type-of($map1) != map or type-of($map2) != map {
+  @if meta.type-of($map1) != map or meta.type-of($map2) != map {
     $map1: $map2;
   } @else {
     @each $key, $value in $map2 {
-      $_new: ($key: _susy_deep-merge(map-get($map1, $key), $value));
-      $map1: map-merge($map1, $_new);
+      $_new: ($key: _susy_deep-merge(map.get($map1, $key), $value));
+      $map1: map.merge($map1, $_new);
     }
   }
 
@@ -88,7 +91,7 @@
 // Deep Has-Key
 // ------------
 // - Return true if a deep key exists
-@function _susy-deep-has-key(
+@function susy-deep-has-key(
   $map,
   $keys...
 ) {
@@ -97,11 +100,11 @@
 
   @each $key in $keys {
     @if not($_stop) {
-      $_return: map-has-key($map, $key);
+      $_return: map.has-key($map, $key);
     }
 
     @if $_return {
-      $map: map-get($map, $key);
+      $map: map.get($map, $key);
     } @else {
       $_stop: true;
     }

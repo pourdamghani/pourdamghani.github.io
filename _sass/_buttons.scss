@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 /* ==========================================================================
    BUTTONS
    ========================================================================== */
@@ -6,24 +9,28 @@
    Default button
    ========================================================================== */
 
-.btn {
-  /* default button */
+@mixin button-base {
   display: inline-block;
   margin-bottom: 0.25em;
   padding: 0.5em 1em;
   color: #fff !important;
-  font-family: $sans-serif;
-  font-size: $type-size-6;
+  font-family: variables.$sans-serif;
+  font-size: variables.$type-size-6;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: $primary-color;
+  background-color: variables.$primary-color;
   border: 0 !important;
-  border-radius: $border-radius;
+  border-radius: variables.$border-radius;
   cursor: pointer;
+}
+
+.btn {
+  /* default button */
+  @include button-base;
 
   &:hover {
-    background-color: mix(white, #000, 20%);
+    background-color: color.mix(white, #000, 20%);
   }
 
   .icon {
@@ -48,13 +55,13 @@
   /* for dark backgrounds */
 
   &--inverse {
-    color: $gray !important;
-    border: 1px solid $light-gray !important; /* override*/
+    color: variables.$gray !important;
+    border: 1px solid variables.$light-gray !important; /* override*/
     background-color: #fff;
 
     &:hover {
       color: #fff !important;
-      border-color: $gray;
+      border-color: variables.$gray;
     }
   }
 
@@ -68,40 +75,40 @@
   /* information */
 
   &--info {
-    background-color: $info-color;
+    background-color: variables.$info-color;
 
     &:hover {
-      background-color: mix(#000, $info-color, 20%);
+      background-color: color.mix(#000, variables.$info-color, 20%);
     }
   }
 
   /* warning */
 
   &--warning {
-    background-color: $warning-color;
+    background-color: variables.$warning-color;
 
     &:hover {
-      background-color: mix(#000, $warning-color, 20%);
+      background-color: color.mix(#000, variables.$warning-color, 20%);
     }
   }
 
   /* success */
 
   &--success {
-    background-color: $success-color;
+    background-color: variables.$success-color;
 
     &:hover {
-      background-color: mix(#000, $success-color, 20%);
+      background-color: color.mix(#000, variables.$success-color, 20%);
     }
   }
 
   /* danger */
 
   &--danger {
-    background-color: $danger-color;
+    background-color: variables.$danger-color;
 
     &:hover {
-      background-color: mix(#000, $danger-color, 20%);
+      background-color: color.mix(#000, variables.$danger-color, 20%);
     }
   }
 
@@ -118,17 +125,17 @@
   /* social buttons */
 
   $social:
-  (facebook, $facebook-color),
-  (twitter, $twitter-color),
-  (google-plus, $google-plus-color),
-  (linkedin, $linkedin-color);
+  (facebook, variables.$facebook-color),
+  (twitter, variables.$twitter-color),
+  (google-plus, variables.$google-plus-color),
+  (linkedin, variables.$linkedin-color);
 
   @each $socialnetwork, $color in $social {
     &--#{$socialnetwork} {
       background-color: $color;
 
       &:hover {
-        background-color: mix(#000, $color, 20%);
+        background-color: color.mix(#000, $color, 20%);
       }
     }
   }
@@ -136,18 +143,18 @@
   /* extra large button */
 
   &--x-large {
-    font-size: $type-size-4;
+    font-size: variables.$type-size-4;
   }
 
   /* large button */
 
   &--large {
-    font-size: $type-size-5;
+    font-size: variables.$type-size-5;
   }
 
   /* small button */
 
   &--small {
-    font-size: $type-size-7;
+    font-size: variables.$type-size-7;
   }
 }

@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "output";
+
 // Shared Container API
 // ====================
 
@@ -13,9 +16,9 @@
 ) {
   $output: (
     #{$property}: $width or 100%,
-    margin-left: nth($justify, 1),
-    margin-right: nth($justify, 2),
+    margin-left: list.nth($justify, 1),
+    margin-right: list.nth($justify, 2),
   );
 
-  @include output($output);
+  @include output.output($output);
 }

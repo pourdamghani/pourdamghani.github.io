@@ -1,3 +1,14 @@
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+@use "../../output/float/isolate" as float-isolate;
+@use "../../output/shared/inspect";
+@use "../../su/settings" as su-settings;
+@use "gutters";
+@use "rows";
+@use "settings" as susy-settings;
+@use "span";
+
 // Isolation Syntax
 // ================
 
@@ -13,11 +24,11 @@
 
   $output: (
     push: isolate($isolate),
-    flow: susy-get(flow, $isolate),
+    flow: su-settings.susy-get(flow, $isolate),
   );
 
-  @include susy-inspect(isolate, $inspect);
-  @include isolate-output($output...);
+  @include inspect.susy-inspect(isolate, $inspect);
+  @include float-isolate.isolate-output($output...);
 }
 
 
@@ -28,15 +39,15 @@
 @function isolate(
   $isolate: 1
 ) {
-  $isolate: parse-span($isolate);
-  $isolation: susy-get(span, $isolate);
+  $isolate: susy-settings.parse-span($isolate);
+  $isolation: su-settings.susy-get(span, $isolate);
 
-  @if $isolation and not(get-location($isolate)) {
+  @if $isolation and not(rows.get-location($isolate)) {
     $new: (
       span: null,
       location: $isolation,
     );
-    $isolate: map-merge($isolate, $new);
+    $isolate: map.merge($isolate, $new);
   }
 
   @return get-isolation($isolate);
@@ -50,27 +61,27 @@
 @function get-isolation(
   $input
 ) {
-  $location   : get-location($input);
-  $columns    : susy-get(columns, $input);
+  $location   : rows.get-location($input);
+  $columns    : su-settings.susy-get(columns, $input);
   $width      : null;
 
-  @if type-of($location) == number and not(unitless($location)) {
+  @if meta.type-of($location) == number and not(math.is-unitless($location)) {
     $width: $location;
   } @else if $location {
     $push: $location - 1;
     @if $push > 0 {
-      $push: map-merge($input, (
+      $push: map.merge($input, (
         span: $push,
         location: 1,
         spread: wide,
       ));
-      $width: get-span-width($push);
+      $width: span.get-span-width($push);
     }
   }
 
-  @if susy-get(gutter-position, $input) == split
-      and susy-get(gutters, $input) > 0 {
-    $width: if($width == null, gutters($input), $width + gutters($input));
+  @if su-settings.susy-get(gutter-position, $input) == split
+      and su-settings.susy-get(gutters, $input) > 0 {
+    $width: if($width == null, gutters.gutters($input), $width + gutters.gutters($input));
   }
 
   @return $width or 0;

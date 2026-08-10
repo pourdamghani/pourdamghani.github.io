@@ -1,15 +1,15 @@
 // Shared API
 // ==========
 
-@import "support";
+@use "support";
 
-@import "shared/inspect";
-@import "shared/output";
-@import "shared/direction";
-@import "shared/background";
-@import "shared/container";
-@import "shared/margins";
-@import "shared/padding";
+@use "shared/inspect";
+@use "shared/output";
+@use "shared/direction";
+@use "shared/background";
+@use "shared/container";
+@use "shared/margins";
+@use "shared/padding";
 
 
 

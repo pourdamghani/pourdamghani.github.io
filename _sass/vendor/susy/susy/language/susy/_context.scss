@@ -1,3 +1,11 @@
+@use "sass:map";
+@use "../../../../../variables";
+@use "../../output/shared/inspect";
+@use "../../su/grid";
+@use "../../su/settings" as su-settings;
+@use "rows";
+@use "settings" as susy-settings;
+
 // Context Syntax
 // ==============
 
@@ -8,12 +16,12 @@
 @function nested(
   $context
 ) {
-  $context    : parse-span($context);
-  $span       : susy-get(span, $context);
-  $location   : get-location($context);
-  $columns    : susy-get(columns, $context);
+  $context    : susy-settings.parse-span($context);
+  $span       : su-settings.susy-get(span, $context);
+  $location   : rows.get-location($context);
+  $columns    : su-settings.susy-get(columns, $context);
 
-  @return susy-slice($span, $location, $columns);
+  @return grid.susy-slice($span, $location, $columns);
 }
 
 // Nested [mixin]
@@ -25,12 +33,12 @@
   $context
 ) {
   $inspect  : $context;
-  $context  : parse-span($context);
-  $old      : susy-get(columns);
-  $susy     : map-merge($susy, (columns: nested($context))) !global;
+  $context  : susy-settings.parse-span($context);
+  $old      : su-settings.susy-get(columns);
+  @include variables.set-susy(map.merge(variables.$susy, (columns: nested($context))));
 
-  @include susy-inspect(nested, $inspect);
+  @include inspect.susy-inspect(nested, $inspect);
   @content;
 
-  $susy     : map-merge($susy, (columns: $old)) !global;
+  @include variables.set-susy(map.merge(variables.$susy, (columns: $old)));
 }

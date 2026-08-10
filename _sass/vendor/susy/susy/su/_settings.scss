@@ -1,3 +1,9 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../../../../variables";
+@use "../language/susy/settings";
+@use "utilities";
+
 // Settings
 // ========
 
@@ -29,7 +35,7 @@ $susy: () !default;
 @mixin susy-defaults(
   $defaults
 ) {
-  $susy-defaults: map-merge($susy-defaults, $defaults) !global;
+  $susy-defaults: map.merge($susy-defaults, $defaults) !global;
 }
 
 
@@ -41,7 +47,7 @@ $susy: () !default;
 @mixin susy-set(
   $key-value...
 ) {
-  $susy: _susy-deep-set($susy, $key-value...) !global;
+  @include variables.set-susy(utilities.susy-deep-set(variables.$susy, $key-value...));
 }
 
 
@@ -52,18 +58,18 @@ $susy: () !default;
 // - $layout  : <settings>
 @function susy-get(
   $key,
-  $layout: map-merge($susy-defaults, $susy)
+  $layout: map.merge($susy-defaults, variables.$susy)
 ) {
-  $layout: parse-grid($layout);
-  $_options: $layout $susy $susy-defaults;
+  $layout: settings.parse-grid($layout);
+  $_options: $layout variables.$susy $susy-defaults;
   $_break: false;
   $_return: null;
 
   @each $opt in $_options {
-    @if type-of($opt) == map and not($_break) {
-      $_keyset: _susy-deep-has-key($opt, $key...);
+    @if meta.type-of($opt) == map and not($_break) {
+      $_keyset: utilities.susy-deep-has-key($opt, $key...);
       @if $_keyset {
-        $_return: _susy-deep-get($opt, $key...);
+        $_return: utilities.susy-deep-get($opt, $key...);
         $_break: true;
       }
     }

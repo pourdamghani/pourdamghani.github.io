@@ -1,3 +1,15 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+@use "sass:string";
+@use "../../output/shared/inspect";
+@use "../../output/shared/output";
+@use "../../su/settings" as su-settings;
+@use "gutters";
+@use "settings" as susy-settings;
+@use "span";
+
 // Bleed Syntax
 // ============
 
@@ -6,17 +18,17 @@
 // Add negative margins, and equal positive padding to create bleed.
 // - $bleed  : <span>
 @mixin bleed(
-  $bleed: 0 gutter()
+  $bleed: 0 gutters.gutter()
 ) {
   $inspect  : $bleed;
   $output   : get-bleed($bleed);
 
-  @if susy-get(global-box-sizing) != content-box {
-    $output: map-merge((box-sizing: content-box), $output);
+  @if su-settings.susy-get(global-box-sizing) != content-box {
+    $output: map.merge((box-sizing: content-box), $output);
   }
 
-  @include susy-inspect(bleed, $inspect);
-  @include output($output);
+  @include inspect.susy-inspect(bleed, $inspect);
+  @include output.output($output);
 }
 
 
@@ -25,17 +37,17 @@
 // Shortcut for horizontal bleed.
 // - $bleed  : <span>
 @mixin bleed-x(
-  $bleed: gutter()
+  $bleed: gutters.gutter()
 ) {
-  $bleed  : parse-span($bleed);
-  $trbl   : susy-get(span, $bleed);
+  $bleed  : susy-settings.parse-span($bleed);
+  $trbl   : su-settings.susy-get(span, $bleed);
 
-  @if length($trbl) == 1 {
-    $bleed: map-merge($bleed, (span: 0 nth($trbl, 1)));
-  } @else if length($trbl) == 2 {
-    $bleed: map-merge($bleed, (span: 0 nth($trbl, 2) 0 nth($trbl, 1)));
+  @if list.length($trbl) == 1 {
+    $bleed: map.merge($bleed, (span: 0 list.nth($trbl, 1)));
+  } @else if list.length($trbl) == 2 {
+    $bleed: map.merge($bleed, (span: 0 list.nth($trbl, 2) 0 list.nth($trbl, 1)));
   } @else {
-    @warn 'bleed-x only takes 2 lengths, but #{length($trbl)} were passed.';
+    @warn 'bleed-x only takes 2 lengths, but #{list.length($trbl)} were passed.';
   }
 
   @include bleed($bleed);
@@ -47,17 +59,17 @@
 // Shortcut for vertical bleed.
 // - $bleed  : <span>
 @mixin bleed-y(
-  $bleed: if(function-exists(rhythm), rhythm(1), 1em)
+  $bleed: if(meta.function-exists(rhythm), rhythm(1), 1em)
 ) {
-  $bleed  : parse-span($bleed);
-  $trbl   : susy-get(span, $bleed);
+  $bleed  : susy-settings.parse-span($bleed);
+  $trbl   : su-settings.susy-get(span, $bleed);
 
-  @if length($trbl) == 1 {
-    $bleed: map-merge($bleed, (span: nth($trbl, 1) 0));
-  } @else if length($trbl) == 2 {
-    $bleed: map-merge($bleed, (span: nth($trbl, 1) 0 nth($trbl, 2) 0));
+  @if list.length($trbl) == 1 {
+    $bleed: map.merge($bleed, (span: list.nth($trbl, 1) 0));
+  } @else if list.length($trbl) == 2 {
+    $bleed: map.merge($bleed, (span: list.nth($trbl, 1) 0 list.nth($trbl, 2) 0));
   } @else {
-    @warn 'bleed-y only takes 2 lengths, but #{length($trbl)} were passed.';
+    @warn 'bleed-y only takes 2 lengths, but #{list.length($trbl)} were passed.';
   }
 
   @include bleed($bleed);
@@ -71,21 +83,21 @@
 @function get-bleed(
   $bleed
 ) {
-  $bleed    : map-merge((spread: wide), parse-span($bleed));
-  $trbl     : susy-get(span, $bleed);
+  $bleed    : map.merge((spread: wide), susy-settings.parse-span($bleed));
+  $trbl     : su-settings.susy-get(span, $bleed);
   $short    : null;
   $output   : ();
 
-  @for $i from 1 through length($trbl) {
-    $this: nth($trbl, $i);
+  @for $i from 1 through list.length($trbl) {
+    $this: list.nth($trbl, $i);
     $new: ();
     $margin: null;
     $padding: null;
     $padding-x: null;
 
     @if $this > 0 {
-      $this: map-merge($bleed, (span: $this));
-      $margin: span($this);
+      $this: map.merge($bleed, (span: $this));
+      $margin: span.span($this);
       $padding: $margin;
       $padding-x: $padding;
     }
@@ -93,9 +105,9 @@
     @if $margin and $margin > 0 {
       $margin: - $margin;
 
-      @if is-inside($this) {
-        $gutter: gutter($this);
-        $join: if($gutter and comparable($padding, $gutter), true, false);
+      @if gutters.is-inside($this) {
+        $gutter: gutters.gutter($this);
+        $join: if($gutter and math.compatible($padding, $gutter), true, false);
         $padding-x: if($join and $padding > 0, $padding + $gutter, $padding);
       }
     }
@@ -130,11 +142,11 @@
       );
     }
 
-    $output: map-merge($output, $new);
+    $output: map.merge($output, $new);
   }
 
   @each $prop, $value in $output {
-    $output: if($value == 0, map-merge($output, ($prop: null)), $output);
+    $output: if($value == 0, map.merge($output, ($prop: null)), $output);
   }
 
   @return bleed-shorthand($output);
@@ -152,10 +164,10 @@
   $return: ();
 
   @each $key, $value in $bleed {
-    @if str-index($key, margin) {
-      $margin: map-merge($margin, ($key: $value));
-    } @else if str-index($key, padding) > 0 {
-      $padding: map-merge($padding, ($key: $value));
+    @if string.index($key, margin) {
+      $margin: map.merge($margin, ($key: $value));
+    } @else if string.index($key, padding) > 0 {
+      $padding: map.merge($padding, ($key: $value));
     }
   }
 
@@ -165,14 +177,14 @@
   );
 
   @each $name, $map in $props {
-    $four: if(length(map-keys($map)) == 4, true, false);
-    $null: if(index(map-values($map), null), true, false);
+    $four: if(list.length(map.keys($map)) == 4, true, false);
+    $null: if(list.index(map.values($map), null), true, false);
 
     @if $four and not($null) {
-      $top: map-get($map, '#{$name}-top');
-      $right: map-get($map, '#{$name}-right');
-      $bottom: map-get($map, '#{$name}-bottom');
-      $left: map-get($map, '#{$name}-left');
+      $top: map.get($map, '#{$name}-top');
+      $right: map.get($map, '#{$name}-right');
+      $bottom: map.get($map, '#{$name}-bottom');
+      $left: map.get($map, '#{$name}-left');
 
       $tb: if($top == $bottom, $top, null);
       $rl: if($right == $left, $right, null);
@@ -190,9 +202,9 @@
         }
       }
 
-      $return: map-merge($return, ($name: $new));
+      $return: map.merge($return, ($name: $new));
     } @else {
-      $return: map-merge($return, $map);
+      $return: map.merge($return, $map);
     }
   }
 

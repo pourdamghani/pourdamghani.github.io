@@ -7,32 +7,30 @@
  *
 */
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
-@import "variables";
-@import "mixins";
-@import "vendor/susy/susy";
+@use "../../_sass/vendor/breakpoint/breakpoint"; // media query mixins
+@use "../../_sass/variables";
+@use "../../_sass/mixins";
+@use "../../_sass/reset";
+@use "../../_sass/base";
 
-@import "reset";
-@import "base";
+@use "../../_sass/utilities";
+@use "../../_sass/animations";
+@use "../../_sass/tables";
+@use "../../_sass/buttons";
+@use "../../_sass/notices";
+@use "../../_sass/masthead";
+@use "../../_sass/navigation";
+@use "../../_sass/footer";
+@use "../../_sass/syntax";
 
-@import "utilities";
-@import "animations";
-@import "tables";
-@import "buttons";
-@import "notices";
-@import "masthead";
-@import "navigation";
-@import "footer";
-@import "syntax";
+@use "../../_sass/forms";
 
-@import "forms";
+@use "../../_sass/page";
+@use "../../_sass/archive";
+@use "../../_sass/sidebar";
 
-@import "page";
-@import "archive";
-@import "sidebar";
-
-@import "vendor/font-awesome/fontawesome";
-@import "vendor/font-awesome/solid";
-@import "vendor/font-awesome/brands";
-@import "vendor/magnific-popup/magnific-popup";
-@import "print";
+@use "../../_sass/vendor/font-awesome/fontawesome";
+@use "../../_sass/vendor/font-awesome/solid";
+@use "../../_sass/vendor/font-awesome/brands";
+@use "../../_sass/vendor/magnific-popup/magnific-popup";
+@use "../../_sass/print";

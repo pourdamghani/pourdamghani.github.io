@@ -1,3 +1,6 @@
+@use "../shared/container";
+@use "../support/clearfix";
+
 // Float Container API
 // ===================
 
@@ -11,6 +14,6 @@
   $justify: auto auto,
   $property: max-width
 ) {
-  @include susy-clearfix;
-  @include container-output($width, $justify, $property);
+  @include clearfix.susy-clearfix;
+  @include container.container-output($width, $justify, $property);
 }

@@ -1,3 +1,6 @@
+@use "../../../../../mixins";
+@use "support";
+
 // Susy Fallback Clearfix
 // ======================
 
@@ -6,8 +9,8 @@
 // --------
 // Check for an existing support mixin, or provide a simple fallback.
 @mixin susy-clearfix {
-  @if susy-support(clearfix, (mixin: clearfix)) {
-    @include clearfix;
+  @if support.susy-support(clearfix, (mixin: clearfix)) {
+    @include mixins.clearfix;
   } @else {
     &:after {
       content: " ";

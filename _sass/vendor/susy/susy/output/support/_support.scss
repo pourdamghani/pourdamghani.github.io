@@ -1,9 +1,15 @@
+@use "sass:meta";
+@use "../../su/settings";
+@use "background";
+@use "box-sizing";
+@use "rem";
+
 // Browser Support
 // ===============
 
 // Susy Support Defaults
 // ---------------------
-@include susy-defaults((
+@include settings.susy-defaults((
   use-custom: (
     clearfix: false,
     background-image: true,
@@ -26,23 +32,23 @@
 ) {
   // Background Support
   @if $prop == background-image {
-    @include susy-background-image($val);
+    @include background.susy-background-image($val);
   } @else if $prop == background-size {
-    @include susy-background-size($val);
+    @include background.susy-background-size($val);
   } @else if $prop == background-origin {
-    @include susy-background-origin($val);
+    @include background.susy-background-origin($val);
   } @else if $prop == background-clip {
-    @include susy-background-clip($val);
+    @include background.susy-background-clip($val);
   }
 
   // Box-Sizing Support
   @else if $prop == box-sizing {
-    @include susy-box-sizing($val);
+    @include box-sizing.susy-box-sizing($val);
   }
 
   // Rem Support
   @else {
-    @include susy-rem($prop, $val);
+    @include rem.susy-rem($prop, $val);
   }
 }
 
@@ -60,14 +66,14 @@
   $requirements: (),
   $warn: true
 ) {
-  $_support: susy-get(use-custom $feature);
+  $_support: settings.susy-get(use-custom $feature);
 
   @if $_support {
     $_fail: false;
 
     @each $_type, $_req in $requirements {
       @each $_i in $_req {
-        $_pass: call(get-function(unquote("#{$_type}-exists")), $_i);
+        $_pass: meta.call(meta.get-function(unquote("#{$_type}-exists")), $_i);
 
         @if not($_pass) {
           $_fail: true;

@@ -1,10 +1,15 @@
+@use "sass:map";
+@use "../../su/settings";
+@use "../shared/direction";
+@use "../shared/output";
+
 // Float Ends API
 // ==============
 
 // Susy End Defaults
 // -----------------
 // - PRIVATE
-@include susy-defaults((
+@include settings.susy-defaults((
   last-flow: to,
 ));
 
@@ -12,29 +17,29 @@
 // ----------
 // - [$flow]  : ltr | rtl
 @mixin float-last(
-  $flow: map-get($susy-defaults, flow),
-  $last-flow: map-get($susy-defaults, last-flow),
+  $flow: map.get(settings.$susy-defaults, flow),
+  $last-flow: map.get(settings.$susy-defaults, last-flow),
   $margin: 0
 ) {
-  $to: to($flow);
+  $to: direction.to($flow);
 
   $output: (
     float: if($last-flow == to, $to, null),
     margin-#{$to}: $margin,
   );
 
-  @include output($output);
+  @include output.output($output);
 }
 
 // Float First
 // -----------
 // - [$flow]  : ltr | rtl
 @mixin float-first(
-  $flow: map-get($susy-defaults, flow)
+  $flow: map.get(settings.$susy-defaults, flow)
 ) {
   $output: (
-    margin-#{from($flow)}: 0,
+    margin-#{direction.from($flow)}: 0,
   );
 
-  @include output($output);
+  @include output.output($output);
 }

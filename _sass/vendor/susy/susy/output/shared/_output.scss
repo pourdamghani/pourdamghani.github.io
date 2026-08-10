@@ -1,3 +1,5 @@
+@use "../support/support";
+
 // Output
 // ======
 
@@ -9,6 +11,6 @@
   $styles
 ) {
   @each $prop, $val in $styles {
-    @include susy-support($prop, $val);
+    @include support.susy-support($prop, $val);
   }
 }

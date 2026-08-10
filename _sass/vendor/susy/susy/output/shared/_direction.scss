@@ -1,10 +1,13 @@
+@use "sass:map";
+@use "../../su/settings";
+
 // Direction Helpers
 // =================
 
 // Susy Flow Defaults
 // ------------------
 // - PRIVATE
-@include susy-defaults((
+@include settings.susy-defaults((
   flow: ltr,
 ));
 
@@ -14,11 +17,11 @@
 // - [$flow]  : ltr | rtl
 // - [$key]   : from | to
 @function get-direction(
-  $flow: map-get($susy-defaults, flow),
+  $flow: map.get(settings.$susy-defaults, flow),
   $key: from
 ) {
   $return: if($flow == rtl, (from: right, to: left), (from: left, to: right));
-  @return map-get($return, $key);
+  @return map.get($return, $key);
 }
 
 // To
@@ -26,7 +29,7 @@
 // Return the 'to' direction of a flow
 // - [$flow]  : ltr | rtl
 @function to(
-  $flow: map-get($susy-defaults, flow)
+  $flow: map.get(settings.$susy-defaults, flow)
 ) {
   @return get-direction($flow, to);
 }
@@ -36,7 +39,7 @@
 // Return the 'from' direction of a flow
 // - [$flow]  : ltr | rtl
 @function from(
-  $flow: map-get($susy-defaults, flow)
+  $flow: map.get(settings.$susy-defaults, flow)
 ) {
   @return get-direction($flow, from);
 }
