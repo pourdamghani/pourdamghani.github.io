@@ -12,6 +12,13 @@ author_profile: true
 
 <div class="supervision-list">
   <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2026</span></div>
+    <div class="supervision-entry__body">
+      <h3><a href="/talks/thesis/">Thesis</a></h3>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
     <div class="supervision-entry__meta"><span>2025</span></div>
     <div class="supervision-entry__body">
       <h3>The DISCOGA Research Seminar</h3>

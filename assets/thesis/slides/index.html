@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demand-Aware Networks: Design, Adjust & Update — Arash Pourdamghani</title>
+  <link rel="stylesheet" href="../vendor/reveal.css">
+  <style>
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+    body { background: white; font-family: Arial, sans-serif; }
+    .reveal { height: 100%; color: #494e52; }
+    .reveal .controls { color: #494e52; }
+    .reveal .progress { color: #494e52; }
+    .reveal .slide-number { left: 8px; right: auto; background: white; color: #494e52; }
+    .reveal button:focus-visible { outline: 2px solid #494e52; outline-offset: 3px; }
+    /* Keep controls below the original slide footer. */
+    .reveal .backgrounds { height: calc(100% - 48px); }
+    .reveal .controls { bottom: 0; }
+  </style>
+</head>
+<body>
+  <div class="reveal" aria-label="PhD defense presentation">
+    <div class="slides">
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s00_bbf616460abc900f61b61f37323c951884bb6d780bf448ee515ffeed9aead7ba.mp4"
+        data-background-video-muted        aria-label="Presentation step 1.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s01_9def0f1c9c281ac260018257de7226912fb87161973c1be6e36f7a210f0ea5a0.mp4"
+        data-background-video-muted        aria-label="Presentation step 2.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s02_24542a5f8abb8c94b11a0a7f581b6aeae61df427eae07ee4c1b4e1101709eaf0.mp4"
+        data-background-video-muted        aria-label="Presentation step 3.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s03_f478cb144afc5a2d16ad1043a778612f2a2b4715860a185006bc8103b2a65128.mp4"
+        data-background-video-muted        aria-label="Presentation step 4.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s04_98820951d46eeddc0d920e33571a0e92fb394ab7d4c3a4a3e181c406b419615c.mp4"
+        data-background-video-muted        aria-label="Presentation step 5.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s05_31cb8e7359526559092fe01a9d56bbc9ed32b7e3d6370d149559991d22fb6657.mp4"
+        data-background-video-muted        aria-label="Presentation step 6.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s06_69524fa2b00b8cfef1aa6c65700903dda288861831b22dcff4873f800e6b5527.mp4"
+        data-background-video-muted        aria-label="Presentation step 7.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s07_9c60cf249edb68fad8f2ac21149389a01ef635305947b3acd05aaba244beec35.mp4"
+        data-background-video-muted        aria-label="Presentation step 8.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s08_9893cbc870c22bb3b4991af9d629b9f40b754efdd973e39b846d2993f39ac64e.mp4"
+        data-background-video-muted        aria-label="Presentation step 9.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s09_1388c973df32fc3e82af37cb441bbfdc3124ccc6c3ff6282cffe94fa68b7a059.mp4"
+        data-background-video-muted        aria-label="Presentation step 10.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s10_4cad0918ef55e46ff4ffa64a5976c8c16d696376483745254e1d44772cfa8fd6.mp4"
+        data-background-video-muted        aria-label="Presentation step 11.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s11_338652fa5b36ead4f4cb513d821272ca6f4d9cbd164fb87a417ff0a55740f7f0.mp4"
+        data-background-video-muted        aria-label="Presentation step 12.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s12_ae61c3aa2547b1b6d335b09ca6ae253c961eecb22fb2b3c0513b63effeee3e80.mp4"
+        data-background-video-muted        aria-label="Presentation step 13.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s13_c24a24c82059f34aa492bf386ccbc0312e558c3cad64b43bc60af5be2636ee59.mp4"
+        data-background-video-muted        aria-label="Presentation step 14.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s14_f7b418e587ea59c2f4004df9268f59604cc489d8465827f15bf096c413f2737f.mp4"
+        data-background-video-muted        aria-label="Presentation step 15.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s15_0f071425a1a30933e227bee89791431ada3ee2633d41231be4274d20d72fc9aa.mp4"
+        data-background-video-muted        aria-label="Presentation step 16.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s16_2e2808455988f998abae9b20acfd2dd39bda1d9105bfd2398d68d2f8894f5e6e.mp4"
+        data-background-video-muted        aria-label="Presentation step 17.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s17_4561f4f4b3d81390adc041fcd707935c8efe3b3f6ba186578530befab12ae288.mp4"
+        data-background-video-muted        aria-label="Presentation step 18.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s18_79ad58ba34b39ee7253d197e4bc405993548c2a4197fd21b198da5531111566c.mp4"
+        data-background-video-muted        aria-label="Presentation step 19.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s19_d070982abf539b270dc45d7ad61f580451e41711944b36d3fc8e79175ac59c29.mp4"
+        data-background-video-muted        aria-label="Presentation step 20.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s20_9870393001420ee2e2263076b2daaa772cc7f484daec8c9f4f3aaafa292acf07.mp4"
+        data-background-video-muted        aria-label="Presentation step 21.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s21_fd7f8f1407c07c997c81d950512e21ef659154aff72a35cee902453030729084.mp4"
+        data-background-video-muted        aria-label="Presentation step 22.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s22_79f6fad0d80bd9da01aecf439789ee0b10b78c18146b02bcacec8e8e2033cf0f.mp4"
+        data-background-video-muted        aria-label="Presentation step 23.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s23_dec1513dca511554ad222454756d4c3049e0d9b698cbe8c3dd59877ddb2b4af7.mp4"
+        data-background-video-muted        aria-label="Presentation step 24.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s24_54335943bc884c6123b21f268ab67d476b8f01a624fe373c2aaa8e198dda5ad3.mp4"
+        data-background-video-muted        aria-label="Presentation step 25.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s25_f836d5dd8a303cefbe5188691874b8f55549650b78380e7ec01ea73e3e833187.mp4"
+        data-background-video-muted        aria-label="Presentation step 26.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s26_7560b60b997f13a006e95cfe9f2769d9e7a9b01362e08c50d1fe3c874c212fd9.mp4"
+        data-background-video-muted        aria-label="Presentation step 27.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s27_0ea9b4d1db03eeeecb786a957d9c3fd8de709cdf6aedd58ca195050acf335ecb.mp4"
+        data-background-video-muted        aria-label="Presentation step 28.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s28_0052883bf116aac2c9d5a07e47219303e49c2fc769ad5e49357fb8af5929e667.mp4"
+        data-background-video-muted        aria-label="Presentation step 29.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s29_359c7dbf78cae64c3c57e0c42e054a8b71fd1883a35db75836bcc9e6ffc26800.mp4"
+        data-background-video-muted        aria-label="Presentation step 30.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s30_69ccb6611aa0eafa889ab0329ab6da2d4829c4c651e4b721965f1069d0d3ff95.mp4"
+        data-background-video-muted        aria-label="Presentation step 31.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s31_a0a94c2bcc23955ad6ecb5dc75f88f97ebb721217a6c1d7f77cb86ad80851981.mp4"
+        data-background-video-muted        aria-label="Presentation step 32.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s32_eea252d70084179f88d2a12661cc79051e748fe76af0d680d276e0a37abd3303.mp4"
+        data-background-video-muted        aria-label="Presentation step 33.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s33_d36abc42569ad18087511c141b990d0e65797769281b8414ec5cf3ecd5c06715.mp4"
+        data-background-video-muted        aria-label="Presentation step 34.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s34_2f0949a4faacdd7d4b34469db2367d21e443fbceb24632c7db5fe3a90e35baa2.mp4"
+        data-background-video-muted        aria-label="Presentation step 35.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s35_8219b830a950235495319e3c3f19b9c683e49378ab558ab61c94b11fa8b4d30d.mp4"
+        data-background-video-muted        aria-label="Presentation step 36.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s36_e18f3c812f93fe14f10296fb480ca24192810d87f8d3fd2c6776cb5e80368077.mp4"
+        data-background-video-muted        aria-label="Presentation step 37.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s37_ef0604371803bd6b727b89c8bec1856bb273296cf515cc2bc045fb0d353d813f.mp4"
+        data-background-video-muted        aria-label="Presentation step 38.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s38_8270caaedb2f73256d86bb7df9be0f48b1d71f68114828162c6d420130369393.mp4"
+        data-background-video-muted        aria-label="Presentation step 39.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s39_00000be167968c4e2759c078d39c0003b4afbd065896c5b6553dfd56e297e87a.mp4"
+        data-background-video-muted        aria-label="Presentation step 40.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s40_96be976b640a3336531aead409b26c8af683a8c8bf011aff5420aeede4d6a03a.mp4"
+        data-background-video-muted        aria-label="Presentation step 41.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s41_49d738f917bdd3fe7e6b8f88ef6b95eaf1fe4db2adbf7222eda835758eaf3687.mp4"
+        data-background-video-muted        aria-label="Presentation step 42.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s42_d28c87573811c767dcd730c922228a3f29d12bea0b3e40a3244421d60db9d915.mp4"
+        data-background-video-muted        aria-label="Presentation step 43.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s43_41b592e79e05733f6fb328c190dfc0f5342cfe35e6c0c29f80dc756d758cec4d.mp4"
+        data-background-video-muted        aria-label="Presentation step 44.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s44_d61e510f2ecb5f1883b5a8b1c27a6595c2e8f60fcb3882be139701a039017f8c.mp4"
+        data-background-video-muted        aria-label="Presentation step 45.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s45_df0ea92174479c5813d4de47a367b41b5479e77b5525f33d3534f65b86127eaf.mp4"
+        data-background-video-muted        aria-label="Presentation step 46.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s46_eb9792fade69c6579451f6c9c30f541d538b372a898d659a8bf64f176b67930f.mp4"
+        data-background-video-muted        aria-label="Presentation step 47.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s47_e7ba2c7ebd0a798026e53eca0f850603005e3b12438767f0f2e558cac693b2f2.mp4"
+        data-background-video-muted        aria-label="Presentation step 48.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s48_43983f8d2c4c14596feef2d17cbfca18bccfa6ca9cced64637f2ffe6a2926777.mp4"
+        data-background-video-muted        aria-label="Presentation step 49.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s49_3ac80e7a0c07dcf590c79d19d3c96e4ff2e99060762281db7cefbe996050db84.mp4"
+        data-background-video-muted        aria-label="Presentation step 50.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s50_0e6aaac980991f13f30db695877960854b3deeabe1b7755069841ae3f4647a4d.mp4"
+        data-background-video-muted        aria-label="Presentation step 51.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s51_44bf83cfaecb6b26759638ddbc0ae3e5e3747f097a7f6a489774ed577b2e6b84.mp4"
+        data-background-video-muted        aria-label="Presentation step 52.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s52_997d3c3da0c7938b9bbb544b77dffdb29093061e4367bb44115c087658753c8b.mp4"
+        data-background-video-muted        aria-label="Presentation step 53.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s53_bd96c7072b77f8da5388229bd7dc6f8d7e6dd53f033ccb1ab3ba9bfef9a3eaa8.mp4"
+        data-background-video-muted        aria-label="Presentation step 54.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s54_55e8d2ba71e63864aeba85b9fdcb1547d3c575f914af5cea90bcf4df496590bb.mp4"
+        data-background-video-muted        aria-label="Presentation step 55.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s55_cb44038fcb308274eb6814f13f2b75ab8dc0b7f442ae7e5e4c6e5c59d38c1c6b.mp4"
+        data-background-video-muted        aria-label="Presentation step 56.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s56_f668616d76dc636b9419a9766ff59708bc04c6d3c9ce09dd26b6dc072ac0e9e4.mp4"
+        data-background-video-muted        aria-label="Presentation step 57.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s57_e1c1d1f37338c560dd7e142ac07c3650c9dd09c1e936a0de04e1ffbe02c72c48.mp4"
+        data-background-video-muted        aria-label="Presentation step 58.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s58_f2877d88e9330c256afc513b97f4d69f26f797b79af12a61dc61f15f38e73dfe.mp4"
+        data-background-video-muted        aria-label="Presentation step 59.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s59_854e543860eebb6ba4597f6b82c9648c808adf92e19ef2b7611e0c2ae3d97402.mp4"
+        data-background-video-muted        aria-label="Presentation step 60.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s60_d42b492ab79fc7ba422eec77d5b349bae5c1148ef69651731f1caeab3a288f1d.mp4"
+        data-background-video-muted        aria-label="Presentation step 61.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s61_ef1a1828fd54127023af63eba3ea80ea97e9ba497b20f12cb7bfe270538d6788.mp4"
+        data-background-video-muted        aria-label="Presentation step 62.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s62_7ae841db9e4a99be67f1987da84ec03379ae4055c314bc2628ce51c0d803a0c3.mp4"
+        data-background-video-muted        aria-label="Presentation step 63.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s63_d348efbde68f99faafd85bfa352a0ebcb1540b63b264e1ba3377b48a3e9705b6.mp4"
+        data-background-video-muted        aria-label="Presentation step 64.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s64_c663d520e1bfb32b373d78aa0bd0c3067a4877ff295db7609c3f32b37c5761a2.mp4"
+        data-background-video-muted        aria-label="Presentation step 65.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s65_2087cac348268e800f7aa508b3a1ce0eb1b28da397cef94d3e788d7ec19e4137.mp4"
+        data-background-video-muted        aria-label="Presentation step 66.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s66_b3ac5079f0f3c41cb24ecf61405026d1235626282fad29eb1c816fc2f68177ae.mp4"
+        data-background-video-muted        aria-label="Presentation step 67.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s67_74db48a3326fac8ba6d37520be0e2db445b67cd64e12255d977a789b49e046b4.mp4"
+        data-background-video-muted        aria-label="Presentation step 68.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s68_bbdb1c598f4acb28d32de49674e148c261b3c548ee1b36c882e5b19a37cc9d7b.mp4"
+        data-background-video-muted        aria-label="Presentation step 69.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s69_dc28049cd4d474fe58fe66af3e24af71ce348469ed4e9ededf73ac139e4fa28a.mp4"
+        data-background-video-muted        aria-label="Presentation step 70.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s70_f5ea59e07280dee000aa0fdab363c11acfbbe5a4c8c427bf1215a2c05079614f.mp4"
+        data-background-video-muted        aria-label="Presentation step 71.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s71_66b66e75207ada1db64c0a2f90a30cdc126a9969057cd9cb5e0c4bbcca6ca86f.mp4"
+        data-background-video-muted        aria-label="Presentation step 72.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s72_af0cec9c9d255d8f99814dd9caaf947bc6635c4cb7f914e4bd29743d02f3a527.mp4"
+        data-background-video-muted        aria-label="Presentation step 73.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s73_966b643cfdf6bed346817ee7dd1429f2bc68b0abcdbd7251cfc38b523d5c3668.mp4"
+        data-background-video-muted        aria-label="Presentation step 74.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s74_12d866e1939dc56111831e46baadcf02d5b534f09af45fd81b8ad28f2abb1714.mp4"
+        data-background-video-muted        aria-label="Presentation step 75.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s75_8534bce8336884e417763b3648dc5345cabf811972ca9ccd9e3c2fa2685a4344.mp4"
+        data-background-video-muted        aria-label="Presentation step 76.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s76_7ebb0da86e4fef0dafb1e2694e3e3aeaa25035471c317802fee4e2906b40f65d.mp4"
+        data-background-video-muted        aria-label="Presentation step 77.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s77_9dc979cdbd2be92eedc61aeaf324cccb3eec8060ccbe24205d2efadc34b4983f.mp4"
+        data-background-video-muted        aria-label="Presentation step 78.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s78_c883d82c458f3c991473d09603b8b32e2d91d7c3b96a4a15141985d4cfeb9959.mp4"
+        data-background-video-muted        aria-label="Presentation step 79.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s79_18d2b767b693a9809be6b8968d244f29bdf8e2c947483e3ef84710d78b388bad.mp4"
+        data-background-video-muted        aria-label="Presentation step 80.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s80_977786c49aa0852ee30bef4d73a4ca1102b90671bdc2d4f16057807ab6222286.mp4"
+        data-background-video-muted        aria-label="Presentation step 81.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s81_c770d8d79045c370791108389a8e0c4328dd2d0cd48a2e169d65d0bc20d6946a.mp4"
+        data-background-video-muted        aria-label="Presentation step 82.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s82_81f98661451818118a55ffa6eba9b6791524a37f08fc745276fc20a6c788dec2.mp4"
+        data-background-video-muted        aria-label="Presentation step 83.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s83_aa7c8c00a624d79b8070819df1ee2bd2329119717bfbbd7ada711b7faaf4deb6.mp4"
+        data-background-video-muted        aria-label="Presentation step 84.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s84_174e0263401541caed9f67f0d8a172805ab32b19f384fe3400a97bcbb7865352.mp4"
+        data-background-video-muted        aria-label="Presentation step 85.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s85_37d0ba230f506b9b4da04ef66c5aeecbc783d6bd22a48c170cb96735192e0606.mp4"
+        data-background-video-muted        aria-label="Presentation step 86.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s86_1ddd9731a31dda31a079de55d585fe7dc1b59f0349a7035b6cf3074e35531626.mp4"
+        data-background-video-muted        aria-label="Presentation step 87.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s87_06d0def82be4bcbc95028f3713e990d9e8a1366beb19c66d2ec188e71285c4b7.mp4"
+        data-background-video-muted        aria-label="Presentation step 88.1"></section>
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="media/s88_f6d1f54f56fe45d663a7d661cd2381c90a3b200c8072355447495df393a25e00.mp4"
+        data-background-video-muted        aria-label="Presentation step 89.1"></section>
+    </div>
+  </div>
+  <noscript>Enable JavaScript to navigate the animated slides.</noscript>
+  <script src="../vendor/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      width: 1920, height: 1080, margin: 0,
+      controls: true, controlsTutorial: false, controlsBackArrows: 'visible',
+      progress: true, slideNumber: 'c/t', hash: true,
+      navigationMode: 'linear', embedded: true,
+      // Keep arrow navigation on phones instead of switching to scroll view.
+      scrollActivationWidth: null,
+      transition: 'none', backgroundTransition: 'none',
+      autoPlayMedia: true, autoSlide: 0,
+      viewDistance: 2, mobileViewDistance: 1,
+      // Navigation stays inside this viewer when it is embedded in the page.
+      keyboardCondition: 'focused'
+    });
+    // Preserve a full-window presentation's keyboard navigation too.
+    if (window.self === window.top) Reveal.configure({ keyboardCondition: null });
+  </script>
+</body>
+</html>

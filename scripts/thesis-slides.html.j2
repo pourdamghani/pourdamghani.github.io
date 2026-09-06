@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="../vendor/reveal.css">
+  <style>
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+    body { background: white; font-family: Arial, sans-serif; }
+    .reveal { height: 100%; color: #494e52; }
+    .reveal .controls { color: #494e52; }
+    .reveal .progress { color: #494e52; }
+    .reveal .slide-number { left: 8px; right: auto; background: white; color: #494e52; }
+    .reveal button:focus-visible { outline: 2px solid #494e52; outline-offset: 3px; }
+    /* Keep controls below the original slide footer. */
+    .reveal .backgrounds { height: calc(100% - 48px); }
+    .reveal .controls { bottom: 0; }
+  </style>
+</head>
+<body>
+  <div class="reveal" aria-label="PhD defense presentation">
+    <div class="slides">
+      {% for presentation_config in presentation_configs %}
+      {% set scene_index = loop.index0 %}
+      {% for slide in presentation_config.slides %}
+      <section data-background-color="white" data-background-size="contain"
+        data-background-video="{{ assets_dir }}/{{ prefix(scene_index) }}{{ slide.file.name }}"
+        data-background-video-muted{% if slide.loop %} data-background-video-loop{% endif %}
+        aria-label="Presentation step {{ scene_index + 1 }}.{{ loop.index }}"></section>
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+  <noscript>Enable JavaScript to navigate the animated slides.</noscript>
+  <script src="../vendor/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      width: 1920, height: 1080, margin: 0,
+      controls: true, controlsTutorial: false, controlsBackArrows: 'visible',
+      progress: true, slideNumber: 'c/t', hash: true,
+      navigationMode: 'linear', embedded: true,
+      // Keep arrow navigation on phones instead of switching to scroll view.
+      scrollActivationWidth: null,
+      transition: 'none', backgroundTransition: 'none',
+      autoPlayMedia: true, autoSlide: 0,
+      viewDistance: 2, mobileViewDistance: 1,
+      // Navigation stays inside this viewer when it is embedded in the page.
+      keyboardCondition: 'focused'
+    });
+    // Preserve a full-window presentation's keyboard navigation too.
+    if (window.self === window.top) Reveal.configure({ keyboardCondition: null });
+  </script>
+</body>
+</html>
