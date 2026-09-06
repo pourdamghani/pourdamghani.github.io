@@ -14,7 +14,7 @@ author_profile: true
   <article class="supervision-entry">
     <div class="supervision-entry__meta"><span>2026</span></div>
     <div class="supervision-entry__body">
-      <h3><a href="/talks/thesis/">Thesis</a></h3>
+      <h3><a href="/talks/thesis/">PhD Thesis Presentation at TUB</a></h3>
     </div>
   </article>
 

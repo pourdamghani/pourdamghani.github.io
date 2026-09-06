@@ -8,22 +8,31 @@ author_profile: true
 youtube_id: ""
 ---
 
-I defended my PhD thesis, *Demand-Aware Networks: Design, Adjust & Update*, at TU Berlin on 2 September 2026 and received the grade **“with distinction.”**
+I defended my PhD thesis, *Demand-Aware Networks: Design, Adjust & Update*, at TU Berlin on 2 September 2026 and received the grade **very good with distinction (summa cum laude)**.
 
 ## Teaser
 
+Here is an overview of the chapters covered in the main body of the presentation.
+
 <a href="/assets/thesis/lifecycle-overview.png"><img class="thesis-teaser" src="/assets/thesis/lifecycle-overview.png" alt="3×3 thesis summary: Design, Adjust, and Update, with their chapters, demand structures, and technological enablers." width="1920" height="1080"></a>
+
+Here are the remaining chapters discussed during the Q&A session.
+
 <a href="/assets/thesis/other-papers.png"><img class="thesis-teaser" src="/assets/thesis/other-papers.png" alt="Three further thesis papers: demand-aware multicast, SeedTree, and software-defined reconfigurable intelligent surfaces." width="1920" height="1080" loading="lazy"></a>
 
 ## Slides
 
-Use the **← and → arrow buttons** in the viewer to move back and forth between slides. You can also click inside the viewer and use your keyboard’s arrow keys. [Open the slides in a full window](/assets/thesis/slides/index.html).
+These are the main slides used during my PhD thesis presentation.
+
+Click inside the viewer and **use your keyboard’s ← and → arrow keys** to move back and forth between slides. You can also use the arrow buttons in the viewer. [Open the slides in a full window](/assets/thesis/slides/index.html).
 
 <iframe class="thesis-embed" src="/assets/thesis/slides/index.html" title="Interactive PhD thesis slides" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 Created with [Manim Slides](https://manim-slides.eertmans.be/) and [Manim Community](https://www.manim.community/).
 
 ## Video
+
+I made this recording after my PhD defense, as recording during the defense was not permitted under TUB regulations.
 
 {% if youtube_id %}
 <iframe class="thesis-embed fitvidsignore" src="https://www.youtube-nocookie.com/embed/{{ youtube_id | escape }}" title="PhD thesis defense recording" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -37,6 +46,10 @@ Created with [Manim Slides](https://manim-slides.eertmans.be/) and [Manim Commun
 ## Manuscript
 
 The manuscript will be added soon, once the official procedures at TU Berlin are complete.
+
+## Get in touch
+
+If you are interested in this talk, please reach out to me. I would be more than happy to present it to your group or build on the ideas discussed here.
 
 ## References
 
