@@ -13,5 +13,15 @@
         </nav>
       </section>
     {% endif %}
+    {% if section_links %}
+      <section class="sidebar-topics" aria-label="Page sections">
+        <h3 class="sidebar-topics__title">Sections</h3>
+        <nav class="sidebar-topics__links" aria-label="Page sections">
+          {% for section in section_links %}
+            <a href="#{{ section | slugify }}">{{ section }}</a>
+          {% endfor %}
+        </nav>
+      </section>
+    {% endif %}
   </div>
 {% endif %}
