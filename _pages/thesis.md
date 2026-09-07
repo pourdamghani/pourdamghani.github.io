@@ -41,6 +41,8 @@ Created with [Manim Slides](https://manim-slides.eertmans.be/) and [Manim Commun
 
 I made this recording after my PhD defense, as recording during the defense was not permitted under TUB regulations.
 
+The recording may be updated in the near future.
+
 {% if youtube_id %}
 <iframe class="thesis-embed fitvidsignore" src="https://www.youtube-nocookie.com/embed/{{ youtube_id | escape }}" title="PhD thesis defense recording" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 {% else %}
