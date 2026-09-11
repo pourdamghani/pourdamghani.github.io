@@ -40,6 +40,10 @@ export async function request(operation, language, body = {}) {
     let session = body.fresh ? null : read(key);
     if (!session) session = createSession(language, data);
     const now = Date.now() / 1000;
+    // Language selection opens practice immediately, including older unstarted saves.
+    if (session.phase === 'onboarding') {
+      applyAction(session, {action: 'practice', request_id: crypto.randomUUID(), version: session.version}, data.vocabularies[language], now);
+    }
     expire(session, now);
     let error;
     if (operation === 'action') {

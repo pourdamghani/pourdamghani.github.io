@@ -62,7 +62,6 @@ function receive(next, sentAt = performance.now()) {
   if (state.phase === 'block_done') frozen = false;
   $('#storage-warning').hidden = next.storage_available && storageOK;
   $('#storage-warning').textContent = t.storageWarning;
-  $('#score-reminder').hidden = !state.scores_need_recalculation;
   render();
   tick();
   // A suspended tab may first learn about expiry when its saved state is read.
@@ -127,7 +126,6 @@ async function poll() {
 function tick() {
   if (!state) return;
   $('#progress').textContent = state.phase === 'practice' ? t.practice : ['playing','block_done'].includes(state.phase) ? `${t.round} ${state.trial.position} ${t.of} 20` : '';
-  $('#remaining').textContent = ['practice','playing','block_done'].includes(state.phase) && state.trial ? `${state.trial.remaining} ${t.guessesLeft}` : '';
   $('#timer-label').textContent = state.deadline_at ? t.timeRemaining : t.timeAllowance;
   $('#timer-status').textContent = state.deadline_at ? '' : t.timerStartsWithPractice;
   $('#timer-status').hidden = Boolean(state.deadline_at);
@@ -159,11 +157,6 @@ function legend() {
   return `<div class="legend"><span><i class="swatch correct"></i>${t.legendCorrect}</span><span><i class="swatch present"></i>${t.legendPresent}</span><span><i class="swatch absent"></i>${t.legendAbsent}</span></div>`;
 }
 
-function renderOnboarding() {
-  $('#main').innerHTML = `<section class="prose"><h2>${t.welcome}</h2><p class="intro">${t.intro}</p><h3>${t.instructions}</h3><ol class="rules">${t.rules.map(rule => `<li>${rule}</li>`).join('')}</ol><p>${t.standard}</p><p>${t.spelling}</p>${legend()}<button id="start-practice">${t.startPractice}</button></section>`;
-  $('#start-practice').addEventListener('click', () => action('practice'));
-}
-
 function renderBoard() {
   const trial = state.trial;
   const editableRow = trial.guesses.length;
@@ -190,7 +183,7 @@ function renderGame() {
   entry = entry.map((letter, index) => trial.greens[index] || (/^[A-Z]$/.test(letter || '') ? letter : null));
   cursor = entry.findIndex((letter,index) => !letter && !trial.greens[index]);
   if (cursor < 0) cursor = Math.max(0, trial.greens.findIndex(letter => !letter));
-  $('#main').innerHTML = `<section class="game"><div id="board" class="board" role="grid" tabindex="0" aria-label="${t.board}"></div><div class="controls"><div id="round-panel"></div><div id="keyboard" class="keyboard" aria-label="${t.keyboard}"></div>${legend()}<div class="surrender"><button id="surrender" class="secondary">${t.surrender}</button><p>${t.surrenderHelp}</p></div><div id="save-status" class="save-status" aria-live="polite"></div></div></section>`;
+  $('#main').innerHTML = `<section class="game"><div id="board" class="board" role="grid" tabindex="0" aria-label="${t.board}"></div><div class="controls"><div id="round-panel"></div><div id="keyboard" class="keyboard" aria-label="${t.keyboard}"></div>${legend()}<div class="surrender"><button id="surrender" class="secondary">${t.surrender}</button></div><div id="save-status" class="save-status" aria-live="polite"></div></div></section>`;
   renderBoard();
   const guess = pending();
   $('#keyboard').hidden = Boolean(guess) || trial.status !== 'active';
@@ -220,7 +213,7 @@ function renderGame() {
   } else if (trial.status !== 'active') {
     $('#round-panel').innerHTML = `<section class="result"><h2>${t[trial.status] || t.expiry}</h2>${trial.answer ? `<p>${t.answer}</p><p class="answer">${esc(trial.answer)}</p>` : ''}<button id="next">${trial.practice ? t.practiceDone : trial.position === 20 ? t.blockDone : t.next}</button></section>`;
     $('#next').addEventListener('click', () => action('next'));
-  } else $('#round-panel').innerHTML = `<h2>${t.typeWord}</h2><p>${state.lock_greens ? t.locked : t.standard}</p><p class="note">${t.spelling}</p>`;
+  } else $('#round-panel').innerHTML = `<h2>${t.typeWord}</h2><p>${state.lock_greens ? t.locked : t.standard}</p>`;
   const keyStatuses = {};
   const rank = {absent:1,present:2,correct:3};
   for (const prior of trial.guesses) {
@@ -261,7 +254,6 @@ function updateControls() {
   if ($('#surrender')) $('#surrender').disabled = !state.trial.can_surrender || frozen || busy;
   if ($('#next')) $('#next').disabled = busy || frozen;
   if ($('#start')) $('#start').disabled = busy || frozen;
-  if ($('#start-practice')) $('#start-practice').disabled = busy;
   const guess = pending();
   if ($('#confidence-range')) $('#confidence-range').disabled = frozen || busy;
   if ($('#confirm-confidence')) $('#confirm-confidence').disabled = frozen || busy || !storage.get(draftKey(guess));
@@ -273,8 +265,7 @@ function render() {
   if (nextSignature === signature) { paintRating(); updateControls(); return; }
   signature = nextSignature;
   clearTimeout(draftTimer);
-  if (state.phase === 'onboarding') renderOnboarding();
-  else if (state.phase === 'ready') {
+  if (state.phase === 'ready') {
     $('#main').innerHTML = `<section class="prose"><h2>${t.ready}</h2><p>${t.readyText}</p><button id="start">${t.start}</button></section>`;
     $('#start').addEventListener('click', () => action('start'));
   } else if (['practice','playing','block_done'].includes(state.phase)) renderGame();
