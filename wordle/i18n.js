@@ -57,6 +57,8 @@ export const translations = {
 
 // Public edition copy: no participant registration or submission to a study.
 Object.assign(translations.en, {
+  timeRemaining: 'Time remaining', timeAllowance: 'Time for 20 words',
+  timerAfterPractice: 'Starts after practice', timerReady: 'Press Start to begin',
   title: 'Wordle', welcome: 'Wordle with confidence',
   intro: 'Find the hidden five-letter word, then see how well your confidence matches your guesses.',
   instructions: 'How to play',
@@ -82,6 +84,8 @@ Object.assign(translations.en.errors, {
   saved_data_error: 'The saved game could not be read. You can start a new game below.'
 });
 Object.assign(translations.de, {
+  timeRemaining: 'Verbleibende Zeit', timeAllowance: 'Zeit für 20 Wörter',
+  timerAfterPractice: 'Startet nach der Übung', timerReady: 'Mit Start beginnt die Zeit',
   title: 'Wordle', welcome: 'Wordle mit Sicherheitseinschätzung',
   intro: 'Finden Sie das verborgene Wort mit fünf Buchstaben und vergleichen Sie Ihre Sicherheit mit Ihren Versuchen.',
   instructions: 'So funktioniert das Spiel',

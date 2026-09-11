@@ -128,11 +128,16 @@ function tick() {
   if (!state) return;
   $('#progress').textContent = state.phase === 'practice' ? t.practice : ['playing','block_done'].includes(state.phase) ? `${t.round} ${state.trial.position} ${t.of} 20` : '';
   $('#remaining').textContent = ['practice','playing','block_done'].includes(state.phase) && state.trial ? `${state.trial.remaining} ${t.guessesLeft}` : '';
+  $('#timer-label').textContent = state.deadline_at ? t.timeRemaining : t.timeAllowance;
+  $('#timer-status').textContent = state.deadline_at ? '' : state.phase === 'ready' ? t.timerReady : t.timerAfterPractice;
+  $('#timer-status').hidden = Boolean(state.deadline_at);
+  const seconds = state.deadline_at
+    ? Math.max(0, Math.ceil(state.deadline_at - (state.ended_at ?? nowServer())))
+    : state.total_seconds;
+  $('#timer').textContent = `${String(Math.floor(seconds / 60)).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`;
   if (state.deadline_at) {
-    const remaining = Math.max(0, Math.ceil(state.deadline_at - (state.ended_at ?? nowServer())));
-    $('#timer').textContent = `${String(Math.floor(remaining / 60)).padStart(2,'0')}:${String(remaining % 60).padStart(2,'0')}`;
-    if (remaining === 0 && state.phase === 'playing' && !frozen) freezeAtDeadline();
-  } else $('#timer').textContent = state.phase === 'practice' ? t.untimed : t.notStarted;
+    if (seconds === 0 && state.phase === 'playing' && !frozen) freezeAtDeadline();
+  }
 }
 
 function freezeAtDeadline() {
