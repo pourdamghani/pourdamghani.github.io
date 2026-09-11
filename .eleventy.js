@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("llms.txt");
-  eleventyConfig.addPassthroughCopy({ "wordle": "tools/wordle" });
+  eleventyConfig.addPassthroughCopy({ "wordle": "tools/word-game" });
 
   // Keep legacy /_pages/ asset URLs working.
   eleventyConfig.addPassthroughCopy("_pages/*.pdf");

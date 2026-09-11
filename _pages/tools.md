@@ -19,9 +19,9 @@ author_profile: true
     </article>
     <article class="publication-card">
       <div class="publication-card__body">
-        <h2 class="publication-card__title"><a href="/tools/wordle/">Wordle</a></h2>
+        <h2 class="publication-card__title"><a href="/tools/word-game/">Word Game</a></h2>
         <p>Play in English or German, rate your confidence before each reveal, and download your results.</p>
-        <p class="publication-card__links"><a class="btn btn--primary" href="/tools/wordle/">Play Wordle</a></p>
+        <p class="publication-card__links"><a class="btn btn--primary" href="/tools/word-game/">Play Word Game</a></p>
       </div>
     </article>
   </div>
