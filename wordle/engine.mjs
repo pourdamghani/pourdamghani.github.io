@@ -71,7 +71,7 @@ export function snapshot(session, now) {
     trial: trial.started_at === null ? null : {
       id: trial.id, position: trial.position, practice: trial.practice, status: trial.status,
       guesses: structuredClone(trial.guesses), remaining: 10 - trial.guesses.length,
-      can_surrender: trial.status === 'active' && trial.guesses.length >= 6 && !trial.guesses.some(g => g.confidence_status === 'pending'),
+      can_surrender: trial.status === 'active' && !trial.guesses.some(g => g.confidence_status === 'pending'),
       greens: Array(5).fill(null), answer: terminal(trial) ? trial.word : null
     },
     summary: {
@@ -153,7 +153,7 @@ export function applyAction(session, body, vocabulary, now = Date.now() / 1000) 
     }
     case 'surrender':
       active();
-      if (pending || trial.guesses.length < 6) fail('surrender_locked');
+      if (pending) fail('surrender_locked');
       trial.status = 'surrendered'; trial.ended_at = now; break;
     default: fail('invalid_request');
   }
