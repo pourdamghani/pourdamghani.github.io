@@ -17,5 +17,12 @@ author_profile: true
         <p class="publication-card__links"><a class="btn btn--primary" href="/tools/next-related-deadlines/">View deadlines</a></p>
       </div>
     </article>
+    <article class="publication-card">
+      <div class="publication-card__body">
+        <h2 class="publication-card__title"><a href="/tools/wordle/">Wordle</a></h2>
+        <p>Play in English or German, rate your confidence before each reveal, and download your results.</p>
+        <p class="publication-card__links"><a class="btn btn--primary" href="/tools/wordle/">Play Wordle</a></p>
+      </div>
+    </article>
   </div>
 </section>

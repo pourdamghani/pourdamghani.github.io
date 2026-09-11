@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wordle · English</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../style.css">
+  <script type="module" src="../app.js"></script>
+</head>
+<body data-language="en">
+  <nav class="site-nav" aria-label="Site"><a href="/tools/">← Tools</a><a href="../">English / Deutsch</a></nav>
+  <header class="header">
+    <h1>Wordle · English</h1>
+    <div id="progress" class="progress"></div>
+    <div class="clock"><span id="timer-label">Time remaining</span><strong id="timer">—</strong></div>
+    <div id="remaining" class="remaining"></div>
+  </header>
+  <p class="local-note">This game saves your responses on this device only.</p>
+  <p id="storage-warning" class="storage-warning" role="alert" hidden></p>
+  <main id="main"><p>Loading the game…</p></main>
+  <div class="messages"><p id="message" role="alert"></p><button id="retry" class="secondary" hidden></button></div>
+  <footer>
+    <p id="score-reminder" class="score-reminder">Reminder: word difficulty scores need to be recalculated.</p>
+    <p class="attribution"><a href="../attribution.txt">Vocabulary credits</a></p>
+  </footer>
+  <noscript>Please enable JavaScript to play.</noscript>
+</body>
+</html>
