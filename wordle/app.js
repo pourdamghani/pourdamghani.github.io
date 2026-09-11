@@ -129,14 +129,14 @@ function tick() {
   $('#progress').textContent = state.phase === 'practice' ? t.practice : ['playing','block_done'].includes(state.phase) ? `${t.round} ${state.trial.position} ${t.of} 20` : '';
   $('#remaining').textContent = ['practice','playing','block_done'].includes(state.phase) && state.trial ? `${state.trial.remaining} ${t.guessesLeft}` : '';
   $('#timer-label').textContent = state.deadline_at ? t.timeRemaining : t.timeAllowance;
-  $('#timer-status').textContent = state.deadline_at ? '' : state.phase === 'ready' ? t.timerReady : t.timerAfterPractice;
+  $('#timer-status').textContent = state.deadline_at ? '' : t.timerStartsWithPractice;
   $('#timer-status').hidden = Boolean(state.deadline_at);
   const seconds = state.deadline_at
     ? Math.max(0, Math.ceil(state.deadline_at - (state.ended_at ?? nowServer())))
     : state.total_seconds;
   $('#timer').textContent = `${String(Math.floor(seconds / 60)).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`;
   if (state.deadline_at) {
-    if (seconds === 0 && state.phase === 'playing' && !frozen) freezeAtDeadline();
+    if (seconds === 0 && ['practice', 'ready', 'playing'].includes(state.phase) && !frozen) freezeAtDeadline();
   }
 }
 
@@ -260,7 +260,7 @@ function updateControls() {
   document.querySelectorAll('#keyboard button').forEach(button => { button.disabled = !editing(); });
   if ($('#surrender')) $('#surrender').disabled = !state.trial.can_surrender || frozen || busy;
   if ($('#next')) $('#next').disabled = busy || frozen;
-  if ($('#start')) $('#start').disabled = busy;
+  if ($('#start')) $('#start').disabled = busy || frozen;
   if ($('#start-practice')) $('#start-practice').disabled = busy;
   const guess = pending();
   if ($('#confidence-range')) $('#confidence-range').disabled = frozen || busy;

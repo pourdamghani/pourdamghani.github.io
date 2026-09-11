@@ -46,7 +46,15 @@ export function createSession(language, materials, now = Date.now() / 1000, rand
 }
 
 export function expire(session, now) {
-  if (session.phase !== 'playing' || now < session.deadline_at) return false;
+  if (!['practice', 'ready', 'playing'].includes(session.phase)) return false;
+  // Restore the clock for saves made when practice did not have a deadline.
+  // Already-running games retain their existing deadline.
+  if (session.deadline_at === null) {
+    session.started_at ??= session.trials[0].started_at ?? now;
+    session.deadline_at = session.started_at + 6000;
+    session.version++;
+  }
+  if (now < session.deadline_at) return false;
   for (const trial of session.trials) {
     if (trial.status === 'active') {
       trial.status = 'time_expired';
@@ -105,10 +113,11 @@ export function applyAction(session, body, vocabulary, now = Date.now() / 1000) 
   switch (body.action) {
     case 'practice':
       if (session.phase !== 'onboarding') fail('state_changed');
-      session.phase = 'practice'; activate(trial); break;
+      Object.assign(session, {phase: 'practice', started_at: now, deadline_at: now + 6000});
+      activate(trial); break;
     case 'start':
       if (session.phase !== 'ready') fail('state_changed');
-      Object.assign(session, {phase: 'playing', current: 1, started_at: now, deadline_at: now + 6000});
+      Object.assign(session, {phase: 'playing', current: 1});
       activate(session.trials[1]); break;
     case 'next':
       if (!['practice', 'playing', 'block_done'].includes(session.phase) || !terminal(trial)) fail('state_changed');

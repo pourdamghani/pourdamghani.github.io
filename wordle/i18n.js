@@ -3,7 +3,7 @@ export const translations = {
     title: 'Word study', welcome: 'Welcome to the word study', intro: 'Find a hidden five-letter word. After each guess, tell us how confident you are before you see the clues.',
     preview: 'Preview only — these responses are not part of a Prolific study.',
     instructions: 'How the study works', rules: [
-      'Complete one practice word, followed by 20 study words. The practice is unscored and untimed.',
+      'Complete one practice word, followed by 20 study words. Practice is unscored and uses the same timer.',
       'You have 100 minutes for all 20 study words together. There is no separate time limit for a word. The timer keeps running if you leave the page.',
       'You may submit up to 10 valid guesses per word. Words outside the study dictionary do not use a guess.',
       'After each valid guess, rate the chance that this exact guess is the hidden word, from 0 (0%) to 10 (100%). Feedback appears only after you confirm your rating.',
@@ -30,7 +30,7 @@ export const translations = {
     title: 'Wortstudie', welcome: 'Willkommen zur Wortstudie', intro: 'Finden Sie ein verborgenes Wort mit fünf Buchstaben. Geben Sie nach jedem Versuch Ihre Sicherheit an, bevor Sie die Hinweise sehen.',
     preview: 'Nur Vorschau — diese Antworten gehören nicht zu einer Prolific-Studie.',
     instructions: 'So funktioniert die Studie', rules: [
-      'Bearbeiten Sie ein Übungswort und anschließend 20 Studienwörter. Die Übung wird nicht gewertet und hat kein Zeitlimit.',
+      'Bearbeiten Sie ein Übungswort und anschließend 20 Studienwörter. Die Übung wird nicht gewertet und nutzt dieselbe Uhr.',
       'Sie haben insgesamt 100 Minuten für alle 20 Studienwörter. Für einzelne Wörter gibt es kein Zeitlimit. Die Uhr läuft weiter, wenn Sie die Seite verlassen.',
       'Pro Wort sind bis zu 10 gültige Versuche möglich. Wörter außerhalb des Studienwörterbuchs verbrauchen keinen Versuch.',
       'Bewerten Sie nach jedem gültigen Versuch die Wahrscheinlichkeit, dass genau dieses Wort die Lösung ist: von 0 (0 %) bis 10 (100 %). Die Hinweise erscheinen erst nach Ihrer Bestätigung.',
@@ -57,13 +57,13 @@ export const translations = {
 
 // Public edition copy: no participant registration or submission to a study.
 Object.assign(translations.en, {
-  timeRemaining: 'Time remaining', timeAllowance: 'Time for 20 words',
-  timerAfterPractice: 'Starts after practice', timerReady: 'Press Start to begin',
+  timeRemaining: 'Time remaining', timeAllowance: 'Total time',
+  timerStartsWithPractice: 'Starts with practice',
   title: 'Wordle', welcome: 'Wordle with confidence',
   intro: 'Find the hidden five-letter word, then see how well your confidence matches your guesses.',
   instructions: 'How to play',
-  ready: 'Ready for 20 words?', start: 'Start the 20 words',
-  readyText: 'Practice is finished. The 100-minute timer starts when you press Start and keeps running if you close this page.',
+  ready: 'Continue to the 20 words', start: 'Continue',
+  readyText: 'Practice is finished. The timer is still running. Continue with the 20 words; they share the same 100-minute limit with practice.',
   saved: 'Saved on this device', memoryOnly: 'Kept in this tab only',
   storageWarning: 'Browser storage is unavailable. Keep this tab open: reloading or closing it will lose your progress.',
   offline: 'The game could not load or save. Keep this tab open and try again. The timer keeps running.', retry: 'Try again',
@@ -76,21 +76,21 @@ Object.assign(translations.en, {
   wordsSolved: 'words solved', totalGuesses: 'guesses', downloadJSON: 'Download JSON', downloadCSV: 'Download CSV',
   resetConfirm: 'Replace the unreadable saved game and start again?'
 });
-translations.en.rules[0] = 'Play one untimed practice word, followed by 20 words. Practice is excluded from your results.';
-translations.en.rules[1] = 'You have 100 minutes for all 20 words together. The timer keeps running if you leave the page.';
+translations.en.rules[0] = 'Play one practice word, followed by 20 words. Practice uses the same timer but is excluded from your score.';
+translations.en.rules[1] = 'You have 100 minutes for practice and all 20 words together. The timer starts when you begin practice and keeps running between words and if you leave the page.';
 translations.en.rules[5] = 'Progress and responses are saved in this browser only. No responses are submitted to a research study.';
 Object.assign(translations.en.errors, {
   load_error: 'Could not load the word list. Check your connection and try again.',
   saved_data_error: 'The saved game could not be read. You can start a new game below.'
 });
 Object.assign(translations.de, {
-  timeRemaining: 'Verbleibende Zeit', timeAllowance: 'Zeit für 20 Wörter',
-  timerAfterPractice: 'Startet nach der Übung', timerReady: 'Mit Start beginnt die Zeit',
+  timeRemaining: 'Verbleibende Zeit', timeAllowance: 'Gesamtzeit',
+  timerStartsWithPractice: 'Startet mit der Übung',
   title: 'Wordle', welcome: 'Wordle mit Sicherheitseinschätzung',
   intro: 'Finden Sie das verborgene Wort mit fünf Buchstaben und vergleichen Sie Ihre Sicherheit mit Ihren Versuchen.',
   instructions: 'So funktioniert das Spiel',
-  ready: 'Bereit für 20 Wörter?', start: 'Die 20 Wörter starten',
-  readyText: 'Die Übung ist beendet. Die 100-Minuten-Uhr beginnt mit einem Klick auf Start und läuft weiter, wenn Sie die Seite schließen.',
+  ready: 'Weiter zu den 20 Wörtern', start: 'Weiter',
+  readyText: 'Die Übung ist beendet. Die Uhr läuft weiter. Die Übung und die folgenden 20 Wörter teilen sich ein Zeitlimit von 100 Minuten.',
   saved: 'Auf diesem Gerät gespeichert', memoryOnly: 'Nur in diesem Tab gespeichert',
   storageWarning: 'Der Browserspeicher ist nicht verfügbar. Lassen Sie diesen Tab geöffnet: Beim Neuladen oder Schließen geht Ihr Fortschritt verloren.',
   offline: 'Das Spiel konnte nicht geladen oder gespeichert werden. Lassen Sie diesen Tab geöffnet und versuchen Sie es erneut. Die Uhr läuft weiter.', retry: 'Erneut versuchen',
@@ -103,8 +103,8 @@ Object.assign(translations.de, {
   wordsSolved: 'Wörter gelöst', totalGuesses: 'Versuche', downloadJSON: 'JSON herunterladen', downloadCSV: 'CSV herunterladen',
   resetConfirm: 'Den unlesbaren Spielstand ersetzen und neu starten?'
 });
-translations.de.rules[0] = 'Spielen Sie ein Übungswort ohne Zeitlimit und anschließend 20 Wörter. Die Übung zählt nicht zu Ihren Ergebnissen.';
-translations.de.rules[1] = 'Sie haben insgesamt 100 Minuten für alle 20 Wörter. Die Uhr läuft weiter, wenn Sie die Seite verlassen.';
+translations.de.rules[0] = 'Spielen Sie ein Übungswort und anschließend 20 Wörter. Die Übung nutzt dieselbe Uhr, zählt aber nicht zu Ihrem Ergebnis.';
+translations.de.rules[1] = 'Sie haben insgesamt 100 Minuten für die Übung und alle 20 Wörter. Die Uhr startet mit der Übung und läuft zwischen den Wörtern sowie beim Verlassen der Seite weiter.';
 translations.de.rules[5] = 'Fortschritt und Antworten werden nur in diesem Browser gespeichert. Es werden keine Antworten an eine Forschungsstudie übermittelt.';
 Object.assign(translations.de.errors, {
   load_error: 'Die Wortliste konnte nicht geladen werden. Prüfen Sie Ihre Verbindung und versuchen Sie es erneut.',
