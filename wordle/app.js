@@ -213,7 +213,7 @@ function renderGame() {
   } else if (trial.status !== 'active') {
     $('#round-panel').innerHTML = `<section class="result"><h2>${t[trial.status] || t.expiry}</h2>${trial.answer ? `<p>${t.answer}</p><p class="answer">${esc(trial.answer)}</p>` : ''}<button id="next">${trial.practice ? t.practiceDone : trial.position === 20 ? t.blockDone : t.next}</button></section>`;
     $('#next').addEventListener('click', () => action('next'));
-  } else $('#round-panel').innerHTML = `<h2>${t.typeWord}</h2><p>${state.lock_greens ? t.locked : t.standard}</p>`;
+  } else $('#round-panel').innerHTML = '';
   const keyStatuses = {};
   const rank = {absent:1,present:2,correct:3};
   for (const prior of trial.guesses) {
@@ -266,8 +266,7 @@ function render() {
   signature = nextSignature;
   clearTimeout(draftTimer);
   if (state.phase === 'ready') {
-    $('#main').innerHTML = `<section class="prose"><h2>${t.ready}</h2><p>${t.readyText}</p><button id="start">${t.start}</button></section>`;
-    $('#start').addEventListener('click', () => action('start'));
+    action('start');
   } else if (['practice','playing','block_done'].includes(state.phase)) renderGame();
   else {
     $('#main').innerHTML = `<section class="debrief"><h2>${t.debrief}</h2>${state.end_reason === 'time_expired' ? `<p>${t.expiry}</p>` : ''}<p>${t.debriefText}</p><p id="completion-status">${t.finishing}</p><div id="completion-actions"></div></section>`;
