@@ -1,6 +1,18 @@
 # Add new publications here.
 # Citation links should point to root-level asset URLs.
 sections:
+  - title: Dissertation
+    items:
+      - title: "Demand-Aware Networks: Design, Adjust & Update"
+        authors: Arash Pourdamghani
+        links:
+          - label: PDF
+            url: https://depositonce.tu-berlin.de/items/e0a7828a-11c2-47a7-b305-a72572602613
+          - label: Slides
+            url: /talks/thesis/#slides
+          - label: Video
+            url: https://youtu.be/Ad_5JZdkf1Q
+
   - title: Demand-Aware Networks
     items:
       - title: A Learning-Augmented Overlay Network
