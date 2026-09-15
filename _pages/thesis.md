@@ -54,7 +54,7 @@ The recording may be updated in the near future.
 
 <h2 id="manuscript">Manuscript</h2>
 
-The manuscript will be added soon, once the official procedures at TU Berlin are complete.
+The manuscript is available [here](https://depositonce.tu-berlin.de/items/e0a7828a-11c2-47a7-b305-a72572602613).
 
 <h2 id="get-in-touch">Get in touch</h2>
 
