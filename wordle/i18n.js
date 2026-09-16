@@ -59,7 +59,7 @@ export const translations = {
 Object.assign(translations.en, {
   timeRemaining: 'Time remaining', timeAllowance: 'Total time',
   timerStartsWithPractice: 'Starts with practice',
-  title: 'Word Game', welcome: 'Word Game',
+  title: 'The Word Discovery Challenge', welcome: 'The Word Discovery Challenge',
   intro: 'Find the hidden five-letter word, then see how well your confidence matches your guesses.',
   instructions: 'How to play',
   ready: 'Continue to the 20 words', start: 'Continue',
@@ -86,7 +86,7 @@ Object.assign(translations.en.errors, {
 Object.assign(translations.de, {
   timeRemaining: 'Verbleibende Zeit', timeAllowance: 'Gesamtzeit',
   timerStartsWithPractice: 'Startet mit der Übung',
-  title: 'Word Game', welcome: 'Word Game',
+  title: 'The Word Discovery Challenge', welcome: 'The Word Discovery Challenge',
   intro: 'Finden Sie das verborgene Wort mit fünf Buchstaben und vergleichen Sie Ihre Sicherheit mit Ihren Versuchen.',
   instructions: 'So funktioniert das Spiel',
   ready: 'Weiter zu den 20 Wörtern', start: 'Weiter',
