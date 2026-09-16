@@ -299,7 +299,7 @@ function writeLetters(text) {
 }
 function deleteLetter() {
   if (!editing()) return;
-  let index = Math.min(cursor - 1, 4);
+  let index = entry[cursor] && !state.trial.greens[cursor] ? cursor : Math.min(cursor - 1, 4);
   while (index >= 0 && state.trial.greens[index]) index--;
   if (index >= 0) { entry[index] = null; cursor = index; storage.set(entryKey(),entry); renderBoard(); }
 }
