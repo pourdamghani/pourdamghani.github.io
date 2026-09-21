@@ -6,8 +6,7 @@ excerpt: "About me"
 author_profile: true
 ---
 
-I am Arash, a researcher at the <a href="https://inet-tub.github.io/">INET</a> research group at the Technical University of Berlin, Germany, working with <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>.
-Furthermore, I am an associated researcher with the PLAMADISO research group at the Weizenbaum Institute for the Networked Society and a researcher at the University of Vienna. I also completed research internships at IST Austria and CUHK Hong Kong. I received my PhD in Computer Science from TU Berlin in September 2026.
+I am Arash, a researcher at the <a href="https://inet-tub.github.io/">INET</a> research group at the Technical University of Berlin, Germany, working with <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. Furthermore, I am an associated researcher with the PLAMADISO research group at the Weizenbaum Institute for the Networked Society. I received my PhD in Computer Science from TU Berlin in September 2026. Previously I was a researcher at the University of Vienna and completed research internships at IST Austria and CUHK Hong Kong.
 
 Throughout the years, my publications gathered 370+ citations, and I have been delighted to be a mentor for more than 15 students from across the world. My teaching experience in advanced theoretical and practical algorithmic concepts is going beyond 10 years, and I have been active in community service to ensure credibility and accessibility of knowledge.
 I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on demand-aware and self-adjusting networks.
