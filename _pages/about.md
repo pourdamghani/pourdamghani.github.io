@@ -17,7 +17,7 @@ Academic email: lastname (at) tu-berlin (dot) de
 Personal email: firstname (at) lastname (dot) net
 
 ## Recent News
-- I defended my PhD thesis, *Demand-Aware Networks: Design, Adjust & Update*, at TU Berlin on 2 September 2026 and received the grade **very good with distinction (summa cum laude).** See my slides, presentation video, and my thesis [here](/talks/thesis/).
+- I defended my PhD thesis, *Demand-Aware Networks: Design, Adjust & Update*, at TU Berlin on 2 September 2026 and received the grade **with distinction (summa cum laude).** See my slides, presentation video, and my thesis [here](/talks/thesis/).
 - Our project, BeeFAIRChain, has just been fully accepted as part of DATIpilot [BioBlock Innovationscommunity](https://bioblock-community.org/event-cp3-cp5.html), funded by Federal Ministry for Research, Technology and Space (BMFTR) in Germany.
 - We have just been awarded [Oxford Berlin Research Partnership Flexible Funds 2026](https://www.berlin-university-alliance.de/en/commitments/international/oxford/news/251106-FFIX.html)!
 - Our paper "Rethinking Fronthaul Topologies for Cell-Free 6G Networks" has been accepted in [IEEE ICC 2026](https://icc2026.ieee-icc.org/)!

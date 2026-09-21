@@ -15,7 +15,7 @@ section_links:
 youtube_id: "Ad_5JZdkf1Q"
 ---
 
-I defended my PhD thesis, *Demand-Aware Networks: Design, Adjust & Update*, at TU Berlin on 2 September 2026 and received the grade **very good with distinction (summa cum laude)**.
+I defended my PhD thesis, *Demand-Aware Networks: Design, Adjust & Update*, at TU Berlin on 2 September 2026 and received the grade **with distinction (summa cum laude)**.
 
 <h2 id="teaser">Teaser</h2>
 
