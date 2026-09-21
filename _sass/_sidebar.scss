@@ -122,6 +122,13 @@
     margin-bottom: 10px;
   }
 }
+.author__prefix {
+  display: block;
+  margin-bottom: 4px;
+  color: variables.$gray;
+  font-size: variables.$type-size-6;
+  line-height: 1.2;
+}
 .sidebar .author__name {
   font-family: variables.$sans-serif;
   font-size: variables.$type-size-5;
