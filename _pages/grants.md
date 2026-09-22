@@ -22,7 +22,7 @@ author_profile: true
 
   <article class="grant-entry">
     <span class="grant-entry__year">2025</span>
-    <h3>Trilateral Seed Funding Initiative (TU Berlin, University of Oxford, Siemens AG)</h3>
+    <h3>Trilateral Seed Funding Initiative, GeCo (TU Berlin, University of Oxford, Siemens AG)</h3>
   </article>
 
   <article class="grant-entry">
