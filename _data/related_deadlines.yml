@@ -10,29 +10,31 @@ categories:
       - title: International Conference on Distributed Computing and Networking
         acronym: ICDCN
         rank: "National: India"
-        next_submission_deadline: "2026-08-13"
-        deadline_announced: true
-        deadline_for: "ICDCN 2027 main conference paper (firm, AoE)"
-        last_submission_deadline: "2025-08-07"
-        last_deadline_source: "https://sites.google.com/view/icdcn2026/home"
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ICDCN 2028 main conference paper"
+        last_submission_deadline: "2026-08-13"
+        last_deadline_source: "https://cs3-lab.github.io/icdcn/index.html"
         deadline_source: "https://cs3-lab.github.io/icdcn/index.html"
       - title: ACM International Conference on Mobile Computing and Networking
         acronym: MOBICOM
         rank: A*
-        next_submission_deadline: "2026-09-02"
-        deadline_announced: true
-        deadline_for: "MobiCom 2027 summer-cycle full paper (23:59 AoE)"
-        last_submission_deadline: "2025-09-03"
-        last_deadline_source: "https://sigmobile.org/mobicom/2026/cfp.html"
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "MobiCom 2027 winter-cycle full paper"
+        last_submission_deadline: "2026-09-02"
+        last_deadline_source: "https://www.sigmobile.org/mobicom/2027/cfp.html"
+        suppress_deadline_estimate: true
         deadline_source: "https://www.sigmobile.org/mobicom/2027/cfp.html"
       - title: Symposium on Networked Systems Design and Implementation
         acronym: NSDI
         rank: "National: USA"
-        next_submission_deadline: "2026-09-17"
-        deadline_announced: true
-        deadline_for: "NSDI '27 fall-cycle full paper (23:59 US EDT)"
-        last_submission_deadline: "2025-09-18"
-        last_deadline_source: "https://www.usenix.org/conference/nsdi26/call-for-papers"
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "Next NSDI full-paper cycle"
+        last_submission_deadline: "2026-09-17"
+        last_deadline_source: "https://www.usenix.org/conference/nsdi27/call-for-papers"
+        suppress_deadline_estimate: true
         deadline_source: "https://www.usenix.org/conference/nsdi27/call-for-papers"
       - title: ACM SIGCOMM Conference
         acronym: SIGCOMM
@@ -46,12 +48,12 @@ categories:
       - title: IEEE International Conference on Computer Communications
         acronym: INFOCOM
         rank: A*
-        next_submission_deadline: "2026-07-31"
-        deadline_announced: true
-        deadline_for: "INFOCOM 2027 main paper"
-        last_submission_deadline: "2025-07-31"
-        last_deadline_source: "https://www.linkedin.com/posts/ieee-communications-society_ieee-infocom-2026-is-accepting-paper-submissions-activity-7350541607512752128-p0Na"
-        deadline_source: "https://infocom2027.ieee-infocom.org/call-papers"
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "INFOCOM 2028 main paper"
+        last_submission_deadline: "2026-07-31"
+        last_deadline_source: "https://www.comsoc.org/conferences-events/ieee-international-conference-computer-communications-2027"
+        deadline_source: "https://ieee-infocom.org/"
       - title: ACM Internet Measurement Conference
         acronym: IMC
         rank: A
@@ -60,6 +62,7 @@ categories:
         deadline_for: "IMC 2027 main paper"
         last_submission_deadline: "2026-04-29"
         last_deadline_source: "https://conferences.sigcomm.org/imc/2026/cfp/"
+        suppress_deadline_estimate: true
         deadline_source: "https://conferences.sigcomm.org/imc/"
       - title: ACM International Conference on Emerging Networking Experiments and Technologies
         acronym: CoNEXT
@@ -69,6 +72,7 @@ categories:
         deadline_for: "Next main-paper cycle"
         last_submission_deadline: "2026-06-05"
         last_deadline_source: "https://conferences.sigcomm.org/co-next/2026/"
+        suppress_deadline_estimate: true
         deadline_source: "https://conferences.sigcomm.org/co-next/2026/"
       - title: International Conference on Network Protocols
         acronym: ICNP
@@ -149,8 +153,10 @@ categories:
       - title: International Conference on Principles of Distributed Systems
         acronym: OPODIS
         rank: B
-        next_submission_deadline: "2026-09-03"
-        deadline_announced: true
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        last_deadline_source: "https://opodis26.software.imdea.org/cfp.html"
+        last_submission_deadline: "2026-09-03"
         deadline_for: "OPODIS 2027 main paper"
         deadline_source: "https://opodis26.software.imdea.org/cfp.html"
       - title: IEEE International Conference on Distributed Computing Systems
@@ -221,20 +227,20 @@ categories:
       - title: SIAM Symposium on Algorithm Engineering and Experiments
         acronym: ALENEX
         rank: A
-        next_submission_deadline: "2026-07-20"
-        deadline_announced: true
-        deadline_for: "ALENEX 2027 main paper"
-        last_submission_deadline: "2025-07-23"
-        last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/alenex26/submissions/"
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ALENEX 2028 main paper"
+        last_submission_deadline: "2026-07-20"
+        last_deadline_source: "https://www.siam.org/conferences-events/siam-conferences/alenex27/submissions/"
         deadline_source: "https://www.siam.org/conferences-events/siam-conferences/alenex27/submissions/"
       - title: SIAM Symposium on Simplicity in Algorithms
         acronym: SOSA
         rank: "Not listed in iCORE 2026"
-        next_submission_deadline: "2026-08-06"
-        deadline_announced: true
-        deadline_for: "SOSA 2027 main paper"
-        last_submission_deadline: "2025-08-07"
-        last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/sosa26/submissions/"
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SOSA 2028 main paper"
+        last_submission_deadline: "2026-08-06"
+        last_deadline_source: "https://www.siam.org/conferences-events/siam-conferences/sosa27/submissions/"
         deadline_source: "https://www.siam.org/conferences-events/siam-conferences/sosa27/submissions/"
       - title: European Symposium on Algorithms
         acronym: ESA
@@ -266,20 +272,20 @@ categories:
       - title: Innovations in Theoretical Computer Science
         acronym: ITCS
         rank: A
-        next_submission_deadline: "2026-09-04"
-        deadline_announced: true
-        deadline_for: "ITCS 2027 main paper"
-        last_submission_deadline: "2025-09-06"
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "ITCS 2028 main paper"
+        last_submission_deadline: "2026-09-04"
         last_deadline_source: "https://itcs-conf.org/"
         deadline_source: "https://itcs-conf.org/"
       - title: ACM-SIAM Symposium on Discrete Algorithms
         acronym: SODA
         rank: A*
-        next_submission_deadline: "2026-07-09"
-        deadline_announced: true
-        deadline_for: "SODA 2027 main paper"
-        last_submission_deadline: "2025-07-14"
-        last_deadline_source: "https://www.siam.org/conferences-events/past-event-archive/soda26/submissions/"
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "SODA 2028 main paper"
+        last_submission_deadline: "2026-07-09"
+        last_deadline_source: "https://www.siam.org/conferences-events/siam-conferences/soda27/submissions/"
         deadline_source: "https://www.siam.org/conferences-events/siam-conferences/soda27/submissions/"
       - title: ACM Symposium on Parallelism in Algorithms and Architectures
         acronym: SPAA
@@ -314,12 +320,12 @@ categories:
       - title: ACM SIGMETRICS
         acronym: SIGMETRICS
         rank: A*
-        next_submission_deadline: "2027-01-11"
+        next_submission_deadline: "2026-10-09"
         deadline_announced: true
-        deadline_for: "SIGMETRICS 2027 paper (23:59 AoE)"
-        last_submission_deadline: "2026-01-13"
-        last_deadline_source: "https://www.sigmetrics.org/sigmetrics2026/call_for_papers.html"
-        deadline_source: "https://www.sigmetrics.org/sigmetrics2027/"
+        deadline_for: "SIGMETRICS 2027 fall-cycle paper (23:59 AoE)"
+        last_submission_deadline: "2026-07-10"
+        last_deadline_source: "https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html"
+        deadline_source: "https://www.sigmetrics.org/sigmetrics2027/pages/cfp.html"
       - title: ACM/IEEE Symposium on Architectures for Networking and Communications Systems
         acronym: ANCS
         rank: "Not listed in iCORE 2026"

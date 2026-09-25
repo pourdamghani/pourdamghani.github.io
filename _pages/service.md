@@ -36,6 +36,7 @@ author_profile: true
   <article class="service-card service-card--wide">
     <h3>Subreviewer</h3>
     <div class="service-tags">
+      <span>INFOCOM 2027</span>
       <span>CCS 2025</span>
       <span>SIROCCO 2025</span>
       <span>SIGMETRICS 2025</span>

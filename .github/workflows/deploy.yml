@@ -31,13 +31,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh conference deadlines
-        run: python3 scripts/update_related_deadlines.py --write
-
       - name: Install dependencies
         run: npm ci
 
-      - name: Build site
+      - name: Test deadline updater
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Refresh deadlines and build site
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v5

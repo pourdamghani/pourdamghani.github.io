@@ -7,9 +7,9 @@ language, and updates only the relevant fields in the existing YAML text. This
 preserves comments and formatting and avoids accepting low-confidence dates such
 as abstract, workshop, notification, registration, or camera-ready deadlines.
 
-Run without --write for a report. The scheduled Pages build uses --write, so the
-generated site can pick up newly announced dates without committing generated
-changes back to the repository.
+Run without --write for a report. Every site build uses --write through the npm
+prebuild hook, so GitHub Pages can pick up newly announced dates without
+committing generated changes back to the repository.
 """
 
 from __future__ import annotations
@@ -42,7 +42,12 @@ USER_AGENT = (
 # Stable official pages that are more precise than a conference's generic home
 # page. The crawler still follows relevant official links discovered at runtime.
 SOURCE_TEMPLATES: dict[str, tuple[str, ...]] = {
-    "INFOCOM": ("https://infocom{year}.ieee-infocom.org/call-papers",),
+    "MOBICOM": ("https://www.sigmobile.org/mobicom/{year}/cfp.html",),
+    "NSDI": ("https://www.usenix.org/conference/nsdi{short_year}/call-for-papers",),
+    "SIGCOMM": ("https://conferences.sigcomm.org/sigcomm/{year}/cfp/",),
+    "INFOCOM": ("https://infocom{year}.ieee-infocom.org/call-papers-main-conference",),
+    "IMC": ("https://conferences.sigcomm.org/imc/{year}/cfp/",),
+    "CoNEXT": ("https://conferences.sigcomm.org/co-next/{year}/",),
     "IPDPS": ("https://www.ipdps.org/ipdps{year}/{year}-call-for-papers.html",),
     "ALENEX": (
         "https://www.siam.org/conferences-events/siam-conferences/alenex{short_year}/submissions/",
@@ -53,6 +58,7 @@ SOURCE_TEMPLATES: dict[str, tuple[str, ...]] = {
     "SODA": (
         "https://www.siam.org/conferences-events/siam-conferences/soda{short_year}/submissions/",
     ),
+    "SIGMETRICS": ("https://www.sigmetrics.org/sigmetrics{year}/pages/cfp.html",),
 }
 
 SOURCE_ROOTS: dict[str, tuple[str, ...]] = {
@@ -161,7 +167,9 @@ BLOCK_TAGS = {
     "section",
     "tr",
 }
-SKIP_TAGS = {"script", "style", "svg", "noscript", "template"}
+# Old deadlines are commonly retained inside strikethrough elements after an
+# extension. Ignoring those elements prevents an obsolete date from winning.
+SKIP_TAGS = {"script", "style", "svg", "noscript", "template", "del", "s", "strike"}
 
 
 @dataclasses.dataclass(frozen=True)
@@ -424,7 +432,9 @@ def extract_candidates(text: str, source: str, today: dt.date) -> tuple[list[Can
     lines = parser.lines
     event_month_year = infer_event_month_year(lines)
     candidates: list[Candidate] = []
-    lower_bound = today - dt.timedelta(days=45)
+    # A "next deadline" must never be in the past. Previously, the 45-day grace
+    # period could re-announce an already closed round on every Pages build.
+    lower_bound = today
     upper_bound = today + dt.timedelta(days=550)
 
     parsed_lines: list[list[tuple[dt.date, re.Match[str]]]] = []
@@ -469,7 +479,14 @@ def extract_candidates(text: str, source: str, today: dt.date) -> tuple[list[Can
         if score < 35:
             continue
         nearby = " ".join(lines[max(0, index - 1) : min(len(lines), index + 2)])
-        for date, _match in parsed_lines[index]:
+        line_matches = parsed_lines[index]
+        if "extend" in line.lower() and len(line_matches) > 1:
+            # "Extended from DATE to DATE" contains two equally well-described
+            # dates; only the later replacement is actionable.
+            latest = max(date for date, _match in line_matches)
+            line_matches = [(date, match) for date, match in line_matches if date == latest]
+
+        for date, _match in line_matches:
             if date < lower_bound or date > upper_bound:
                 continue
             candidates.append(
@@ -481,6 +498,14 @@ def extract_candidates(text: str, source: str, today: dt.date) -> tuple[list[Can
                 )
             )
     return candidates, parser
+
+
+def choose_candidate(candidates: list[Candidate]) -> Candidate:
+    """Choose the earliest next deadline among the most reliable matches."""
+
+    highest_score = max(candidate.score for candidate in candidates)
+    strongest = [candidate for candidate in candidates if candidate.score == highest_score]
+    return min(strongest, key=lambda candidate: candidate.date)
 
 
 def candidate_urls(entry: Entry, today: dt.date) -> list[str]:
@@ -536,15 +561,14 @@ def discover(entry: Entry, today: dt.date, timeout: float, max_pages: int) -> Re
     if not found:
         return Result(entry.acronym, entry.title, "not-found", errors=errors)
 
-    # Prefer semantic confidence first, then the latest date when a page lists an
-    # original and an extended full-paper deadline with equal wording.
-    best = max(found, key=lambda candidate: (candidate.score, candidate.date))
+    # Prefer semantic confidence first, then the earliest actionable round. This
+    # matters for conferences such as SIGMETRICS that publish several submission
+    # cycles on one page. Explicit extensions are handled while extracting lines.
+    best = choose_candidate(found)
     current = entry.fields.get("next_submission_deadline", "")
     announced = entry.fields.get("deadline_announced", "false").lower() == "true"
     if announced and re.fullmatch(r"\d{4}-\d{2}-\d{2}", current):
         current_date = dt.date.fromisoformat(current)
-        if best.date < current_date:
-            return Result(entry.acronym, entry.title, "kept-newer-existing", best, errors)
         if best.date == current_date and normalize_url(best.source) == normalize_url(
             entry.fields.get("deadline_source", best.source)
         ):
@@ -571,17 +595,34 @@ def set_field(block: str, name: str, value: str, quoted: bool) -> str:
     return block[:position] + f"\n        {name}: {rendered}" + block[position:]
 
 
-def apply_results(raw: str, entries: list[Entry], results: list[Result]) -> tuple[str, int]:
+def apply_results(
+    raw: str, entries: list[Entry], results: list[Result], today: dt.date
+) -> tuple[str, int]:
     by_acronym = {result.acronym: result for result in results if result.status == "update" and result.candidate}
     replacements: list[tuple[int, int, str]] = []
     for entry in entries:
         result = by_acronym.get(entry.acronym)
-        if not result or not result.candidate:
-            continue
         block = raw[entry.start : entry.end]
         old_deadline = entry.fields.get("next_submission_deadline", "")
         old_source = entry.fields.get("deadline_source", "")
         was_announced = entry.fields.get("deadline_announced", "false").lower() == "true"
+        old_date = (
+            dt.date.fromisoformat(old_deadline)
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", old_deadline)
+            else None
+        )
+
+        if not result or not result.candidate:
+            if not was_announced or old_date is None or old_date >= today:
+                continue
+            block = set_field(block, "last_submission_deadline", old_deadline, quoted=True)
+            if old_source:
+                block = set_field(block, "last_deadline_source", old_source, quoted=True)
+            block = set_field(block, "next_submission_deadline", "Not announced", quoted=True)
+            block = set_field(block, "deadline_announced", "false", quoted=False)
+            replacements.append((entry.start, entry.end, block))
+            continue
+
         new_deadline = result.candidate.date.isoformat()
 
         if was_announced and re.fullmatch(r"\d{4}-\d{2}-\d{2}", old_deadline) and old_deadline != new_deadline:
@@ -668,7 +709,7 @@ def main() -> int:
         )
 
     if args.write:
-        updated, count = apply_results(raw, entries, results)
+        updated, count = apply_results(raw, entries, results, args.today)
         if updated != raw:
             args.data.write_text(updated, encoding="utf-8")
         print(f"Updated {count} conference entr{'y' if count == 1 else 'ies'}.")
