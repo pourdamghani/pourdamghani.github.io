@@ -18,6 +18,14 @@ author_profile: true
 
 <div class="supervision-list">
   <article class="supervision-entry">
+    <div class="supervision-entry__meta"><span>2026</span><span>BSc</span><span>TU Berlin</span></div>
+    <div class="supervision-entry__body">
+      <h3>Eren Kayakiran</h3>
+      <p>Learning-augmented Consistent Hashing with Bounded Loads</p>
+    </div>
+  </article>
+
+  <article class="supervision-entry">
     <div class="supervision-entry__meta"><span>2025</span><span>BSc</span><span>TU Berlin</span></div>
     <div class="supervision-entry__body">
       <h3>Sebastian Wojciechowski</h3>
