@@ -1,27 +1,27 @@
 # main links links
 main:
   - title: "Publications"
-    url: /publications
+    url: /#publications
 
   - title: "Service"
-    url: /service
+    url: /#service
 
   - title: "Supervision"
-    url: /supervision
+    url: /#supervision
 
   - title: "Teaching"
-    url: /teaching
+    url: /#teaching
 
   - title: "Talks"
-    url: /talks
+    url: /#talks
 
   - title: "Grants"
-    url: /grants  
+    url: /#grants
 
   - title: "Tools"
-    url: /tools
+    url: /#tools
   
   - title: "CV"
-    url: /cv
+    url: /#cv
 
     
