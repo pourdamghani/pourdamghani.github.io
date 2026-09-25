@@ -3,6 +3,7 @@ import importlib.util
 from pathlib import Path
 import sys
 import unittest
+from unittest import mock
 
 
 SCRIPT = Path(__file__).parents[1] / "scripts" / "update_related_deadlines.py"
@@ -73,6 +74,54 @@ class DeadlineUpdaterTests(unittest.TestCase):
             deadlines.SOURCE_TEMPLATES["INFOCOM"],
             ("https://infocom{year}.ieee-infocom.org/call-papers-main-conference",),
         )
+
+    def test_infocom_only_crawls_the_expected_edition_cfp(self):
+        raw = """categories:
+  - title: Networking
+    conferences:
+      - title: IEEE International Conference on Computer Communications
+        acronym: INFOCOM
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "INFOCOM 2028 main paper"
+        deadline_source: "https://ieee-infocom.org/"
+        last_deadline_source: "https://example.org/infocom2027"
+"""
+        entry = deadlines.parse_entries(raw)[0]
+
+        self.assertEqual(
+            deadlines.candidate_urls(entry, dt.date(2026, 9, 25)),
+            ["https://infocom2028.ieee-infocom.org/call-papers-main-conference"],
+        )
+
+    def test_infocom_rejects_date_from_wrong_edition_page(self):
+        raw = """categories:
+  - title: Networking
+    conferences:
+      - title: IEEE International Conference on Computer Communications
+        acronym: INFOCOM
+        next_submission_deadline: "Not announced"
+        deadline_announced: false
+        deadline_for: "INFOCOM 2028 main paper"
+        deadline_source: "https://ieee-infocom.org/"
+"""
+        entry = deadlines.parse_entries(raw)[0]
+        unrelated_page = """
+        <h1>IEEE INFOCOM 2027</h1>
+        <p>Paper submission deadline: October 9, 2026</p>
+        """
+
+        with mock.patch.object(
+            deadlines,
+            "fetch",
+            return_value=(unrelated_page, "https://ieee-infocom.org/"),
+        ):
+            result = deadlines.discover(
+                entry, dt.date(2026, 9, 25), timeout=1, max_pages=1
+            )
+
+        self.assertEqual(result.status, "not-found")
+        self.assertIsNone(result.candidate)
 
 
 if __name__ == "__main__":

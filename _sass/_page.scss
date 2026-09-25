@@ -608,7 +608,8 @@
       align-content: flex-start;
     }
 
-    span {
+    span,
+    .supervision-tag {
       display: inline-flex;
       align-items: center;
       min-height: 1.5rem;
@@ -621,6 +622,140 @@
       font-weight: 600;
       line-height: 1.25;
       white-space: nowrap;
+    }
+  }
+
+  .supervision-filter-root {
+    .filterable-supervision-section[hidden] {
+      display: none;
+    }
+
+    .supervision-entry__meta {
+      flex-wrap: nowrap;
+    }
+
+    .filterable-supervision-section .supervision-entry {
+      &[hidden] {
+        display: none;
+      }
+
+      @include breakpoint.breakpoint(variables.$medium) {
+        grid-template-columns: minmax(11.25rem, 0.3fr) minmax(0, 1fr);
+      }
+    }
+
+    .filterable-supervision-section .supervision-tag {
+      appearance: none;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background-color 0.15s ease, border-color 0.15s ease,
+        color 0.15s ease;
+
+      &:hover,
+      &:focus-visible {
+        background: color.mix(#fff, variables.$link-color, 88%);
+        border-color: variables.$link-color;
+        color: variables.$link-color;
+      }
+
+      &[aria-pressed="true"] {
+        background: variables.$link-color;
+        border-color: variables.$link-color;
+        color: #fff;
+      }
+    }
+
+    .supervision-filter-status {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin: -0.25rem 0 0.75rem;
+      color: variables.$gray;
+      font-size: variables.$type-size-6;
+
+      &[hidden] {
+        display: none;
+      }
+    }
+
+    .supervision-filter-clear {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: variables.$link-color;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+      white-space: nowrap;
+
+      &:hover,
+      &:focus-visible {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .filterable-teaching-section {
+    .supervision-entry {
+      &[hidden] {
+        display: none;
+      }
+
+      @include breakpoint.breakpoint(variables.$medium) {
+        grid-template-columns: minmax(11.25rem, 0.3fr) minmax(0, 1fr);
+      }
+    }
+
+    .teaching-tag {
+      appearance: none;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background-color 0.15s ease, border-color 0.15s ease,
+        color 0.15s ease;
+
+      &:hover,
+      &:focus-visible {
+        background: color.mix(#fff, variables.$link-color, 88%);
+        border-color: variables.$link-color;
+        color: variables.$link-color;
+      }
+
+      &[aria-pressed="true"] {
+        background: variables.$link-color;
+        border-color: variables.$link-color;
+        color: #fff;
+      }
+    }
+
+    .teaching-filter-status {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin: 0 0 0.75rem;
+      color: variables.$gray;
+      font-size: variables.$type-size-6;
+
+      &[hidden] {
+        display: none;
+      }
+    }
+
+    .teaching-filter-clear {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: variables.$link-color;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+      white-space: nowrap;
+
+      &:hover,
+      &:focus-visible {
+        text-decoration: underline;
+      }
     }
   }
 

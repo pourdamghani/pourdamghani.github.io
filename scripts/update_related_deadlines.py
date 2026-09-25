@@ -61,6 +61,12 @@ SOURCE_TEMPLATES: dict[str, tuple[str, ...]] = {
     "SIGMETRICS": ("https://www.sigmetrics.org/sigmetrics{year}/pages/cfp.html",),
 }
 
+# These conferences publish edition-specific CFP pages. Falling back to a
+# generic series page can mix in unrelated events and dates (as happened when
+# INFOCOM inherited SIGMETRICS' October deadline), so only crawl the expected
+# edition URL and links discovered from that page.
+EDITION_SCOPED_ACRONYMS = frozenset(SOURCE_TEMPLATES)
+
 SOURCE_ROOTS: dict[str, tuple[str, ...]] = {
     "INFOCOM": ("https://ieee-infocom.org/",),
     "OPODIS": ("https://opodis26.software.imdea.org/cfp.html",),
@@ -508,18 +514,31 @@ def choose_candidate(candidates: list[Candidate]) -> Candidate:
     return min(strongest, key=lambda candidate: candidate.date)
 
 
+def expected_edition_year(entry: Entry, today: dt.date) -> int:
+    match = re.search(r"\b(20\d{2})\b", entry.fields.get("deadline_for", ""))
+    return int(match.group(1)) if match else today.year + 1
+
+
+def page_matches_edition(text: str, entry: Entry, edition_year: int) -> bool:
+    lowered = html.unescape(text).lower()
+    return entry.acronym.lower() in lowered and str(edition_year) in lowered
+
+
 def candidate_urls(entry: Entry, today: dt.date) -> list[str]:
-    edition_year = today.year + 1
+    edition_year = expected_edition_year(entry, today)
     template_values = [
         value.format(year=edition_year, short_year=str(edition_year)[-2:])
         for value in SOURCE_TEMPLATES.get(entry.acronym, ())
     ]
-    values: list[str] = template_values + list(SOURCE_ROOTS.get(entry.acronym, ()))
-    values.extend(
-        value
-        for field in ("deadline_source", "last_deadline_source")
-        if (value := entry.fields.get(field)) and value.startswith(("http://", "https://"))
-    )
+    if entry.acronym in EDITION_SCOPED_ACRONYMS:
+        values = template_values
+    else:
+        values = list(SOURCE_ROOTS.get(entry.acronym, ()))
+        values.extend(
+            value
+            for field in ("deadline_source", "last_deadline_source")
+            if (value := entry.fields.get(field)) and value.startswith(("http://", "https://"))
+        )
     seen: set[str] = set()
     result: list[str] = []
     for value in values:
@@ -536,6 +555,7 @@ def discover(entry: Entry, today: dt.date, timeout: float, max_pages: int) -> Re
     visited: set[str] = set()
     found: list[Candidate] = []
     errors: list[str] = []
+    edition_year = expected_edition_year(entry, today)
 
     while queue and len(visited) < max_pages:
         url = queue.pop(0)
@@ -544,7 +564,20 @@ def discover(entry: Entry, today: dt.date, timeout: float, max_pages: int) -> Re
         visited.add(url)
         try:
             body, final_url = fetch(url, timeout)
+            if entry.acronym in EDITION_SCOPED_ACRONYMS and not page_matches_edition(
+                body, entry, edition_year
+            ):
+                errors.append(
+                    f"{final_url}: page does not identify {entry.acronym} {edition_year}"
+                )
+                continue
             candidates, parser = extract_candidates(body, final_url, today)
+            if entry.acronym in EDITION_SCOPED_ACRONYMS:
+                candidates = [
+                    candidate
+                    for candidate in candidates
+                    if candidate.date.year >= edition_year - 1
+                ]
             found.extend(candidates)
             for href, label in parser.links:
                 joined = f"{label} {href}"

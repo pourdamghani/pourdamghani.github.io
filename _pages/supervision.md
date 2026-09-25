@@ -13,7 +13,8 @@ author_profile: true
 <p>I am delighted to be able to mentor the following students in the past few years.</p>
 </section>
 
-<section class="research-section people-list-section">
+<div class="supervision-filter-root">
+<section class="research-section people-list-section filterable-supervision-section">
 <h2>Thesis Supervision</h2>
 
 <div class="supervision-list">
@@ -115,7 +116,7 @@ author_profile: true
 </div>
 </section>
 
-<section class="research-section people-list-section">
+<section class="research-section people-list-section filterable-supervision-section">
 <h2>Undergraduate Research Interns</h2>
 
 <div class="supervision-list">
@@ -176,3 +177,6 @@ author_profile: true
   </article>
 </div>
 </section>
+</div>
+
+<script src="/assets/js/supervision-filters.js" defer></script>

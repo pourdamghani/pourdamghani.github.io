@@ -8,11 +8,11 @@ author_profile: true
 
 # Teaching
 
-<section class="research-section people-list-section">
+<section class="research-section people-list-section filterable-teaching-section">
 
 <div class="supervision-list">
   <article class="supervision-entry">
-    <div class="supervision-entry__meta"><span>2024-Present</span><span>Lecturer</span></div>
+    <div class="supervision-entry__meta"><span>2024-2025</span><span>Lecturer</span></div>
     <div class="supervision-entry__body">
       <h3>AI/ML in Networked Systems Seminar</h3>
       <p>TU Berlin, Germany</p>
@@ -20,7 +20,7 @@ author_profile: true
   </article>
 
   <article class="supervision-entry">
-    <div class="supervision-entry__meta"><span>2023-Present</span><span>Lecturer</span></div>
+    <div class="supervision-entry__meta"><span>2023-2025</span><span>Lecturer</span></div>
     <div class="supervision-entry__body">
       <h3>Advanced Topics in Networked and Distributed Systems Seminar</h3>
       <p>TU Berlin, Germany</p>
@@ -28,7 +28,7 @@ author_profile: true
   </article>
 
   <article class="supervision-entry">
-    <div class="supervision-entry__meta"><span>2022-Present</span><span>Tutor</span></div>
+    <div class="supervision-entry__meta"><span>2022-Present</span><span>Tutor &amp; Guest lecture</span></div>
     <div class="supervision-entry__body">
       <h3>Algorithms for Networked Systems</h3>
       <p>TU Berlin, Germany</p>
@@ -36,7 +36,7 @@ author_profile: true
   </article>
 
   <article class="supervision-entry">
-    <div class="supervision-entry__meta"><span>2022-2025</span><span>Lecturer</span></div>
+    <div class="supervision-entry__meta"><span>2022-Present</span><span>Lecturer</span></div>
     <div class="supervision-entry__body">
       <h3>Cryptocurrency and Blockchain Networks Seminar</h3>
       <p>TU Berlin, Germany</p>
@@ -116,3 +116,5 @@ author_profile: true
   </article>
 </div>
 </section>
+
+<script src="/assets/js/teaching-filters.js" defer></script>
