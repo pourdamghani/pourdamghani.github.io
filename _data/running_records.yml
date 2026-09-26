@@ -1,0 +1,22 @@
+# Add more events here. Set an image field to a site-relative path when a photo is available.
+- id: generali-5k-2026-09-26
+  name: GENERALI 5K
+  distance: 5K
+  time: "00:31:53"
+  date: "2026-09-26"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: volvo-tierparklauf-2026-09-13
+  name: VOLVO Tierparklauf 2026
+  distance: "—"
+  time: "00:36:18"
+  date: "2026-09-13"
+  display_date: "13. September 2026"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null

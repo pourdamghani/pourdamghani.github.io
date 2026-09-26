@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include "head.njk" %}
+  </head>
+  <body class="running-records-page">
+    <header class="running-records-header">
+      <nav class="running-records-nav" aria-label="Main navigation">
+        <a href="/">Homepage</a>
+        {% for link in navigation.main %}
+          <a href="{{ link.url }}"{% if link.title == "Tools" %} aria-current="true"{% endif %}>{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+
+    <main class="running-records-main" id="main-content">
+      <a class="running-records-back" href="/#tools">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4m8-8-8 8 8 8"/></svg>
+        Back to Tools
+      </a>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </main>
+
+    <footer class="running-records-footer">
+      <p>{{ metadata.author.name }}</p>
+    </footer>
+  </body>
+</html>

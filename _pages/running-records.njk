@@ -1,0 +1,54 @@
+---
+layout: running-records.njk
+permalink: /tools/running-records/
+title: Running Records
+excerpt: "Running events, finish times, medals, race numbers, and event photos."
+---
+
+{% macro recordImage(src, label, eventName) %}
+  <figure class="running-record__photo">
+    <div class="running-record__image">
+      <img src="{{ src if src else '/images/running-records-placeholder.svg' }}" alt="{{ label }}{{ ' from ' if src else ' image placeholder for ' }}{{ eventName }}" width="400" height="220" loading="lazy" decoding="async">
+      {% if not src %}<span class="running-record__placeholder" aria-hidden="true">Image placeholder</span>{% endif %}
+    </div>
+    <figcaption>{{ label }}</figcaption>
+  </figure>
+{% endmacro %}
+
+<div class="running-records-list">
+  {% for record in running_records %}
+    {% set dateParts = record.date.split('-') %}
+    <article class="running-record" aria-labelledby="{{ record.id }}">
+      <header class="running-record__header">
+        <div class="running-record__summary">
+          <h2 id="{{ record.id }}">{{ record.name }}</h2>
+          <dl class="running-record__details">
+            <div>
+              <dt>Date</dt>
+              <dd><time datetime="{{ record.date }}">{{ record.display_date if record.display_date else dateParts[2] + '.' + dateParts[1] + '.' + dateParts[0] }}</time></dd>
+            </div>
+            <div>
+              <dt>City + Country</dt>
+              <dd>{{ record.city }}, {{ record.country }}</dd>
+            </div>
+          </dl>
+        </div>
+        <dl class="running-record__performance">
+          <div>
+            <dt>Distance</dt>
+            <dd>{{ record.distance }}</dd>
+          </div>
+          <div>
+            <dt>Time</dt>
+            <dd>{{ record.time }}</dd>
+          </div>
+        </dl>
+      </header>
+      <div class="running-record__photos">
+        {{ recordImage(record.medal_image, 'Medal', record.name) }}
+        {{ recordImage(record.race_number_image, 'Race number', record.name) }}
+        {{ recordImage(record.event_image, 'Event photo', record.name) }}
+      </div>
+    </article>
+  {% endfor %}
+</div>
