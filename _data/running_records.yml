@@ -22,7 +22,7 @@
   event_image: null
 - id: city-night-berlin-2026-07-31
   name: City Night Berlin
-  distance: "—"
+  distance: 5K
   time: "00:34:46"
   date: "2026-07-31"
   display_date: "31.07.2026"
@@ -39,6 +39,39 @@
   display_date: "19. April 2026"
   city: Berlin
   country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: berliner-firmenlauf-2025-05-21
+  name: Berliner Firmenlauf
+  distance: 5.5K
+  time: "00:43:13"
+  date: "2025-05-21"
+  display_date: "21. Mai 2025"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: berliner-firmenlauf-2024-04-24
+  name: Berliner Firmenlauf
+  distance: 5.5K
+  time: "00:43:56"
+  date: "2024-04-24"
+  display_date: "24. April 2024"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: business-run-2018-09-06
+  name: Business Run
+  distance: 4.1 km
+  time: "00:27:53"
+  date: "2018-09-06"
+  display_date: "6 September 2018"
+  city: Vienna
+  country: Austria
   medal_image: null
   race_number_image: null
   event_image: null
