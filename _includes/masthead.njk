@@ -2,7 +2,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button type="button" aria-label="More navigation links" aria-expanded="false" aria-controls="overflow-navigation"><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg">
             <a href="/">Homepage</a>
@@ -13,7 +13,7 @@
             </li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul id="overflow-navigation" class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>

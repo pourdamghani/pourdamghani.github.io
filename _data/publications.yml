@@ -18,8 +18,6 @@ sections:
         links:
           - label: Paper
             url: /sand26ba.pdf
-          - label: Slides
-            url: /sand26ba-slides.pdf
           - label: Citation
             url: /SAND26.bib
       - title: "SpiderDAN: Matching Augmentation in Demand-Aware Networks"

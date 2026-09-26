@@ -1,22 +1,2 @@
-# robots.txt for https://pourdamghani.net/
-
-# General
 User-agent: *
-Allow: /publications/
 Allow: /
-
-# Nudge major bots 
-User-agent: Googlebot
-Allow: /
-Allow: /publications/
-Allow: /Arash_Pourdamghani_CV.pdf
-
-User-agent: Bingbot
-Allow: /
-Allow: /publications/
-Allow: /Arash_Pourdamghani_CV.pdf
-
-User-agent: DuckDuckBot
-Allow: /
-Allow: /publications/
-Allow: /Arash_Pourdamghani_CV.pdf

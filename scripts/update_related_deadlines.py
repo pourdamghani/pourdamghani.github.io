@@ -7,9 +7,9 @@ language, and updates only the relevant fields in the existing YAML text. This
 preserves comments and formatting and avoids accepting low-confidence dates such
 as abstract, workshop, notification, registration, or camera-ready deadlines.
 
-Run without --write for a report. Every site build uses --write through the npm
-prebuild hook, so GitHub Pages can pick up newly announced dates without
-committing generated changes back to the repository.
+Run without --write for a report, or use npm run update:deadlines to update the
+data. The scheduled deployment refreshes deadlines explicitly; ordinary local
+builds use the saved data and do not require network access.
 """
 
 from __future__ import annotations

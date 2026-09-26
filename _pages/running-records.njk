@@ -21,7 +21,10 @@ excerpt: "Running events, finish times, medals, race numbers, and event photos."
     <article class="running-record" aria-labelledby="{{ record.id }}">
       <header class="running-record__header">
         <div class="running-record__summary">
-          <h2 id="{{ record.id }}">{{ record.name }}</h2>
+          <div class="running-record__title">
+            {% if record.logo_image %}<img class="running-record__logo" src="{{ record.logo_image }}" alt="" aria-hidden="true" decoding="async">{% endif %}
+            <h2 id="{{ record.id }}">{{ record.name }}</h2>
+          </div>
           <dl class="running-record__details">
             <div>
               <dt>Date</dt>
