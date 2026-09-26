@@ -9,12 +9,34 @@
   medal_image: null
   race_number_image: null
   event_image: null
-- id: volvo-tierparklauf-2026-09-13
-  name: VOLVO Tierparklauf 2026
-  distance: "—"
+- id: tierparklauf-2026-09-13
+  name: Tierparklauf 
+  distance: 5K
   time: "00:36:18"
   date: "2026-09-13"
   display_date: "13. September 2026"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: city-night-berlin-2026-07-31
+  name: City Night Berlin
+  distance: "—"
+  time: "00:34:46"
+  date: "2026-07-31"
+  display_date: "31.07.2026"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: s-25-berlin-2026-04-19
+  name: S 25 Berlin
+  distance: 5K
+  time: "00:42:01"
+  date: "2026-04-19"
+  display_date: "19. April 2026"
   city: Berlin
   country: Germany
   medal_image: null
