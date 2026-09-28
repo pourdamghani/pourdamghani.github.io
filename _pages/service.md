@@ -83,9 +83,5 @@ author_profile: true
     <p class="service-card__meta">Organizing team, panelist, and speaker</p>
   </article>
 
-  <article class="service-card">
-    <h3>ACM-ICPC Asia Region, Tehran Site</h3>
-    <p class="service-card__meta">Organizing team</p>
-  </article>
 </div>
 </section>

@@ -21,20 +21,12 @@ templateEngineOverride: njk
       <p class="home-hero__role">Postdoctoral researcher <span aria-hidden="true">·</span> TU Berlin</p>
       <div class="home-hero__rule" aria-hidden="true"></div>
       <div class="home-hero__bio">
-        <p>I am Arash, a postdoctoral researcher at the <a href="https://inet-tub.github.io/">INET</a> research group at the Technical University of Berlin, Germany, working with <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. Furthermore, I am an associated researcher with the PLAMADISO research group at the Weizenbaum Institute for the Networked Society. I received my PhD in Computer Science from TU Berlin in September 2026. Previously I was a researcher at the University of Vienna and completed research internships at IST Austria and CUHK Hong Kong.</p>
+        <p>I am Arash, a postdoctoral researcher at the <a href="https://inet.tu-berlin.de/">INET</a> research group at the Technical University of Berlin, Germany, working with <a href="https://schmiste.github.io/">Prof. Stefan Schmid</a>. I am also an associated researcher with the PLAMADISO research group at the Weizenbaum Institute for the Networked Society. I received my PhD in Computer Science from TU Berlin in September 2026. Previously I was a researcher at the University of Vienna and completed research internships at IST Austria and CUHK Hong Kong.</p>
         <p>I have been previously received awards such as MacCracken PhD Fellowship, Oxford Berlin Research Partnership Flexible Funds, and has been partner in GeCo seed funding and BeeFAIRChain praxis-sprint funding from German agencies, among others.</p>
         <p class="home-hero__intro">I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on demand-aware and self-adjusting networks.</p>
-        <p>Academic email: lastname (at) tu-berlin (dot) de</p>
-        <p>Personal email: firstname (at) lastname (dot) net</p>
-      </div>
-      <div class="home-hero__actions">
-        <a class="home-button home-button--primary" href="#publications">Selected Publications <span aria-hidden="true">→</span></a>
-        <a class="home-button" href="/Arash_Pourdamghani_CV.pdf">Download my CV <span aria-hidden="true">↓</span></a>
       </div>
       <nav class="home-profile-links" aria-label="Academic and social profiles">
         <a href="{{ metadata.author.googlescholar }}">Google Scholar</a>
-        <a href="{{ metadata.author.orcid }}">ORCID</a>
-        <a href="https://github.com/{{ metadata.author.github }}">Github</a>
         <a href="https://www.linkedin.com/in/{{ metadata.author.linkedin }}">LinkedIn</a>
       </nav>
     </div>
@@ -57,6 +49,10 @@ templateEngineOverride: njk
       </svg>
       <div class="home-portrait__frame">
         <img src="/images/profile.png" alt="Arash Pourdamghani" width="586" height="578">
+      </div>
+      <div class="home-portrait__contact">
+        <p>Academic email: lastname (at) tu-berlin (dot) de</p>
+        <p>Personal email: firstname (at) lastname (dot) net</p>
       </div>
     </div>
   </div>
@@ -121,7 +117,7 @@ templateEngineOverride: njk
 <section class="home-content-section home-content-section--tools home-anchor" id="tools" aria-labelledby="tools-title">
   <div class="home-shell">
     <header class="home-section-heading"><div><h2 id="tools-title">Tools</h2></div></header>
-    <div class="home-section-embed">{{ includePage('/tools/') }}</div>
+    <div class="home-section-embed">{% include "home-tools.njk" %}</div>
   </div>
 </section>
 

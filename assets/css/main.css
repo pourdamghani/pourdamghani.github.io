@@ -2399,18 +2399,19 @@ body.single-page a {
   margin-bottom: 0.35rem;
   color: var(--home-accent);
   font-family: var(--home-sans);
-  font-size: 0.2em;
+  font-size: 0.24em;
   font-weight: 760;
   letter-spacing: 0.06em;
   line-height: 1;
 }
 
 .home-hero__role {
-  margin: 0.85rem 0 0;
+  margin: 0.55rem 0 0;
   color: var(--home-muted);
   font-family: var(--home-serif);
   font-size: clamp(1.08rem, 1.7vw, 1.4rem);
   line-height: 1.3;
+  text-align: left;
 }
 
 .home-hero__rule {
@@ -2439,40 +2440,6 @@ body.single-page a {
   font-size: inherit;
   font-weight: 400;
   line-height: inherit;
-}
-
-.home-hero__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1.4rem;
-}
-
-.home-button {
-  display: inline-flex;
-  gap: 0.7rem;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  padding: 0.6rem 1.25rem;
-  color: var(--home-accent) !important;
-  font-size: 0.89rem;
-  font-weight: 700;
-  text-decoration: none;
-  border: 1px solid #a9c4df;
-  border-radius: 4px;
-  transition: border-color 160ms ease, transform 160ms ease;
-}
-
-.home-button:hover {
-  border-color: var(--home-accent);
-  transform: translateY(-1px);
-}
-
-.home-button--primary {
-  background: var(--home-accent);
-  color: #fff !important;
-  border-color: var(--home-accent);
 }
 
 .home-profile-links {
@@ -2508,6 +2475,19 @@ body.single-page a {
   place-items: center;
   min-height: 0;
   color: #c5d9ec;
+}
+
+.home-portrait__contact {
+  width: min(100%, 260px);
+  margin-top: 0.2rem;
+  color: var(--home-muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.home-portrait__contact p {
+  margin: 0.25rem 0 0;
 }
 
 .home-portrait__network {
@@ -2884,6 +2864,16 @@ body.single-page a {
   border-color: #46627e;
 }
 
+.home-content-section--tools .home-section-embed .publication-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 2rem;
+}
+
+.home-content-section--tools .home-section-embed .publication-card {
+  padding-block: 1rem;
+}
+
 .home-content-section--cv .home-section-embed > p {
   max-width: 720px;
 }
@@ -3034,6 +3024,12 @@ body.single-page a {
 }
 
 @media (max-width: 880px) {
+  .home-content-section--tools .home-section-embed .publication-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 880px) {
   .home-news__list article {
     grid-template-columns: 1fr;
       gap: 0.35rem;
@@ -3083,18 +3079,6 @@ body.single-page a {
 @media (max-width: 480px) {
   .home-portrait__frame {
     width: 118px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-hero__actions {
-    display: grid;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-button {
-    width: 100%;
   }
 }
 

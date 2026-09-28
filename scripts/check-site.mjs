@@ -65,9 +65,10 @@ const homepage = await readFile(path.join(output, "index.html"), "utf8");
 for (const id of ["about", "news", "publications", "supervision", "teaching", "service", "talks", "grants", "tools", "cv"]) {
   assert.match(homepage, new RegExp(`<section[^>]+id="${id}"`), `Missing homepage section: ${id}`);
 }
-for (const content of ["publication-card", "supervision-filter-root", "filterable-teaching-section", "service-card", "grant-entry", "/tools/running-records/", "/tools/word-game/"]) {
+for (const content of ["publication-card", "supervision-filter-root", "filterable-teaching-section", "service-card", "grant-entry", "/tools/running-records/"]) {
   assert.ok(homepage.includes(content), `Missing embedded content: ${content}`);
 }
+assert.doesNotMatch(homepage, /\/tools\/word-game\//, "Word Discovery Challenge should not appear on the homepage");
 
 if (errors.size) {
   console.error(Array.from(errors).join("\n"));
