@@ -3,6 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches: [master]
+  pull_request:
   schedule:
     - cron: "17 5 * * *"
   workflow_dispatch:
@@ -13,7 +14,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -35,16 +36,22 @@ jobs:
         run: npm ci
 
       - name: Test deadline updater
-        run: python3 -m unittest discover -s tests -v
+        run: npm run test:deadlines
 
-      - name: Refresh deadlines and build site
-        run: npm run build
+      - name: Refresh conference deadlines
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: npm run update:deadlines
+
+      - name: Build and check site
+        run: npm run check
 
       - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
         with:
           path: _site
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:

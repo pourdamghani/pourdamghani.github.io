@@ -1,5 +1,0 @@
-@use "span";
-
-@mixin pre($spec) {
-  margin-left: span.wide-span($spec);
-}

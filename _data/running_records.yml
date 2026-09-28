@@ -1,0 +1,84 @@
+# Add more events here. Set an image field to a site-relative path when a photo is available.
+- id: generali-5k-2026-09-26
+  name: GENERALI 5K
+  logo_image: /images/event-logos/generali-5k.svg
+  distance: 5K
+  time: "00:31:53"
+  date: "2026-09-26"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: tierparklauf-2026-09-13
+  name: Tierparklauf 
+  logo_image: /images/event-logos/tierparklauf.png
+  distance: 5K
+  time: "00:36:18"
+  date: "2026-09-13"
+  display_date: "13. September 2026"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: city-night-berlin-2026-07-31
+  name: City Night Berlin
+  logo_image: /images/event-logos/city-night.svg
+  distance: 5K
+  time: "00:34:46"
+  date: "2026-07-31"
+  display_date: "31.07.2026"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: s-25-berlin-2026-04-19
+  name: S 25 Berlin
+  logo_image: /images/event-logos/s25-berlin.svg
+  distance: 5K
+  time: "00:42:01"
+  date: "2026-04-19"
+  display_date: "19. April 2026"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: berliner-firmenlauf-2025-05-21
+  name: Berliner Firmenlauf
+  logo_image: /images/event-logos/berliner-firmenlauf.png
+  distance: 5.5K
+  time: "00:43:13"
+  date: "2025-05-21"
+  display_date: "21. Mai 2025"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: berliner-firmenlauf-2024-04-24
+  name: Berliner Firmenlauf
+  logo_image: /images/event-logos/berliner-firmenlauf.png
+  distance: 5.5K
+  time: "00:43:56"
+  date: "2024-04-24"
+  display_date: "24. April 2024"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: null
+- id: business-run-2018-09-06
+  name: Business Run
+  logo_image: /images/event-logos/business-run.png
+  distance: 4.1 km
+  time: "00:27:53"
+  date: "2018-09-06"
+  display_date: "6 September 2018"
+  city: Vienna
+  country: Austria
+  medal_image: null
+  race_number_image: null
+  event_image: null

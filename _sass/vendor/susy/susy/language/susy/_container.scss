@@ -1,7 +1,0 @@
-@use "../../../../../variables";
-
-@mixin container {
-  max-width: variables.$large;
-  margin-left: auto;
-  margin-right: auto;
-}

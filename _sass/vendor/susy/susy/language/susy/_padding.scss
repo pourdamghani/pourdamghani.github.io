@@ -1,9 +1,0 @@
-@use "span";
-
-@mixin prefix($spec) {
-  padding-left: span.wide-span($spec);
-}
-
-@mixin suffix($spec) {
-  padding-right: span.wide-span($spec);
-}

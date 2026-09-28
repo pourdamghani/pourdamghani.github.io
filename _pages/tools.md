@@ -24,5 +24,12 @@ author_profile: true
         <p class="publication-card__links"><a class="btn btn--primary" href="/tools/word-game/">Play The Word Discovery Challenge</a></p>
       </div>
     </article>
+    <article class="publication-card">
+      <div class="publication-card__body">
+        <h2 class="publication-card__title"><a href="/tools/running-records/">Running Records</a></h2>
+        <p>My running events, finish times, and photos of medals, race numbers, and race days.</p>
+        <p class="publication-card__links"><a class="btn btn--primary" href="/tools/running-records/">View running records</a></p>
+      </div>
+    </article>
   </div>
 </section>

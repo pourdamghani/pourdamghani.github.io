@@ -4,7 +4,7 @@ const markdownIt = require("markdown-it");
 const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
-  // Load YAML data files (Eleventy only supports JSON/JS by default)
+  // Site content and metadata stay editable in YAML.
   eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
   const md = markdownIt({ html: true, typographer: true });
   eleventyConfig.setLibrary("md", md);
 
-  // Simple slugify filter (matches Jekyll's default behaviour)
+  // Stable section IDs used by page navigation.
   eleventyConfig.addFilter("slugify", (str) =>
     String(str)
       .toLowerCase()
