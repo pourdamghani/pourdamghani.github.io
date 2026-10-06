@@ -12,12 +12,12 @@
 
 :root {
   --site-font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --type-xs: 0.75rem;
-  --type-sm: 0.875rem;
-  --type-base: 1rem;
-  --type-lg: 1.25rem;
-  --type-xl: 1.75rem;
-  --type-display: clamp(2.5rem, 5vw, 3.75rem);
+  --type-xs: 0.875rem;
+  --type-sm: 1rem;
+  --type-base: 1.125rem;
+  --type-lg: 1.375rem;
+  --type-xl: 2rem;
+  --type-display: clamp(2.8125rem, 5.6vw, 4.25rem);
   --leading-tight: 1.2;
   --leading-body: 1.6;
 }
@@ -3129,7 +3129,7 @@ body.single-page a {
 
 @media (max-width: 880px) {
   .home-hero__copy h1 {
-    font-size: clamp(2.25rem, 9vw, 3rem);
+    font-size: clamp(2.5rem, 10vw, 3.375rem);
   }
 }
 
@@ -3585,7 +3585,7 @@ body.running-records-page a:focus-visible {
 @media (max-width: 600px) {
   .running-records-main > h1 {
     margin: 20px 0 28px;
-      font-size: clamp(2.25rem, 9vw, 3rem);
+      font-size: clamp(2.5rem, 10vw, 3.375rem);
   }
 }
 
