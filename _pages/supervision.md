@@ -14,7 +14,16 @@ author_profile: true
 </section>
 
 <div class="supervision-filter-root">
-<section class="research-section people-list-section filterable-supervision-section">
+<div class="topic-selector supervision-topic-selector" aria-label="Filter supervision by group">
+  <span class="topic-selector__label">Browse by group</span>
+  <div class="topic-selector__options" role="group" aria-label="Supervision groups">
+    <button type="button" class="topic-selector__button is-active" data-supervision-group="all" aria-pressed="true">All students</button>
+    <button type="button" class="topic-selector__button" data-supervision-group="theses" aria-pressed="false">Thesis supervision</button>
+    <button type="button" class="topic-selector__button" data-supervision-group="interns" aria-pressed="false">Research interns</button>
+  </div>
+</div>
+
+<section class="research-section people-list-section filterable-supervision-section" data-supervision-section="theses">
 <h2>Thesis Supervision</h2>
 
 <div class="supervision-list">
@@ -116,7 +125,7 @@ author_profile: true
 </div>
 </section>
 
-<section class="research-section people-list-section filterable-supervision-section">
+<section class="research-section people-list-section filterable-supervision-section" data-supervision-section="interns">
 <h2>Undergraduate Research Interns</h2>
 
 <div class="supervision-list">

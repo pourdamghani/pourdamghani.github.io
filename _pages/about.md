@@ -25,10 +25,6 @@ templateEngineOverride: njk
         <p>I have been previously received awards such as MacCracken PhD Fellowship, Oxford Berlin Research Partnership Flexible Funds, and has been partner in GeCo seed funding and BeeFAIRChain praxis-sprint funding from German agencies, among others.</p>
         <p class="home-hero__intro">I am interested in algorithm design and analysis with applications in networks, distributed systems, and blockchains. My particular focus is on demand-aware and self-adjusting networks.</p>
       </div>
-      <nav class="home-profile-links" aria-label="Academic and social profiles">
-        <a href="{{ metadata.author.googlescholar }}">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/{{ metadata.author.linkedin }}">LinkedIn</a>
-      </nav>
     </div>
 
     <div class="home-portrait" aria-label="Portrait of Arash Pourdamghani">
@@ -50,9 +46,13 @@ templateEngineOverride: njk
       <div class="home-portrait__frame">
         <img src="/images/profile.png" alt="Arash Pourdamghani" width="586" height="578">
       </div>
+      <nav class="home-profile-links" aria-label="Academic and social profiles">
+        <a href="{{ metadata.author.googlescholar }}"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span></a>
+        <a href="https://www.linkedin.com/in/{{ metadata.author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+      </nav>
       <div class="home-portrait__contact">
-        <p>Academic email: lastname (at) tu-berlin (dot) de</p>
-        <p>Personal email: firstname (at) lastname (dot) net</p>
+        <p title="Academic email"><i class="fas fa-university" aria-hidden="true"></i><span>lastname (at) tu-berlin (dot) de</span></p>
+        <p title="Personal email"><i class="fas fa-envelope" aria-hidden="true"></i><span>firstname (at) lastname (dot) net</span></p>
       </div>
     </div>
   </div>

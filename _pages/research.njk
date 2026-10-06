@@ -11,9 +11,20 @@ author_profile: true
 <p>In theoretical computer science, authors are sorted alphabetically by default.</p>
 
 {% from "publication-card.njk" import pubCard %}
+<div class="topic-selector publication-topic-selector" aria-label="Filter publications by topic">
+  <span class="topic-selector__label">Browse by topic</span>
+  <div class="topic-selector__options" role="group" aria-label="Publication topics">
+    <button type="button" class="topic-selector__button is-active" data-publication-topic="all" aria-pressed="true">All topics</button>
+    {% for section in publications.sections %}
+      <button type="button" class="topic-selector__button" data-publication-topic="{{ section.title | slugify }}" aria-pressed="false">{{ section.title }}</button>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="publication-filter-root">
 {% for section in publications.sections %}
   {% set section_id = section.title | slugify %}
-  <section class="research-section research-section--cards" id="{{ section_id }}">
+  <section class="research-section research-section--cards filterable-publication-section" id="{{ section_id }}" data-publication-section="{{ section_id }}">
     <h2>{{ section.title }}</h2>
     <div class="publication-grid">
       {% for pub in section.items %}
@@ -22,3 +33,6 @@ author_profile: true
     </div>
   </section>
 {% endfor %}
+</div>
+
+<script src="/assets/js/publication-filters.js" defer></script>

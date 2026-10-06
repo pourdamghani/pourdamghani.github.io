@@ -2169,6 +2169,14 @@ button::-moz-focus-inner {
   content: "\f08c";
 }
 
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-university:before {
+  content: "\f19c";
+}
+
 .fa-map-marker:before {
   content: "\f041";
 }
@@ -2445,26 +2453,27 @@ body.single-page a {
 .home-profile-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem 0;
-  margin-top: 1.35rem;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.9rem;
 }
 
 .home-profile-links a {
-  padding: 0 0.85rem;
-  color: var(--home-muted);
-  font-size: 0.78rem;
-  font-weight: 650;
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 0.38rem 0.55rem;
+  color: var(--home-accent);
+  font-size: 0.71rem;
+  font-weight: 700;
   text-decoration: none;
-  border-left: 1px solid var(--home-rule);
-}
-
-.home-profile-links a:first-child {
-  padding-left: 0;
-  border-left: 0;
+  border: 1px solid #bfd5e9;
+  border-radius: 4px;
 }
 
 .home-profile-links a:hover {
-  color: var(--home-accent);
+  background: var(--home-soft);
+  border-color: var(--home-accent);
 }
 
 .home-portrait {
@@ -2478,16 +2487,30 @@ body.single-page a {
 }
 
 .home-portrait__contact {
-  width: min(100%, 260px);
-  margin-top: 0.2rem;
+  display: grid;
+  gap: 0.32rem;
+  width: max-content;
+  max-width: none;
+  margin-top: 0.7rem;
   color: var(--home-muted);
-  font-size: 0.72rem;
-  line-height: 1.5;
-  text-align: center;
+  font-size: 0.66rem;
+  line-height: 1.35;
+  text-align: left;
 }
 
 .home-portrait__contact p {
-  margin: 0.25rem 0 0;
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.home-portrait__contact i {
+  width: 1.2em;
+  color: var(--home-accent);
+  font-size: 0.94rem;
+  text-align: center;
 }
 
 .home-portrait__network {
@@ -2621,6 +2644,86 @@ body.single-page a {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   border: 0;
+}
+
+.home-section-embed--publications .research-section + .research-section,
+.home-section-embed .filterable-supervision-section + .filterable-supervision-section {
+  margin-top: 4rem;
+}
+
+.home-section-embed--publications .research-section > h2,
+.home-section-embed .filterable-supervision-section > h2 {
+  margin-bottom: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(90deg, var(--home-soft), rgba(238, 244, 250, 0));
+  font-size: clamp(1.2rem, 1.7vw, 1.45rem);
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  text-transform: none;
+  border-left: 4px solid var(--home-accent);
+}
+
+.home-section-embed .filterable-publication-section[hidden],
+.home-section-embed .filterable-supervision-section[hidden] {
+  display: none;
+}
+
+.topic-selector {
+  margin: 1.4rem 0 2.4rem;
+  padding: 1rem 0 1.1rem;
+  border-top: 1px solid var(--home-rule);
+  border-bottom: 1px solid var(--home-rule);
+}
+
+.topic-selector__label {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: var(--home-muted);
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.topic-selector__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.topic-selector__button {
+  appearance: none;
+  min-height: 36px;
+  margin: 0;
+  padding: 0.45rem 0.78rem;
+  background: var(--home-white);
+  color: var(--home-muted);
+  font: 700 0.76rem/1.2 var(--home-sans);
+  border: 1px solid #bfd0df;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.topic-selector__button:hover,
+.topic-selector__button:focus-visible {
+  color: var(--home-accent);
+  border-color: var(--home-accent);
+}
+
+.topic-selector__button.is-active,
+.topic-selector__button[aria-pressed="true"] {
+  background: var(--home-accent);
+  color: #fff;
+  border-color: var(--home-accent);
+}
+
+.home-section-embed--publications .topic-selector {
+  margin-top: 1.2rem;
+}
+
+.home-section-embed .supervision-topic-selector + .supervision-filter-status {
+  margin-top: -1.4rem;
 }
 
 .home-section-embed .publication-grid {
@@ -3458,6 +3561,298 @@ body.running-records-page a:focus-visible {
 @media (max-width: 600px) {
   .running-record dt {
     font-size: 16px;
+  }
+}
+
+/* related-deadlines: current tool-page treatment shared with Running Records. */
+
+.related-deadlines-page .deadline-filters {
+  margin: 0 0 36px;
+  padding: 28px 30px;
+  background: var(--home-white);
+  border: 1px solid #c9dce9;
+  border-radius: 5px;
+}
+
+.related-deadlines-page .deadline-filters__grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.6fr) repeat(2, minmax(170px, 0.9fr)) minmax(170px, 0.8fr);
+  gap: 22px 20px;
+  align-items: end;
+}
+
+.related-deadlines-page .deadline-filters label {
+  display: grid;
+  gap: 8px;
+  color: var(--home-muted);
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.related-deadlines-page .deadline-filters input,
+.related-deadlines-page .deadline-filters select,
+.related-deadlines-page .deadline-filters button {
+  min-height: 48px;
+  margin: 0;
+  border-radius: 4px;
+  font-family: var(--home-sans);
+  font-size: 16px;
+}
+
+.related-deadlines-page .deadline-filters input,
+.related-deadlines-page .deadline-filters select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--home-white);
+  color: var(--home-ink);
+  border: 1px solid #aebfd0;
+}
+
+.related-deadlines-page .deadline-filters input:focus,
+.related-deadlines-page .deadline-filters select:focus {
+  border-color: var(--home-accent);
+  outline: 2px solid color-mix(in srgb, var(--home-accent) 22%, transparent);
+  outline-offset: 1px;
+}
+
+.related-deadlines-page .deadline-filters__current {
+  display: flex !important;
+  grid-column: 1 / 4;
+  gap: 12px !important;
+  align-items: center;
+  justify-self: start;
+  min-height: 48px;
+  padding: 0;
+  color: var(--home-ink) !important;
+  cursor: pointer;
+}
+
+.related-deadlines-page .deadline-filters__current input {
+  width: 20px;
+  min-height: 20px;
+  height: 20px;
+  padding: 0;
+  accent-color: var(--home-accent);
+}
+
+.related-deadlines-page .deadline-filters__clear {
+  grid-column: 4;
+  grid-row: 2;
+  justify-self: stretch;
+  padding: 10px 20px;
+  background: var(--home-ink);
+  color: var(--home-white);
+  border: 1px solid var(--home-ink);
+  font-weight: 700;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.related-deadlines-page .deadline-filters__clear:hover {
+  background: var(--home-accent);
+  border-color: var(--home-accent);
+}
+
+.related-deadlines-page .deadline-filters__status {
+  margin: 18px 0 0;
+  color: var(--home-muted);
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.related-deadlines-page .deadline-results {
+  margin-bottom: 32px;
+}
+
+.related-deadlines-page .deadline-results .deadline-group + .deadline-group {
+  margin-top: 36px;
+}
+
+.related-deadlines-page .deadline-topic {
+  margin: 0;
+  border-top: 1px solid var(--home-rule);
+}
+
+.related-deadlines-page .deadline-topic:last-of-type {
+  border-bottom: 1px solid var(--home-rule);
+}
+
+.related-deadlines-page .deadline-topic > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 92px;
+  padding: 24px 8px;
+  color: var(--home-ink);
+  cursor: pointer;
+  list-style: none;
+}
+
+.related-deadlines-page .deadline-topic > summary::-webkit-details-marker {
+  display: none;
+}
+
+.related-deadlines-page .deadline-topic > summary:hover {
+  color: var(--home-accent);
+}
+
+.related-deadlines-page .deadline-topic > summary:focus-visible {
+  outline: 2px solid var(--home-accent);
+  outline-offset: 4px;
+}
+
+.related-deadlines-page .deadline-topic__title {
+  font-size: clamp(24px, 2.2vw, 32px);
+  font-weight: 750;
+  letter-spacing: -0.018em;
+  line-height: 1.25;
+}
+
+.related-deadlines-page .deadline-topic__icon {
+  flex: 0 0 24px;
+  transition: transform 180ms ease;
+}
+
+.related-deadlines-page .deadline-topic[open] .deadline-topic__icon {
+  transform: rotate(90deg);
+}
+
+.related-deadlines-page .deadline-topic[open] > summary {
+  padding-bottom: 18px;
+  color: var(--home-accent);
+}
+
+.related-deadlines-page .deadline-group {
+  padding: 0 8px 32px;
+}
+
+.related-deadlines-page .deadline-group[hidden] {
+  display: none;
+}
+
+.related-deadlines-page .deadline-group h2,
+.related-deadlines-page .deadline-group h3 {
+  margin: 12px 0 16px;
+  color: var(--home-ink);
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.related-deadlines-page .deadline-group + .deadline-group {
+  padding-top: 4px;
+}
+
+.related-deadlines-page .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #c9dce9;
+  border-radius: 5px;
+}
+
+.related-deadlines-page table {
+  width: 100%;
+  min-width: 940px;
+  margin: 0;
+  border-collapse: collapse;
+  color: var(--home-ink);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.related-deadlines-page th,
+.related-deadlines-page td {
+  padding: 16px 18px;
+  text-align: left;
+  vertical-align: top;
+  border: 0;
+  border-bottom: 1px solid var(--home-rule);
+}
+
+.related-deadlines-page th {
+  background: var(--home-soft);
+  color: var(--home-muted);
+  font-size: 14px;
+  font-weight: 750;
+  letter-spacing: 0.015em;
+}
+
+.related-deadlines-page tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.related-deadlines-page tbody tr:hover td {
+  background: color-mix(in srgb, var(--home-soft) 54%, white);
+}
+
+.related-deadlines-page td:nth-child(2),
+.related-deadlines-page td:nth-child(3),
+.related-deadlines-page time {
+  white-space: nowrap;
+}
+
+.related-deadlines-page .deadline-estimate {
+  display: block;
+  margin-top: 4px;
+  color: var(--home-muted);
+  font-size: 13px;
+  white-space: normal;
+}
+
+.related-deadlines-page .deadline-filters__empty {
+  margin: 28px 0;
+  padding: 28px;
+  background: var(--home-soft);
+  color: var(--home-muted);
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .related-deadlines-page .deadline-filters__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .related-deadlines-page .deadline-filters__current,
+  .related-deadlines-page .deadline-filters__clear {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .related-deadlines-page .deadline-filters {
+    margin-bottom: 24px;
+    padding: 20px;
+  }
+
+  .related-deadlines-page .deadline-filters__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .related-deadlines-page .deadline-filters__current,
+  .related-deadlines-page .deadline-filters__clear {
+    grid-column: 1;
+  }
+
+  .related-deadlines-page .deadline-topic > summary {
+    min-height: 76px;
+    padding: 20px 2px;
+  }
+
+  .related-deadlines-page .deadline-topic__title {
+    font-size: 23px;
+  }
+
+  .related-deadlines-page .deadline-group {
+    padding-inline: 2px;
+  }
+
+  .related-deadlines-page .deadline-group h2,
+  .related-deadlines-page .deadline-group h3 {
+    font-size: 18px;
   }
 }
 

@@ -70,6 +70,12 @@ for (const content of ["publication-card", "supervision-filter-root", "filterabl
 }
 assert.doesNotMatch(homepage, /\/tools\/word-game\//, "Word Discovery Challenge should not appear on the homepage");
 
+const deadlinesPage = await readFile(path.join(output, "tools", "next-related-deadlines", "index.html"), "utf8");
+assert.match(deadlinesPage, /<body class="running-records-page related-deadlines-page">/, "Deadlines page should use the current tool shell");
+assert.match(deadlinesPage, /class="running-records-nav"/, "Deadlines page should use the current site navigation");
+assert.match(deadlinesPage, /class="deadline-topic__icon"/, "Deadline topics should use the current disclosure icon");
+assert.doesNotMatch(deadlinesPage, /class="sidebar/, "Deadlines page should not render the legacy profile sidebar");
+
 if (errors.size) {
   console.error(Array.from(errors).join("\n"));
   process.exitCode = 1;

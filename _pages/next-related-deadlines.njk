@@ -1,12 +1,10 @@
 ---
-layout: page.njk
+layout: running-records.njk
 permalink: /tools/next-related-deadlines/
-title: ""
+title: Next Related Deadlines
 excerpt: "Next submission deadlines for related conferences"
-author_profile: true
+body_class: related-deadlines-page
 ---
-
-<h1>Next Related Deadlines</h1>
 
 <form class="deadline-filters" id="deadline-filters" aria-label="Filter deadlines">
   <div class="deadline-filters__grid">
@@ -94,7 +92,10 @@ author_profile: true
 {% set dated_future_conferences = category.conferences | selectattr("last_submission_deadline") | rejectattr("deadline_announced") | sort(attribute="last_submission_deadline") %}
 {% set undated_future_conferences = category.conferences | rejectattr("last_submission_deadline") | rejectattr("deadline_announced") %}
 <details class="research-section deadline-topic" data-deadline-topic>
-  <summary><span class="deadline-topic__title" role="heading" aria-level="2">{{ category.title }}</span></summary>
+  <summary>
+    <span class="deadline-topic__title" role="heading" aria-level="2">{{ category.title }}</span>
+    <svg class="deadline-topic__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+  </summary>
 
   <section class="deadline-group" data-deadline-group="current">
     <h3>Current deadlines</h3>
@@ -192,4 +193,4 @@ author_profile: true
 
 <p class="deadline-filters__empty" id="deadline-filter-empty" hidden>No deadlines match these filters.</p>
 
-<script src="/assets/js/deadline-filters.js?v=3" defer></script>
+<script src="/assets/js/deadline-filters.js?v=4" defer></script>
