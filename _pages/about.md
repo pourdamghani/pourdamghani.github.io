@@ -74,14 +74,39 @@ templateEngineOverride: njk
 
 <section class="home-content-section home-anchor" id="publications" aria-labelledby="publications-title">
   <div class="home-shell">
-    <header class="home-section-heading"><div><h2 id="publications-title">Publications</h2></div></header>
+    <header class="home-section-heading">
+      <div>
+        <h2 id="publications-title">Publications</h2>
+        <div class="topic-selector publication-topic-selector" aria-label="Filter publications by topic">
+          <span class="topic-selector__label">Browse by topic</span>
+          <div class="topic-selector__options" role="group" aria-label="Publication topics">
+            <button type="button" class="topic-selector__button is-active" data-publication-topic="all" aria-pressed="true">All topics</button>
+            {% for section in publications.sections %}
+              <button type="button" class="topic-selector__button" data-publication-topic="{{ section.title | slugify }}" aria-pressed="false">{{ section.title }}</button>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="home-section-embed home-section-embed--publications">{{ includePage('/publications/') }}</div>
   </div>
 </section>
 
 <section class="home-content-section home-anchor" id="supervision" aria-labelledby="supervision-title">
   <div class="home-shell">
-    <header class="home-section-heading"><div><h2 id="supervision-title">Supervision</h2></div></header>
+    <header class="home-section-heading">
+      <div>
+        <h2 id="supervision-title">Supervision</h2>
+        <div class="topic-selector supervision-topic-selector" aria-label="Filter supervision by group">
+          <span class="topic-selector__label">Browse by group</span>
+          <div class="topic-selector__options" role="group" aria-label="Supervision groups">
+            <button type="button" class="topic-selector__button is-active" data-supervision-group="all" aria-pressed="true">All students</button>
+            <button type="button" class="topic-selector__button" data-supervision-group="theses" aria-pressed="false">Thesis supervision</button>
+            <button type="button" class="topic-selector__button" data-supervision-group="interns" aria-pressed="false">Research interns</button>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="home-section-embed">{{ includePage('/supervision/') }}</div>
   </div>
 </section>

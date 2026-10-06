@@ -12,7 +12,8 @@
     root.querySelectorAll(".supervision-entry")
   );
   var metaTags = root.querySelectorAll(".supervision-entry__meta span");
-  var groupButtons = root.querySelectorAll("[data-supervision-group]");
+  var scope = root.closest("#supervision") || root;
+  var groupButtons = scope.querySelectorAll("[data-supervision-group]");
   var activeFilter = "";
   var activeGroup = "all";
 
@@ -95,9 +96,9 @@
         (activeFilter ? " tagged “" + activeFilter + "”" : "") + ".";
   }
 
-  root.addEventListener("click", function (event) {
+  scope.addEventListener("click", function (event) {
     var groupButton = event.target.closest("[data-supervision-group]");
-    if (groupButton && root.contains(groupButton)) {
+    if (groupButton && scope.contains(groupButton)) {
       activeGroup = groupButton.dataset.supervisionGroup;
       applyFilter(activeFilter);
       return;

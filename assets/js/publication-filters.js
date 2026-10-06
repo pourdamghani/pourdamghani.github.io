@@ -4,10 +4,15 @@
   var selectors = document.querySelectorAll(".publication-topic-selector");
 
   selectors.forEach(function (selector) {
-    var container = selector.nextElementSibling;
+    var homeSection = selector.closest("#publications");
+    var container = homeSection
+      ? homeSection.querySelector(".publication-filter-root")
+      : selector.nextElementSibling;
     if (!container || !container.classList.contains("publication-filter-root")) return;
 
-    var buttons = selector.querySelectorAll("[data-publication-topic]");
+    var linkedSelectors = homeSection
+      ? homeSection.querySelectorAll(".publication-topic-selector")
+      : [selector];
     var sections = container.querySelectorAll("[data-publication-section]");
 
     selector.addEventListener("click", function (event) {
@@ -16,10 +21,12 @@
 
       var topic = button.dataset.publicationTopic;
 
-      buttons.forEach(function (candidate) {
-        var selected = candidate === button;
-        candidate.classList.toggle("is-active", selected);
-        candidate.setAttribute("aria-pressed", selected ? "true" : "false");
+      linkedSelectors.forEach(function (linkedSelector) {
+        linkedSelector.querySelectorAll("[data-publication-topic]").forEach(function (candidate) {
+          var selected = candidate.dataset.publicationTopic === topic;
+          candidate.classList.toggle("is-active", selected);
+          candidate.setAttribute("aria-pressed", selected ? "true" : "false");
+        });
       });
 
       sections.forEach(function (section) {
