@@ -37,9 +37,9 @@
   event_image: /images/running-records/city-night-2026.png
 - id: saucony-bln-10k-2026-06-20
   name: Saucony BLN 10K
-  logo_image: null
+  logo_image: /images/event-logos/bln-10k.png
   distance: 10K
-  time: null
+  time: "untimed"
   date: "2026-06-20"
   display_date: "20 June 2026"
   city: Berlin
