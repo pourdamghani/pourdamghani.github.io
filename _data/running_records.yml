@@ -1,22 +1,23 @@
 # Add more events here. Set an image field to a site-relative path when a photo is available.
 - id: generali-5k-2026-09-26
   name: GENERALI 5K
-  logo_image: /images/event-logos/generali-5k.svg
+  logo_image: /images/event-logos/generali-5k.webp
   distance: 5K
   time: "00:31:53"
   date: "2026-09-26"
+  display_date: "26 September 2026"
   city: Berlin
   country: Germany
   medal_image: null
   race_number_image: null
-  event_image: null
+  event_image: /images/running-records/generali-5k-2026.png
 - id: tierparklauf-2026-09-13
   name: Tierparklauf 
   logo_image: /images/event-logos/tierparklauf.png
   distance: 5K
   time: "00:36:18"
   date: "2026-09-13"
-  display_date: "13. September 2026"
+  display_date: "13 September 2026"
   city: Berlin
   country: Germany
   medal_image: null
@@ -28,19 +29,31 @@
   distance: 5K
   time: "00:34:46"
   date: "2026-07-31"
-  display_date: "31.07.2026"
+  display_date: "31 July 2026"
   city: Berlin
   country: Germany
   medal_image: null
   race_number_image: null
-  event_image: null
+  event_image: /images/running-records/city-night-2026.png
+- id: saucony-bln-10k-2026-06-20
+  name: Saucony BLN 10K
+  logo_image: null
+  distance: 10K
+  time: null
+  date: "2026-06-20"
+  display_date: "20 June 2026"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: /images/running-records/bln-10k-2026.jpg
 - id: s-25-berlin-2026-04-19
   name: S 25 Berlin
   logo_image: /images/event-logos/s25-berlin.svg
   distance: 5K
   time: "00:42:01"
   date: "2026-04-19"
-  display_date: "19. April 2026"
+  display_date: "19 April 2026"
   city: Berlin
   country: Germany
   medal_image: null
@@ -49,10 +62,11 @@
 - id: berliner-firmenlauf-2025-05-21
   name: Berliner Firmenlauf
   logo_image: /images/event-logos/berliner-firmenlauf.png
+  show_placeholder_images: false
   distance: 5.5K
   time: "00:43:13"
   date: "2025-05-21"
-  display_date: "21. Mai 2025"
+  display_date: "21 May 2025"
   city: Berlin
   country: Germany
   medal_image: null
@@ -61,10 +75,11 @@
 - id: berliner-firmenlauf-2024-04-24
   name: Berliner Firmenlauf
   logo_image: /images/event-logos/berliner-firmenlauf.png
+  show_placeholder_images: false
   distance: 5.5K
   time: "00:43:56"
   date: "2024-04-24"
-  display_date: "24. April 2024"
+  display_date: "24 April 2024"
   city: Berlin
   country: Germany
   medal_image: null
@@ -73,10 +88,11 @@
 - id: business-run-2018-09-06
   name: Business Run
   logo_image: /images/event-logos/business-run.png
-  distance: 4.1 km
+  show_placeholder_images: false
+  distance: 4.1K
   time: "00:27:53"
   date: "2018-09-06"
-  display_date: "6 September 2018"
+  display_date: "06 September 2018"
   city: Vienna
   country: Austria
   medal_image: null
