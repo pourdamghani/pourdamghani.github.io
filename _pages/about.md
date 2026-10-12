@@ -47,15 +47,13 @@ templateEngineOverride: njk
         <img src="/images/profile.png" alt="Arash Pourdamghani" width="586" height="578">
       </div>
       <nav class="home-profile-links" aria-label="Academic and social profiles">
-        <a href="{{ metadata.author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/{{ metadata.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-        <a href="{{ metadata.author.orcid }}" aria-label="ORCID" title="ORCID"><i class="ai ai-orcid-square" aria-hidden="true"></i></a>
-        <a href="{{ metadata.author.dblp }}" aria-label="DBLP" title="DBLP"><span class="profile-brand profile-brand--dblp" aria-hidden="true">d</span></a>
-        <a href="{{ metadata.author.youtube }}" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-        <a href="{{ metadata.author.mastodon }}" aria-label="Mastodon" title="Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
-        <a href="{{ metadata.author.bluesky }}" aria-label="Bluesky" title="Bluesky">
-          <svg class="profile-brand profile-brand--bluesky" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.1C8 5.2 11 9.4 12 11.7c1-2.3 4-6.5 6.8-8.6 2-1.5 5.2-2.7 5.2 1 0 .8-.5 6.2-.8 7.1-.9 3-4.1 3.7-7 3.2 5.1.9 6.4 3.8 3.6 6.7-5.3 5.4-7.1-1.4-7.7-3.2-.1-.4-.2-.6-.2-.5 0-.1-.1.1-.2.5-.6 1.8-2.4 8.6-7.7 3.2-2.8-2.9-1.5-5.8 3.6-6.7-2.9.5-6.1-.2-7-3.2C.3 10.3-.2 4.9-.2 4.1c0-3.7 3.2-2.5 5.4-1Z" transform="translate(.3 0) scale(.96)"/></svg>
-        </a>
+        <a href="{{ metadata.author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><img src="/assets/images/social/googlescholar.svg" alt="" width="20" height="20"></a>
+        <a href="https://www.linkedin.com/in/{{ metadata.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><img src="/assets/images/social/linkedin.svg" alt="" width="20" height="20"></a>
+        <a href="{{ metadata.author.orcid }}" aria-label="ORCID" title="ORCID"><img src="/assets/images/social/orcid.svg" alt="" width="20" height="20"></a>
+        <a href="{{ metadata.author.dblp }}" aria-label="DBLP" title="DBLP"><img src="/assets/images/social/dblp.svg" alt="" width="20" height="20"></a>
+        <a href="{{ metadata.author.youtube }}" aria-label="YouTube" title="YouTube"><img src="/assets/images/social/youtube.svg" alt="" width="20" height="20"></a>
+        <a href="{{ metadata.author.mastodon }}" rel="me" aria-label="Mastodon" title="Mastodon"><img src="/assets/images/social/mastodon.svg" alt="" width="20" height="20"></a>
+        <a href="{{ metadata.author.bluesky }}" aria-label="Bluesky" title="Bluesky"><img src="/assets/images/social/bluesky.svg" alt="" width="20" height="20"></a>
       </nav>
       <div class="home-portrait__contact">
         <p title="Academic email"><i class="fas fa-university" aria-hidden="true"></i><span>lastname (at) tu-berlin (dot) de</span></p>

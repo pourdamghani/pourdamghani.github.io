@@ -2176,14 +2176,6 @@ button::-moz-focus-inner {
   content: "\f08c";
 }
 
-.fa-youtube:before {
-  content: "\f167";
-}
-
-.fa-mastodon:before {
-  content: "\f4f6";
-}
-
 .fa-envelope:before {
   content: "\f0e0";
 }
@@ -2494,32 +2486,13 @@ body.single-page a {
 }
 
 .home-profile-links a:hover {
-  color: #0459a8;
   background: var(--home-soft);
 }
 
-.home-profile-links .ai {
-  font-size: 1.35rem;
-}
-
-.profile-brand--dblp {
-  display: inline-grid;
-  width: 1em;
-  height: 1em;
-  place-items: center;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  font-family: var(--home-sans);
-  font-size: 0.78em;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.profile-brand--bluesky {
+.home-profile-links img {
   display: block;
-  width: 1.05em;
-  height: 1.05em;
-  fill: currentColor;
+  width: 1.15rem;
+  height: 1.15rem;
 }
 
 .home-portrait {
