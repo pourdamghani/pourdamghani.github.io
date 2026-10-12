@@ -2176,6 +2176,14 @@ button::-moz-focus-inner {
   content: "\f08c";
 }
 
+.fa-youtube:before {
+  content: "\f167";
+}
+
+.fa-mastodon:before {
+  content: "\f4f6";
+}
+
 .fa-envelope:before {
   content: "\f0e0";
 }
@@ -2466,28 +2474,52 @@ body.single-page a {
 
 .home-profile-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-wrap: nowrap;
+  gap: 0.35rem;
   justify-content: center;
   margin-top: 0.9rem;
 }
 
 .home-profile-links a {
   display: inline-flex;
-  gap: 0.4rem;
   align-items: center;
-  padding: 0.38rem 0.55rem;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0;
   color: var(--home-accent);
-  font-size: var(--type-xs);
-  font-weight: 700;
+  font-size: 1.15rem;
   text-decoration: none;
-  border: 1px solid #bfd5e9;
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
 .home-profile-links a:hover {
+  color: #0459a8;
   background: var(--home-soft);
-  border-color: var(--home-accent);
+}
+
+.home-profile-links .ai {
+  font-size: 1.35rem;
+}
+
+.profile-brand--dblp {
+  display: inline-grid;
+  width: 1em;
+  height: 1em;
+  place-items: center;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-family: var(--home-sans);
+  font-size: 0.78em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.profile-brand--bluesky {
+  display: block;
+  width: 1.05em;
+  height: 1.05em;
+  fill: currentColor;
 }
 
 .home-portrait {

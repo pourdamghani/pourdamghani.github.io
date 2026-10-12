@@ -9,6 +9,21 @@
     {% if metadata.author.googlescholar %}
       <li><a href="{{ metadata.author.googlescholar }}"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
     {% endif %}
+    {% if metadata.author.orcid %}
+      <li><a href="{{ metadata.author.orcid }}"><i class="ai ai-orcid-square" aria-hidden="true"></i> ORCID</a></li>
+    {% endif %}
+    {% if metadata.author.dblp %}
+      <li><a href="{{ metadata.author.dblp }}">DBLP</a></li>
+    {% endif %}
+    {% if metadata.author.youtube %}
+      <li><a href="{{ metadata.author.youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+    {% endif %}
+    {% if metadata.author.mastodon %}
+      <li><a href="{{ metadata.author.mastodon }}"><i class="fab fa-mastodon" aria-hidden="true"></i> Mastodon</a></li>
+    {% endif %}
+    {% if metadata.author.bluesky %}
+      <li><a href="{{ metadata.author.bluesky }}">Bluesky</a></li>
+    {% endif %}
   </ul>
 </div>
 

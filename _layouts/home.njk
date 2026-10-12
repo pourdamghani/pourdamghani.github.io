@@ -31,7 +31,11 @@
         <nav aria-label="Profile links">
           <a href="{{ metadata.author.googlescholar }}">Google Scholar</a>
           <a href="{{ metadata.author.orcid }}">ORCID</a>
-          <a href="https://github.com/{{ metadata.author.github }}">Github</a>
+          <a href="{{ metadata.author.dblp }}">DBLP</a>
+          <a href="{{ metadata.author.youtube }}">YouTube</a>
+          <a href="{{ metadata.author.mastodon }}">Mastodon</a>
+          <a href="{{ metadata.author.bluesky }}">Bluesky</a>
+          <a href="https://github.com/{{ metadata.author.github }}">GitHub</a>
           <a href="https://www.linkedin.com/in/{{ metadata.author.linkedin }}">LinkedIn</a>
         </nav>
         <p class="home-footer__copyright">&copy; 2026 {{ metadata.author.name }}</p>
