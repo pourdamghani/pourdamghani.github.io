@@ -24,6 +24,7 @@ author_profile: true
     <div class="service-tags">
       <span>DISC 2026</span>
       <span>TON 2026</span>
+      <span>TOPS 2026</span>
       <span>TON 2025</span>
       <span>DLT 2025</span>
       <span>TON 2024</span>
@@ -65,22 +66,12 @@ author_profile: true
 <div class="service-grid">
   <article class="service-card">
     <h3>Rayacast Podcast</h3>
-    <p class="service-card__meta">Founder & organizer, 2022</p>
+    <p class="service-card__meta">Founder & organizer</p>
   </article>
 
   <article class="service-card">
     <h3>Persian Wikipedia Edit-a-thon</h3>
     <p class="service-card__meta">Co-founder & co-organizer</p>
-  </article>
-
-  <article class="service-card">
-    <h3>TEDxSUT</h3>
-    <p class="service-card__meta">Founding member</p>
-  </article>
-
-  <article class="service-card">
-    <h3>Seminar Series in Advanced Computer Science</h3>
-    <p class="service-card__meta">Organizing team, panelist, and speaker</p>
   </article>
 
 </div>
