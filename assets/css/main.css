@@ -3487,7 +3487,8 @@ body.running-records-page a:focus-visible {
   background: #e5eff7;
 }
 
-.running-record__image img {
+.running-record__image img,
+.running-record__image video {
   display: block;
   width: 100%;
   height: auto;

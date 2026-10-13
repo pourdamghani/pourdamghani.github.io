@@ -17,12 +17,24 @@ excerpt: "Running events, finish times, medals, race numbers, and event photos."
   {% endif %}
 {% endmacro %}
 
+{% macro recordVideo(src, eventName) %}
+  <figure class="running-record__photo">
+    <div class="running-record__image">
+      <video controls preload="metadata" playsinline aria-label="Event video from {{ eventName }}">
+        <source src="{{ src }}" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </div>
+    <figcaption>Event video</figcaption>
+  </figure>
+{% endmacro %}
+
 <div class="running-records-list">
   {% for record in running_records %}
     {% set dateParts = [] %}
     {% if record.date %}{% set dateParts = record.date.split('-') %}{% endif %}
     {% set showPlaceholders = record.show_placeholder_images != false %}
-    {% set hasPhotos = record.medal_image or record.race_number_image or record.event_image %}
+    {% set hasPhotos = record.medal_image or record.race_number_image or record.event_image or record.event_video %}
     <article class="running-record" aria-labelledby="{{ record.id }}">
       <header class="running-record__header">
         <div class="running-record__summary">
@@ -56,7 +68,11 @@ excerpt: "Running events, finish times, medals, race numbers, and event photos."
         <div class="running-record__photos">
           {{ recordImage(record.medal_image, 'Medal', record.name, showPlaceholders) }}
           {{ recordImage(record.race_number_image, 'Race number', record.name, showPlaceholders) }}
-          {{ recordImage(record.event_image, 'Event photo', record.name, showPlaceholders) }}
+          {% if record.event_video %}
+            {{ recordVideo(record.event_video, record.name) }}
+          {% else %}
+            {{ recordImage(record.event_image, 'Event photo', record.name, showPlaceholders) }}
+          {% endif %}
         </div>
       {% endif %}
     </article>

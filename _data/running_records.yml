@@ -1,4 +1,16 @@
 # Add more events here. Set an image field to a site-relative path when a photo is available.
+- id: berliner-morgenpost-great-10k-2026-10-11
+  name: Berliner Morgenpost Great 10K 2026
+  logo_image: /images/event-logos/berliner-morgenpost-great-10k.png
+  distance: 10K
+  time: "01:11:35"
+  date: "2026-10-11"
+  display_date: "11. Oktober 2026"
+  city: Berlin
+  country: Germany
+  medal_image: null
+  race_number_image: null
+  event_image: /images/running-records/berliner-morgenpost-great-10k-2026.jpg
 - id: generali-5k-2026-09-26
   name: GENERALI 5K
   logo_image: /images/event-logos/generali-5k.webp
@@ -59,6 +71,7 @@
   medal_image: null
   race_number_image: null
   event_image: null
+  event_video: /images/running-records/s25-berlin-2026.mp4
 - id: berliner-firmenlauf-2025-05-21
   name: Berliner Firmenlauf
   logo_image: /images/event-logos/berliner-firmenlauf.png
