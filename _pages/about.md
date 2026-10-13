@@ -72,7 +72,7 @@ templateEngineOverride: njk
       <article><p>I defended my PhD thesis, <em>Demand-Aware Networks: Design, Adjust &amp; Update</em>, at TU Berlin on 2 September 2026 and received the grade <strong>with distinction (summa cum laude).</strong> See my slides, presentation video, and my thesis <a href="/talks/thesis/">here</a>.</p></article>
       <article><p>Our project, BeeFAIRChain, has just been fully accepted as part of DATIpilot <a href="https://bioblock-community.org/event-cp3-cp5.html">BioBlock Innovationscommunity</a>, funded by Federal Ministry for Research, Technology and Space (BMFTR) in Germany.</p></article>
       <article><p>We have just been awarded <a href="https://www.berlin-university-alliance.de/en/commitments/international/oxford/news/251106-FFIX.html">Oxford Berlin Research Partnership Flexible Funds 2026</a>!</p></article>
-      <article><p>Our paper "Rethinking Fronthaul Topologies for Cell-Free 6G Networks" has been accepted in <a href="https://icc2026.ieee-icc.org/">IEEE ICC 2026</a>!</p></article>
+      <article><p>Our paper "Toward GenAI-Powered Manufacturing Networks: Challenges &amp; Opportunities" has just been accepted in IEEE Communications Standards Magazine!</p></article>
     </div>
   </div>
 </section>
