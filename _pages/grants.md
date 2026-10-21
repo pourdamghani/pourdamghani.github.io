@@ -2,13 +2,14 @@
 layout: page.njk
 permalink: /grants/
 title: ""
-excerpt: "Grants and awards of Arash Pourdamghani"
+excerpt: "Funding Accusation of Arash Pourdamghani"
 author_profile: true
 ---
 
-# Grants & Awards
+# Funding Accusation
 
 <section class="research-section people-list-section">
+<h2>Supervised Funding Accusation</h2>
 <div class="grant-list">
   <article class="grant-entry">
     <span class="grant-entry__year">2026</span>
@@ -24,7 +25,12 @@ author_profile: true
     <span class="grant-entry__year">2025</span>
     <h3>Trilateral Seed Funding Initiative, GeCo (TU Berlin, University of Oxford, Siemens AG)</h3>
   </article>
+</div>
+</section>
 
+<section class="research-section people-list-section">
+<h2>Independent Fundings Accusation</h2>
+<div class="grant-list">
   <article class="grant-entry">
     <span class="grant-entry__year">2024</span>
     <h3>Student Travel Grant (Web4Good for WebSci)</h3>
