@@ -2,18 +2,18 @@
 layout: page.njk
 permalink: /grants/
 title: ""
-excerpt: "Funding Acquisition of Arash Pourdamghani"
+excerpt: "Grants of Arash Pourdamghani"
 author_profile: true
 ---
 
-# Funding Acquisition
+# Grants
 
 <div class="funding-filter-root">
 {% include "funding-type-selector.njk" %}
 
 <section class="research-section people-list-section filterable-funding-section" data-funding-section="supervised">
 <h2>Supervised Grant Development</h2>
-<p>As a PhD/Postdoc at TU Berlin, I have contributed in finding, applying and managing the fundings mentioned below. However, I could have not been the PI, and Prof. Schmid had supervised me as the main PI throughout the life time of these fundings.</p>
+<p>During my PhD and postdoctoral work at TU Berlin, I have contributed to identifying funding opportunities, preparing grant applications, and managing the grants listed below. As I could not serve as principal investigator (PI), Prof. Schmid has served as the lead PI and supervised my contributions throughout these projects.</p>
 <div class="grant-list">
   <article class="grant-entry">
     <span class="grant-entry__year">2026</span>
