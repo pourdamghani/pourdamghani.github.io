@@ -59,16 +59,6 @@ author_profile: true
     <span class="grant-entry__year">2018</span>
     <h3>2-month scholarship (OeAD-GmbH)</h3>
   </article>
-
-  <article class="grant-entry">
-    <span class="grant-entry__year">2016</span>
-    <h3>Awarded for Success in Studies (Sharif University of Technology)</h3>
-  </article>
-
-  <article class="grant-entry">
-    <span class="grant-entry__year">2013</span>
-    <h3>Silver Medal in Iranian National Olympiad in Informatics </h3>
-  </article>
 </div>
 </section>
 </div>
