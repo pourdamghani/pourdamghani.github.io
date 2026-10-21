@@ -8,8 +8,12 @@ author_profile: true
 
 # Funding Accusation
 
-<section class="research-section people-list-section">
+<div class="funding-filter-root">
+{% include "funding-type-selector.njk" %}
+
+<section class="research-section people-list-section filterable-funding-section" data-funding-section="supervised">
 <h2>Supervised Funding Accusation</h2>
+<p>As a PhD/Postdoc at TU Berlin, I have contributed in finding, applying and managing the fundings mentioned below. However, I could have not been the PI, and Prof. Schmid had supervised me as the main PI throughout the life time of these fundings.</p>
 <div class="grant-list">
   <article class="grant-entry">
     <span class="grant-entry__year">2026</span>
@@ -28,7 +32,7 @@ author_profile: true
 </div>
 </section>
 
-<section class="research-section people-list-section">
+<section class="research-section people-list-section filterable-funding-section" data-funding-section="independent">
 <h2>Independent Fundings Accusation</h2>
 <div class="grant-list">
   <article class="grant-entry">
@@ -67,3 +71,6 @@ author_profile: true
   </article>
 </div>
 </section>
+</div>
+
+<script src="/assets/js/funding-filters.js" defer></script>

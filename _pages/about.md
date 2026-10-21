@@ -139,7 +139,12 @@ templateEngineOverride: njk
 
 <section class="home-content-section home-anchor" id="grants" aria-labelledby="grants-title">
   <div class="home-shell">
-    <header class="home-section-heading"><div><h2 id="grants-title">Funding Accusation</h2></div></header>
+    <header class="home-section-heading">
+      <div>
+        <h2 id="grants-title">Funding Accusation</h2>
+        {% include "funding-type-selector.njk" %}
+      </div>
+    </header>
     <div class="home-section-embed">{{ includePage('/grants/') }}</div>
   </div>
 </section>

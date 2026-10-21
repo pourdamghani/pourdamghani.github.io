@@ -2667,12 +2667,14 @@ body.single-page a {
 }
 
 .home-section-embed--publications .research-section + .research-section,
-.home-section-embed .filterable-supervision-section + .filterable-supervision-section {
+.home-section-embed .filterable-supervision-section + .filterable-supervision-section,
+.home-section-embed .filterable-funding-section + .filterable-funding-section {
   margin-top: 4rem;
 }
 
 .home-section-embed--publications .research-section > h2,
-.home-section-embed .filterable-supervision-section > h2 {
+.home-section-embed .filterable-supervision-section > h2,
+.home-section-embed .filterable-funding-section > h2 {
   margin-bottom: 0.75rem;
   padding: 0.85rem 1rem;
   background: linear-gradient(90deg, var(--home-soft), rgba(238, 244, 250, 0));
@@ -2684,12 +2686,14 @@ body.single-page a {
 }
 
 .home-section-embed .filterable-publication-section[hidden],
-.home-section-embed .filterable-supervision-section[hidden] {
+.home-section-embed .filterable-supervision-section[hidden],
+.filterable-funding-section[hidden] {
   display: none;
 }
 
 .home-section-embed .publication-topic-selector,
-.home-section-embed .supervision-topic-selector {
+.home-section-embed .supervision-topic-selector,
+.home-section-embed .funding-type-selector {
   display: none;
 }
 
