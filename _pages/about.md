@@ -141,7 +141,7 @@ templateEngineOverride: njk
   <div class="home-shell">
     <header class="home-section-heading">
       <div>
-        <h2 id="grants-title">Funding Accusation</h2>
+        <h2 id="grants-title">Funding Acquisition</h2>
         {% include "funding-type-selector.njk" %}
       </div>
     </header>

@@ -2,17 +2,17 @@
 layout: page.njk
 permalink: /grants/
 title: ""
-excerpt: "Funding Accusation of Arash Pourdamghani"
+excerpt: "Funding Acquisition of Arash Pourdamghani"
 author_profile: true
 ---
 
-# Funding Accusation
+# Funding Acquisition
 
 <div class="funding-filter-root">
 {% include "funding-type-selector.njk" %}
 
 <section class="research-section people-list-section filterable-funding-section" data-funding-section="supervised">
-<h2>Supervised Funding Accusation</h2>
+<h2>Supervised Funding Acquisition</h2>
 <p>As a PhD/Postdoc at TU Berlin, I have contributed in finding, applying and managing the fundings mentioned below. However, I could have not been the PI, and Prof. Schmid had supervised me as the main PI throughout the life time of these fundings.</p>
 <div class="grant-list">
   <article class="grant-entry">
@@ -33,7 +33,7 @@ author_profile: true
 </section>
 
 <section class="research-section people-list-section filterable-funding-section" data-funding-section="independent">
-<h2>Independent Fundings Accusation</h2>
+<h2>Independent Fundings Acquisition</h2>
 <div class="grant-list">
   <article class="grant-entry">
     <span class="grant-entry__year">2024</span>
