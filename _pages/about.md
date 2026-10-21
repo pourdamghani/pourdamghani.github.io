@@ -85,7 +85,7 @@ templateEngineOverride: njk
         <div class="topic-selector publication-topic-selector" aria-label="Filter publications by topic">
           <span class="topic-selector__label">Browse by topic</span>
           <div class="topic-selector__options" role="group" aria-label="Publication topics">
-            <button type="button" class="topic-selector__button is-active" data-publication-topic="all" aria-pressed="true">All topics</button>
+            <button type="button" class="topic-selector__button is-active" data-publication-topic="all" aria-pressed="true">All Topics</button>
             {% for section in publications.sections %}
               <button type="button" class="topic-selector__button" data-publication-topic="{{ section.title | slugify }}" aria-pressed="false">{{ section.title }}</button>
             {% endfor %}
@@ -105,9 +105,9 @@ templateEngineOverride: njk
         <div class="topic-selector supervision-topic-selector" aria-label="Filter supervision by group">
           <span class="topic-selector__label">Browse by group</span>
           <div class="topic-selector__options" role="group" aria-label="Supervision groups">
-            <button type="button" class="topic-selector__button is-active" data-supervision-group="all" aria-pressed="true">All students</button>
-            <button type="button" class="topic-selector__button" data-supervision-group="theses" aria-pressed="false">Thesis supervision</button>
-            <button type="button" class="topic-selector__button" data-supervision-group="interns" aria-pressed="false">Research interns</button>
+            <button type="button" class="topic-selector__button is-active" data-supervision-group="all" aria-pressed="true">All Students</button>
+            <button type="button" class="topic-selector__button" data-supervision-group="theses" aria-pressed="false">Thesis Supervision</button>
+            <button type="button" class="topic-selector__button" data-supervision-group="interns" aria-pressed="false">Research Interns</button>
           </div>
         </div>
       </div>

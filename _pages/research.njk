@@ -14,7 +14,7 @@ author_profile: true
 <div class="topic-selector publication-topic-selector" aria-label="Filter publications by topic">
   <span class="topic-selector__label">Browse by topic</span>
   <div class="topic-selector__options" role="group" aria-label="Publication topics">
-    <button type="button" class="topic-selector__button is-active" data-publication-topic="all" aria-pressed="true">All topics</button>
+    <button type="button" class="topic-selector__button is-active" data-publication-topic="all" aria-pressed="true">All Topics</button>
     {% for section in publications.sections %}
       <button type="button" class="topic-selector__button" data-publication-topic="{{ section.title | slugify }}" aria-pressed="false">{{ section.title }}</button>
     {% endfor %}
