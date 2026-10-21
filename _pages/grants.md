@@ -38,11 +38,6 @@ author_profile: true
 
   <article class="grant-entry">
     <span class="grant-entry__year">2020</span>
-    <h3>PhD Grant for ERC project self-adjusting networks</h3>
-  </article>
-
-  <article class="grant-entry">
-    <span class="grant-entry__year">2020</span>
     <h3>Career Grant (FFG Austria)</h3>
   </article>
 
