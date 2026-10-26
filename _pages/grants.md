@@ -17,12 +17,12 @@ author_profile: true
 <div class="grant-list">
   <article class="grant-entry">
     <span class="grant-entry__year">2026</span>
-    <h3>BeeFAIRChain Praxis-Sprint, as part of DATIpilot BioBlock Innovationscommunity, funded by Federal Ministry for Research, Technology and Space (BMFTR) in Germany.</h3>
+    <h3>BeeFAIRChain Praxis-Sprint, as part of DATIpilot BioBlock Innovationscommunity, funded by Federal Ministry for Research, Technology and Space (BMFTR) in Germany (with ISW of the University of Stuttgart).</h3>
   </article>
   
   <article class="grant-entry">
     <span class="grant-entry__year">2026</span>
-    <h3>Oxford Berlin Research Partnership Flexible Funds</h3>
+    <h3>Oxford Berlin Research Partnership Flexible Funds (with University of Oxford)</h3>
   </article>
 
   <article class="grant-entry">
