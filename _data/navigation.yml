@@ -3,6 +3,9 @@ main:
   - title: "Publications"
     url: /#publications
 
+  - title: "Grants"
+    url: /#grants
+
   - title: "Service"
     url: /#service
 
@@ -14,9 +17,6 @@ main:
 
   - title: "Talks"
     url: /#talks
-
-  - title: "Grants"
-    url: /#grants
 
   - title: "Tools"
     url: /#tools

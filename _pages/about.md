@@ -97,6 +97,18 @@ templateEngineOverride: njk
   </div>
 </section>
 
+<section class="home-content-section home-anchor" id="grants" aria-labelledby="grants-title">
+  <div class="home-shell">
+    <header class="home-section-heading">
+      <div>
+        <h2 id="grants-title">Grants</h2>
+        {% include "funding-type-selector.njk" %}
+      </div>
+    </header>
+    <div class="home-section-embed">{{ includePage('/grants/') }}</div>
+  </div>
+</section>
+
 <section class="home-content-section home-anchor" id="supervision" aria-labelledby="supervision-title">
   <div class="home-shell">
     <header class="home-section-heading">
@@ -134,18 +146,6 @@ templateEngineOverride: njk
   <div class="home-shell">
     <header class="home-section-heading"><div><h2 id="talks-title">Talks</h2></div></header>
     <div class="home-section-embed">{{ includePage('/talks/') }}</div>
-  </div>
-</section>
-
-<section class="home-content-section home-anchor" id="grants" aria-labelledby="grants-title">
-  <div class="home-shell">
-    <header class="home-section-heading">
-      <div>
-        <h2 id="grants-title">Grants</h2>
-        {% include "funding-type-selector.njk" %}
-      </div>
-    </header>
-    <div class="home-section-embed">{{ includePage('/grants/') }}</div>
   </div>
 </section>
 
